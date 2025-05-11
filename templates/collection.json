@@ -1,1 +1,142 @@
-{"sections":{"image_with_text_MEcUbm":{"type":"image-with-text","blocks":{"heading_9cyDjT":{"type":"heading","settings":{"heading":"Metal tidsindstillet hængelås + Screenbalance Sleeve","heading_size":"h1"}},"text_6zcN7r":{"type":"text","settings":{"text":"<p>Sættet der kan hjælpe dig med at nedsætte dit skærmforbrug. <br\/>1 stk. metal tidsindstillet hængelås <br\/>1 stk. Screenbalance sleeve (frit valg i farve) <\/p><p>Roen, der opstår, når det er fysisk umuligt at tilgå enhederne, er meget mere markant end at skulle kæmpe med “skulle jeg liiiige tjekke” tankerne.<\/p>","text_style":"body"}},"button_bbPbDq":{"type":"button","settings":{"button_label":"Gå til produkt","button_link":"shopify:\/\/products\/tidsindstillet-haengelas","button_style_secondary":false}}},"block_order":["heading_9cyDjT","text_6zcN7r","button_bbPbDq"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/IMG_1145.png","height":"adapt","desktop_image_width":"medium","layout":"image_first","image_behavior":"none","content_layout":"no-overlap","desktop_content_position":"top","desktop_content_alignment":"left","mobile_content_alignment":"left","section_color_scheme":"","color_scheme":"","padding_top":36,"padding_bottom":36}},"banner":{"type":"main-collection-banner","settings":{"show_collection_description":true,"show_collection_image":false,"color_scheme":"scheme-1"}},"featured_product_7AaMFh":{"type":"featured-product","blocks":{"text_YDxjpn":{"type":"text","settings":{"text":"{{ section.settings.product.vendor }}","text_style":"uppercase"}},"title_DjAUx6":{"type":"title","settings":{"heading_size":"h1"}},"price_UgbKjB":{"type":"price","settings":{}},"variant_picker_efDqFM":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector_Uhr77F":{"type":"quantity_selector","settings":{}},"buy_buttons_37kgtV":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"share_yNXTfx":{"type":"share","settings":{"share_label":"Share"}}},"block_order":["text_YDxjpn","title_DjAUx6","price_UgbKjB","variant_picker_efDqFM","quantity_selector_Uhr77F","buy_buttons_37kgtV","share_yNXTfx"],"disabled":true,"settings":{"product":"tidsindstillet-haengelas","color_scheme":"","secondary_background":false,"media_size":"medium","constrain_to_viewport":true,"media_fit":"contain","media_position":"left","image_zoom":"lightbox","hide_variants":false,"enable_video_looping":false,"padding_top":36,"padding_bottom":36}},"product-grid":{"type":"main-collection-product-grid","settings":{"products_per_page":16,"columns_desktop":5,"columns_mobile":"2","color_scheme":"scheme-2","image_ratio":"square","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"standard","enable_filtering":false,"filter_type":"horizontal","enable_sorting":false,"padding_top":36,"padding_bottom":36}}},"order":["image_with_text_MEcUbm","banner","featured_product_7AaMFh","product-grid"]}
+{
+  "sections": {
+    "image_with_text_MEcUbm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9cyDjT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Metal tidsindstillet hængelås + Screenbalance Sleeve",
+            "heading_size": "h1"
+          }
+        },
+        "text_6zcN7r": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sættet der kan hjælpe dig med at nedsætte dit skærmforbrug. <br\/>1 stk. metal tidsindstillet hængelås <br\/>1 stk. Screenbalance sleeve (frit valg i farve) <\/p><p>Roen, der opstår, når det er fysisk umuligt at tilgå enhederne, er meget mere markant end at skulle kæmpe med “skulle jeg liiiige tjekke” tankerne.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_bbPbDq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Gå til produkt",
+            "button_link": "shopify:\/\/products\/tidsindstillet-haengelas",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": ["heading_9cyDjT", "text_6zcN7r", "button_bbPbDq"],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_1145.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "featured_product_7AaMFh": {
+      "type": "featured-product",
+      "blocks": {
+        "text_YDxjpn": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_DjAUx6": {
+          "type": "title",
+          "settings": { "heading_size": "h1" }
+        },
+        "price_UgbKjB": { "type": "price", "settings": {} },
+        "variant_picker_efDqFM": {
+          "type": "variant_picker",
+          "settings": { "picker_type": "button", "swatch_shape": "circle" }
+        },
+        "quantity_selector_Uhr77F": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_37kgtV": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_yNXTfx": {
+          "type": "share",
+          "settings": { "share_label": "Share" }
+        }
+      },
+      "block_order": [
+        "text_YDxjpn",
+        "title_DjAUx6",
+        "price_UgbKjB",
+        "variant_picker_efDqFM",
+        "quantity_selector_Uhr77F",
+        "buy_buttons_37kgtV",
+        "share_yNXTfx"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "tidsindstillet-haengelas",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 5,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-2",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_with_text_MEcUbm",
+    "banner",
+    "featured_product_7AaMFh",
+    "product-grid"
+  ]
+}
