@@ -14,14 +14,16 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "nav a {font-size: 16px;}"
+        "nav a {font-size: 16px;}",
+        ".header-wrapper {background: transparent;}",
+        "header {display: flex; justify-content: space-between; flex-wrap: nowrap; border-radius: 50px; border: 2px #fffdf8 solid; background: rgb(255, 253, 248, 0.2); backdrop-filter: blur(5px);}"
       ],
       "settings": {
         "logo_position": "middle-left",
         "mobile_logo_position": "center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "none",
+        "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
         "color_scheme": "scheme-1",
         "menu_color_scheme": "scheme-1",

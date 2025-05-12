@@ -159,13 +159,13 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#fffdf8",
           "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "text": "#3e2103",
+          "button": "#2ba70a",
+          "button_label": "#2ba70a",
+          "secondary_button_label": "#2ba70a",
+          "shadow": "#ef0000"
         }
       },
       "scheme-2": {
@@ -216,11 +216,11 @@
         "settings": {
           "background": "#fffdf8",
           "background_gradient": "",
-          "text": "#3E2103",
-          "button": "#0BDB00",
-          "button_label": "#0BDB00",
-          "secondary_button_label": "#0BDB00",
-          "shadow": "#15B40D"
+          "text": "#3e2103",
+          "button": "#0bdb00",
+          "button_label": "#0bdb00",
+          "secondary_button_label": "#0bdb00",
+          "shadow": "#15b40d"
         }
       }
     }
@@ -418,6 +418,8 @@
     }
   },
   "platform_customizations": {
-    "custom_css": ["header img {  background-color:red;"]
+    "custom_css": [
+      "header img {background-color:red;"
+    ]
   }
 }
