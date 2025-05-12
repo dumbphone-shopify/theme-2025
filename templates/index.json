@@ -1,1 +1,278 @@
-{"sections":{"rich_text_LMikFR":{"type":"rich-text","blocks":{"heading_cwq3Hj":{"type":"heading","settings":{"heading":"<strong>En hjælpende hånd med at styre skærmforbruget<\/strong>","heading_size":"h1"}},"text_wdR6fj":{"type":"text","settings":{"text":"<p>Vi har samlet alle de bedste dumbphones, gadgets og tilbehør som kan hjælpe dig med at styre skærmforbruget<\/p>"}},"button_UfHqXV":{"type":"button","settings":{"button_label":"","button_link":"shopify:\/\/collections\/vores-dumbphones","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_cwq3Hj","text_wdR6fj","button_UfHqXV"],"custom_css":["h2 {font-size: 4, 9vw;}","div {font-size: 1, 5vw;}"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-1","full_width":true,"padding_top":24,"padding_bottom":12}},"collection_list_3gXFbh":{"type":"collection-list","blocks":{"featured_collection_7Cb8qD":{"type":"featured_collection","settings":{"collection":"vores-dumbphones"}},"featured_collection_yLdp8L":{"type":"featured_collection","settings":{"collection":"tilbehor"}},"featured_collection_DVbR4m":{"type":"featured_collection","settings":{"collection":"kits"}}},"block_order":["featured_collection_7Cb8qD","featured_collection_yLdp8L","featured_collection_DVbR4m"],"settings":{"title":"","heading_size":"h2","image_ratio":"square","columns_desktop":3,"color_scheme":"","show_view_all":false,"columns_mobile":"2","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}},"video_HHEcWA":{"type":"video","settings":{"heading":"","heading_size":"h1","enable_video_looping":false,"video_url":"https:\/\/www.youtube.com\/watch?v=EhcL4mFrIc0","cover_image":"shopify:\/\/shop_images\/Thumbnail_22c6c971-d64d-4c9b-b0f8-bb867813f9d0.png","description":"","full_width":false,"color_scheme":"","padding_top":36,"padding_bottom":48}},"rich_text_WhwJye":{"type":"rich-text","blocks":{"heading_db3TLx":{"type":"heading","settings":{"heading":"OMTALE I MEDIERNE","heading_size":"h2"}},"text_h6KhWF":{"type":"text","settings":{"text":""}},"button_7nb6er":{"type":"button","settings":{"button_label":"","button_link":"","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_db3TLx","text_h6KhWF","button_7nb6er"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":0}},"featured_blog_XGYwnV":{"type":"featured-blog","settings":{"blog":"potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug","post_limit":3,"heading":"Potentielle gavnlige resultater","heading_size":"h1","columns_desktop":3,"show_view_all":true,"show_image":true,"show_date":true,"show_author":false,"color_scheme":"","padding_top":40,"padding_bottom":36}},"image_with_text_PKtyhg":{"type":"image-with-text","blocks":{"caption_aW8ata":{"type":"caption","settings":{"caption":"DUMBPHONE.DK","text_style":"caption-with-letter-spacing","text_size":"large"}},"heading_6z8KMQ":{"type":"heading","settings":{"heading":"Foredrag + Efterskole\/Højskole løsningen.","heading_size":"h1"}},"text_9XJbLc":{"type":"text","settings":{"text":"<p>Dumbphone projektet er startet et helt andet sted end på denne webshop. Har du lyst til at læse mere om vores foredrag og hvad vi laver på efterskoler, højskoler og landet over? <\/p><p>Tryk på knappen ↓<\/p>","text_style":"body"}},"button_4kcAA4":{"type":"button","settings":{"button_label":"LÆS MERE","button_link":"shopify:\/\/pages\/vores-skoleforlob","button_style_secondary":true}}},"block_order":["caption_aW8ata","heading_6z8KMQ","text_9XJbLc","button_4kcAA4"],"settings":{"image":"shopify:\/\/shop_images\/Skoleforloeb_2bb1a038-4a12-4e46-9191-4e78686bced3.png","height":"adapt","desktop_image_width":"medium","layout":"image_first","image_behavior":"none","content_layout":"overlap","desktop_content_position":"middle","desktop_content_alignment":"center","mobile_content_alignment":"left","section_color_scheme":"scheme-2","color_scheme":"scheme-2","padding_top":36,"padding_bottom":36}},"image_banner_yA7yNr":{"type":"image-banner","blocks":{"heading_JLmAXc":{"type":"heading","settings":{"heading":"","heading_size":"h1"}},"text_KcUHbY":{"type":"text","settings":{"text":"","text_style":"body"}},"buttons_LyG4jN":{"type":"buttons","settings":{"button_label_1":"","button_link_1":"","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_JLmAXc","text_KcUHbY","buttons_LyG4jN"],"settings":{"image":"shopify:\/\/shop_images\/banner3_dcb0e4dc-bbc3-476d-ac6e-f0780622839b.png","image_overlay_opacity":0,"image_height":"small","image_behavior":"none","desktop_content_position":"middle-center","desktop_content_alignment":"center","show_text_box":false,"color_scheme":"","stack_images_on_mobile":true,"mobile_content_alignment":"center","show_text_below":false}},"collage_f44EKd":{"type":"collage","blocks":{"image_HbWMRX":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Pyntpakker.png"}},"product_4PM84E":{"type":"product","settings":{"product":"familiepakke-2","second_image":false}},"collection_dJUy9b":{"type":"collection","settings":{"collection":"kits"}}},"block_order":["image_HbWMRX","product_4PM84E","collection_dJUy9b"],"disabled":true,"settings":{"heading":"Alt er inkluderet i vores Dumbphone-pakker","heading_size":"h1","desktop_layout":"left","mobile_layout":"collage","card_styles":"product-card-wrapper","color_scheme":"scheme-1","padding_top":56,"padding_bottom":36}}},"order":["rich_text_LMikFR","collection_list_3gXFbh","video_HHEcWA","rich_text_WhwJye","featured_blog_XGYwnV","image_with_text_PKtyhg","image_banner_yA7yNr","collage_f44EKd"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_LMikFR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cwq3Hj": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>En hjælpende hånd med at styre skærmforbruget</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_wdR6fj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi har samlet alle de bedste dumbphones, gadgets og tilbehør som kan hjælpe dig med at styre skærmforbruget</p>"
+          }
+        },
+        "button_UfHqXV": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "shopify://collections/vores-dumbphones",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cwq3Hj",
+        "text_wdR6fj",
+        "button_UfHqXV"
+      ],
+      "custom_css": [
+        "h2 {font-size: 4, 9vw;}",
+        "div {font-size: 1, 5vw;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 12
+      }
+    },
+    "collection_list_3gXFbh": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_7Cb8qD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vores-dumbphones"
+          }
+        },
+        "featured_collection_yLdp8L": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tilbehor"
+          }
+        },
+        "featured_collection_DVbR4m": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kits"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_7Cb8qD",
+        "featured_collection_yLdp8L",
+        "featured_collection_DVbR4m"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_HHEcWA": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=EhcL4mFrIc0",
+        "cover_image": "shopify://shop_images/Thumbnail_22c6c971-d64d-4c9b-b0f8-bb867813f9d0.png",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    },
+    "rich_text_WhwJye": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_db3TLx": {
+          "type": "heading",
+          "settings": {
+            "heading": "OMTALE I MEDIERNE",
+            "heading_size": "h2"
+          }
+        },
+        "text_h6KhWF": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_7nb6er": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_db3TLx",
+        "text_h6KhWF",
+        "button_7nb6er"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_blog_XGYwnV": {
+      "type": "featured-blog",
+      "settings": {
+        "blog": "potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
+        "post_limit": 3,
+        "heading": "Potentielle gavnlige resultater",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_PKtyhg": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_aW8ata": {
+          "type": "caption",
+          "settings": {
+            "caption": "DUMBPHONE.DK",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "heading_6z8KMQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Foredrag + Efterskole/Højskole løsningen.",
+            "heading_size": "h1"
+          }
+        },
+        "text_9XJbLc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dumbphone projektet er startet et helt andet sted end på denne webshop. Har du lyst til at læse mere om vores foredrag og hvad vi laver på efterskoler, højskoler og landet over? </p><p>Tryk på knappen ↓</p>",
+            "text_style": "body"
+          }
+        },
+        "button_4kcAA4": {
+          "type": "button",
+          "settings": {
+            "button_label": "LÆS MERE",
+            "button_link": "shopify://pages/vores-skoleforlob",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "caption_aW8ata",
+        "heading_6z8KMQ",
+        "text_9XJbLc",
+        "button_4kcAA4"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Skoleforloeb_2bb1a038-4a12-4e46-9191-4e78686bced3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_f44EKd": {
+      "type": "collage",
+      "blocks": {
+        "image_HbWMRX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Pyntpakker.png"
+          }
+        },
+        "product_4PM84E": {
+          "type": "product",
+          "settings": {
+            "product": "familiepakke-2",
+            "second_image": false
+          }
+        },
+        "collection_dJUy9b": {
+          "type": "collection",
+          "settings": {
+            "collection": "kits"
+          }
+        }
+      },
+      "block_order": [
+        "image_HbWMRX",
+        "product_4PM84E",
+        "collection_dJUy9b"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Alt er inkluderet i vores Dumbphone-pakker",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "scheme-1",
+        "padding_top": 56,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "rich_text_LMikFR",
+    "collection_list_3gXFbh",
+    "video_HHEcWA",
+    "rich_text_WhwJye",
+    "featured_blog_XGYwnV",
+    "image_with_text_PKtyhg",
+    "collage_f44EKd"
+  ]
+}
