@@ -416,5 +416,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "header img {background-color: red;}"
+    ]
   }
 }
