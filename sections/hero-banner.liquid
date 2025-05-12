@@ -1,14 +1,14 @@
 {% comment %} 
 
-  LINK TO OFFICIAL DOCS HERE:
-  https://shopify.dev/docs/storefronts/themes/architecture/settings/input-settings
+    LINK TO OFFICIAL DOCS HERE:
+    https://shopify.dev/docs/storefronts/themes/architecture/settings/input-settings
 
-   Schema is the part of the code that will be visible in the theme-editor. 
+     Schema is the part of the code that will be visible in the theme-editor. 
 
-   The name sets the name that will present in the sections-list. 
+     The name sets the name that will present in the sections-list. 
 
-   Settings are the fields that the user can customize in the theme editor. There is more information in the link on the top of this comment.
-   
+     Settings are the fields that the user can customize in the theme editor. There is more information in the link on the top of this comment.
+     
  {% endcomment %}
 {% schema %}
   {
@@ -19,50 +19,86 @@
       {
         "type": "image_picker",
         "id": "background_image",
-        "label": "Hero image "
+        "label": "Baggrundsbillede"
       },
       {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "Velkommen til"
-      },
-      {
-        "type": "text",
-        "id": "subheading",
-        "label": "Subheading",
-        "default": "Test test test"
-      },
-      {
-        "type": "text",
-        "id": "button_label",
-        "label": "Button text",
-        "default": "Test knap"
-      }, {
-        "type": "url",
-        "id": "button_link",
-        "label": "Button link"
-      }, {
+
         // This is for giving various heights to the section.
-        "type": "select", 
+        "type": "select",
         "id": "hero_height",
-        "label": "Section height",
+        "label": "Sektionstørrelse",
         "default": "100vh",
         "options": [
           {
             "value": "50vh",
-            "label": "50% of viewport height"
+            "label": "50% af skærmstørrelse"
           }, {
             "value": "75vh",
-            "label": "75% of viewport height"
+            "label": "75% af skærmstørrelse"
           }, {
             "value": "100vh",
-            "label": "100% of viewport height"
+            "label": "100% af skærmstørrelse"
           }, {
             "value": "auto",
             "label": "Auto"
           }
         ]
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Titel",
+        "default": "Velkommen til"
+      },
+      {
+        // This creates the option to align the text to the left, center or right. 
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Test placering",
+        "default": "Center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Venstre"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }, {
+            "value": "right",
+            "label": "Højre"
+          }
+        ]
+      },
+      {
+  "type": "select",
+  "id": "content_position",
+  "label": "Tekst block position",
+  "default": "center",
+  "options": [
+    {
+      "value": "flex-start",
+      "label": "Venstre"
+    },
+    {
+      "value": "center",
+      "label": "Center"
+    },
+    {
+      "value": "flex-end",
+      "label": "Højre"
+    }
+  ]
+}
+,
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button text",
+        "default": "Testknap"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
       }
 
     ],
@@ -78,7 +114,6 @@
   <div class="hero-overlay">
     <div class="hero-content">
       <h1>{{ section.settings.heading }}</h1>
-      <p>{{ section.settings.subheading }}</p>
       {% if section.settings.button_link != blank and section.settings.button_label != blank %}
         <a href="{{ section.settings.button_link }}" class="cta-button">{{ section.settings.button_label }}</a>
       {% endif %}
@@ -89,7 +124,8 @@
 <style>
   .hero-banner-section {
     position: relative;
-    height: {{ section.settings.hero_height }}; /* This adapts the chosen height of the section */
+    height: {{ section.settings.hero_height }};
+    /* This adapts the chosen height of the section */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -103,12 +139,12 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: {{ section.settings.content_position }};
   }
 
   .hero-content {
     color: white;
-    text-align: center;
+    text-align: {{ section.settings.text_alignment }};
     padding: 20px;
   }
 
