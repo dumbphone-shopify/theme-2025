@@ -169,6 +169,62 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_xiUMYQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GxALeY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CleanShot_2025-02-16_at_15.40.54_2x_62587c0b-a779-4c34-8a8b-0d98ab9cee91.png",
+            "title": "Kolonne",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_D94Mi7": {
+          "type": "column",
+          "settings": {
+            "title": "Kolonne",
+            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VVWBft": {
+          "type": "column",
+          "settings": {
+            "title": "Kolonne",
+            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_GxALeY",
+        "column_D94Mi7",
+        "column_VVWBft"
+      ],
+      "custom_css": [],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "ghgh",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Knaptekst",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_with_text_PKtyhg": {
       "type": "image-with-text",
       "blocks": {
@@ -211,7 +267,7 @@
         "desktop_content_alignment": "center",
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -263,6 +319,7 @@
     "video_HHEcWA",
     "rich_text_WhwJye",
     "featured_blog_XGYwnV",
+    "multicolumn_xiUMYQ",
     "image_with_text_PKtyhg",
     "collage_f44EKd"
   ]
