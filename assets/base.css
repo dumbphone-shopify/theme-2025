@@ -3705,11 +3705,15 @@ details-disclosure > details {
 }
 
 /***     Edits made by NH & JKJ    ***/
+
+/* Doesn't really do the trick just yet: */
+/*
 header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
-  background: transparent; /* Make it transparent or semi-transparent */
-}
+  background: transparent;
+} 
+*/
