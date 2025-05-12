@@ -1,7 +1,11 @@
 {% comment %} 
 
       LINK TO OFFICIAL DOCS HERE:
+      Input settings:
       https://shopify.dev/docs/storefronts/themes/architecture/settings/input-settings
+
+      Sections and blocks:
+      https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks
 
        Schema is the part of the code that will be visible in the theme-editor. 
 
@@ -163,7 +167,7 @@
   }
 
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem); /*  2rem to 3rem */
     margin-bottom: 1rem;
     max-width: 762px;
     width: 100%;
@@ -172,21 +176,20 @@
 /* Button styling */
   .button-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  max-width: 556px; /* 2 x 258 + 40 gap */
+flex-direction: row;
+  gap: 5rem;
+  justify-content: space-between;
+  max-width: 762px; 
   margin: 0 auto;
 }
 
 .cta-button {
-  flex: 1 1 200px;
+  flex: 1 1 auto;
   max-width: 258px;
   background-color: #ffffff;
   color: #000000;
   padding: 1rem 2rem;
   text-decoration: none;
-  font-weight: bold;
   text-align: center;
   transition: background-color 0.3s ease;
 }
@@ -195,7 +198,7 @@
   background-color: #e0e0e0;
 }
 
-/* Responsive tweak: center buttons vertically on small screens */
+/* center buttons vertically on small screens */
 @media (max-width: 600px) {
   .button-wrapper {
     flex-direction: column;
