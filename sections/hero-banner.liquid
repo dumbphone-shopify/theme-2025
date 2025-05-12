@@ -55,6 +55,12 @@
         "default": "Velkommen til"
       },
       {
+  "type": "color",
+  "id": "title_color",
+  "label": "Titel farve",
+  "default": "#ffffff"
+},
+      {
 
         // This creates the option to align the text to the left, center or right.
         "type": "select",
@@ -107,7 +113,19 @@
             "type": "url",
             "id": "link",
             "label": "Knap link"
-          }
+          }, 
+          {
+  "type": "color",
+  "id": "button_bg_color",
+  "label": "Knap baggrundsfarve",
+  "default": "#ffffff"
+},
+{
+  "type": "color",
+  "id": "button_text_color",
+  "label": "Knap tekstfarve",
+  "default": "#000000"
+}
         ]
       }
     ],
@@ -124,12 +142,13 @@
 <section class="hero-banner-section" style="background-image: url({{ section.settings.background_image | image_url: width: 2000 }});">
   <div class="hero-overlay">
     <div class="hero-content">
-      <h1>{{ section.settings.heading }}</h1>
+      <h1 style="color: {{ section.settings.title_color }};">{{ section.settings.heading }}</h1>
       {% if section.blocks.size > 0 %}
         <div class="button-wrapper">
           {% for block in section.blocks %}
             {% if block.type == 'button' and block.settings.label != blank and block.settings.link != blank %}
-              <a href="{{ block.settings.link }}" class="cta-button">{{ block.settings.label }}</a>
+              <a href="{{ block.settings.link }}" 
+              style="background-color: {{ section.settings.button_bg_color }}; color: {{ section.settings.button_text_color }};" class="cta-button">{{ block.settings.label }}</a>
             {% endif %}
           {% endfor %}
         </div>
