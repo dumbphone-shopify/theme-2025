@@ -10,22 +10,22 @@
 {
   "current": {
     "logo": "shopify://shop_images/logo_hvid.png",
-    "logo_width": 110,
+    "logo_width": 90,
     "favicon": "shopify://shop_images/favicon.png",
-    "type_header_font": "quantico_n4",
+    "type_header_font": "assistant_n4",
     "heading_scale": 100,
-    "type_body_font": "harmonia_sans_n4",
+    "type_body_font": "assistant_n4",
     "body_scale": 100,
-    "page_width": 1400,
+    "page_width": 1200,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
     "animations_reveal_on_scroll": true,
-    "animations_hover_elements": "vertical-lift",
+    "animations_hover_elements": "default",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
-    "buttons_radius": 4,
-    "buttons_shadow_opacity": 25,
+    "buttons_radius": 0,
+    "buttons_shadow_opacity": 0,
     "buttons_shadow_horizontal_offset": 0,
     "buttons_shadow_vertical_offset": 4,
     "buttons_shadow_blur": 5,
@@ -43,7 +43,7 @@
     "inputs_shadow_horizontal_offset": 0,
     "inputs_shadow_vertical_offset": 4,
     "inputs_shadow_blur": 5,
-    "card_style": "card",
+    "card_style": "standard",
     "card_image_padding": 0,
     "card_text_alignment": "left",
     "card_color_scheme": "scheme-2",
@@ -110,7 +110,7 @@
     "brand_headline": "Dumb Phone, Smart Choice",
     "brand_description": "<p>Shop-dumbphone.dk er din portal til et enklere og mere nærværende liv. Vi tilbyder et hånd-plukket udvalg af dumbphones og tilbehør.</p>",
     "brand_image": "shopify://shop_images/logo_664106ca-d753-4e3f-824b-705c0a3b8bb8.png",
-    "brand_image_width": 140,
+    "brand_image_width": 100,
     "social_facebook_link": "https://www.facebook.com/profile.php?id=100083092193056",
     "social_instagram_link": "https://www.instagram.com/dumbphone.dk/",
     "social_youtube_link": "https://www.youtube.com/@arne1089",
@@ -122,13 +122,13 @@
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
-    "predictive_search_show_price": true,
+    "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "drawer",
+    "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "cart_color_scheme": "scheme-5",
+    "cart_color_scheme": "scheme-1",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -159,32 +159,32 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#134749",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#195c5e",
+          "text": "#121212",
+          "button": "#121212",
           "button_label": "#ffffff",
-          "secondary_button_label": "#ffffff",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       },
       "scheme-2": {
         "settings": {
-          "background": "#134749",
+          "background": "#f3f3f3",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
+          "text": "#121212",
+          "button": "#121212",
           "button_label": "#f3f3f3",
-          "secondary_button_label": "#c9e5e6",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       },
       "scheme-3": {
         "settings": {
-          "background": "#388284",
+          "background": "#242833",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#c9e5e6",
+          "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
@@ -192,9 +192,9 @@
       },
       "scheme-4": {
         "settings": {
-          "background": "#a8cbcc",
+          "background": "#121212",
           "background_gradient": "",
-          "text": "#000000",
+          "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#121212",
           "secondary_button_label": "#ffffff",
@@ -203,12 +203,12 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#236769",
+          "background": "#334fb4",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#134749",
-          "secondary_button_label": "#df7777",
+          "button_label": "#334fb4",
+          "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
       },
@@ -216,11 +216,11 @@
         "settings": {
           "background": "#fffdf8",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#195c5e",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#3e2103",
+          "button": "#cc3a2b",
+          "button_label": "#1bf43b",
+          "secondary_button_label": "#52d11d",
+          "shadow": "#3dfd23"
         }
       }
     }
