@@ -48,13 +48,6 @@
     "rich_text_LMikFR": {
       "type": "rich-text",
       "blocks": {
-        "heading_cwq3Hj": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>En hjælpende hånd med at styre skærmforbruget</strong>",
-            "heading_size": "h1"
-          }
-        },
         "text_wdR6fj": {
           "type": "text",
           "settings": {
@@ -74,7 +67,6 @@
         }
       },
       "block_order": [
-        "heading_cwq3Hj",
         "text_wdR6fj",
         "button_UfHqXV"
       ],
