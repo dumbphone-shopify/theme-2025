@@ -9,6 +9,17 @@
  */
 {
   "sections": {
+    "hero_banner_xc7HTV": {
+      "type": "hero-banner",
+      "name": "Hero Banner",
+      "settings": {
+        "background_image": "shopify://shop_images/grassy-beach-view.jpg",
+        "heading": "En hjælpende hånd med at styre skærmforbruget",
+        "subheading": "Test test test",
+        "button_label": "Test knap",
+        "button_link": ""
+      }
+    },
     "rich_text_LMikFR": {
       "type": "rich-text",
       "blocks": {
@@ -314,6 +325,7 @@
     }
   },
   "order": [
+    "hero_banner_xc7HTV",
     "rich_text_LMikFR",
     "collection_list_3gXFbh",
     "video_HHEcWA",
