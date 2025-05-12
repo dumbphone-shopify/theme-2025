@@ -16,14 +16,18 @@
           "type": "button",
           "settings": {
             "label": "Klik her",
-            "link": "shopify://blogs/potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug/kan-jeg-fa-mere-naervaer"
+            "link": "shopify://blogs/potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug/kan-jeg-fa-mere-naervaer",
+            "button_bg_color": "#fffdf8",
+            "button_text_color": "#3e2103"
           }
         },
         "button_dnMkfG": {
           "type": "button",
           "settings": {
             "label": "Klik her",
-            "link": "shopify://pages/dumbphone-guide"
+            "link": "shopify://pages/dumbphone-guide",
+            "button_bg_color": "#fffdf8",
+            "button_text_color": "#3e2103"
           }
         }
       },
@@ -36,6 +40,7 @@
         "background_image": "shopify://shop_images/grassy-beach-view.jpg",
         "hero_height": "100vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
+        "title_color": "#ffffff",
         "text_alignment": "center",
         "content_position": "flex-end"
       }
