@@ -216,11 +216,11 @@
         "settings": {
           "background": "#fffdf8",
           "background_gradient": "",
-          "text": "#3e2103",
-          "button": "#cc3a2b",
-          "button_label": "#1bf43b",
-          "secondary_button_label": "#52d11d",
-          "shadow": "#3dfd23"
+          "text": "#3E2103",
+          "button": "#0BDB00",
+          "button_label": "#0BDB00",
+          "secondary_button_label": "#0BDB00",
+          "shadow": "#15B40D"
         }
       }
     }
