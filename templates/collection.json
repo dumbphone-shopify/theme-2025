@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_with_text_MEcUbm": {
@@ -13,7 +22,7 @@
         "text_6zcN7r": {
           "type": "text",
           "settings": {
-            "text": "<p>Sættet der kan hjælpe dig med at nedsætte dit skærmforbrug. <br\/>1 stk. metal tidsindstillet hængelås <br\/>1 stk. Screenbalance sleeve (frit valg i farve) <\/p><p>Roen, der opstår, når det er fysisk umuligt at tilgå enhederne, er meget mere markant end at skulle kæmpe med “skulle jeg liiiige tjekke” tankerne.<\/p>",
+            "text": "<p>Sættet der kan hjælpe dig med at nedsætte dit skærmforbrug. <br/>1 stk. metal tidsindstillet hængelås <br/>1 stk. Screenbalance sleeve (frit valg i farve) </p><p>Roen, der opstår, når det er fysisk umuligt at tilgå enhederne, er meget mere markant end at skulle kæmpe med “skulle jeg liiiige tjekke” tankerne.</p>",
             "text_style": "body"
           }
         },
@@ -21,15 +30,19 @@
           "type": "button",
           "settings": {
             "button_label": "Gå til produkt",
-            "button_link": "shopify:\/\/products\/tidsindstillet-haengelas",
+            "button_link": "shopify://products/tidsindstillet-haengelas",
             "button_style_secondary": false
           }
         }
       },
-      "block_order": ["heading_9cyDjT", "text_6zcN7r", "button_bbPbDq"],
+      "block_order": [
+        "heading_9cyDjT",
+        "text_6zcN7r",
+        "button_bbPbDq"
+      ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_1145.png",
+        "image": "shopify://shop_images/IMG_1145.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -64,12 +77,20 @@
         },
         "title_DjAUx6": {
           "type": "title",
-          "settings": { "heading_size": "h1" }
+          "settings": {
+            "heading_size": "h1"
+          }
         },
-        "price_UgbKjB": { "type": "price", "settings": {} },
+        "price_UgbKjB": {
+          "type": "price",
+          "settings": {}
+        },
         "variant_picker_efDqFM": {
           "type": "variant_picker",
-          "settings": { "picker_type": "button", "swatch_shape": "circle" }
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
         },
         "quantity_selector_Uhr77F": {
           "type": "quantity_selector",
@@ -84,7 +105,9 @@
         },
         "share_yNXTfx": {
           "type": "share",
-          "settings": { "share_label": "Share" }
+          "settings": {
+            "share_label": "Share"
+          }
         }
       },
       "block_order": [
@@ -118,7 +141,7 @@
         "products_per_page": 16,
         "columns_desktop": 5,
         "columns_mobile": "2",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
