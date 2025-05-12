@@ -11,13 +11,33 @@
   "sections": {
     "hero_banner_xc7HTV": {
       "type": "hero-banner",
+      "blocks": {
+        "button_YPkiTz": {
+          "type": "button",
+          "settings": {
+            "label": "Klik her",
+            "link": "shopify://blogs/potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug/kan-jeg-fa-mere-naervaer"
+          }
+        },
+        "button_dnMkfG": {
+          "type": "button",
+          "settings": {
+            "label": "Klik her",
+            "link": "shopify://pages/dumbphone-guide"
+          }
+        }
+      },
+      "block_order": [
+        "button_YPkiTz",
+        "button_dnMkfG"
+      ],
       "name": "Hero Banner",
       "settings": {
         "background_image": "shopify://shop_images/grassy-beach-view.jpg",
+        "hero_height": "100vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
-        "subheading": "Test test test",
-        "button_label": "Test knap",
-        "button_link": ""
+        "text_alignment": "center",
+        "content_position": "flex-end"
       }
     },
     "rich_text_LMikFR": {
