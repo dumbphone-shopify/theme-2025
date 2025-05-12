@@ -418,6 +418,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": ["header img {  filter: invert(1);}"]
+    "custom_css": ["header img {  background-color:red;"]
   }
 }
