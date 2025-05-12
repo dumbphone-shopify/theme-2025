@@ -189,7 +189,7 @@
     font-size: clamp(2rem, 5vw, 3rem); /*  2rem to 3rem */
     max-width: 762px;
     width: 100%;
-    margin-bottom: clamp(1.125rem, 0.8207rem + 1.5217vw, 2rem);;
+    margin-bottom: clamp(1.125rem, 0.8207rem + 1.5217vw, 2rem);
   }
 
 /* Button styling */
@@ -206,8 +206,8 @@ flex-wrap: wrap;
 .cta-button {
   flex: 1 1 auto;
   max-width: 258px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: {{ section.settings.button_bg_color }};
+  color: {{ section.settings.button_text_color }};
   padding: 1rem 2rem;
   text-decoration: none;
   text-align: center;
