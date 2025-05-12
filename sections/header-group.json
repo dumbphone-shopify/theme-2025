@@ -16,7 +16,7 @@
       "custom_css": [
         "nav a {font-size: 16px;}",
         ".header-wrapper {background: transparent;}",
-        "header {display: flex; justify-content: space-between; flex-wrap: nowrap; border-radius: 50px; border: 2px #fffdf8 solid; background: rgb(255, 253, 248, 0.2); backdrop-filter: blur(5px);}"
+        "header {display: flex; justify-content: space-between; flex-wrap: nowrap; border-radius: 50px; border: 1px #fffdf8 solid; background: rgb(255, 253, 248, 0.2); backdrop-filter: blur(5px); margin: 0.5em auto; max-width: 1200px;}"
       ],
       "settings": {
         "logo_position": "middle-left",

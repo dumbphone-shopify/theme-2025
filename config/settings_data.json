@@ -162,10 +162,10 @@
           "background": "#fffdf8",
           "background_gradient": "",
           "text": "#3e2103",
-          "button": "#2ba70a",
-          "button_label": "#2ba70a",
-          "secondary_button_label": "#2ba70a",
-          "shadow": "#ef0000"
+          "button": "#fffdf8",
+          "button_label": "#3e2103",
+          "secondary_button_label": "#3e2103",
+          "shadow": "#3e2103"
         }
       },
       "scheme-2": {
@@ -181,35 +181,35 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#242833",
+          "background": "#9cb7aa",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#000000",
+          "text": "#eafff1",
+          "button": "#9cb7aa",
+          "button_label": "#eafff1",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "shadow": "#9cb7aa"
         }
       },
       "scheme-4": {
         "settings": {
-          "background": "#121212",
+          "background": "#ffd9b1",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#121212",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#3e2103",
+          "button": "#ffd9b1",
+          "button_label": "#ac3f00",
+          "secondary_button_label": "#3e2103",
+          "shadow": "#3e2103"
         }
       },
       "scheme-5": {
         "settings": {
-          "background": "#334fb4",
+          "background": "#43668f",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#334fb4",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#fefeff",
+          "button": "#43668f",
+          "button_label": "#fffdf8",
+          "secondary_button_label": "#43668f",
+          "shadow": "#43668f"
         }
       },
       "scheme-6": {

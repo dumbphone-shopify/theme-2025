@@ -38,7 +38,7 @@
       "name": "Hero Banner",
       "settings": {
         "background_image": "shopify://shop_images/grassy-beach-view.jpg",
-        "hero_height": "100vh",
+        "hero_height": "75vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
         "text_alignment": "center",
@@ -129,21 +129,6 @@
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "video_HHEcWA": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=EhcL4mFrIc0",
-        "cover_image": "shopify://shop_images/Thumbnail_22c6c971-d64d-4c9b-b0f8-bb867813f9d0.png",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 48
       }
     },
     "rich_text_WhwJye": {
@@ -353,7 +338,6 @@
     "hero_banner_xc7HTV",
     "rich_text_LMikFR",
     "collection_list_3gXFbh",
-    "video_HHEcWA",
     "rich_text_WhwJye",
     "featured_blog_XGYwnV",
     "multicolumn_xiUMYQ",
