@@ -212,7 +212,7 @@
           "shadow": "#121212"
         }
       },
-      "scheme-9ef1db6c-1a55-4e81-8eb9-ae9ddd18ae2c": {
+      "scheme-6": {
         "settings": {
           "background": "#fffdf8",
           "background_gradient": "",
@@ -418,8 +418,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      "header img {background-color: red;}"
-    ]
+    "custom_css": ["header img {background-color: red;}"]
   }
 }

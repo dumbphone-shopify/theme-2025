@@ -37,19 +37,12 @@
           }
         }
       },
-      "block_order": [
-        "heading_cwq3Hj",
-        "text_wdR6fj",
-        "button_UfHqXV"
-      ],
-      "custom_css": [
-        "h2 {font-size: 4, 9vw;}",
-        "div {font-size: 1, 5vw;}"
-      ],
+      "block_order": ["heading_cwq3Hj", "text_wdR6fj", "button_UfHqXV"],
+      "custom_css": ["h2 {font-size: 4, 9vw;}", "div {font-size: 1, 5vw;}"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-9ef1db6c-1a55-4e81-8eb9-ae9ddd18ae2c",
+        "color_scheme": "scheme-6",
         "full_width": true,
         "padding_top": 24,
         "padding_bottom": 12
@@ -138,11 +131,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_db3TLx",
-        "text_h6KhWF",
-        "button_7nb6er"
-      ],
+      "block_order": ["heading_db3TLx", "text_h6KhWF", "button_7nb6er"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -248,11 +237,7 @@
           }
         }
       },
-      "block_order": [
-        "image_HbWMRX",
-        "product_4PM84E",
-        "collection_dJUy9b"
-      ],
+      "block_order": ["image_HbWMRX", "product_4PM84E", "collection_dJUy9b"],
       "disabled": true,
       "settings": {
         "heading": "Alt er inkluderet i vores Dumbphone-pakker",
