@@ -57,8 +57,21 @@
         "padding_bottom": 36
       }
     },
+    "hero_banner_yXXfmr": {
+      "type": "hero-banner",
+      "name": "Hero-sektion",
+      "settings": {
+        "background_image": "shopify://shop_images/foggy-landscape-reflected-in-lake.jpg",
+        "hero_height": "75vh",
+        "heading": "Vores Dumbphones",
+        "title_color": "#fffdf8",
+        "text_alignment": "center",
+        "content_position": "center"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -139,7 +152,7 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         ".grid__item {border-radius: 25px; transition: all ease-in-out 0.3s; overflow: hidden; box-shadow: 0 0 0 2px #3e2103;}",
-        ".grid__item:hover {box-shadow: none; }",
+        ".grid__item:hover {box-shadow: none;}",
         ".grid {--grid-mobile-horizontal-spacing: 20px; --grid-mobile-vertical-spacing: 65px; column-gap: var(--grid-mobile-horizontal-spacing); row-gap: var(--grid-mobile-vertical-spacing);}"
       ],
       "settings": {
@@ -163,6 +176,7 @@
   },
   "order": [
     "image_with_text_MEcUbm",
+    "hero_banner_yXXfmr",
     "banner",
     "featured_product_7AaMFh",
     "product-grid"
