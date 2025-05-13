@@ -73,7 +73,8 @@
         "description"
       ],
       "custom_css": [
-        ".product__media{border-radius:25px;}"
+        ".product__media {border-radius: 25px;}",
+        "h2.title{text-align: center;}"
       ],
       "settings": {
         "enable_sticky_info": true,
