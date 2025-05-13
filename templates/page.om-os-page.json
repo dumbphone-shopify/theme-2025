@@ -15,14 +15,14 @@
         "heading_yimKYb": {
           "type": "heading",
           "settings": {
-            "heading": "Billedbanner",
+            "heading": "OM DUMBPHONE",
             "heading_size": "h1"
           }
         },
         "text_XCHWYm": {
           "type": "text",
           "settings": {
-            "text": "Giv kunder oplysninger om bannerbillederne eller indholdet i skabelonen.",
+            "text": "Hej og hjerteligt velkommen til shop-Dumbphone.dk. Hos Dumbphone har vi  nu udvidet forretningen, således at vi kan gøre det nemmere for familier, venner, roomies eller hele klasse at få fingre i deres helt egen Dumbphone.",
             "text_style": "body"
           }
         }
@@ -32,7 +32,7 @@
         "text_XCHWYm"
       ],
       "custom_css": [
-        ".banner__box {border-radius: 15px 15px 0 0; width: 1400px; padding: 25px 25px; margin: auto auto -55px auto;}"
+        ".banner__box {border-radius: 15px 15px 0 0; width: 1400px; padding: 25px 50px; margin: auto auto -55px auto;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -46,49 +46,6 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
-      }
-    },
-    "rich_text_DWUf4Y": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_RhBiym": {
-          "type": "heading",
-          "settings": {
-            "heading": "OM DUMBPHONE",
-            "heading_size": "h1"
-          }
-        },
-        "text_mLREkW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Hej og hjerteligt velkommen til shop-Dumbphone.dk. Hos Dumbphone har vi  nu udvidet forretningen, således at vi kan gøre det nemmere for familier, venner, roomies eller hele klasse at få fingre i deres helt egen Dumbphone.</p>"
-          }
-        },
-        "button_7zMTqL": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Dumbphones her!",
-            "button_link": "shopify://collections/vores-dumbphones",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_RhBiym",
-        "text_mLREkW",
-        "button_7zMTqL"
-      ],
-      "custom_css": [],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "image_with_text_tU3CRX": {
@@ -185,54 +142,6 @@
         "padding_bottom": 36
       }
     },
-    "image_banner_V9TRwP": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_L7zMWr": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_MVbffh": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
-        "buttons_6BDADY": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_L7zMWr",
-        "text_MVbffh",
-        "buttons_6BDADY"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Banner_783216c2-3168-4693-aa9f-ef4d89284cf7.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
     "image_with_text_M9M7XT": {
       "type": "image-with-text",
       "blocks": {
@@ -282,6 +191,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 48
@@ -290,10 +200,8 @@
   },
   "order": [
     "image_banner_9ad76N",
-    "rich_text_DWUf4Y",
     "image_with_text_tU3CRX",
     "image_with_text_xQcGLD",
-    "image_banner_V9TRwP",
     "image_with_text_M9M7XT",
     "main"
   ]
