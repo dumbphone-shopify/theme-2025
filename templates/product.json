@@ -72,6 +72,9 @@
         "icon_with_text_wzietP",
         "description"
       ],
+      "custom_css": [
+        ".product__media{border-radius:25px;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
