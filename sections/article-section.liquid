@@ -145,9 +145,7 @@
   .article-wrapper {
     display: grid;
     grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
-    > * {
-      margin: 0 auto;
-    }
+
   }
 
   .article-wrapper > * {
@@ -182,10 +180,8 @@
   .article-content {
     grid-column: content;
     max-width: 70ch;
-    margin-inline: auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
   }
 
 
