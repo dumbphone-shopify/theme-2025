@@ -90,8 +90,8 @@
         "heading_eP6Yjq": {
           "type": "heading",
           "settings": {
-            "heading": "Billede med tekst",
-            "heading_size": "h1"
+            "heading": "Velkommen til dumbphone.dk",
+            "heading_size": "h2"
           }
         },
         "text_cbbnAW": {
@@ -113,6 +113,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/Arne-and-TIkko-on-a_bike-trip.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
