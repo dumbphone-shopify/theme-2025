@@ -3707,7 +3707,7 @@ details-disclosure > details {
 /***     Edits made by NH & JKJ    ***/
 
 /* Doesn't really do the trick just yet: */
-/*
+
 header {
   position: absolute;
   top: 0;
@@ -3716,4 +3716,4 @@ header {
   z-index: 10;
   background: transparent;
 } 
-*/
+
