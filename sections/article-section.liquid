@@ -136,22 +136,13 @@
 {% endschema %}
 
 {% stylesheet %}
-  .article-wrapper > *,
-  .article-wrapper > * + * {
-    margin: 0 auto;
-  }
-
-  .article-hero {
+  .article-hero > * {
     max-width: 1000px;
     margin: 0 auto;
-
-    img {
-      idth: 100%;
-      height: auto;
-      display: block;
-    }
+    width: 100%;
+    height: auto;
+    display: block;
   }
-
 
   .hero-title-overlay {
     position: absolute;
@@ -160,6 +151,12 @@
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.5rem;
+  }
+
+  .article-body {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .article-image {
