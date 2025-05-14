@@ -108,7 +108,8 @@
       ],
       "custom_css": [
         ".image-with-text__content {border-radius: 25px 0 0 25px;}",
-        ".image-with-text__media {border-radius: 0 25px 25px 0;}"
+        ".image-with-text__media {border-radius: 0 25px 25px 0;}",
+        "@media screen and (max-width: 749px) {.image-with-text__content {border-radius: 0 0 25px 25px; } .image-with-text__media {border-radius: 25px 25px 0 0; }}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
