@@ -179,11 +179,18 @@
     padding: 0.5rem;
   }
 
+  .article-content {
+    grid-column: content;
+    max-width: 70ch;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+
   .article-paragraph {
     grid-column: content;
-    max-width: 100%;
-    width: 100%;
-    margin-inline: auto;
   }
 
   .article-image {
@@ -231,21 +238,23 @@
     {% endif %}
   {% endif %}
 
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'heading' %}
-        <h2>{{ block.settings.heading }}</h2>
-      {% when 'h3' %}
-        <h3>{{ block.settings.heading }}</h3>
-      {% when 'h4' %}
-        <h4>{{ block.settings.heading }}</h4>
-      {% when 'paragraph' %}
-        <p class="article-paragraph">{{ block.settings.text }}</p>
-      {% when 'image' %}
-        <img
-      class="article-image article-image--{{ block.settings.image_size }}"
-      src="{{ block.settings.image | image_url: width: 1200 }}"
-      alt="{{ block.settings.alt | escape }}" />
-    {% endcase %}
-  {% endfor %}
+  <div class="article-content">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'heading' %}
+          <h2>{{ block.settings.heading }}</h2>
+        {% when 'h3' %}
+          <h3>{{ block.settings.heading }}</h3>
+        {% when 'h4' %}
+          <h4>{{ block.settings.heading }}</h4>
+        {% when 'paragraph' %}
+          <p class="article-paragraph">{{ block.settings.text }}</p>
+        {% when 'image' %}
+          <img
+        class="article-image article-image--{{ block.settings.image_size }}"
+        src="{{ block.settings.image | image_url: width: 1200 }}"
+        alt="{{ block.settings.alt | escape }}" />
+      {% endcase %}
+    {% endfor %}
+  </div>
 </div>
