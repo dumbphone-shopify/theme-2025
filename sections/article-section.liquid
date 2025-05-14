@@ -139,11 +139,12 @@
   :root  {
     --col-50: clamp(0rem, -1.1364rem + 5.6818vw, 3.125rem);
     --col-100: clamp(0rem, -2.2727rem + 11.3636vw, 6.25rem);
+    --img-article-pad: clamp(2rem, 1.8261rem + 0.8696vw, 2.5rem);
   }
 
   .article-wrapper {
     display: grid;
-    grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 70ch var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
+    grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
     > * {
       margin: 0 auto;
     }
@@ -188,6 +189,7 @@
     display: block;
     margin-inline: auto;
     width: 100%;
+    padding: var(--img-article-pad) 0;
   }
 
   .article-image--large {
