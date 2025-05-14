@@ -109,14 +109,17 @@
 <div class="wrapper">
   {% if section.settings.hero_type == 'image' and section.settings.hero_image %}
     <div>
-      <img src="{{ section.settings.hero_image | img_url: width: 2000}}" alt="Hero image" />
+      <img
+        src="{{ section.settings.hero_image | image_url: width: 2000 }}"
+        alt="Hero image"
+        escape />
 
       {% if section.settings.image_title_position == 'overlay' %}
         <h1 class="hero-title-overlay">{{ section.settings.hero_title }}</h1>
       {% endif %}
     </div>
     {% if section.settings.image_title_position == 'below' %}
-      <h1>{{  }}section.settings.hero_title</h1>
+      <h1>{{ section.settings.hero_title }}</h1>
     {% endif %}
 
   {% elsif section.settings.hero_type == 'video' and section.settings.hero_video_url %}
@@ -126,7 +129,10 @@
 
       </video>
     </div>
-    <h1>{{ section.settings.hero_title }}</h1>
+    {% if section.settings.hero_title != blank %}
+      <h1>{{ section.settings.hero_title }}</h1>
+    {% endif %}
+
   {% endif %}
 
   <section class="article-body">
@@ -137,7 +143,7 @@
         {% when 'paragraph' %}
           <p>{{ block.settings.text }}</p>
         {% when 'image' %}
-          <img src="{{block.settings.image | image_url: width: 1200}}" />
+          <img src="{{block.settings.image | image_url: width: 1200}}" alt="{{ block.settings.alt | escape }}" />
       {% endcase %}
     {% endfor %}
   </section>
