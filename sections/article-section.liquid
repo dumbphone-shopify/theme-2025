@@ -146,6 +146,7 @@
     display: grid;
     grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
 
+
   }
 
   .article-wrapper > * {
@@ -182,6 +183,7 @@
     max-width: 70ch;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
   }
 
 
@@ -229,12 +231,12 @@
         <source src="{{ section.settings.hero_video_url }}" type="video/mp4" />
       </video>
     </div>
-    {% if section.settings.hero_title != blank %}
-      <h1>{{ section.settings.hero_title }}</h1>
-    {% endif %}
   {% endif %}
 
   <div class="article-content">
+    {% if section.settings.hero_title != blank %}
+      <h1>{{ section.settings.hero_title }}</h1>
+    {% endif %}
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'heading' %}
