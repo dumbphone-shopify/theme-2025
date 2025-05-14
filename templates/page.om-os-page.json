@@ -48,6 +48,20 @@
         "show_text_below": true
       }
     },
+    "hero_banner_Cp7bef": {
+      "type": "hero-banner",
+      "custom_css": [
+        "img {max-width: 1200px;}"
+      ],
+      "name": "Hero-sektion",
+      "settings": {
+        "hero_height": "75vh",
+        "heading": "",
+        "title_color": "#ffffff",
+        "text_alignment": "center",
+        "content_position": "center"
+      }
+    },
     "image_with_text_tU3CRX": {
       "type": "image-with-text",
       "blocks": {
@@ -247,6 +261,7 @@
   },
   "order": [
     "image_banner_9ad76N",
+    "hero_banner_Cp7bef",
     "image_with_text_tU3CRX",
     "image_with_text_xQcGLD",
     "image_with_text_M9M7XT",
