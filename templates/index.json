@@ -46,6 +46,64 @@
         "content_position": "flex-end"
       }
     },
+    "article_section_UPqpGX": {
+      "type": "article-section",
+      "blocks": {
+        "heading_6RtkV6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Titel till artikel"
+          }
+        },
+        "paragraph_ePHtFA": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus <br/>augue maximus vehicula maximus. Donec ac ipsum ut risus ornare laoreet <br/>rutrum eu arcu. Nam dolor elit, faucibus nec ante in, efficitur <br/>convallis lectus. Sed ornare aliquam orci ac tempus. Pellentesque nec <br/>est at lectus maximus consequat sed et nunc. Nulla facilisi. Curabitur <br/>porttitor velit vitae tellus condimentum, eget tincidunt orci auctor. <br/>Vestibulum massa sem, molestie sed sagittis quis, tristique nec tellus. <br/>Etiam at feugiat dolor.<br/></p><p>Curabitur eu sem a erat tincidunt maximus. Pellentesque vitae lacus <br/>aliquet neque condimentum convallis. Aliquam vel lobortis velit, a <br/>sagittis magna. Donec ut iaculis est, elementum fermentum nibh. Nam <br/>tortor augue, ultrices sit amet faucibus in, fringilla nec nunc. Nam <br/>quis sollicitudin ligula, vel finibus elit. Nullam sed blandit arcu, <br/>vitae lacinia est. Etiam pharetra feugiat turpis molestie lacinia. <br/>Quisque rutrum odio finibus vulputate aliquet. Donec et facilisis lacus.<br/> Quisque tempor posuere diam, nec ultricies ex. Etiam sagittis ultrices <br/>dolor, eu ultricies dolor consequat quis. Sed vel est facilisis, <br/>facilisis magna ac, gravida erat. Duis et auctor massa. Cras facilisis, <br/>ligula et mattis porttitor, enim justo dictum dui, sit amet vulputate <br/>sem nulla dapibus lectus.</p><p><br/>Aenean ante elit, commodo malesuada faucibus sed, congue nec tortor. <br/>Donec justo massa, laoreet eu quam ac, rutrum rutrum neque. Nunc <br/>imperdiet tincidunt quam eu tincidunt. Aliquam purus dolor, hendrerit ut<br/> enim ac, mollis tincidunt lacus. Integer non tempus mauris, non aliquam<br/> elit. Vivamus feugiat eros varius dolor tincidunt ultrices. Suspendisse<br/> in elementum ipsum. Mauris vehicula lectus ac odio congue posuere. <br/>Aenean vitae elit non nunc efficitur aliquam. Aliquam ultrices tempus <br/>vehicula. Donec venenatis mi nec gravida consequat. Nunc mi turpis, <br/>vehicula nec scelerisque ornare, fringilla ac sem. Curabitur lorem <br/>sapien, pharetra in ligula eget, dapibus efficitur mi.</p>"
+          }
+        },
+        "image_BiLanp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/woman-wades-in-ocean-at-sunset.jpg",
+            "alt": "bild"
+          }
+        },
+        "paragraph_kNMJcf": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Curabitur eu sem a erat tincidunt maximus. Pellentesque vitae lacus <br/>aliquet neque condimentum convallis. Aliquam vel lobortis velit, a <br/>sagittis magna. Donec ut iaculis est, elementum fermentum nibh. Nam <br/>tortor augue, ultrices sit amet faucibus in, fringilla nec nunc. Nam <br/>quis sollicitudin ligula, vel finibus elit. Nullam sed blandit arcu, <br/>vitae lacinia est. Etiam pharetra feugiat turpis molestie lacinia. <br/>Quisque rutrum odio finibus vulputate aliquet. Donec et facilisis lacus.<br/> Quisque tempor posuere diam, nec ultricies ex. </p><p>Etiam sagittis ultrices <br/>dolor, eu ultricies dolor consequat quis. Sed vel est facilisis, <br/>facilisis magna ac, gravida erat. Duis et auctor massa. Cras facilisis, <br/>ligula et mattis porttitor, enim justo dictum dui, sit amet vulputate <br/>sem nulla dapibus lectus.</p><p></p>"
+          }
+        },
+        "heading_ciHPAc": {
+          "type": "heading",
+          "settings": {
+            "heading": "titel 2"
+          }
+        },
+        "paragraph_ErtNEp": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Curabitur eu sem a erat tincidunt maximus. Pellentesque vitae lacus <br/>aliquet neque condimentum convallis. Aliquam vel lobortis velit, a <br/>sagittis magna. Donec ut iaculis est, elementum fermentum nibh. Nam <br/>tortor augue, ultrices sit amet faucibus in, fringilla nec nunc. Nam <br/>quis sollicitudin ligula, vel finibus elit. Nullam sed blandit arcu, <br/>vitae lacinia est. Etiam pharetra feugiat turpis molestie lacinia. <br/>Quisque rutrum odio finibus vulputate aliquet. Donec et facilisis lacus.<br/> Quisque tempor posuere diam, nec ultricies ex. Etiam sagittis ultrices <br/>dolor, eu ultricies dolor consequat quis. Sed vel est facilisis, <br/>facilisis magna ac, gravida erat. Duis et auctor massa. Cras facilisis, <br/>ligula et mattis porttitor, enim justo dictum dui, sit amet vulputate <br/>sem nulla dapibus lectus.</p><p><br/>Aenean ante elit, commodo malesuada faucibus sed, congue nec tortor. <br/>Donec justo massa, laoreet eu quam ac, rutrum rutrum neque. Nunc <br/>imperdiet tincidunt quam eu tincidunt. Aliquam purus dolor, hendrerit ut<br/> enim ac, mollis tincidunt lacus. Integer non tempus mauris, non aliquam<br/> elit. Vivamus feugiat eros varius dolor tincidunt ultrices. Suspendisse<br/> in elementum ipsum. Mauris vehicula lectus ac odio congue posuere. <br/>Aenean vitae elit non nunc efficitur aliquam. Aliquam ultrices tempus <br/>vehicula. Donec venenatis mi nec gravida consequat. Nunc mi turpis, <br/>vehicula nec scelerisque ornare, fringilla ac sem. Curabitur lorem <br/>sapien, pharetra in ligula eget, dapibus efficitur mi.</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6RtkV6",
+        "paragraph_ePHtFA",
+        "image_BiLanp",
+        "paragraph_kNMJcf",
+        "heading_ciHPAc",
+        "paragraph_ErtNEp"
+      ],
+      "name": "Default custom sections",
+      "settings": {
+        "hero_type": "image",
+        "hero_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg",
+        "hero_video_url": "",
+        "hero_title": "Rubrik här!",
+        "image_title_position": "below"
+      }
+    },
     "rich_text_LMikFR": {
       "type": "rich-text",
       "blocks": {
@@ -373,6 +431,7 @@
   },
   "order": [
     "hero_banner_xc7HTV",
+    "article_section_UPqpGX",
     "rich_text_LMikFR",
     "image_with_text_3acgQr",
     "collection_list_3gXFbh",
