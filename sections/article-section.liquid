@@ -136,10 +136,30 @@
 {% endschema %}
 
 {% stylesheet %}
+  :root  {
+    --col-50: clamp(0rem, -1.1364rem + 5.6818vw, 3.125rem);
+    --col-100: clamp(0rem, -2.2727rem + 11.3636vw, 6.25rem);
+  }
 
-  .article-hero > * {
-    max-width: 1000px;
-    margin: 0 auto;
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
+  }
+
+  .article-wrapper > * {
+    grid-column: content;
+  }
+
+  .article-hero {
+    grid-column: full;
+    display: grid;
+    grid-template-columns: subgrid;
+    position: relative;
+  }
+
+  .article-hero img,
+  .article-hero video {
+    grid-column: full;
     width: 100%;
     height: auto;
     display: block;
@@ -154,46 +174,37 @@
     padding: 0.5rem;
   }
 
-  .article-body {
-    max-width: 1000px;
-    margin: 0 auto;
-    width: 100%;
-    > * {
-      margin: 0 auto;
-
-    }
+  .article-paragraph {
+    grid-column: content;
+    max-width: 70ch;
+    margin-inline: auto;
   }
 
   .article-image {
     display: block;
-    margin: 2rem auto;
+    margin-inline: auto;
   }
 
-  /* reminder to myself to use utopia here: */
   .article-image--large {
+    grid-column: inner;
     max-width: 800px;
   }
 
   .article-image--medium {
+    grid-column: content;
     max-width: 600px;
   }
 
   .article-image--small {
+    grid-column: content;
     max-width: 300px;
   }
-
-  .article-paragraph {
-    max-width: 70ch;
-    width: 100%;
-  }
-
 {% endstylesheet %}
 
 <div class="article-wrapper">
   {% if section.settings.hero_type == 'image' and section.settings.hero_image %}
     <div class="article-hero">
       <img src="{{ section.settings.hero_image | image_url: width: 2000 }}" alt="{{ section.settings.hero_image.alt | escape }}" />
-
       {% if section.settings.image_title_position == 'overlay' %}
         <h1 class="hero-title-overlay">{{ section.settings.hero_title }}</h1>
       {% endif %}
@@ -201,38 +212,32 @@
     {% if section.settings.image_title_position == 'below' %}
       <h1>{{ section.settings.hero_title }}</h1>
     {% endif %}
-
   {% elsif section.settings.hero_type == 'video' and section.settings.hero_video_url %}
-    <div class="wrapper">
-      <video controls="controls">
-        <source src="{{ section.settings.hero_video_url }}" type="video/mp4">
-
+    <div class="article-hero">
+      <video controls>
+        <source src="{{ section.settings.hero_video_url }}" type="video/mp4" />
       </video>
     </div>
     {% if section.settings.hero_title != blank %}
       <h1>{{ section.settings.hero_title }}</h1>
     {% endif %}
-
   {% endif %}
 
-  <section class="article-body">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'heading' %}
-          <h2>{{ block.settings.heading }}</h2>
-        {% when 'h3' %}
-          <h3>{{ block.settings.heading }}</h3>
-        {% when 'h4' %}
-          <h4>{{ block.settings.heading }}</h4>
-        {% when 'paragraph' %}
-          <p class="article-paragraph">{{ block.settings.text }}</p>
-        {% when 'image' %}
-          {% assign image_size = block.settings.image_size %}
-          <img
-        class="article-image article-image--{{ image_size }}"
-        src="{{ block.settings.image | image_url: width: 1200 }}"
-        alt="{{ block.settings.alt | escape }}" />
-      {% endcase %}
-    {% endfor %}
-  </section>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'heading' %}
+        <h2>{{ block.settings.heading }}</h2>
+      {% when 'h3' %}
+        <h3>{{ block.settings.heading }}</h3>
+      {% when 'h4' %}
+        <h4>{{ block.settings.heading }}</h4>
+      {% when 'paragraph' %}
+        <p class="article-paragraph">{{ block.settings.text }}</p>
+      {% when 'image' %}
+        <img
+      class="article-image article-image--{{ block.settings.image_size }}"
+      src="{{ block.settings.image | image_url: width: 1200 }}"
+      alt="{{ block.settings.alt | escape }}" />
+    {% endcase %}
+  {% endfor %}
 </div>
