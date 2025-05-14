@@ -6,7 +6,7 @@
     "limit": 1,
     "presets": [
       {
-        "name": "Default custom sections"
+        "name": "Artikelsektion"
       }
     ],
     "settings": [
@@ -83,11 +83,28 @@
           {
             "type": "image_picker",
             "id": "image",
-            "label": "Billede till artikel"
+            "label": "Billede til artikel"
           }, {
             "type": "text",
             "id": "alt",
             "label": "Alternativ billedetekst"
+          }, {
+            "type": "select",
+            "id": "image_size",
+            "label": "Billedets størrelse",
+            "options": [
+              {
+                "value": "large",
+                "label": "Stor"
+              }, {
+                "value": "medium",
+                "label": "Mellem"
+              }, {
+                "value": "small",
+                "label": "Lille"
+              }
+            ],
+            "default": "large"
           }
         ]
       }
@@ -96,6 +113,14 @@
 {% endschema %}
 
 {% stylesheet %}
+  .article-wrapper {
+    margin: 0 auto;
+  }
+
+  .article-hero {
+    max-width: 1000px;
+
+  }
   .hero-title-overlay {
     position: absolute;
     bottom: 1rem;
@@ -104,11 +129,35 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.5rem;
   }
+
+  .article-image {
+    display: block;
+    margin: 2rem auto;
+  }
+
+  /* reminder to myself to use utopia here: */
+  .article-image--large {
+    max-width: 800px;
+  }
+
+  .article-image--medium {
+    max-width: 600px;
+  }
+
+  .article-image--small {
+    max-width: 300px;
+  }
+
+  .article-paragraph {
+    max-width: 70ch;
+    margin: 1rem auto;
+  }
+
 {% endstylesheet %}
 
-<div class="wrapper">
+<div class="article-wrapper">
   {% if section.settings.hero_type == 'image' and section.settings.hero_image %}
-    <div>
+    <div class="article-hero">
       <img
         src="{{ section.settings.hero_image | image_url: width: 2000 }}"
         alt="Hero image"
@@ -141,9 +190,13 @@
         {% when 'heading' %}
           <h2>{{ block.settings.heading }}</h2>
         {% when 'paragraph' %}
-          <p>{{ block.settings.text }}</p>
+          <p class="article-paragraph">{{ block.settings.text }}</p>
         {% when 'image' %}
-          <img src="{{block.settings.image | image_url: width: 1200}}" alt="{{ block.settings.alt | escape }}" />
+          {% assign image_size = block.settings.image_size %}
+          <img
+        class="article-image article-image--{{ image_size }}"
+        src="{{ block.settings.image | image_url: width: 1200 }}"
+        alt="{{ block.settings.alt | escape }}" />
       {% endcase %}
     {% endfor %}
   </section>
