@@ -37,8 +37,9 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "image": "shopify://shop_images/Arne-and-TIkko-on-a_bike-trip.webp",
         "image_overlay_opacity": 20,
-        "image_height": "medium",
+        "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
@@ -159,7 +160,7 @@
           "settings": {
             "caption": "Min mission med dumbphone.dk",
             "text_style": "subtitle",
-            "text_size": "medium"
+            "text_size": "large"
           }
         },
         "text_9hfWtU": {
@@ -192,7 +193,7 @@
         "image": "shopify://shop_images/dumbphone-founder-at-tvmv.webp",
         "height": "adapt",
         "desktop_image_width": "small",
-        "layout": "image_first",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
