@@ -15,9 +15,8 @@
       "type": "header",
       "custom_css": [
         "nav a {font-size: 16px;}",
-        "header {position: absolute; top: 0; left: 0; width: 100%; z-index: 10; background: transparent;}",
-        " .header-wrapper {background: transparent;}",
-        "header {display: flex; justify-content: space-between; flex-wrap: nowrap; border-radius: 50px; border: 1px #fffdf8 solid; background: rgb(255, 253, 248, 0.2); backdrop-filter: blur(5px); margin: 0.5em auto; max-width: 1200px;}"
+        ".header-wrapper {background: transparent;}",
+        "header {display: flex; justify-content: space-between; flex-wrap: nowrap; border-radius: 50px; border: 1px #fffdf8 solid; background: rgb(255, 253, 248, 0.2); backdrop-filter: blur(5px); margin: 0.5em auto; max-width: 1200px; position: absolute; top: 0; left: 0; width: 100%; z-index: 10; background: transparent;}"
       ],
       "settings": {
         "logo_position": "top-left",
