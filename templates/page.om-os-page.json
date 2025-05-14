@@ -32,7 +32,8 @@
         "text_XCHWYm"
       ],
       "custom_css": [
-        ".banner__box {border-radius: 15px 15px 0 0; width: 1400px; padding: 25px 50px; margin: auto auto -55px auto;}"
+        ".banner__box {border-radius: 15px 15px 0 0; width: 1400px; padding: 25px 50px; margin: auto auto -55px auto;}",
+        "@media screen and (max-width: 749px) {.banner__box {margin: auto auto auto auto; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -61,7 +62,7 @@
         "text_76DiUq": {
           "type": "text",
           "settings": {
-            "text": "<p>Mit navn er Arne, jeg er 31 år og færdiguddannet som Kaospilot. Jeg bor i Aarhus med min hund Tikko og er den stolte stifter af <strong>Dumbphone-projektet.</strong><br/><br/>Min rejse mod en mere simpel tilværelse begyndte for 3 år siden, da min smartphone gik i stykker, og jeg nødtvungent skiftede til en Dumbphone.</p><p>...Dette skifte viste sig at skulle forvandle mit liv - jeg følte mig mere til stede, havde mere overskud, og oplevede mindre stress og angst, hvilket også førte til bedre søvn.</p>",
+            "text": "<p>Mit navn er Arne, jeg er 31 år og færdiguddannet som Kaospilot. Jeg bor i Aarhus med min hund Tikko og er den stolte stifter af Dumbphone-projektet.</p><p>Min rejse mod en mere simpel tilværelse begyndte for 3 år siden, da min smartphone gik i stykker, og jeg nødtvungent skiftede til en Dumbphone....Dette skifte viste sig at skulle forvandle mit liv - jeg følte mig mere til stede, havde mere overskud, og oplevede mindre stress og angst, hvilket også førte til bedre søvn.</p><p>Det var lige her at idéen til Dumbphone opstod. Jeg opdagede nemlig, at mange andre havde delt lignende positive oplevelser online, men hvad kunne man gøre ved det?<br/><br/></p>",
             "text_style": "body"
           }
         },
@@ -79,10 +80,14 @@
         "text_76DiUq",
         "button_Rxnfmg"
       ],
+      "custom_css": [
+        ".image-with-text__media-item {height: 400px; align-self: center;}",
+        "img {object-fit: cover; object-position: center; border-radius: 25px;}"
+      ],
       "settings": {
-        "image": "shopify://shop_images/Om_os_85c1a95c-b52e-4cf0-8f06-532eada8e7ab.png",
+        "image": "shopify://shop_images/Arne-with-dumbphones.webp",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
@@ -95,51 +100,48 @@
         "padding_bottom": 0
       }
     },
-    "image_with_text_xQcGLD": {
-      "type": "image-with-text",
+    "hero_banner_raAHw4": {
+      "type": "hero-banner",
+      "custom_css": [],
+      "name": "hero-sektion",
+      "settings": {
+        "background_image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
+        "hero_height": "100vh",
+        "heading": "",
+        "title_color": "#ffffff",
+        "text_alignment": "center",
+        "content_position": "center"
+      }
+    },
+    "rich_text_bUkCeJ": {
+      "type": "rich-text",
       "blocks": {
-        "heading_mcLMqV": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_QFaVKN": {
+        "text_njtJBy": {
           "type": "text",
           "settings": {
-            "text": "<p>Det var lige her at idéen til Dumbphone opstod. Jeg opdagede nemlig, at mange andre havde delt lignende positive oplevelser online, men hvad kunne man gøre ved det?</p><p>Det slog mig, at skiftet til en simplere telefon måske kunne hjælpe mange med de udfordringer, der er så udbredte i dag, heriblandt angst, stress og depression.</p><p>Min ambition med Dumbphone.dk er at gøre skiftet til en dumbphone så let og tiltalende som muligt, særligt for at bekæmpe frygten for isolation og det at gå glip af noget (FOMO).</p>",
-            "text_style": "body"
+            "text": "<h2>Min vision</h2>"
           }
         },
-        "button_Eh8hdT": {
-          "type": "button",
+        "text_JeaJ6A": {
+          "type": "text",
           "settings": {
-            "button_label": "Se vores udvalg",
-            "button_link": "shopify://collections",
-            "button_style_secondary": false
+            "text": "<p>Det slog mig, at skiftet til en simplere telefon måske kunne hjælpe mange med de udfordringer, der er så udbredte i dag, heriblandt angst, stress og depression.</p><p>Min ambition med Dumbphone.dk er at gøre skiftet til en dumbphone så let og tiltalende som muligt, særligt for at bekæmpe frygten for isolation og det at gå glip af noget (FOMO).<br/><br/></p>"
           }
         }
       },
       "block_order": [
-        "heading_mcLMqV",
-        "text_QFaVKN",
-        "button_Eh8hdT"
+        "text_njtJBy",
+        "text_JeaJ6A"
       ],
+      "custom_css": [],
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Om_os_2_af384e33-725b-4790-8672-d5fa72922f16.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 36
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "image_with_text_M9M7XT": {
@@ -150,6 +152,14 @@
           "settings": {
             "heading": "",
             "heading_size": "h1"
+          }
+        },
+        "caption_PPnjtP": {
+          "type": "caption",
+          "settings": {
+            "caption": "Min mission med dumbphone.dk",
+            "text_style": "subtitle",
+            "text_size": "medium"
           }
         },
         "text_9hfWtU": {
@@ -170,13 +180,18 @@
       },
       "block_order": [
         "heading_4NpeXJ",
+        "caption_PPnjtP",
         "text_9hfWtU",
         "button_rVz8mX"
       ],
+      "custom_css": [
+        ".image-with-text__media-item {height: 400px; align-self: center;}",
+        "img {object-fit: cover; object-position: center; border-radius: 25px;}"
+      ],
       "settings": {
-        "image": "shopify://shop_images/shoplogo.png",
+        "image": "shopify://shop_images/dumbphone-founder-at-tvmv.webp",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
@@ -253,7 +268,8 @@
   "order": [
     "image_banner_9ad76N",
     "image_with_text_tU3CRX",
-    "image_with_text_xQcGLD",
+    "hero_banner_raAHw4",
+    "rich_text_bUkCeJ",
     "image_with_text_M9M7XT",
     "image_with_text_9R8dpj",
     "main"
