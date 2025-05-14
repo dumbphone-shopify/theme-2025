@@ -118,7 +118,7 @@
     <h1>{{  }}section.settings.hero_title</h1>
   {% endif %}
 
-  {% elseif section.settings.hero_type == 'video' and section.settings.hero_video_url %}
+  {% elsif section.settings.hero_type == 'video' and section.settings.hero_video_url %}
   <div class="wrapper">
     <video controls="controls">
       <source src="{{ section.settings.hero_video_url }}" type="video/mp4">
