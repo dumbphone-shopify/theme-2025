@@ -175,9 +175,13 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        "p {font-size: medium;}",
+        "img {object-fit: contain;}"
+      ],
       "settings": {
-        "show_collection_description": false,
-        "show_collection_image": false,
+        "show_collection_description": true,
+        "show_collection_image": true,
         "color_scheme": "scheme-1"
       }
     },
