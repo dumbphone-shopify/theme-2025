@@ -74,7 +74,9 @@
       ],
       "custom_css": [
         ".product__media {border-radius: 25px;}",
-        "h2.title {text-align: center;}"
+        "img {background: #9cb7aa;}",
+        "h2.title {text-align: center;}",
+        ".thumbnail{border-radius: 15px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
