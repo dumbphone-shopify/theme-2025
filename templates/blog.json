@@ -25,7 +25,8 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image_overlay_opacity": 20,
+        "image": "shopify://shop_images/persons-hand-points-to-text-in-a-open-book-laying-in-a-table.jpg",
+        "image_overlay_opacity": 30,
         "image_height": "small",
         "image_behavior": "none",
         "desktop_content_position": "bottom-right",
@@ -55,7 +56,7 @@
     "featured_blog_Vfq9Ab": {
       "type": "featured-blog",
       "custom_css": [
-        ".article-card {background-color: #FFFDF8; border-radius: 25px; overflow: hidden;}"
+        ".article-card {background-color: #fffdf8; border-radius: 25px; overflow: hidden;}"
       ],
       "name": "t:sections.featured-blog.presets.name",
       "settings": {
