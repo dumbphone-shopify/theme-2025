@@ -133,6 +133,7 @@
     --col-50: clamp(0rem, -1.1364rem + 5.6818vw, 3.125rem);
     --col-100: clamp(0rem, -2.2727rem + 11.3636vw, 6.25rem);
     --img-article-pad: clamp(2rem, 1.8261rem + 0.8696vw, 2.5rem);
+    --inner-article: clamp(20rem, 15.4545rem + 22.7273vw, 32.5rem);
   }
 
   .article-wrapper {
@@ -168,7 +169,7 @@
   .article-content {
     grid-column: full;
     display: grid;
-    grid-template-columns: subgrid;
+    grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] var(--inner-article) var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
   }
 
   .article-content p,
