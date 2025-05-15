@@ -58,7 +58,13 @@
         "paragraph_ePHtFA": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus <br/>augue maximus vehicula maximus. Donec ac ipsum ut risus ornare laoreet <br/>rutrum eu arcu. Nam dolor elit, faucibus nec ante in, efficitur <br/>convallis lectus. Sed ornare aliquam orci ac tempus. Pellentesque nec <br/>est at lectus maximus consequat sed et nunc. Nulla facilisi. Curabitur <br/>porttitor velit vitae tellus condimentum, eget tincidunt orci auctor. <br/>Vestibulum massa sem, molestie sed sagittis quis, tristique nec tellus. <br/>Etiam at feugiat dolor.<br/></p><p>Curabitur eu sem a erat tincidunt maximus. Pellentesque vitae lacus <br/>aliquet neque condimentum convallis. Aliquam vel lobortis velit, a <br/>sagittis magna. Donec ut iaculis est, elementum fermentum nibh. Nam <br/>tortor augue, ultrices sit amet faucibus in, fringilla nec nunc. Nam <br/>quis sollicitudin ligula, vel finibus elit. Nullam sed blandit arcu, <br/>vitae lacinia est. Etiam pharetra feugiat turpis molestie lacinia. <br/>Quisque rutrum odio finibus vulputate aliquet. Donec et facilisis lacus.<br/> Quisque tempor posuere diam, nec ultricies ex. Etiam sagittis ultrices <br/>dolor, eu ultricies dolor consequat quis. Sed vel est facilisis, <br/>facilisis magna ac, gravida erat. Duis et auctor massa. Cras facilisis, <br/>ligula et mattis porttitor, enim justo dictum dui, sit amet vulputate <br/>sem nulla dapibus lectus.</p><p><br/>Aenean ante elit, commodo malesuada faucibus sed, congue nec tortor. <br/>Donec justo massa, laoreet eu quam ac, rutrum rutrum neque. Nunc <br/>imperdiet tincidunt quam eu tincidunt. Aliquam purus dolor, hendrerit ut<br/> enim ac, mollis tincidunt lacus. Integer non tempus mauris, non aliquam<br/> elit. Vivamus feugiat eros varius dolor tincidunt ultrices. Suspendisse<br/> in elementum ipsum. Mauris vehicula lectus ac odio congue posuere. <br/>Aenean vitae elit non nunc efficitur aliquam. Aliquam ultrices tempus <br/>vehicula. Donec venenatis mi nec gravida consequat. Nunc mi turpis, <br/>vehicula nec scelerisque ornare, fringilla ac sem. Curabitur lorem <br/>sapien, pharetra in ligula eget, dapibus efficitur mi.</p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus augue maximus vehicula maximus. Donec ac ipsum ut risus ornare laoreet <br/>rutrum eu arcu. Nam dolor elit, faucibus nec ante in, efficitur <br/>convallis lectus. Sed ornare aliquam orci ac tempus. Pellentesque nec <br/>est at lectus maximus consequat sed et nunc. Nulla facilisi. Curabitur <br/>porttitor velit vitae tellus condimentum, eget tincidunt orci auctor. <br/>Vestibulum massa sem, molestie sed sagittis quis, tristique nec tellus. <br/>Etiam at feugiat dolor.<br/></p><p>Curabitur eu sem a erat tincidunt maximus. Pellentesque vitae lacus <br/>aliquet neque condimentum convallis. Aliquam vel lobortis velit, a <br/>sagittis magna. Donec ut iaculis est, elementum fermentum nibh. Nam <br/>tortor augue, ultrices sit amet faucibus in, fringilla nec nunc. Nam <br/>quis sollicitudin ligula, vel finibus elit. Nullam sed blandit arcu, <br/>vitae lacinia est. Etiam pharetra feugiat turpis molestie lacinia. <br/>Quisque rutrum odio finibus vulputate aliquet. Donec et facilisis lacus.<br/> Quisque tempor posuere diam, nec ultricies ex. Etiam sagittis ultrices <br/>dolor, eu ultricies dolor consequat quis. Sed vel est facilisis, <br/>facilisis magna ac, gravida erat. Duis et auctor massa. Cras facilisis, <br/>ligula et mattis porttitor, enim justo dictum dui, sit amet vulputate <br/>sem nulla dapibus lectus.</p><p><br/>Aenean ante elit, commodo malesuada faucibus sed, congue nec tortor. <br/>Donec justo massa, laoreet eu quam ac, rutrum rutrum neque. Nunc <br/>imperdiet tincidunt quam eu tincidunt. Aliquam purus dolor, hendrerit ut<br/> enim ac, mollis tincidunt lacus. Integer non tempus mauris, non aliquam<br/> elit. Vivamus feugiat eros varius dolor tincidunt ultrices. Suspendisse<br/> in elementum ipsum. Mauris vehicula lectus ac odio congue posuere. <br/>Aenean vitae elit non nunc efficitur aliquam. Aliquam ultrices tempus <br/>vehicula. Donec venenatis mi nec gravida consequat. Nunc mi turpis, <br/>vehicula nec scelerisque ornare, fringilla ac sem. Curabitur lorem <br/>sapien, pharetra in ligula eget, dapibus efficitur mi.</p>"
+          }
+        },
+        "pull_quote_FzWRxf": {
+          "type": "pull_quote",
+          "settings": {
+            "quote": "Very inspiration quote here, don't you agree?"
           }
         },
         "image_BiLanp": {
@@ -91,6 +97,7 @@
       "block_order": [
         "heading_6RtkV6",
         "paragraph_ePHtFA",
+        "pull_quote_FzWRxf",
         "image_BiLanp",
         "paragraph_kNMJcf",
         "heading_ciHPAc",
@@ -101,8 +108,7 @@
         "hero_type": "image",
         "hero_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg",
         "hero_video_url": "",
-        "hero_title": "Rubrik här!",
-        "image_title_position": "below"
+        "hero_title": "Rubrik här!"
       }
     },
     "rich_text_LMikFR": {
