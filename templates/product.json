@@ -119,7 +119,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 24
@@ -128,7 +128,8 @@
     "article_section_UikNit": {
       "type": "article-section",
       "custom_css": [
-        "img {max-width: 900px; margin: auto auto;}"
+        "img {max-width: 900px; margin: auto auto;}",
+        "div {background-color: #9cb7aa; padding: 10px;}"
       ],
       "name": "Artikelsektion",
       "settings": {
