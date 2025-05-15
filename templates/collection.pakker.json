@@ -47,6 +47,9 @@
     },
     "featured_collection_tifA63": {
       "type": "featured-collection",
+      "custom_css": [
+        "h2 {color: #ac3f00;}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "kits",
@@ -80,30 +83,21 @@
         "heading_aL6E7c": {
           "type": "heading",
           "settings": {
-            "heading": "Billede med tekst",
-            "heading_size": "h1"
+            "heading": "Udlej vores dumbphone og skab mere fokus",
+            "heading_size": "h2"
           }
         },
         "text_wYmffA": {
           "type": "text",
           "settings": {
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "text": "<p>Giv jeres team eller elever mulighed for at være til stede uden digitale forstyrrelser. Vores dumbphones hjælper med at skabe ro og fokus i travle hverdagssituationer, hvor nærvær og koncentration er vigtigst. Lej dem, når I vil styrke opmærksomheden og mindske unødvendige afbrydelser.</p>",
             "text_style": "body"
-          }
-        },
-        "button_XpngF6": {
-          "type": "button",
-          "settings": {
-            "button_label": "Knaptekst",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_aL6E7c",
-        "text_wYmffA",
-        "button_XpngF6"
+        "text_wYmffA"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -127,7 +121,7 @@
         "heading_8yXm4x": {
           "type": "heading",
           "settings": {
-            "heading": "Billede med tekst",
+            "heading": "Fordrag",
             "heading_size": "h1"
           }
         },
@@ -138,19 +132,19 @@
             "text_style": "body"
           }
         },
-        "button_fQRBmQ": {
+        "button_hhCMkG": {
           "type": "button",
           "settings": {
-            "button_label": "Knaptekst",
+            "button_label": "Læs mere →",
             "button_link": "",
-            "button_style_secondary": false
+            "button_style_secondary": true
           }
         }
       },
       "block_order": [
         "heading_8yXm4x",
         "text_Qx9Vcj",
-        "button_fQRBmQ"
+        "button_hhCMkG"
       ],
       "custom_css": [
         ".image-with-text__content {border-radius: 0 25px 25px 0;}",
@@ -159,6 +153,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/image_3.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
