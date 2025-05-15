@@ -165,7 +165,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".grid__item {border-radius: 25px; transition: all ease-in-out 0.3s; overflow: hidden; box-shadow: 0 0 0 2px #3e2103; }",
+        ".card:hover {background-color: #9cb7aa;}",
+        ".grid__item {border-radius: 25px; transition: all ease-in-out 0.3s; overflow: hidden; box-shadow: 0 0 0 2px #3e2103;}",
         ".grid__item:hover {box-shadow: none;}",
         ".grid {--grid-mobile-horizontal-spacing: 20px; --grid-mobile-vertical-spacing: 65px; column-gap: var(--grid-mobile-horizontal-spacing); row-gap: var(--grid-mobile-vertical-spacing);}"
       ],
@@ -190,6 +191,7 @@
     "featured_collection_n9Hc8c": {
       "type": "featured-collection",
       "custom_css": [
+        ".card {background-color: #9cb7aa;}",
         ".grid__item {border-radius: 25px; overflow: hidden;}"
       ],
       "name": "t:sections.featured-collection.presets.name",
