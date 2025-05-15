@@ -200,8 +200,12 @@
 
   .pull-quote {
     grid-column: breakout;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-style: italic;
+    font-family: Georgia
+    , 'Times New Roman'
+    , Times
+    , serif;
     position: relative;
     margin: 2rem 0;
     padding: 1.5rem;
@@ -209,10 +213,10 @@
     line-height: 1.5;
   }
 
-  .pull-quote::before,
-  .pull-quote::after {
-    content: '"';
-    font-size: 2rem;
+  .pull-quote::before
+ {
+    content: '“';
+    font-size: 5rem;
     color: #999;
     position: absolute;
   }
@@ -222,10 +226,7 @@
     left: -1rem;
   }
 
-  .pull-quote::after {
-    bottom: 0;
-    right: -1rem;
-  }
+ 
 
 {% endstylesheet %}
 
