@@ -51,16 +51,36 @@
         "show_text_below": false
       }
     },
-    "image_with_text_tU3CRX": {
-      "type": "image-with-text",
+    "rich_text_8U9amQ": {
+      "type": "rich-text",
       "blocks": {
-        "heading_WmVPE4": {
+        "heading_kd4j9U": {
           "type": "heading",
           "settings": {
             "heading": "Hvem står bag?",
-            "heading_size": "h2"
+            "heading_size": "h1"
           }
-        },
+        }
+      },
+      "block_order": [
+        "heading_kd4j9U"
+      ],
+      "custom_css": [
+        "h2 {color: #ac3f00;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_tU3CRX": {
+      "type": "image-with-text",
+      "blocks": {
         "text_76DiUq": {
           "type": "text",
           "settings": {
@@ -78,7 +98,6 @@
         }
       },
       "block_order": [
-        "heading_WmVPE4",
         "text_76DiUq",
         "button_Rxnfmg"
       ],
@@ -96,9 +115,9 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-9cb15f53-7587-4f63-bade-50a1282d6270",
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -269,6 +288,7 @@
   },
   "order": [
     "image_banner_9ad76N",
+    "rich_text_8U9amQ",
     "image_with_text_tU3CRX",
     "hero_banner_raAHw4",
     "rich_text_bUkCeJ",
