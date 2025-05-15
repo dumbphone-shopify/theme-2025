@@ -94,23 +94,48 @@
         "padding_bottom": 52
       }
     },
-    "video_9n94Rn": {
-      "type": "video",
-      "custom_css": [
-        "h2 {text-align: center;}",
-        ".product__media media {border-radius: 15px;}"
+    "rich_text_7MHYf6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gzrYVg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Træt af at være online hele tiden?",
+            "heading_size": "h1"
+          }
+        },
+        "text_fzyNVF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Måske kender du det. Du tager bare lige telefonen frem, og pludselig er der gået en halv time. En dumbphone handler ikke om notifikationer, apps eller endeløse feeds. Den handler om at være til stede. I samtaler. I roen. I hverdagen. Dumbphone er ikke for alle, men måske er den for dig, der savner lidt mere nærvær.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gzrYVg",
+        "text_fzyNVF"
       ],
-      "name": "t:sections.video.presets.name",
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "heading": "Træt af at være online hele tiden?                her er hvad jeg tilbyder",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-2",
-        "padding_top": 52,
-        "padding_bottom": 52
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "article_section_UikNit": {
+      "type": "article-section",
+      "custom_css": [
+        "img {max-width: 900px; margin: auto auto;}"
+      ],
+      "name": "Artikelsektion",
+      "settings": {
+        "hero_type": "image",
+        "hero_image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
+        "hero_video_url": "",
+        "hero_title": ""
       }
     },
     "multirow_qEFL7e": {
@@ -240,7 +265,8 @@
   },
   "order": [
     "main",
-    "video_9n94Rn",
+    "rich_text_7MHYf6",
+    "article_section_UikNit",
     "multirow_qEFL7e",
     "related-products",
     "collapsible_content_8VzBej"
