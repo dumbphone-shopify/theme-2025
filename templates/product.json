@@ -76,7 +76,7 @@
         ".product__media {border-radius: 25px;}",
         "img {background: #9cb7aa;}",
         "h2.title {text-align: center;}",
-        ".thumbnail{border-radius: 15px;}"
+        ".thumbnail {border-radius: 15px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -119,20 +119,22 @@
         "row_DK3azV": {
           "type": "row",
           "settings": {
-            "caption": "Billedtekst",
-            "heading": "Række",
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
-            "button_label": "Knaptekst",
+            "image": "{{ product.featured_image }}",
+            "caption": "",
+            "heading": "NoKia 2660 Flip 4G",
+            "text": "<p>Det skal være let at ringe og sende en sms, ikke noget teknisk cirkus. Derfor er HMD 2660 Flip lavet med store knapper, en tydelig skærm og en menu der er nem at finde rundt i. Jeg bruger den selv når jeg bare vil være til stede, og lyden er så klar at man faktisk får lyst til at snakke lidt længere.<br/><br/></p>",
+            "button_label": "",
             "button_link": ""
           }
         },
         "row_qx96hY": {
           "type": "row",
           "settings": {
-            "caption": "Billedtekst",
-            "heading": "Række",
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
-            "button_label": "Knaptekst",
+            "image": "{{ product.featured_image }}",
+            "caption": "",
+            "heading": "Mist ikke forbindelsen",
+            "text": "<p><br/>Det skal være nemt at holde kontakten, også når hverdagen roder lidt. HMD 2660 Flip er lavet med holdbarhed for øje. Den tåler både støv og stænk og er klar til at følge med i det liv, du lever.<br/><br/></p>",
+            "button_label": "",
             "button_link": ""
           }
         }
@@ -140,6 +142,9 @@
       "block_order": [
         "row_DK3azV",
         "row_qx96hY"
+      ],
+      "custom_css": [
+        "img {border-radius: 25px;}"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
