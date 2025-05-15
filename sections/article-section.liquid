@@ -143,8 +143,6 @@
   .article-hero {
     grid-column: full;
     display: grid;
-    grid-template-columns: subgrid;
-    position: relative;
   }
 
   .article-hero img,
@@ -166,17 +164,16 @@
 
 
   .article-content {
-  grid-column: content;
-  display: grid;
-  grid-template-columns: subgrid;
-}
+    grid-column: full;
+    display: grid;
+    grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
+  }
 
 
   .text-content {
-      grid-column: inner;
+    grid-column: inner;
   }
 
- 
 
   .article-image {
     display: block;
