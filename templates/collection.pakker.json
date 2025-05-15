@@ -378,6 +378,9 @@
     },
     "contact_form_TyGdag": {
       "type": "contact-form",
+      "custom_css": [
+        "h2 {color: #AC3F00;}"
+      ],
       "settings": {
         "heading": "Interesseret? Kontakt os her!          Så sender vi en rabatkode til jer!",
         "heading_size": "h2",
