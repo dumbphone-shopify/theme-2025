@@ -188,7 +188,7 @@
 
 
   .article-paragraph {
-    grid-column: content;
+    grid-column: inner;
   }
 
   .article-image {
@@ -199,7 +199,7 @@
   }
 
   .article-image--large {
-    grid-column: inner;
+    grid-column: full;
     max-width: 800px;
   }
 
@@ -209,7 +209,7 @@
   }
 
   .article-image--small {
-    grid-column: content;
+    grid-column: inner;
     max-width: 300px;
   }
 {% endstylesheet %}
@@ -231,12 +231,12 @@
         <source src="{{ section.settings.hero_video_url }}" type="video/mp4" />
       </video>
     </div>
-  {% endif %}
-
-  <div class="article-content">
     {% if section.settings.hero_title != blank %}
       <h1>{{ section.settings.hero_title }}</h1>
     {% endif %}
+  {% endif %}
+
+  <div class="article-content">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'heading' %}
