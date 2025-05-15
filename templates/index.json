@@ -65,7 +65,8 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/woman-wades-in-ocean-at-sunset.jpg",
-            "alt": "bild"
+            "alt": "bild",
+            "image_size": "large"
           }
         },
         "paragraph_kNMJcf": {
