@@ -198,7 +198,7 @@
       "settings": {
         "collection": "tilbehor",
         "products_to_show": 3,
-        "title": "populare produkter",
+        "title": "{{ section.settings.collection.title }}",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
