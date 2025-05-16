@@ -135,12 +135,18 @@ new Glider(document.querySelector('.glider'),{
   align-items: stretch;
 }
 
+
+.carousel-slide{
+     grid-template-columns:1fr 2fr ;
+ 
+ }
+
+
  }
  
  .carousel-slide{
     display: grid;
-   grid-template-columns:1fr 2fr ;
-    gap:25px;
+     gap:25px;
     border-radius:25px;
     overflow:hidden;
     margin:auto;
@@ -152,8 +158,7 @@ new Glider(document.querySelector('.glider'),{
 
  @media screen and (max-width: 749px) {
     .carousel-slide{
-         grid-template-columns:1fr;
-        grid-template-rows:1fr 2fr ;
+        grid-template-rows:1fr 1fr ;
         max-height: 500px;
         max-width: 100%;
     }
