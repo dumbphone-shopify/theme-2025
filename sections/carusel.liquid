@@ -11,7 +11,7 @@
           <img width="500" height="500" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
         {% endif %}
         </div>        
-        <div class="text-block">    
+        <div class="text-block align-the-text_{{ section.settings.align_text }}">    
         {% if block.settings.heading %}
           <h3>{{ block.settings.heading }}</h3>
         {% endif %}
@@ -77,7 +77,27 @@ new Glider(document.querySelector('.glider'),{
           "id": "text",
           "label": "Text",
           "default": "Here’s a short description or message."
-        }
+        },
+        {
+    "type": "select",
+    "id": "align_text",
+    "label": "Text alignment",
+    "default": "left",
+    "options": [
+    {
+    "value": "left",
+    "label": "Left"
+    },
+    {
+    "value": "center",
+    "label": "Centered"
+    },
+    {
+    "value": "right",
+    "label": "Right"
+    }
+    ]
+    },
       ]
     }
   ],
@@ -94,8 +114,9 @@ new Glider(document.querySelector('.glider'),{
 
 {%-style -%}
  .carousel-slide{
-    display:flex row;
-    align-content:center;
-    justify-content:space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
  }
 {%-endstyle%}
