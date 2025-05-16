@@ -11,7 +11,8 @@
           <img width="800" height="800" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
         {% endif %}
         </div>        
-        <div class="text-block text-{{ block.settings.align_text }}" {{ block.shopify_attributes }} >    
+       <div class="text-block text-{{ block.settings.align_text }}" style="background-color: {{ block.settings.text_background }}; color: {{ block.settings.text_color }};">
+
         {% if block.settings.heading %}
           <h3>{{ block.settings.heading }}</h3>
         {% endif %}
@@ -90,7 +91,19 @@ new Glider(document.querySelector('.glider'),{
     { "value": "center", "label": "Centered" },
     { "value": "right", "label": "Right" }
   ]
+},{
+  "type": "color",
+  "id": "text_background",
+  "label": "Text block background color",
+  "default": "#ffffff"
+},
+{
+  "type": "color",
+  "id": "text_color",
+  "label": "Text block text color",
+  "default": "#000000"
 }
+
       ]
     }
   ],
