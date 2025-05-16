@@ -120,10 +120,8 @@ new Glider(document.querySelector('.glider'),{
 
 {%-style -%}
  .carousel-slide{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: grid;
+   grid-template-rows:1fr 2fr ;
     gap:25px;
     border-radius:25px;
     overflow:hidden;
