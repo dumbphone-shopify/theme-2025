@@ -42,9 +42,15 @@
         "hero_height": "75vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
+        "vertical_position": "center",
         "text_alignment": "center",
         "content_position": "flex-end"
       }
+    },
+    "carusel_TeGAzP": {
+      "type": "carusel",
+      "name": "Carousel",
+      "settings": {}
     },
     "article_section_UPqpGX": {
       "type": "article-section",
@@ -471,6 +477,7 @@
   },
   "order": [
     "hero_banner_xc7HTV",
+    "carusel_TeGAzP",
     "article_section_UPqpGX",
     "rich_text_LMikFR",
     "1747382751afc67ba6",
