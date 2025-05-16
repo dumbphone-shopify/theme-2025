@@ -184,7 +184,7 @@
         ".image-with-text__content {border-radius: 25px 0 0 25px;}",
         ".image-with-text__media {border-radius: 0 25px 25px 0;}",
         "@media screen and (max-width: 749px) {.image-with-text__content {border-radius: 0 0 25px 25px; } .image-with-text__media {border-radius: 25px 25px 0 0; }}",
-        "a{align-self: flex-end;}"
+        "a {align-self: flex-end;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -252,8 +252,14 @@
         "heading_db3TLx": {
           "type": "heading",
           "settings": {
-            "heading": "OMTALE I MEDIERNE",
-            "heading_size": "h2"
+            "heading": "Har du brug for lidt hjælp til at finde balancen?",
+            "heading_size": "h1"
+          }
+        },
+        "text_ML9pFF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi har samlet en række enkle og praktiske guides, der hjælper dig med at bruge din dumbphone og hvordan du kan mindske dit skærmforbrug, uden forvirring og uden stress.</p>"
           }
         },
         "text_h6KhWF": {
@@ -276,13 +282,14 @@
       },
       "block_order": [
         "heading_db3TLx",
+        "text_ML9pFF",
         "text_h6KhWF",
         "button_7nb6er"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
@@ -296,7 +303,7 @@
       "settings": {
         "blog": "potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
         "post_limit": 3,
-        "heading": "Potentielle gavnlige resultater",
+        "heading": "",
         "heading_size": "h1",
         "columns_desktop": 3,
         "show_view_all": true,
@@ -304,54 +311,7 @@
         "show_date": false,
         "show_author": true,
         "color_scheme": "scheme-2",
-        "padding_top": 40,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_PKtyhg": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_6z8KMQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Foredrag + Efterskole/Højskole løsningen.",
-            "heading_size": "h1"
-          }
-        },
-        "text_9XJbLc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Dumbphone projektet er startet et helt andet sted end på denne webshop. Har du lyst til at læse mere om vores foredrag og hvad vi laver på efterskoler, højskoler og landet over? </p><p>Tryk på knappen ↓</p>",
-            "text_style": "body"
-          }
-        },
-        "button_4kcAA4": {
-          "type": "button",
-          "settings": {
-            "button_label": "LÆS MERE",
-            "button_link": "shopify://pages/vores-skoleforlob",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_6z8KMQ",
-        "text_9XJbLc",
-        "button_4kcAA4"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Skoleforloeb_2bb1a038-4a12-4e46-9191-4e78686bced3.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
+        "padding_top": 8,
         "padding_bottom": 36
       }
     },
@@ -404,7 +364,6 @@
     "collection_list_3gXFbh",
     "rich_text_WhwJye",
     "featured_blog_XGYwnV",
-    "image_with_text_PKtyhg",
     "collage_f44EKd"
   ]
 }
