@@ -32,10 +32,9 @@
         "text_XCHWYm"
       ],
       "custom_css": [
-        ".banner__box {border-radius: 15px 15px 0 0; width: 1400px; padding: 25px 50px; margin: auto auto -55px auto;}",
-        "@media screen and (max-width: 749px) {.banner__box {margin: auto auto auto auto; }}",
-        "img {object-position: top;}",
-        "@media screen and (max-width: 749px) {}"
+        ".banner__box {border-radius: 15px 15px 0 0; max-width: 1300px; min-width: 1000px; width: 100%; padding: 25px 50px; margin: auto auto -55px auto;}",
+        "@media screen and (max-width: 749px) {.banner__box {min-width: 100%; margin: auto auto auto auto; }}",
+        "img {object-position: top;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -132,8 +131,7 @@
         "hero_type": "image",
         "hero_image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
         "hero_video_url": "",
-        "hero_title": "",
-        "image_title_position": "overlay"
+        "hero_title": ""
       }
     },
     "rich_text_bUkCeJ": {
