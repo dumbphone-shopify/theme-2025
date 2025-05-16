@@ -408,7 +408,7 @@
         "column_aP9g8h"
       ],
       "custom_css": [
-        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content;}"
+        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
