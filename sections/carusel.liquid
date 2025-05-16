@@ -38,6 +38,9 @@
 
 window.addEventListener('DOMContentLoaded', () =>{
 new Glider(document.querySelector('.glider'),{
+    slidesToShow: 1.5, // or 2, or any float (e.g., 1.3)
+  slidesToScroll: 1,
+  draggable: true,
    
   arrows: {
     prev: '#{{ section.id }} .prev',
@@ -119,6 +122,19 @@ new Glider(document.querySelector('.glider'),{
 {% endschema %}
 
 {%-style -%}
+
+
+.carousel-slide {
+  flex: 0 0 auto; /* Don't stretch */
+  width: 80%; /* Or set a fixed max-width like 600px */
+ 
+}
+
+.glider {
+  display: flex;
+  align-items: stretch;
+}
+
  .carousel-slide{
     display: grid;
    grid-template-columns:1fr 2fr ;
