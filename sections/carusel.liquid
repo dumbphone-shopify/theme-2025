@@ -8,7 +8,7 @@
       <div class="carousel-slide" {{ block.shopify_attributes }}>
       <div class="img-block">
         {% if block.settings.image %}
-          <img width="800" height="800" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
+          <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
         {% endif %}
         </div>        
        <div class="text-block text-{{ block.settings.align_text }}" style="background-color: {{ block.settings.text_background }}; color: {{ block.settings.text_color }};">
