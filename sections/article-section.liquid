@@ -1,3 +1,5 @@
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
 {% schema %}
   {
     "name": "Artikelsektion",
@@ -24,14 +26,22 @@
           }
         ],
         "default": "image"
-      }, {
+      },
+      {
         "type": "image_picker",
         "id": "hero_image",
-        "label": "Vælg billede"
-      }, {
-        "type": "url",
+        "label": "Hero billede"
+      },
+      {
+        "type": "video",
+        "id": "hero_video",
+        "label": "Hero video"
+      },
+      {
+        "type": "video_url",
         "id": "hero_video_url",
-        "label": "Video-URL"
+        "accept": ["youtube", "vimeo"],
+        "label": "YouTube/Vimeo URL"
       }, {
         "type": "text",
         "id": "hero_title",
@@ -265,12 +275,69 @@
     {% if section.settings.hero_title != blank %}
       <h1 class="article-title">{{ section.settings.hero_title }}</h1>
     {% endif %}
-  {% elsif section.settings.hero_type == 'video' and section.settings.hero_video_url %}
-    <div class="article-hero">
-      <video controls>
-        <source src="{{ section.settings.hero_video_url }}" type="video/mp4" />
-      </video>
-    </div>
+  {% elsif section.settings.hero_type == 'video' and (section.settings.hero_video or section.settings.hero_video_url) %}
+    {% assign video_id = section.settings.hero_video.id | default: section.settings.hero_video_url.id %}
+{% assign poster = section.settings.hero_poster | image_url: width: 1000 %}
+{% assign alt = section.settings.hero_title | escape %}
+{% assign loop = section.settings.hero_video_loop %}
+{% assign is_external = section.settings.hero_video_url != blank and section.settings.hero_video == blank %}
+<div class="article-hero">
+  <deferred-media
+    class="deferred-media gradient global-media-settings media--landscape"
+    data-media-id="{{ video_id }}"
+    {% if section.settings.hero_poster %}
+      style="--ratio-percent: {{ 1 | divided_by: section.settings.hero_poster.aspect_ratio | times: 100 }}%;"
+    {% endif %}
+  >
+    <button
+      id="Deferred-Poster-Modal-{{ video_id }}"
+      class="media deferred-media__poster"
+      type="button"
+      aria-label="{{ alt }}"
+    >
+      {% if section.settings.hero_poster %}
+        <img
+          src="{{ poster }}"
+          alt="{{ alt }}"
+          sizes="100vw"
+          loading="lazy"
+        >
+      {% endif %}
+      <span class="deferred-media__poster-button motion-reduce">
+        <span class="svg-wrapper">
+          {{ 'icon-play.svg' | inline_asset_content }}
+        </span>
+      </span>
+    </button>
+
+    <template>
+      {% if is_external %}
+        {% if section.settings.hero_video_url.type == "youtube" %}
+          <iframe
+            src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1{% if loop %}&loop=1&playlist={{ video_id }}{% endif %}"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="{{ alt }}"
+          ></iframe>
+        {% else %}
+          <iframe
+            src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{% if loop %}&loop=1{% endif %}"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="{{ alt }}"
+          ></iframe>
+        {% endif %}
+      {% else %}
+        {{ section.settings.hero_video | video_tag: autoplay: true, loop: loop, controls: true, muted: false, image_size: '1600x' }}
+      {% endif %}
+    </template>
+  </deferred-media>
+</div>
+
+{% if section.settings.hero_title != blank %}
+  <h1 class="article-title">{{ section.settings.hero_title }}</h1>
+{% endif %}
+
     {% if section.settings.hero_title != blank %}
       <h1 class="article-title">{{ section.settings.hero_title }}</h1>
     {% endif %}
