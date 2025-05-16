@@ -107,13 +107,19 @@ new Glider(document.querySelector('.glider'),{
 
 {%-style -%}
  .carousel-slide{
-    display: flex wrap;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     border-radius:25px;
     overflow:hidden;
 
+ }
+
+ @media screen and (max-width: 749px) {
+    .carousel-slide{
+ display: flex wrap;
+    }
  }
 
  img{
