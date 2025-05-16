@@ -221,7 +221,7 @@
         "featured_collection_DVbR4m"
       ],
       "custom_css": [
-        ".card-wrapper {overflow: hidden; border-radius: 25px; background-color: #D2DFDF; padding:0 15px;}"
+        ".card-wrapper {overflow: hidden; border-radius: 25px; background-color: #d2dfdf; padding: 0 15px;}"
       ],
       "settings": {
         "title": "",
@@ -280,6 +280,9 @@
     },
     "featured_blog_XGYwnV": {
       "type": "featured-blog",
+      "custom_css": [
+        ".article-card {background-color: #fffdf8; border-radius: 25px; overflow: hidden;}"
+      ],
       "settings": {
         "blog": "potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
         "post_limit": 3,
@@ -288,9 +291,9 @@
         "columns_desktop": 3,
         "show_view_all": true,
         "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "color_scheme": "",
+        "show_date": false,
+        "show_author": true,
+        "color_scheme": "scheme-2",
         "padding_top": 40,
         "padding_bottom": 36
       }
