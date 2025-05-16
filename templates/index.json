@@ -57,7 +57,7 @@
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
             "align_text": "left",
-            "text_background": "#fefeff",
+            "text_background": "#eafff1",
             "text_color": "#ac3f00"
           }
         },
