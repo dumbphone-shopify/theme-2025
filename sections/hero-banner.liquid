@@ -1,22 +1,22 @@
 {% comment %} 
 
-                    LINK TO OFFICIAL DOCS HERE:
+                            LINK TO OFFICIAL DOCS HERE:
 
-                    Overall docs relevant to us: 
-                    https://shopify.dev/docs/storefronts/themes/architecture/
+                            Overall docs relevant to us: 
+                            https://shopify.dev/docs/storefronts/themes/architecture/
 
-                    Input settings:
-                    https://shopify.dev/docs/storefronts/themes/architecture/settings/input-settings
+                            Input settings:
+                            https://shopify.dev/docs/storefronts/themes/architecture/settings/input-settings
 
-                    Sections and blocks:
-                    https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks
+                            Sections and blocks:
+                            https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks
 
-                    Schema is the part of the code that will be visible in the theme-editor. 
+                            Schema is the part of the code that will be visible in the theme-editor. 
 
-                    The name sets the name that will present in the sections-list. 
+                            The name sets the name that will present in the sections-list. 
 
-                    Settings are the fields that the user can customize in the theme editor. There is more information in the link on the top of this comment.
-                     
+                            Settings are the fields that the user can customize in the theme editor. There is more information in the link on the top of this comment.
+                             
  {% endcomment %}
 {% schema %}
   {
@@ -130,7 +130,7 @@
       }, {
         "type": "select",
         "id": "mobile_content_alignment",
-        "label": "center",
+        "label": "Indhold placering på mobil",
         "default": "center",
         "options": [
           {
@@ -182,15 +182,6 @@
     ]
   }
 {% endschema %}
-
-
-{% liquid
-
-  if section.index == 1
-    assign fetch_priority = 'high'
-  endif
-%}
-
 <section class="hero-banner-section {% if section.settings.enable_scroll_effect %}parallax-bg{% endif %}" style="background-image: url({{ section.settings.background_image | image_url: width: 2000 }});">
   <div class="hero-overlay position-{{ section.settings.content_position}} mobile-position-{{ section.settings.mobile_content_alignment }}">
 
@@ -223,7 +214,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-attachment: fixed; // for scroll effect
+    background-attachment: fixed;
+    // for scroll effect
   }
 
 
