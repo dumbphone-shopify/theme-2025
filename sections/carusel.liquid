@@ -107,9 +107,10 @@ new Glider(document.querySelector('.glider'),{
 
 {%-style -%}
  .carousel-slide{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    display: grid;
+   grid-template-rows: 1fr 1fr;
+    align-content:center
+    gap: 15px;
    
     border-radius:25px;
     overflow:hidden;
