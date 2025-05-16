@@ -42,7 +42,13 @@
         "id": "hero_video_url",
         "accept": ["youtube", "vimeo"],
         "label": "YouTube/Vimeo URL"
-      }, {
+      }, 
+      {
+  "type": "image_picker",
+  "id": "hero_video_thumbnail",
+  "label": "Uploade din egen video thumbnail"
+}
+,{
         "type": "text",
         "id": "hero_title",
         "label": "Rubrik"
@@ -283,9 +289,11 @@
     {% assign video_id = section.settings.hero_video.id | default: section.settings.hero_video_url.id %}
     {% assign alt = section.settings.hero_title | escape %}
     {% assign is_external = false %}
+    {% assign poster_image = section.settings.hero_video_poster | default: section.settings.hero_video.preview_image %}
     {% if section.settings.hero_video_url != blank and section.settings.hero_video == blank %}
       {% assign is_external = true %}
     {% endif %}
+
     
 
     {% if section.settings.hero_video or section.settings.hero_video_url %}
@@ -300,6 +308,15 @@
             type="button"
             aria-label="{{ alt }}"
           >
+          {% if poster_image %}
+            <img
+              src="{{ poster_image | image_url: width: 1600 }}"
+              alt="{{ alt }}"
+              sizes="100vw"
+              loading="lazy"
+            >
+          {% endif %}
+          
             <span class="deferred-media__poster-button motion-reduce">
               <span class="svg-wrapper">
                 {{ 'icon-play.svg' | inline_asset_content }}
