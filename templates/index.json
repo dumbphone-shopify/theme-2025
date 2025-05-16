@@ -55,21 +55,24 @@
           "settings": {
             "image": "shopify://shop_images/fall-vegetable-box.jpg",
             "heading": "This is a heading",
-            "text": "Here’s a short description or message."
+            "text": "Here’s a short description or message.",
+            "align_text": "left"
           }
         },
         "slide_UMaxaR": {
           "type": "slide",
           "settings": {
             "heading": "This is a heading",
-            "text": "Here’s a short description or message."
+            "text": "Here’s a short description or message.",
+            "align_text": "left"
           }
         },
         "slide_n43yy9": {
           "type": "slide",
           "settings": {
             "heading": "This is a heading",
-            "text": "Here’s a short description or message."
+            "text": "Here’s a short description or message.",
+            "align_text": "left"
           }
         }
       },
@@ -161,7 +164,7 @@
         "hero_type": "image",
         "hero_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg",
         "hero_video_url": "",
-        "hero_title": "Rubrik"
+        "hero_title": "Rubri"
       }
     },
     "rich_text_LMikFR": {
