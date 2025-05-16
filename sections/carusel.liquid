@@ -128,68 +128,65 @@ new Glider(document.querySelector('.glider'),{
 
 {% endschema %}
 
-{%-style -%}
- @media screen and (min-width: 749px) {
-    
+{%-style-%}
 .carousel-slide {
-  flex: 0 0 auto; /* Don't stretch */
-  width: 80%; /* Or set a fixed max-width like 600px */
- 
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 25px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: auto;
+  max-width: 850px;
+  padding: 0 !important;
+  margin-right: 15px !important;
 }
 
+.img-block {
+  flex: 2 0 0%;
+}
+
+.text-block {
+  flex: 3 0 0%;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Make image fill its container */
+.img-block img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Carousel container */
 .glider {
   display: flex;
   gap: 50px;
   align-items: stretch;
 }
 
-.carousel-slide{
-     grid-template-columns:1fr 2fr ;
- 
- }
-
- }
- 
- .carousel-slide{
-    display: grid;
-     gap:25px;
-    border-radius:25px;
-    overflow:hidden;
-    margin:auto;
-    max-width: 850px;
-    padding: 0 !important; 
-    margin-right: 15px !important;
-
- }
-
- @media screen and (max-width: 749px) {
-    .carousel-slide{
-        grid-template-rows:1fr 1fr ;
-        max-height: 500px;
-        max-width: 100%;
-    }
- }
-
- .img-block img{
-    object-fit: cover;
-    aspect-ratio: 1;
-    object-position: center;
-    height: 100%;
-    width: 300px;
- }
-
-.text-block{
-    display: flex;
+/* Responsive adjustments */
+@media screen and (max-width: 749px) {
+  .carousel-slide {
     flex-direction: column;
-    flex: 1 0 250px;
-    padding: 25px 10px;
+    max-width: 100%;
+  }
+
+  .img-block {
+    flex: 1 0 0%;
+  }
+
+  .text-block {
+    flex: 2 0 0%;
+  }
 }
 
-.img-block{
-    flex: 1 0 250px;
-} 
-
- .text-left {
+/* Text alignment classes */
+.text-left {
   text-align: left;
 }
 
@@ -200,4 +197,4 @@ new Glider(document.querySelector('.glider'),{
 .text-right {
   text-align: right;
 }
-{%-endstyle%}
+{%-endstyle-%}
