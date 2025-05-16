@@ -49,8 +49,38 @@
     },
     "carusel_TeGAzP": {
       "type": "carusel",
+      "blocks": {
+        "slide_p7XqpQ": {
+          "type": "slide",
+          "settings": {
+            "heading": "hello",
+            "text": "Here’s a short description or message."
+          }
+        },
+        "slide_HDwYhe": {
+          "type": "slide",
+          "settings": {
+            "heading": "This is a heading",
+            "text": "Here’s a short description or message."
+          }
+        },
+        "slide_63UWGh": {
+          "type": "slide",
+          "settings": {
+            "heading": "This is a heading",
+            "text": "Here’s a short description or message."
+          }
+        }
+      },
+      "block_order": [
+        "slide_p7XqpQ",
+        "slide_HDwYhe",
+        "slide_63UWGh"
+      ],
       "name": "Carousel",
-      "settings": {}
+      "settings": {
+        "number_slider_desktop": 4
+      }
     },
     "article_section_UPqpGX": {
       "type": "article-section",
