@@ -38,10 +38,17 @@
 
 window.addEventListener('DOMContentLoaded', () =>{
 new Glider(document.querySelector('.glider'),{
-    slidesToShow: 1.5, // or 2, or any float (e.g., 1.3)
+    slidesToShow: 1.2, // or 2, or any float (e.g., 1.3)
   slidesToScroll: 1,
   draggable: true,
-   
+     responsive: [
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1.5
+      }
+    }
+  ]
   arrows: {
     prev: '#{{ section.id }} .prev',
      next: '#{{ section.id }} .next',
@@ -132,15 +139,14 @@ new Glider(document.querySelector('.glider'),{
 
 .glider {
   display: flex;
+  gap: 50px;
   align-items: stretch;
 }
-
 
 .carousel-slide{
      grid-template-columns:1fr 2fr ;
  
  }
-
 
  }
  
