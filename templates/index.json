@@ -57,7 +57,7 @@
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
             "align_text": "left",
-            "text_background": "#eafff1",
+            "text_background": "#ffd9b1",
             "text_color": "#ac3f00"
           }
         },
@@ -89,7 +89,9 @@
         "slide_UMaxaR",
         "slide_n43yy9"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".img-block{aspect-ratio: 6 / 9}"
+      ],
       "name": "Carousel",
       "settings": {
         "number_slider_desktop": 4
