@@ -166,14 +166,34 @@
 
 
   .article-hero img,
-  .article-hero video {
-    grid-column: full;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-inline: auto;
-    max-width: 1000px;
-  }
+.article-hero iframe,
+.article-hero video,
+.article-hero .media--landscape,
+.article-hero deferred-media {
+  grid-column: full;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+  max-width: 1000px;
+}
+
+/* article video settings  */
+
+deferred-media {
+  position: relative;
+  padding-bottom: var(--ratio-percent, 56.25%);
+  height: 0;
+  display: block;
+}
+
+deferred-media > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
   .article-title {
