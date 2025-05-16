@@ -156,7 +156,7 @@
         "row_qx96hY": {
           "type": "row",
           "settings": {
-            "image": "{{ product.featured_image }}",
+            "image": "shopify://shop_images/Frame_3330.png",
             "caption": "",
             "heading": "Mist ikke forbindelsen",
             "text": "<p><br/>Det skal være nemt at holde kontakten, også når hverdagen roder lidt. HMD 2660 Flip er lavet med holdbarhed for øje. Den tåler både støv og stænk og er klar til at følge med i det liv, du lever.<br/><br/></p>",
