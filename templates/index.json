@@ -220,14 +220,17 @@
         "featured_collection_yLdp8L",
         "featured_collection_DVbR4m"
       ],
+      "custom_css": [
+        ".card-wrapper {overflow: hidden; border-radius: 25px; background-color: #D2DFDF; padding:0 15px;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h2",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "columns_desktop": 3,
         "color_scheme": "",
         "show_view_all": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36

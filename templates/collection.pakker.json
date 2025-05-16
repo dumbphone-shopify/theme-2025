@@ -37,7 +37,7 @@
       ],
       "name": "Hero-sektion",
       "settings": {
-        "background_image": "shopify://shop_images/starting-school.jpg",
+        "background_image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
         "hero_height": "75vh",
         "heading": "Giv dine elever en bedre forhold til smartphones",
         "title_color": "#ffffff",
@@ -378,10 +378,13 @@
     },
     "contact_form_TyGdag": {
       "type": "contact-form",
+      "custom_css": [
+        "h2 {color: #AC3F00;}"
+      ],
       "settings": {
         "heading": "Interesseret? Kontakt os her!          Så sender vi en rabatkode til jer!",
         "heading_size": "h2",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
