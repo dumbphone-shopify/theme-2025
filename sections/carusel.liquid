@@ -4,12 +4,11 @@
 
 <div class="page-width" id="{{ section.id }}">
     <div class="glider">
-        <div> 1 </div>
-        <div> 2 </div>
-        <div> 3 </div>
-        <div> 4 </div>
-        <div> 5 </div>
-        <div> 6 </div>
+    {%- for block in section.blocks -%}
+{%- if block.type == 'slide' -%}
+    <p>{{ block.settings.slide.heading }}</p>
+    {%- endif -%}
+    {%- endfor -%}
     </div>
     <button class="prev"> prev</button>
     <button class="next"> next</button>
@@ -38,7 +37,39 @@ new Glider(document.querySelector('.glider'),{
 {% schema %}
 {
     "name":"Carousel",
-    "settings": [],
+    "settings": [
+        {
+        "type": "number",
+        "id": "number_slider_desktop",
+        "label": "Numer of SLides (desktop)"
+        }
+    ],
+      "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "This is a heading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Here’s a short description or message."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
     "presets": [
 
         {
