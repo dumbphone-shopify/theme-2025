@@ -77,8 +77,9 @@
       "settings": {
         "background_image": "shopify://shop_images/foggy-landscape-reflected-in-lake.jpg",
         "hero_height": "75vh",
-        "heading": "Vores Dumbphones",
+        "heading": "Vores dumbphones",
         "title_color": "#fffdf8",
+        "vertical_position": "center",
         "text_alignment": "center",
         "content_position": "center"
       }
