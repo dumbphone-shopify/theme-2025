@@ -90,7 +90,7 @@
         "slide_n43yy9"
       ],
       "custom_css": [
-        "img{}"
+        ".img-block{aspect-ratio: 6 / 9}"
       ],
       "name": "Carousel",
       "settings": {
