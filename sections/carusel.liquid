@@ -41,7 +41,11 @@ new Glider(document.querySelector('.glider'),{
     slidesToShow: 1.2, // or 2, or any float (e.g., 1.3)
   slidesToScroll: 1,
   draggable: true,
-     responsive: [
+  arrows: {
+    prev: '#{{ section.id }} .prev',
+     next: '#{{ section.id }} .next',
+  },
+   responsive: [
     {
       breakpoint: 750,
       settings: {
@@ -49,10 +53,6 @@ new Glider(document.querySelector('.glider'),{
       }
     }
   ]
-  arrows: {
-    prev: '#{{ section.id }} .prev',
-     next: '#{{ section.id }} .next',
-  },
 });
 });
 
