@@ -89,9 +89,7 @@
         "slide_UMaxaR",
         "slide_n43yy9"
       ],
-      "custom_css": [
-        "img {height: 100%; width: 100%;}"
-      ],
+      "custom_css": [],
       "name": "Carousel",
       "settings": {
         "number_slider_desktop": 4
