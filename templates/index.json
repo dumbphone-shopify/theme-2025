@@ -337,6 +337,97 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_az4UTm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JFTTYE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Recensioner",
+            "heading_size": "h1"
+          }
+        },
+        "text_MaAH7h": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Feedback fra deltagere til vores workshops</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JFTTYE",
+        "text_MaAH7h"
+      ],
+      "custom_css": [
+        "h2 {color: #c55614;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_keDkMU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qpzpMw": {
+          "type": "column",
+          "settings": {
+            "title": "navn på anmelder",
+            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RPGQee": {
+          "type": "column",
+          "settings": {
+            "title": "Kolonne",
+            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_aP9g8h": {
+          "type": "column",
+          "settings": {
+            "title": "Kolonne",
+            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_qpzpMw",
+        "column_RPGQee",
+        "column_aP9g8h"
+      ],
+      "custom_css": [
+        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
     "collage_f44EKd": {
       "type": "collage",
       "blocks": {
@@ -387,6 +478,8 @@
     "collection_list_3gXFbh",
     "rich_text_WhwJye",
     "featured_blog_XGYwnV",
+    "rich_text_az4UTm",
+    "multicolumn_keDkMU",
     "collage_f44EKd"
   ]
 }
