@@ -3,21 +3,24 @@
 <h2>Carusel Header hi</h2>
 
 <div class="page-width">
-<div class="glider">
-  <div> 1 </div>
-  <div> 2 </div>
-  <div> 3 </div>
-  <div> 4 </div>
-  <div> 5 </div>
-  <div> 6 </div>
+    <div class="glider">
+        <div> 1 </div>
+        <div> 2 </div>
+        <div> 3 </div>
+        <div> 4 </div>
+        <div> 5 </div>
+        <div> 6 </div>
     </div>
-<button class="prev"> prev</button>
-<button class="next"> next</button>
+    <button class="prev"> prev</button>
+    <button class="next"> next</button>
 </div>
+
+
+
 <script src="{{ 'glider.min.js' |asset_url}}" async ></script>
 
 <script>
-window.addEventListener("DOMContentLoaded", () =>{
+window.addEventListener('DOMContentLoaded', () =>{
 new Glider(document.querySelector('.glider'),{
   arrows: {
     prev: '#{{ section.id }} .prev',
