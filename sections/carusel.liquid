@@ -3,13 +3,21 @@
 <h2>Carusel Header hi</h2>
 
 <div class="page-width" id="{{ section.id }}">
-    <div class="glider">
-    {%- for block in section.blocks -%}
-{%- if block.type == 'slide' -%}
-    <p>{{ block.settings.slide.heading }}</p>
-    {%- endif -%}
-    {%- endfor -%}
-    </div>
+  <div class="glider">
+    {% for block in section.blocks %}
+      <div class="carousel-slide" {{ block.shopify_attributes }}>
+        {% if block.settings.image %}
+          <img width="500" height="500" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
+        {% endif %}
+        {% if block.settings.heading %}
+          <h3>{{ block.settings.heading }}</h3>
+        {% endif %}
+        {% if block.settings.text %}
+          <p>{{ block.settings.text }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
     <button class="prev"> prev</button>
     <button class="next"> next</button>
 </div>
