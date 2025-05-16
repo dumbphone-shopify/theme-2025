@@ -280,7 +280,7 @@
     {% assign video_id = section.settings.hero_video.id | default: section.settings.hero_video_url.id %}
     {% assign alt = section.settings.hero_title | escape %}
     {% assign is_external = section.settings.hero_video_url != blank and section.settings.hero_video == blank %}
-
+    
     {% if section.settings.hero_video or section.settings.hero_video_url %}
       <div class="article-hero">
         <deferred-media class="deferred-media gradient global-media-settings media--landscape" data-media-id="{{ video_id }}">
