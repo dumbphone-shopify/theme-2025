@@ -9,54 +9,6 @@
  */
 {
   "sections": {
-    "image_banner_i3KCmy": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_KNfNHj": {
-          "type": "heading",
-          "settings": {
-            "heading": "Billedbanner",
-            "heading_size": "h1"
-          }
-        },
-        "text_Tf6UKd": {
-          "type": "text",
-          "settings": {
-            "text": "Giv kunder oplysninger om bannerbillederne eller indholdet i skabelonen.",
-            "text_style": "body"
-          }
-        },
-        "buttons_AkMU7e": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Knaptekst",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Knaptekst",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_KNfNHj",
-        "text_Tf6UKd",
-        "buttons_AkMU7e"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
     "hero_banner_xc7HTV": {
       "type": "hero-banner",
       "blocks": {
@@ -91,7 +43,8 @@
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
         "text_alignment": "center",
-        "content_position": "flex-end"
+        "content_position": "middle-left",
+        "mobile_content_alignment": "center"
       }
     },
     "article_section_UPqpGX": {
@@ -518,7 +471,6 @@
     }
   },
   "order": [
-    "image_banner_i3KCmy",
     "hero_banner_xc7HTV",
     "article_section_UPqpGX",
     "rich_text_LMikFR",
