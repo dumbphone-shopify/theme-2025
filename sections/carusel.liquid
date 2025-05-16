@@ -128,70 +128,48 @@ new Glider(document.querySelector('.glider'),{
 
 {% endschema %}
 
-{%-style -%}
- @media screen and (min-width: 749px) {
-    
-.carousel-slide {
-  flex: 1 0 auto; /* Don't stretch */
-  width: 80%; /* Or set a fixed max-width like 600px */
- 
-}
-
+{%- style -%}
 .glider {
   display: flex;
   gap: 50px;
   align-items: stretch;
 }
 
-.carousel-slide{
-     grid-template-columns:1fr 2fr ;
- 
- }
-
- }
- 
- .carousel-slide{
-    display: grid;
-     gap:25px;
-    border-radius:25px;
-    overflow:hidden;
-    margin:auto;
-    max-width: 850px;
-    padding: 0 !important; 
-    margin-right: 15px !important;
-
- }
-
- @media screen and (max-width: 749px) {
-    .carousel-slide{
-        grid-template-rows:1fr 1fr ;
-        
-    }
- }
-
-
- .img-block{
- height: 100%;
- width: 300px;
-
- }
- .img-block img{
-    object-fit: cover;
-    aspect-ratio: 1;
-    object-position: center;
-    height: 100%;
-    width: auto;
- }
-
-.text-block{
-        padding: 25px 10px;
+.carousel-slide {
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* 2/5 image, 3/5 text */
+  gap: 25px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: auto;
+  max-width: 850px;
+  padding: 0 !important;
+  margin-right: 15px !important;
+  height: 100%; /* Make it fill the glider height */
 }
 
-.img-block{
-    flex: 1 0 250px;
-} 
+.img-block {
+  width: 100%;
+  height: 100%;
+}
 
- .text-left {
+.img-block img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.text-block {
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.text-left {
   text-align: left;
 }
 
@@ -202,4 +180,20 @@ new Glider(document.querySelector('.glider'),{
 .text-right {
   text-align: right;
 }
-{%-endstyle%}
+
+/* Mobile layout */
+@media screen and (max-width: 749px) {
+  .carousel-slide {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr; /* 1/3 image, 2/3 text */
+    max-width: 100%;
+    height: auto; /* Let it adjust to content */
+  }
+
+  .img-block,
+  .text-block {
+    width: 100%;
+    height: auto;
+  }
+}
+{%- endstyle -%}
