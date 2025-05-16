@@ -129,6 +129,14 @@ new Glider(document.querySelector('.glider'),{
 {% endschema %}
 
 {%-style-%}
+.glider {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+  height: 100%; /* Ensure it has height */
+  min-height: 500px; /* Optional: define a minimum height */
+}
+
 .carousel-slide {
   display: flex;
   flex-direction: row;
@@ -140,10 +148,12 @@ new Glider(document.querySelector('.glider'),{
   max-width: 850px;
   padding: 0 !important;
   margin-right: 15px !important;
+  height: 100%; /* Fill the height of .glider */
 }
 
 .img-block {
   flex: 2 0 0%;
+  height: 100%;
 }
 
 .text-block {
@@ -152,9 +162,9 @@ new Glider(document.querySelector('.glider'),{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 }
 
-/* Make image fill its container */
 .img-block img {
   object-fit: cover;
   object-position: center;
@@ -162,30 +172,25 @@ new Glider(document.querySelector('.glider'),{
   height: 100%;
 }
 
-/* Carousel container */
-.glider {
-  display: flex;
-  gap: 50px;
-  align-items: stretch;
-}
-
-/* Responsive adjustments */
+/* Responsive */
 @media screen and (max-width: 749px) {
   .carousel-slide {
     flex-direction: column;
     max-width: 100%;
+    height: auto; /* Reset for mobile */
   }
 
   .img-block {
     flex: 1 0 0%;
+    height: auto;
   }
 
   .text-block {
     flex: 2 0 0%;
+    height: auto;
   }
 }
 
-/* Text alignment classes */
 .text-left {
   text-align: left;
 }
