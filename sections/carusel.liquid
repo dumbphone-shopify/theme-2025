@@ -165,24 +165,26 @@ new Glider(document.querySelector('.glider'),{
  @media screen and (max-width: 749px) {
     .carousel-slide{
         grid-template-rows:1fr 1fr ;
-        max-height: 500px;
-        max-width: 100%;
+        
     }
  }
 
+
+ .img-block{
+ height: 100%;
+ width: 300px;
+
+ }
  .img-block img{
     object-fit: cover;
     aspect-ratio: 1;
     object-position: center;
     height: 100%;
-    width: 300px;
+    width: auto;
  }
 
 .text-block{
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 250px;
-    padding: 25px 10px;
+        padding: 25px 10px;
 }
 
 .img-block{
