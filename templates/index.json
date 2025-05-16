@@ -52,13 +52,13 @@
         "heading_6RtkV6": {
           "type": "heading",
           "settings": {
-            "heading": "Titel till artikel"
+            "heading": "Titel til artikel"
           }
         },
         "paragraph_ePHtFA": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus augue maximus vehicula maximus. Donec ac ipsum ut risus ornare laoreet <br/>rutrum eu arcu. Nam dolor elit, faucibus nec ante in, efficitur <br/>convallis lectus. Sed ornare aliquam orci ac tempus. Pellentesque nec <br/>est at lectus maximus consequat sed et nunc. Nulla facilisi. Curabitur <br/>porttitor velit vitae tellus condimentum, eget tincidunt orci auctor. <br/>Vestibulum massa sem, molestie sed sagittis quis, tristique nec tellus. <br/>Etiam at feugiat dolor.<br/></p><p>Curabitur eu sem a erat tincidunt maximus. Pellentesque vitae lacus <br/>aliquet neque condimentum convallis. Aliquam vel lobortis velit, a <br/>sagittis magna. Donec ut iaculis est, elementum fermentum nibh. Nam <br/>tortor augue, ultrices sit amet faucibus in, fringilla nec nunc. Nam <br/>quis sollicitudin ligula, vel finibus elit. Nullam sed blandit arcu, <br/>vitae lacinia est. Etiam pharetra feugiat turpis molestie lacinia. <br/>Quisque rutrum odio finibus vulputate aliquet. Donec et facilisis lacus.<br/> Quisque tempor posuere diam, nec ultricies ex. Etiam sagittis ultrices <br/>dolor, eu ultricies dolor consequat quis. Sed vel est facilisis, <br/>facilisis magna ac, gravida erat. Duis et auctor massa. Cras facilisis, <br/>ligula et mattis porttitor, enim justo dictum dui, sit amet vulputate <br/>sem nulla dapibus lectus.</p><p><br/>Aenean ante elit, commodo malesuada faucibus sed, congue nec tortor. <br/>Donec justo massa, laoreet eu quam ac, rutrum rutrum neque. Nunc <br/>imperdiet tincidunt quam eu tincidunt. Aliquam purus dolor, hendrerit ut<br/> enim ac, mollis tincidunt lacus. Integer non tempus mauris, non aliquam<br/> elit. Vivamus feugiat eros varius dolor tincidunt ultrices. Suspendisse<br/> in elementum ipsum. Mauris vehicula lectus ac odio congue posuere. <br/>Aenean vitae elit non nunc efficitur aliquam. Aliquam ultrices tempus <br/>vehicula. Donec venenatis mi nec gravida consequat. Nunc mi turpis, <br/>vehicula nec scelerisque ornare, fringilla ac sem. Curabitur lorem <br/>sapien, pharetra in ligula eget, dapibus efficitur mi.</p>"
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br/><br/>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br/><br/>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p><p>Curabitur eu sem a erat tincidunt maximus. Pellentesque vitae lacus <br/>aliquet neque condimentum convallis. Aliquam vel lobortis velit, a <br/>sagittis magna. Donec ut iaculis est, elementum fermentum nibh. Nam <br/>tortor augue, ultrices sit amet faucibus in, fringilla nec nunc. Nam <br/>quis sollicitudin ligula, vel finibus elit. Nullam sed blandit arcu, <br/>vitae lacinia est. Etiam pharetra feugiat turpis molestie lacinia. <br/>Quisque rutrum odio finibus vulputate aliquet. Donec et facilisis lacus.<br/> Quisque tempor posuere diam, nec ultricies ex. Etiam sagittis ultrices <br/>dolor, eu ultricies dolor consequat quis. Sed vel est facilisis, <br/>facilisis magna ac, gravida erat. Duis et auctor massa. Cras facilisis, <br/>ligula et mattis porttitor, enim justo dictum dui, sit amet vulputate <br/>sem nulla dapibus lectus.</p><p><br/>Aenean ante elit, commodo malesuada faucibus sed, congue nec tortor. <br/>Donec justo massa, laoreet eu quam ac, rutrum rutrum neque. Nunc <br/>imperdiet tincidunt quam eu tincidunt. Aliquam purus dolor, hendrerit ut<br/> enim ac, mollis tincidunt lacus. Integer non tempus mauris, non aliquam<br/> elit. Vivamus feugiat eros varius dolor tincidunt ultrices. Suspendisse<br/> in elementum ipsum. Mauris vehicula lectus ac odio congue posuere. <br/>Aenean vitae elit non nunc efficitur aliquam. Aliquam ultrices tempus <br/>vehicula. Donec venenatis mi nec gravida consequat. Nunc mi turpis, <br/>vehicula nec scelerisque ornare, fringilla ac sem. Curabitur lorem <br/>sapien, pharetra in ligula eget, dapibus efficitur mi.</p>"
           }
         },
         "pull_quote_FzWRxf": {
@@ -70,7 +70,7 @@
         "image_BiLanp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/woman-wades-in-ocean-at-sunset.jpg",
+            "image": "shopify://shop_images/fall-vegetable-box.jpg",
             "alt": "bild",
             "image_size": "large"
           }
@@ -78,19 +78,33 @@
         "paragraph_kNMJcf": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Curabitur eu sem a erat tincidunt maximus. Pellentesque vitae lacus <br/>aliquet neque condimentum convallis. Aliquam vel lobortis velit, a <br/>sagittis magna. Donec ut iaculis est, elementum fermentum nibh. Nam <br/>tortor augue, ultrices sit amet faucibus in, fringilla nec nunc. Nam <br/>quis sollicitudin ligula, vel finibus elit. Nullam sed blandit arcu, <br/>vitae lacinia est. Etiam pharetra feugiat turpis molestie lacinia. <br/>Quisque rutrum odio finibus vulputate aliquet. Donec et facilisis lacus.<br/> Quisque tempor posuere diam, nec ultricies ex. </p><p>Etiam sagittis ultrices <br/>dolor, eu ultricies dolor consequat quis. Sed vel est facilisis, <br/>facilisis magna ac, gravida erat. Duis et auctor massa. Cras facilisis, <br/>ligula et mattis porttitor, enim justo dictum dui, sit amet vulputate <br/>sem nulla dapibus lectus.</p><p></p>"
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p><p></p>"
+          }
+        },
+        "image_kt3QYf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/abandoned-iceland-farm-home.jpg",
+            "alt": "",
+            "image_size": "medium"
           }
         },
         "heading_ciHPAc": {
           "type": "heading",
           "settings": {
-            "heading": "titel 2"
+            "heading": "Titel igen"
+          }
+        },
+        "h3_yKwt3V": {
+          "type": "h3",
+          "settings": {
+            "heading": "Underoverskrift"
           }
         },
         "paragraph_ErtNEp": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Curabitur eu sem a erat tincidunt maximus. Pellentesque vitae lacus <br/>aliquet neque condimentum convallis. Aliquam vel lobortis velit, a <br/>sagittis magna. Donec ut iaculis est, elementum fermentum nibh. Nam <br/>tortor augue, ultrices sit amet faucibus in, fringilla nec nunc. Nam <br/>quis sollicitudin ligula, vel finibus elit. Nullam sed blandit arcu, <br/>vitae lacinia est. Etiam pharetra feugiat turpis molestie lacinia. <br/>Quisque rutrum odio finibus vulputate aliquet. Donec et facilisis lacus.<br/> Quisque tempor posuere diam, nec ultricies ex. Etiam sagittis ultrices <br/>dolor, eu ultricies dolor consequat quis. Sed vel est facilisis, <br/>facilisis magna ac, gravida erat. Duis et auctor massa. Cras facilisis, <br/>ligula et mattis porttitor, enim justo dictum dui, sit amet vulputate <br/>sem nulla dapibus lectus.</p><p><br/>Aenean ante elit, commodo malesuada faucibus sed, congue nec tortor. <br/>Donec justo massa, laoreet eu quam ac, rutrum rutrum neque. Nunc <br/>imperdiet tincidunt quam eu tincidunt. Aliquam purus dolor, hendrerit ut<br/> enim ac, mollis tincidunt lacus. Integer non tempus mauris, non aliquam<br/> elit. Vivamus feugiat eros varius dolor tincidunt ultrices. Suspendisse<br/> in elementum ipsum. Mauris vehicula lectus ac odio congue posuere. <br/>Aenean vitae elit non nunc efficitur aliquam. Aliquam ultrices tempus <br/>vehicula. Donec venenatis mi nec gravida consequat. Nunc mi turpis, <br/>vehicula nec scelerisque ornare, fringilla ac sem. Curabitur lorem <br/>sapien, pharetra in ligula eget, dapibus efficitur mi.</p><p></p>"
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p><p></p>"
           }
         }
       },
@@ -100,7 +114,9 @@
         "pull_quote_FzWRxf",
         "image_BiLanp",
         "paragraph_kNMJcf",
+        "image_kt3QYf",
         "heading_ciHPAc",
+        "h3_yKwt3V",
         "paragraph_ErtNEp"
       ],
       "name": "Default custom sections",
@@ -108,7 +124,7 @@
         "hero_type": "image",
         "hero_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg",
         "hero_video_url": "",
-        "hero_title": "Rubrik här!"
+        "hero_title": "Rubrik"
       }
     },
     "rich_text_LMikFR": {
