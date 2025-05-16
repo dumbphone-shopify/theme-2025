@@ -275,62 +275,51 @@
     {% if section.settings.hero_title != blank %}
       <h1 class="article-title">{{ section.settings.hero_title }}</h1>
     {% endif %}
-  {% elsif section.settings.hero_type == 'video' and (section.settings.hero_video or section.settings.hero_video_url) %}
+
+  {% elsif section.settings.hero_type == 'video' %}
     {% assign video_id = section.settings.hero_video.id | default: section.settings.hero_video_url.id %}
+    {% assign alt = section.settings.hero_title | escape %}
+    {% assign is_external = section.settings.hero_video_url ! = blank and section.settings.hero_video = = blank %}
 
-{% assign alt = section.settings.hero_title | escape %}
+    {% if section.settings.hero_video or section.settings.hero_video_url %}
+      <div class="article-hero">
+        <deferred-media class="deferred-media gradient global-media-settings media--landscape" data-media-id="{{ video_id }}">
+          <button
+            id="Deferred-Poster-Modal-{{ video_id }}"
+            class="media deferred-media__poster"
+            type="button"
+            aria-label="{{ alt }}">
+            <span class="deferred-media__poster-button motion-reduce">
+              <span class="svg-wrapper">
+                {{ 'icon-play.svg' | inline_asset_content }}
+              </span>
+            </span>
+          </button>
 
-{% assign is_external = section.settings.hero_video_url != blank and section.settings.hero_video == blank %}
-<div class="article-hero">
-  <deferred-media
-    class="deferred-media gradient global-media-settings media--landscape"
-    data-media-id="{{ video_id }}"
-    
-  >
-    <button
-      id="Deferred-Poster-Modal-{{ video_id }}"
-      class="media deferred-media__poster"
-      type="button"
-      aria-label="{{ alt }}"
-    >
-      
-      <span class="deferred-media__poster-button motion-reduce">
-        <span class="svg-wrapper">
-          {{ 'icon-play.svg' | inline_asset_content }}
-        </span>
-      </span>
-    </button>
-
-    <template>
-      {% if is_external %}
-        {% if section.settings.hero_video_url.type == "youtube" %}
-          <iframe
-            src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1{% if loop %}&loop=1&playlist={{ video_id }}{% endif %}"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            title="{{ alt }}"
-          ></iframe>
-        {% else %}
-          <iframe
-            src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{% if loop %}&loop=1{% endif %}"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            title="{{ alt }}"
-          ></iframe>
-        {% endif %}
-      {% else %}
-        {{ section.settings.hero_video | video_tag: autoplay: true, loop: loop, controls: true, muted: false, image_size: '1600x' }}
+          <template>
+            {% if is_external %}
+              {% if section.settings.hero_video_url.type == "youtube" %}
+                <iframe
+                  src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  title="{{ alt }}"></iframe>
+              {% else %}
+                <iframe
+                  src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  title="{{ alt }}"></iframe>
+              {% endif %}
+            {% else %}
+              {{ section.settings.hero_video | video_tag: autoplay: true, loop: false, controls: true, muted: true, image_size: '1600x' }}
+            {% endif %}
+          </template>
+        </deferred-media>
+      </div>
+      {% if section.settings.hero_title != blank %}
+        <h1 class="article-title">{{ section.settings.hero_title }}</h1>
       {% endif %}
-    </template>
-  </deferred-media>
-</div>
-
-{% if section.settings.hero_title != blank %}
-  <h1 class="article-title">{{ section.settings.hero_title }}</h1>
-{% endif %}
-
-    {% if section.settings.hero_title != blank %}
-      <h1 class="article-title">{{ section.settings.hero_title }}</h1>
     {% endif %}
   {% endif %}
 
