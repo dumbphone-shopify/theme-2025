@@ -56,7 +56,7 @@
             "image": "shopify://shop_images/fall-vegetable-box.jpg",
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
-            "align_text": "left",
+            "align_text": "right",
             "text_background": "#eafff1",
             "text_color": "#0a2038"
           }
