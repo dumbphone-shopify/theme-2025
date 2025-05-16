@@ -33,6 +33,7 @@
       ],
       "custom_css": [
         ".banner__box {border-radius: 15px 15px 0 0; max-width: 1300px; min-width: 1000px; width: 100%; padding: 25px 50px; margin: auto auto -55px auto;}",
+        "p {max-width: 650px; margin: auto;}",
         "@media screen and (max-width: 749px) {.banner__box {min-width: 100%; margin: auto auto auto auto; }}",
         "img {object-position: top;}"
       ],
