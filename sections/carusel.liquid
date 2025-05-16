@@ -11,7 +11,7 @@
           <img width="500" height="500" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
         {% endif %}
         </div>        
-        <div class="text-block align-the-text_{{ section.settings.align_text }}">    
+        <div class="text-block text-{{ block.settings.align_text }}" {{ block.shopify_attributes }} >    
         {% if block.settings.heading %}
           <h3>{{ block.settings.heading }}</h3>
         {% endif %}
@@ -37,6 +37,7 @@
 
 window.addEventListener('DOMContentLoaded', () =>{
 new Glider(document.querySelector('.glider'),{
+    slidesToShow: {{ section.settings.number_slider_desktop }},
   arrows: {
     prev: '#{{ section.id }} .prev',
      next: '#{{ section.id }} .next',
@@ -53,7 +54,8 @@ new Glider(document.querySelector('.glider'),{
         {
         "type": "number",
         "id": "number_slider_desktop",
-        "label": "Numer of SLides (desktop)"
+        "label": "Numer of SLides (desktop)",
+        "default": 1
         }
     ],
       "blocks": [
@@ -79,25 +81,16 @@ new Glider(document.querySelector('.glider'),{
           "default": "Here’s a short description or message."
         },
         {
-    "type": "select",
-    "id": "align_text",
-    "label": "Text alignment",
-    "default": "left",
-    "options": [
-    {
-    "value": "left",
-    "label": "Left"
-    },
-    {
-    "value": "center",
-    "label": "Centered"
-    },
-    {
-    "value": "right",
-    "label": "Right"
-    }
-    ]
-    },
+  "type": "select",
+  "id": "align_text",
+  "label": "Text alignment",
+  "default": "left",
+  "options": [
+    { "value": "left", "label": "Left" },
+    { "value": "center", "label": "Centered" },
+    { "value": "right", "label": "Right" }
+  ]
+}
       ]
     }
   ],
@@ -118,5 +111,25 @@ new Glider(document.querySelector('.glider'),{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    border-radius:25px;
+    overflow:hidden;
+
  }
+
+ img{
+    object-fit:cover;
+    object-position:center;
+ }
+
+ .text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
 {%-endstyle%}
