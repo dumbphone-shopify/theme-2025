@@ -5,13 +5,13 @@
 <div class="page-width" id="{{ section.id }}">
   <div class="glider">
     {% for block in section.blocks %}
-      <div class="carousel-slide" {{ block.shopify_attributes }}>
+      <div class="carousel-slide" {{ block.shopify_attributes }} style="background-color: {{ block.settings.text_background }};">
       <div class="img-block">
         {% if block.settings.image %}
           <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
         {% endif %}
         </div>        
-       <div class="text-block text-{{ block.settings.align_text }}" style="background-color: {{ block.settings.text_background }}; color: {{ block.settings.text_color }};">
+       <div class="text-block text-{{ block.settings.align_text }}" style=" color: {{ block.settings.text_color }};">
 
         {% if block.settings.heading %}
           <h3>{{ block.settings.heading }}</h3>
@@ -141,6 +141,8 @@ new Glider(document.querySelector('.glider'),{
  img{
     object-fit:cover;
     object-position:center;
+    height: auto;
+    width: 100%;
  }
 
 .text-block{
