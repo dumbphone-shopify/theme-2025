@@ -143,7 +143,8 @@
       }
     ],
 
-// This is used to allow the user to add up to two button "blocks"
+{% comment %} This is for giving various heights to the section. {% endcomment%}
+
     "blocks": [
       {
         "type": "button",
@@ -267,21 +268,14 @@
 
   /* Mobile content placement  */
   @media screen and (max-width: 749px) {
-    .hero-overlay.position.content-align-mobile-left .banner__box {
-    align-items: flex-start;
-    text-align: left;
+    .hero-overlay.mobile-position-top {
+    place-content: start center;
   }
-
-  .hero-overlay.position.ontent-align-mobile-center .banner__box {
-    align-items: center;
-    text-align: center;
+  .hero-overlay.mobile-position-center {
+    place-content: center center;
   }
-
-  .hero-overlay.position.content-align-mobile-right .banner__box {
-    align-items: flex-end;
-    text-align: right;
-
-    
+  .hero-overlay.mobile-position-bottom {
+    place-content: end center;
   }
 }
 
