@@ -122,8 +122,8 @@ new Glider(document.querySelector('.glider'),{
 {% endschema %}
 
 {%-style -%}
-
-
+ @media screen and (min-width: 749px) {
+    
 .carousel-slide {
   flex: 0 0 auto; /* Don't stretch */
   width: 80%; /* Or set a fixed max-width like 600px */
@@ -134,7 +134,7 @@ new Glider(document.querySelector('.glider'),{
   display: flex;
   align-items: stretch;
 }
-
+ }
  .carousel-slide{
     display: grid;
    grid-template-columns:1fr 2fr ;
