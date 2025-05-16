@@ -277,17 +277,15 @@
     {% endif %}
   {% elsif section.settings.hero_type == 'video' and (section.settings.hero_video or section.settings.hero_video_url) %}
     {% assign video_id = section.settings.hero_video.id | default: section.settings.hero_video_url.id %}
-{% assign poster = section.settings.hero_poster | image_url: width: 1000 %}
+
 {% assign alt = section.settings.hero_title | escape %}
-{% assign loop = section.settings.hero_video_loop %}
+
 {% assign is_external = section.settings.hero_video_url != blank and section.settings.hero_video == blank %}
 <div class="article-hero">
   <deferred-media
     class="deferred-media gradient global-media-settings media--landscape"
     data-media-id="{{ video_id }}"
-    {% if section.settings.hero_poster %}
-      style="--ratio-percent: {{ 1 | divided_by: section.settings.hero_poster.aspect_ratio | times: 100 }}%;"
-    {% endif %}
+    
   >
     <button
       id="Deferred-Poster-Modal-{{ video_id }}"
@@ -295,14 +293,7 @@
       type="button"
       aria-label="{{ alt }}"
     >
-      {% if section.settings.hero_poster %}
-        <img
-          src="{{ poster }}"
-          alt="{{ alt }}"
-          sizes="100vw"
-          loading="lazy"
-        >
-      {% endif %}
+      
       <span class="deferred-media__poster-button motion-reduce">
         <span class="svg-wrapper">
           {{ 'icon-play.svg' | inline_asset_content }}
