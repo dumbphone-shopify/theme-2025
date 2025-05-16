@@ -1,4 +1,4 @@
-
+{% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 <h2>Carusel Header hi</h2>
 
@@ -16,10 +16,14 @@
 </div>
 
 
-
+{% comment %} her henter jeg Glide.min.js scriptet for  glideren inde i assets {% endcomment %}
 <script src="{{ 'glider.min.js' |asset_url}}" async ></script>
 
 <script>
+    {% comment %} her linker jeg knapeprne med mine buttons 
+     i gennem klasserne. dette kan man finde i github documentationen for 
+     glider.js "https://github.com/NickPiscitelli/Glider.js/tree/master" {% endcomment %}
+
 window.addEventListener('DOMContentLoaded', () =>{
 new Glider(document.querySelector('.glider'),{
   arrows: {
