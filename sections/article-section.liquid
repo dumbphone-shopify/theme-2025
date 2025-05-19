@@ -30,7 +30,7 @@
       {
         "type": "image_picker",
         "id": "hero_image",
-        "label": "Hero billede"
+        "label": "t:sections.video.settings.cover_image.label"
       },
       {
         "type": "video",
@@ -41,7 +41,9 @@
         "type": "video_url",
         "id": "hero_video_url",
         "accept": ["youtube", "vimeo"],
-        "label": "YouTube/Vimeo URL"
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+       "label": "t:sections.video.settings.video_url.label",
+      "info": "t:sections.video.settings.video_url.info"
       }, 
       {
   "type": "image_picker",
@@ -62,7 +64,8 @@
           {
             "type": "text",
             "id": "heading",
-            "label": "Ny titel"
+        "label": "t:sections.video.settings.description.label",
+      "info": "t:sections.video.settings.description.info"
           }
         ]
       },
