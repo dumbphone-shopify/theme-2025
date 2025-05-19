@@ -43,15 +43,13 @@
         "id": "hero_video_url",
         "accept": ["youtube", "vimeo"],
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-       "label": "t:sections.video.settings.video_url.label",
-      "info": "t:sections.video.settings.video_url.info"
-      }, 
-      {
-  "type": "image_picker",
-  "id": "hero_video_thumbnail",
-  "label": "Uploade din egen video thumbnail"
-}
-,{
+        "label": "t:sections.video.settings.video_url.label",
+        "info": "t:sections.video.settings.video_url.info"
+      }, {
+        "type": "image_picker",
+        "id": "hero_video_thumbnail",
+        "label": "Uploade din egen video thumbnail"
+      }, {
         "type": "text",
         "id": "hero_title",
         "label": "Rubrik"
@@ -65,8 +63,8 @@
           {
             "type": "text",
             "id": "heading",
-        "label": "t:sections.video.settings.description.label",
-      "info": "t:sections.video.settings.description.info"
+            "label": "t:sections.video.settings.description.label",
+            "info": "t:sections.video.settings.description.info"
           }
         ]
       },
@@ -170,34 +168,34 @@
 
 
   .article-hero img,
-.article-hero iframe,
-.article-hero video,
-.article-hero .media--landscape,
-.article-hero deferred-media {
-  grid-column: full;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-inline: auto;
-  max-width: 1000px;
-}
+  .article-hero iframe,
+  .article-hero video,
+  .article-hero .media--landscape,
+  .article-hero deferred-media {
+    grid-column: full;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-inline: auto;
+    max-width: 1000px;
+  }
 
-/* article video settings  */
+  /* article video settings  */
 
-deferred-media {
-  position: relative;
-  padding-bottom: var(--ratio-percent, 56.25%);
-  height: 0;
-  display: block;
-}
+  deferred-media {
+    position: relative;
+    padding-bottom: var(--ratio-percent, 56.25%);
+    height: 0;
+    display: block;
+  }
 
-deferred-media > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+  deferred-media > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 
   .article-title {
@@ -300,31 +298,18 @@ deferred-media > * {
 <div class="article-wrapper">
   {% if section.settings.hero_type == 'image' and section.settings.hero_image %}
     <div class="article-hero">
-      <img
-        src="{{ section.settings.hero_image | image_url: width: 2000 }}"
-        alt="{{ section.settings.hero_image.alt | escape }}"
-      />
+      <img src="{{ section.settings.hero_image | image_url: width: 2000 }}" alt="{{ section.settings.hero_image.alt | escape }}" />
     </div>
     {% if section.settings.hero_title != blank %}
       <h1 class="article-title">{{ section.settings.hero_title }}</h1>
     {% endif %}
 
   {% elsif section.settings.hero_type == 'video' %}
-    {% assign video_id = section.settings.hero_video.id | default: section.settings.hero_video_url.id %}
-    {% assign alt = section.settings.hero_title | escape %}
-    {% assign is_external = false %}
-    {% assign poster_image = section.settings.hero_video_poster | default: section.settings.hero_video.preview_image %}
-    {% if section.settings.hero_video_url != blank and section.settings.hero_video == blank %}
-      {% assign is_external = true %}
-    {% endif %}
-
-    
-    {% elsif section.settings.hero_type == 'video' %}
-    {% comment %} Extrahera korrekt video ID och sätt rätt poster-bild {% endcomment %}
     {% assign is_external = false %}
     {% assign poster = section.settings.hero_video.preview_image | default: section.settings.hero_video_thumbnail %}
+
     {% assign video_id = '' %}
-  
+
     {% if section.settings.hero_video_url != blank and section.settings.hero_video == blank %}
       {% assign is_external = true %}
       {% if section.settings.hero_video_url contains 'youtube.com/watch?v=' %}
@@ -337,10 +322,9 @@ deferred-media > * {
     {% else %}
       {% assign video_id = section.settings.hero_video.id %}
     {% endif %}
-  
+
     {% assign alt = section.settings.hero_title | escape %}
-  
-    {% comment %} Eventuell ratio-fix {% endcomment %}
+
     {% assign fix_ratio = false %}
     {% if section.settings.hero_video != null and poster != null %}
       {% assign ratio_diff = section.settings.hero_video.aspect_ratio | minus: poster.aspect_ratio | abs %}
@@ -348,32 +332,26 @@ deferred-media > * {
         {% assign fix_ratio = true %}
       {% endif %}
     {% endif %}
-  
-    {% comment %} Responsive sizes {% endcomment %}
+
     {% capture sizes %}
       (min-width: 750px) calc(100vw - 10rem), 100vw
     {% endcapture %}
-  
     {% if video_id != blank or section.settings.hero_video != blank %}
       <div class="article-hero">
         <deferred-media
           class="deferred-media gradient global-media-settings media--landscape{% if fix_ratio %} media-fit-cover{% endif %}"
           data-media-id="{{ video_id }}"
           {% if poster != null %}
-            style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
-          {% endif %}
-        >
+          style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
+          {% endif %}>
           <button
             id="Deferred-Poster-Modal-{{ video_id }}"
             class="media deferred-media__poster"
             type="button"
-            aria-label="{{ alt }}"
-          >
+            aria-label="{{ alt }}">
             {% if poster != null %}
               {{
-                poster
-                | image_url: width: 3840
-                | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 2000, 3000, 3840', alt: alt
+                poster | image_url: width: 3840 | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 2000, 3000, 3840', alt: alt
               }}
             {% else %}
               {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
@@ -384,7 +362,7 @@ deferred-media > * {
               </span>
             </span>
           </button>
-  
+
           <template>
             {% if is_external %}
               {% if section.settings.hero_video_url contains 'youtube' %}
@@ -393,16 +371,14 @@ deferred-media > * {
                   allow="autoplay; encrypted-media"
                   allowfullscreen
                   title="{{ alt }}"
-                  class="js-youtube"
-                ></iframe>
+                  class="js-youtube"></iframe>
               {% else %}
                 <iframe
                   src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1"
                   allow="autoplay; encrypted-media"
                   allowfullscreen
                   title="{{ alt }}"
-                  class="js-vimeo"
-                ></iframe>
+                  class="js-vimeo"></iframe>
               {% endif %}
             {% else %}
               {{ section.settings.hero_video | video_tag: autoplay: true, controls: true, muted: true, image_size: '1100x' }}
@@ -410,7 +386,7 @@ deferred-media > * {
           </template>
         </deferred-media>
       </div>
-  
+
       {% if section.settings.hero_title != blank %}
         <h1 class="article-title">{{ section.settings.hero_title }}</h1>
       {% endif %}
