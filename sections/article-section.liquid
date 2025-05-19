@@ -178,14 +178,14 @@
 
   /* article video settings  */
 
-  deferred-media {
+  .deferred-media {
     position: relative;
     padding-bottom: var(--ratio-percent, 56.25%);
     height: 0;
     display: block;
   }
 
-  deferred-media > * {
+  .deferred-media > * {
     position: absolute;
     top: 0;
     left: 0;
@@ -299,6 +299,21 @@
     height: auto;
   }
 
+
+  .section-{{ section.id }}
+  -padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+
 {% endstylesheet %}
 
 <div class="article-wrapper">
@@ -324,14 +339,14 @@
     {% if video_id != blank or section.settings.hero_video != blank %}
       <div class="article-hero article-hero__video">
         <deferred-media
-          class="deferred-media video-section__media gradient global-media-settings media--landscape{% if fix_ratio %} media-fit-cover{% endif %}"
+          class="deferred-media video-section__media gradient global-media-settings"
           data-media-id="{{ video_id }}"
           {% if poster != null %}
           style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
           {% endif %}>
           <button
             id="Deferred-Poster-Modal-{{ video_id }}"
-            class="media deferred-media__poster-button"
+            class="media deferred-media__poster-button video-section__poster"
             type="button"
             aria-label="{{ alt }}">
             {% if poster != null %}
@@ -348,25 +363,34 @@
             </span>
           </button>
           <template>
-            {% if section.settings.hero_video contains 'youtube' %}
-              <iframe
-                src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-                title="{{ alt }}"
-                class="js-youtube"></iframe>
-            {% elsif section.settings.hero_video contains 'vimeo' %}
-              <iframe
-                src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-                title="{{ alt }}"
-                class="js-vimeo"></iframe>
-            {% else %}
-              {{ section.settings.hero_video | video_tag: autoplay: true, controls: true, muted: true, image_size: '1100x' }}
-            {% endif %}
+            {%- if section.settings.video == null and section.settings.video_url != null -%}
+              {%- liquid
+                assign loop = ''
+                if section.settings.enable_video_looping
+                  assign loop = '&loop=1&playlist=' | append: video_id
+                endif
+              -%}
+              {%- if section.settings.video_url.type == 'youtube' -%}
+                <iframe
+                  src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
+                  class="js-youtube"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  title="{{ section.settings.description | escape }}"></iframe>
+              {%- else -%}
+                <iframe
+                  src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
+                  class="js-vimeo"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  title="{{ section.settings.description | escape }}"></iframe>
+              {%- endif -%}
+            {%- else -%}
+              {{
+                section.settings.video | video_tag: image_size: '1100x', autoplay: true, loop: section.settings.enable_video_looping, controls: true, muted: false
+              }}
+            {%- endif -%}
           </template>
-
         </deferred-media>
       </div>
     {% endif %}
