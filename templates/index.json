@@ -95,7 +95,8 @@
       "name": "Carousel",
       "settings": {
         "number_slider_desktop": 3,
-        "title": "Det vi gør"
+        "title": "Det vi gør",
+        "align_text": "center"
       }
     },
     "article_section_UPqpGX": {
