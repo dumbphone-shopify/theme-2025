@@ -339,23 +339,28 @@
             style="--ratio-percent: 56.25%;"
           {% endif %}>
           <button
-            id="Deferred-Poster-Modal-{{ video_id }}"
-            class="media deferred-media__poster-button video-section__poster media--landscape"
-            type="button"
-            aria-label="{{ alt }}">
-            <span class="deferred-media__poster-button motion-reduce">
-              <span class="svg-wrapper">
-                {{ 'icon-play.svg' | inline_asset_content }}
-              </span>
-            </span>
-
-            {% if poster != blank %}
-              <img class="deferred-media__poster-image" src="{{ poster | image_url: width: 3840 }}" alt="{{ alt }}">
-            {% else %}
-              {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-            {% endif %}
-          </button>
+    id="Deferred-Poster-Modal-{{ section.settings.hero_video_url.id }}"
+    class="video-section__poster media deferred-media__poster media--landscape"
+    type="button"
+    aria-label="{{ section.settings.hero_title | default: 'Hero Video' }}"
+  >
+    {%- if section.settings.hero_video_thumbnail -%}
+      {{
+        section.settings.hero_video_thumbnail
+        | image_url: width: 3840
+        | image_tag: alt: section.settings.hero_title, class: 'media__image', widths: '375, 750, 1100, 1500, 2000, 3000, 3840'
+      }}
+    {%- else -%}
+      {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+    {%- endif -%}
+    <span class="deferred-media__poster-button motion-reduce">
+      <span class="svg-wrapper">
+        {{ 'icon-play.svg' | inline_asset_content }}
+      </span>
+    </span>
+  </button>
           <template>
+            {% assign video_id = section.settings.hero_video_url.id %}
               {%- if video_type == 'youtube' -%}
                 <iframe
               src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1"
