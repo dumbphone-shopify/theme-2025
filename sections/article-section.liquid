@@ -343,7 +343,7 @@ iframe {
     {% if video_id != blank or section.settings.hero_video != blank %}
       <div class="article-hero article-hero__video">
         <deferred-media
-          class="deferred-media gradient global-media-settings media--landscape{% if fix_ratio %} media-fit-cover{% endif %}"
+          class="deferred-media video-section__media gradient global-media-settings media--landscape{% if fix_ratio %} media-fit-cover{% endif %}"
           data-media-id="{{ video_id }}"
           {% if poster != null %}
           style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
