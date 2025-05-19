@@ -1,5 +1,5 @@
-{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {% schema %}
   {
@@ -337,7 +337,7 @@
       (min-width: 750px) calc(100vw - 10rem), 100vw
     {% endcapture %}
     {% if video_id != blank or section.settings.hero_video != blank %}
-      <div class="article-hero">
+      <div class="article-hero article-hero__video">
         <deferred-media
           class="deferred-media gradient global-media-settings media--landscape{% if fix_ratio %} media-fit-cover{% endif %}"
           data-media-id="{{ video_id }}"
