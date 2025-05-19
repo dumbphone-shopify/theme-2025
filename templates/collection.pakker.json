@@ -383,7 +383,7 @@
         "slide_g73TQR": {
           "type": "slide",
           "settings": {
-            "color_scheme": "scheme-bfe894cc-935b-43d3-84d3-4a466bb22c96",
+            "color_scheme": "scheme-4",
             "image": "shopify://shop_images/family-time-in-the-kitchen.jpg",
             "heading": "1.",
             "text": "Dumbphonen løser et meget naturligt og alment behov hos mange forældre - nemlig at kunne komme i kontakt med deres barn\n\nDumbphonen opfyldet dette behov og giver jer som forældre tryghed og barnet en blød start med telefon og teknologi",
@@ -395,7 +395,7 @@
         "slide_x3nWjr": {
           "type": "slide",
           "settings": {
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-4",
             "image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
             "heading": "2.",
             "text": "Det er en fordel at være flere med, da det gør det nemmere at udskyde smartphonen når man er flere om at gøre det sammen\n\nDet vil samtidig gøre det mere realistisk at flere forældre kan se sig selv i det og vil være med til at prøve bare et par år på denne måde",
@@ -407,7 +407,7 @@
         "slide_EyDWzF": {
           "type": "slide",
           "settings": {
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-3",
             "image": "shopify://shop_images/child-on-playground.jpg",
             "heading": "3.",
             "text": "Med dumbphonen bliver det mere overskueligt at vente med smartphonen\n\nBare 1 eller 2 år kunne potentielt være meget nærvær og trivsel vundet. Man kan også her tale om at gøre det blot ud fra et forsigtighedsprincip.",
@@ -428,8 +428,8 @@
         "padding_bottom": 36,
         "title": "FORDELE VED AT STARTE MED DUMBPHONES",
         "align_text": "left",
-        "title_color": "#002b0c",
-        "color_scheme": "scheme-3"
+        "title_color": "#ac3f00",
+        "color_scheme": "scheme-1"
       }
     },
     "contact_form_TyGdag": {
