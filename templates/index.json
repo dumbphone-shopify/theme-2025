@@ -58,7 +58,9 @@
             "text": "Here’s a short description or message.",
             "align_text": "left",
             "text_background": "#eafff1",
-            "text_color": "#002b0c"
+            "text_color": "#002b0c",
+            "link": "shopify://pages/contact",
+            "linktext": "button here"
           }
         },
         "slide_UMaxaR": {
@@ -69,7 +71,9 @@
             "text": "Here’s a short description or message.",
             "align_text": "center",
             "text_background": "#ffd9b1",
-            "text_color": "#ac3f00"
+            "text_color": "#ac3f00",
+            "link": "",
+            "linktext": "Click here"
           }
         },
         "slide_n43yy9": {
@@ -80,7 +84,9 @@
             "text": "Here’s a short description or message.",
             "align_text": "left",
             "text_background": "#fffdf8",
-            "text_color": "#002b0c"
+            "text_color": "#002b0c",
+            "link": "",
+            "linktext": "Click here"
           }
         }
       },
