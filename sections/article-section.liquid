@@ -1,4 +1,5 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
 
 {% schema %}
   {
@@ -322,8 +323,13 @@ deferred-media > * {
     {% if section.settings.hero_video or section.settings.hero_video_url %}
       <div class="article-hero">
         <deferred-media
-          class="deferred-media gradient global-media-settings media--landscape"
+          class="deferred-media gradient global-media-settings media--landscape
+          video-section__media global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           data-media-id="{{ video_id }}"
+
+          {% if poster != null %}
+            style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
+          {% endif %}
         >
           <button
             id="Deferred-Poster-Modal-{{ video_id }}"
@@ -331,20 +337,15 @@ deferred-media > * {
             type="button"
             aria-label="{{ alt }}"
           >
-          {% if poster_image != null %}
+          {%- if poster != null -%}
             {{
               poster
               | image_url: width: 3840
               | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
             }}
-            {% else %}
+          {%- else -%}
             {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-            {% comment %} <img
-              src="{{ poster_image | image_url: width: 1600 }}"
-              alt="{{ alt }}"
-              sizes="100vw"
-              loading="lazy"
-            > {% endcomment %}
+          {%- endif -%}
           {% endif %}
           
             <span class="deferred-media__poster-button motion-reduce">
