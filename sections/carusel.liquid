@@ -1,7 +1,8 @@
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
-<h2>Carusel Header hi</h2>
-
+{% if settings.title %}
+      <h2>{{ settings.title}}</h2>
+{% endif %}
 <div class="page-width glider__container" id="{{ section.id }}">
   <div class="glider">
     {% for block in section.blocks %}
@@ -66,8 +67,13 @@ new Glider(document.querySelector('.glider'),{
         "type": "number",
         "id": "number_slider_desktop",
         "label": "Numer of SLides (desktop)",
-        
-        }
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "This is a title"
+        },
     ],
       "blocks": [
     {
@@ -79,11 +85,11 @@ new Glider(document.querySelector('.glider'),{
           "id": "image",
           "label": "Image"
         },
-        {
+                {
           "type": "text",
           "id": "heading",
           "label": "Heading",
-          "default": "This is a heading"
+          "default": "This is a slider heading"
         },
         {
           "type": "textarea",
