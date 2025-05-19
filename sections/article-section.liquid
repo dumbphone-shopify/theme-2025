@@ -346,7 +346,7 @@
           {% endif %}>
           <button
             id="Deferred-Poster-Modal-{{ video_id }}"
-            class="media deferred-media__poster-button video-section__poster"
+            class="media deferred-media__poster-button video-section__poster media--landscape"
             type="button"
             aria-label="{{ alt }}">
             {% if poster != null %}
@@ -363,13 +363,7 @@
             </span>
           </button>
           <template>
-            {%- if section.settings.video == null and section.settings.video_url != null -%}
-              {%- liquid
-                assign loop = ''
-                if section.settings.enable_video_looping
-                  assign loop = '&loop=1&playlist=' | append: video_id
-                endif
-              -%}
+        
               {%- if section.settings.video_url.type == 'youtube' -%}
                 <iframe
                   src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
