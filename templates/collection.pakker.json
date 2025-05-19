@@ -102,6 +102,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/three-students-working-flatlay.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
