@@ -35,7 +35,7 @@
       },
       {
         "type": "video_url",
-        "id": "hero_video",
+        "id": "hero_video_url",
         "accept": ["youtube", "vimeo"],
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "label": "t:sections.video.settings.video_url.label",
@@ -323,36 +323,27 @@
       <img src="{{ section.settings.hero_image | image_url: width: 2000 }}" alt="{{ section.settings.hero_image.alt | escape }}" />
     </div>
 
-  {% elsif section.settings.hero_type == 'video' %}
+  {% elsif section.settings.hero_type == 'video' and section.settings.hero_video_url != blank %}
+    {% assign video_type = section.settings.hero_video_url.type %}
+    {% assign video_id = section.settings.hero_video_url.id %}
+    {% assign video_type = section.settings.hero_video_url.type %}
+    {% assign poster = section.settings.hero_video_thumbnail %}
+    {% assign alt = section.settings.hero_title | default: "Hero Video" %}
 
-    {% assign video_id = section.settings.video.id | default: section.settings.video_url.id %}
-
-    {% assign poster = section.settings.hero_video.preview_image | default: section.settings.hero_video_thumbnail %}
-
-    {% if section.settings.hero_video != null and poster != null %}
-      {% assign ratio_diff = section.settings.hero_video.aspect_ratio | minus: poster.aspect_ratio | abs %}
-      {% if ratio_diff < 0.01 and ratio_diff > 0 %}
-        {% assign fix_ratio = true %}
-      {% endif %}
-    {% endif %}
-
-    {% if video_id != blank or section.settings.hero_video != blank %}
       <div class="article-hero article-hero__video">
         <deferred-media
           class="deferred-media video-section__media gradient global-media-settings"
           data-media-id="{{ video_id }}"
-          {% if poster != null %}
-          style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
+          {% if poster != blank %}
+            style="--ratio-percent: 56.25%;"
           {% endif %}>
           <button
             id="Deferred-Poster-Modal-{{ video_id }}"
             class="media deferred-media__poster-button video-section__poster media--landscape"
             type="button"
             aria-label="{{ alt }}">
-            {% if poster != null %}
-              {{
-                poster | image_url: width: 3840 | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 2000, 3000, 3840', alt: alt
-              }}
+            {% if poster != blank %}
+              <img src="{{ poster | image_url: width: 3840 }}" alt="{{ alt }}">
             {% else %}
               {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
             {% endif %}
@@ -363,28 +354,23 @@
             </span>
           </button>
           <template>
-            {%- if section.settings.video == null and section.settings.video_url != null -%}
-
-              {%- if section.settings.video_url.type == 'youtube' -%}
+              {%- if video_type == 'youtube' -%}
                 <iframe
-                  src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
-                  class="js-youtube"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  title="{{ section.settings.description | escape }}"></iframe>
-              {%- else -%}
-                <iframe
-                  src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1{{ loop }}"
-                  class="js-vimeo"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  title="{{ section.settings.description | escape }}"></iframe>
-              {%- endif -%}
-            {%- else -%}
-              {{
-                section.settings.video | video_tag: image_size: '1100x', autoplay: true, loop: section.settings.enable_video_looping, controls: true, muted: false
-              }}
-            {%- endif -%}
+              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1"
+              class="js-youtube"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ alt }}"
+            ></iframe>
+            {% elsif video_type == 'vimeo' %}
+              <iframe
+                src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1"
+                class="js-vimeo"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                title="{{ alt }}"
+              ></iframe>
+            {% endif %}
           </template>
         </deferred-media>
       </div>
