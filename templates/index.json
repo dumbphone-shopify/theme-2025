@@ -57,7 +57,7 @@
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
             "align_text": "left",
-            "block_color_scheme": "scheme-3",
+            "block_color_scheme": "scheme-5",
             "link": "shopify://pages/contact",
             "linktext": "button here"
           }
@@ -99,7 +99,7 @@
       "settings": {
         "title": "Det vi gør",
         "align_text": "center",
-        "section_color_scheme": "scheme-2"
+        "section_color_scheme": "scheme-3"
       }
     },
     "article_section_UPqpGX": {
