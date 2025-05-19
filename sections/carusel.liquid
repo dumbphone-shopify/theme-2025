@@ -1,12 +1,12 @@
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width glider__container" id="{{ section.id }}">
+<div class="page-width glider__container" id="{{ section.id }} color-{{ section.settings.color_scheme }}">
   <h2 class="text-{{ section.settings.align_text }}" style="color:{{ section.settings.title_color }}">
     {{ section.settings.title }}
   </h2>
 
-  <div class="glider color-{{ section.settings.color_scheme }}">
+  <div class="glider">
     {% for block in section.blocks %}
       <div
         class="carousel-slide"
