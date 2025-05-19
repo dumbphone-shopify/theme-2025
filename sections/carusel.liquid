@@ -2,7 +2,7 @@
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width glider__container" id="{{ section.id }}">
-  <h2>{{ settings.title}}</h2>
+  <h2>{{ section.settings.title}}</h2>
  
   <div class="glider">
     {% for block in section.blocks %}
@@ -73,7 +73,7 @@ new Glider(document.querySelector('.glider'),{
           "id": "title",
           "label": "Title",
           "default": "This is a title"
-        },
+        }
     ],
       "blocks": [
     {
