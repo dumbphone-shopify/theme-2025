@@ -278,10 +278,10 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "number_slider_desktop": 4,
-        "title": "This is a title",
-        "align_text": "left",
-        "title_color": "#ffffff",
-        "color_scheme": ""
+        "title": "Min tid i dumbphone.dk",
+        "align_text": "center",
+        "title_color": "#43668f",
+        "color_scheme": "scheme-2"
       }
     },
     "image_with_text_9R8dpj": {
