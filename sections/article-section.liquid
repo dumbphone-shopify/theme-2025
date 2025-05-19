@@ -292,6 +292,10 @@
     margin-top: 3rem;
   }
 
+/* video hero section  */
+iframe {
+  aspect-ratio: 16/9;
+}
 
 {% endstylesheet %}
 
@@ -346,7 +350,7 @@
           {% endif %}>
           <button
             id="Deferred-Poster-Modal-{{ video_id }}"
-            class="media deferred-media__poster"
+            class="media deferred-media__poster-button"
             type="button"
             aria-label="{{ alt }}">
             {% if poster != null %}
