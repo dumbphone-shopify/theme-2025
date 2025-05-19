@@ -2,9 +2,8 @@
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width glider__container" id="{{ section.id }}">
-  {% if settings.title %}
-      <h2>{{ settings.title}}</h2>
-  {% endif %}
+  <h2>{{ settings.title}}</h2>
+ 
   <div class="glider">
     {% for block in section.blocks %}
       <div class="carousel-slide" {{ block.shopify_attributes }} style="background-color: {{ block.settings.text_background }};">
