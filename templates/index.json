@@ -94,7 +94,8 @@
       ],
       "name": "Carousel",
       "settings": {
-        "number_slider_desktop": 3
+        "number_slider_desktop": 3,
+        "title": "here is a title"
       }
     },
     "article_section_UPqpGX": {
