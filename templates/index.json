@@ -53,7 +53,7 @@
         "slide_PTJEt3": {
           "type": "slide",
           "settings": {
-            "color_scheme": "scheme-3",
+            "color_scheme": "scheme-4",
             "image": "shopify://shop_images/fall-vegetable-box.jpg",
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
@@ -67,7 +67,7 @@
         "slide_UMaxaR": {
           "type": "slide",
           "settings": {
-            "color_scheme": "",
+            "color_scheme": "scheme-3",
             "image": "shopify://shop_images/self-serve-coffee-shop.jpg",
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
@@ -81,7 +81,7 @@
         "slide_n43yy9": {
           "type": "slide",
           "settings": {
-            "color_scheme": "",
+            "color_scheme": "scheme-2",
             "image": "shopify://shop_images/abandoned-iceland-farm-home.jpg",
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
@@ -106,7 +106,7 @@
         "title": "Det vi gør",
         "align_text": "center",
         "title_color": "#ac3f00",
-        "color_scheme": "scheme-2"
+        "color_scheme": "scheme-1"
       }
     },
     "article_section_UPqpGX": {
