@@ -343,16 +343,17 @@
             class="media deferred-media__poster-button video-section__poster media--landscape"
             type="button"
             aria-label="{{ alt }}">
-            {% if poster != blank %}
-              <img src="{{ poster | image_url: width: 3840 }}" alt="{{ alt }}">
-            {% else %}
-              {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-            {% endif %}
             <span class="deferred-media__poster-button motion-reduce">
               <span class="svg-wrapper">
                 {{ 'icon-play.svg' | inline_asset_content }}
               </span>
             </span>
+
+            {% if poster != blank %}
+              <img class="deferred-media__poster-image" src="{{ poster | image_url: width: 3840 }}" alt="{{ alt }}">
+            {% else %}
+              {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+            {% endif %}
           </button>
           <template>
               {%- if video_type == 'youtube' -%}
