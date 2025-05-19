@@ -57,8 +57,7 @@
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
             "align_text": "left",
-            "text_background": "#eafff1",
-            "text_color": "#002b0c",
+            "block_color_scheme": "scheme-3",
             "link": "shopify://pages/contact",
             "linktext": "button here"
           }
@@ -70,8 +69,7 @@
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
             "align_text": "center",
-            "text_background": "#ffd9b1",
-            "text_color": "#ac3f00",
+            "block_color_scheme": "scheme-4",
             "link": "",
             "linktext": "Click here"
           }
@@ -83,8 +81,7 @@
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
             "align_text": "left",
-            "text_background": "#fffdf8",
-            "text_color": "#002b0c",
+            "block_color_scheme": "",
             "link": "",
             "linktext": "Click here"
           }
@@ -100,10 +97,9 @@
       ],
       "name": "Carousel",
       "settings": {
-        "number_slider_desktop": 3,
         "title": "Det vi gør",
         "align_text": "center",
-        "title_color": "#ac3f00"
+        "section_color_scheme": "scheme-2"
       }
     },
     "article_section_UPqpGX": {
