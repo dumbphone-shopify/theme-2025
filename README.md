@@ -13,3 +13,11 @@ This is where to find out about which *customisable settings* we want to add to 
 - Schema is the part of the code that will be visible in the theme-editor.
 - The `"name"` inside `{% schema %}` sets the name that will be present in the sections-list in the theme-editor. (web-ui)
 - `"settings:"[]` is where you write the input settings that the user will be able to interact with and customise in the theme-editor. 
+- "tag" is the name of the wrapping element around the section. Can be either of these: 
+	* `article`
+	- `aside`
+	- `div`
+	- `footer`
+	- `header`
+	- `section`
+- Blocks are like sections within sections - repeatable content within the main section.

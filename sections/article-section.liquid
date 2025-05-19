@@ -328,13 +328,20 @@ deferred-media > * {
             type="button"
             aria-label="{{ alt }}"
           >
-          {% if poster_image %}
-            <img
+          {% if poster_image != null %}
+            {{
+              poster
+              | image_url: width: 3840
+              | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+            }}
+            {% else %}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+            {% comment %} <img
               src="{{ poster_image | image_url: width: 1600 }}"
               alt="{{ alt }}"
               sizes="100vw"
               loading="lazy"
-            >
+            > {% endcomment %}
           {% endif %}
           
             <span class="deferred-media__poster-button motion-reduce">
@@ -348,10 +355,11 @@ deferred-media > * {
             {% if is_external %}
               {% if section.settings.hero_video_url.type == "youtube" %}
                 <iframe
-                  src="https://www.youtube.com/embed/{{ video_id }}?autoplay=1"
+                  src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1"
                   allow="autoplay; encrypted-media"
                   allowfullscreen
                   title="{{ alt }}"
+                  class="js-youtube"
                 ></iframe>
               {% else %}
                 <iframe
@@ -359,10 +367,11 @@ deferred-media > * {
                   allow="autoplay; encrypted-media"
                   allowfullscreen
                   title="{{ alt }}"
+                  class="js-vimeo"
                 ></iframe>
               {% endif %}
             {% else %}
-              {{ section.settings.hero_video | video_tag: autoplay: true, loop: false, controls: true, muted: true, image_size: '1600x' }}
+              {{ section.settings.hero_video | video_tag: autoplay: true, controls: true, muted: true, image_size: '1000x' }}
             {% endif %}
           </template>
         </deferred-media>
