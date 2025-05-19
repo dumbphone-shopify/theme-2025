@@ -38,7 +38,7 @@
 
 window.addEventListener('DOMContentLoaded', () =>{
 new Glider(document.querySelector('.glider'),{
-    slidesToShow: 1.2, // or 2, or any float (e.g., 1.3)
+    slidesToShow: 1, // or 2, or any float (e.g., 1.3)
   slidesToScroll: 1,
   draggable: true,
   arrows: {
@@ -139,14 +139,15 @@ new Glider(document.querySelector('.glider'),{
   position:absolute;
   bottom: 0;
   transform:translate(-50%);
+  padding: 20px 10px;
 }
 
 .glider__container .next{
-  right: 49%;
+  right: 45%;
 }
 
 .glider__container .prev{
-  left: 49%;
+  left: 45%;
 }
 
 
