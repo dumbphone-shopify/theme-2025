@@ -93,10 +93,12 @@
         "slide_n43yy9"
       ],
       "custom_css": [
-        ".carousel-slide{margin:0 10px ;}"
+        ".carousel-slide {margin: 0 10px;}"
       ],
       "name": "Carousel",
       "settings": {
+        "padding_top": 60,
+        "padding_bottom": 68,
         "title": "Det vi gør",
         "align_text": "center",
         "title_color": "#ac3f00",
