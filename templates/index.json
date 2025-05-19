@@ -53,7 +53,7 @@
         "slide_PTJEt3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/fall-vegetable-box.jpg",
+            "image": "shopify://shop_images/persons-hand-points-to-text-in-a-open-book-laying-in-a-table.jpg",
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
             "align_text": "left",
@@ -90,7 +90,7 @@
         "slide_n43yy9"
       ],
       "custom_css": [
-        "img{height: 100%; }"
+        "img {height: 100%;}"
       ],
       "name": "Carousel",
       "settings": {
