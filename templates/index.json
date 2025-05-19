@@ -98,7 +98,7 @@
       "name": "Carousel",
       "settings": {
         "padding_top": 60,
-        "padding_bottom": 68,
+        "padding_bottom": 16,
         "title": "Det vi gør",
         "align_text": "center",
         "title_color": "#ac3f00",
