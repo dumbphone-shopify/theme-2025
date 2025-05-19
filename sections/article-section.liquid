@@ -51,7 +51,9 @@
         "type": "image_picker",
         "id": "hero_video_thumbnail",
         "label": "Uploade din egen video thumbnail",
-        "hero_type": "video"
+        "condition": {
+          "hero_type": "video"
+        }
 
       }, {
         "type": "text",
@@ -354,28 +356,26 @@
               </span>
             </span>
           </button>
-
           <template>
-            {% if section.settings.hero_video != blank and section.settings.hero_video == blank %}
-              {% if section.settings.hero_video contains 'youtube' %}
-                <iframe
-                  src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  title="{{ alt }}"
-                  class="js-youtube"></iframe>
-              {% elsif section.settings.hero_video contains 'vimeo' %}
-                <iframe
-                  src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  title="{{ alt }}"
-                  class="js-vimeo"></iframe>
-              {% endif %}
+            {% if section.settings.hero_video contains 'youtube' %}
+              <iframe
+                src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                title="{{ alt }}"
+                class="js-youtube"></iframe>
+            {% elsif section.settings.hero_video contains 'vimeo' %}
+              <iframe
+                src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                title="{{ alt }}"
+                class="js-vimeo"></iframe>
             {% else %}
               {{ section.settings.hero_video | video_tag: autoplay: true, controls: true, muted: true, image_size: '1100x' }}
             {% endif %}
           </template>
+
         </deferred-media>
       </div>
     {% endif %}
