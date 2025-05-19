@@ -1,7 +1,7 @@
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width glider__container color-{{ section.settings.color_scheme }}" id="{{ section.id }} ">
+<div class="page-width glider__container color-{{ section.settings.color_scheme }}" id="{{section.id}}">
   <h2 class="text-{{ section.settings.align_text }}" style="color:{{ section.settings.title_color }}">
     {{ section.settings.title }}
   </h2>
@@ -58,7 +58,7 @@
     draggable: true,
     arrows: {
       prev: '#{{ section.id }} .prev',
-       next: '#{{ section.id }} .next',
+      next: '#{{ section.id }} .next',
     },
      responsive: [
       {
