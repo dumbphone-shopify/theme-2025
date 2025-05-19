@@ -2,7 +2,7 @@
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width glider__container" id="{{ section.id }}">
-  <h2 class="text-{{ section.settings.align_text }}" >{{ section.settings.title}}</h2>
+  <h2 class="text-{{ section.settings.align_text }}" style="color:{{ section.settings.title_color }}" >{{ section.settings.title}}</h2>
  
   <div class="glider">
     {% for block in section.blocks %}
@@ -73,7 +73,8 @@ new Glider(document.querySelector('.glider'),{
           "id": "title",
           "label": "Title",
           "default": "This is a title"
-        },     {
+        },     
+        {
   "type": "select",
   "id": "align_text",
   "label": "Text alignment",
@@ -83,7 +84,13 @@ new Glider(document.querySelector('.glider'),{
     { "value": "center", "label": "Centered" },
     { "value": "right", "label": "Right" }
   ]
-}
+},
+{
+  "type": "color",
+  "id": "title_color",
+  "label": "This is the title color",
+  "default": "#ffffff"
+},
     ],
       "blocks": [
     {
@@ -181,7 +188,7 @@ border: none;
   align-items: stretch;
   height: 100%;
   min-height: 400px;
-  margin: 10px 0;
+  margin: 0px 0 25px 0;
   
 }
 
