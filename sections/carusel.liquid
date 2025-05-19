@@ -2,7 +2,7 @@
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 <h2>Carusel Header hi</h2>
 
-<div class="page-width" id="{{ section.id }}">
+<div class="page-width glider__container" id="{{ section.id }}">
   <div class="glider">
     {% for block in section.blocks %}
       <div class="carousel-slide" {{ block.shopify_attributes }} style="background-color: {{ block.settings.text_background }};">
@@ -129,6 +129,28 @@ new Glider(document.querySelector('.glider'),{
 {% endschema %}
 
 {%- style -%}
+
+.glider__container{
+  position: relative;
+}
+
+
+.glider__container .prev,.glider__container .next{
+  position:absolute;
+  top: 0;
+  transform:translate(-50%);
+}
+
+.glider__container .next{
+  right: 0;
+}
+
+.glider__container .prev{
+  left: 0;
+}
+
+
+
 .glider {
   display: flex;
   gap: 50px;
