@@ -45,8 +45,6 @@
 }
 .glider-slide {
   user-select: none;
-  justify-content: center;
-
   width: 100%;
   min-width: 150px;
 }
