@@ -102,53 +102,55 @@
 
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
+<div class="color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+  <div
+    class="page-width glider__container"
+    id="{{section.id}}"
+  >
+    <h2 class="text-{{ section.settings.align_text }}" style="color:{{ section.settings.title_color }}">
+      {{ section.settings.title }}
+    </h2>
 
-<div
-  class="page-width glider__container color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding"
-  id="{{section.id}}"
->
-  <h2 class="text-{{ section.settings.align_text }}" style="color:{{ section.settings.title_color }}">
-    {{ section.settings.title }}
-  </h2>
-
-  <div class="glider">
-    {% for block in section.blocks %}
-      <div
-        class="carousel-slide color-{{ block.settings.color_scheme }}"
-        {{ block.shopify_attributes }}
-      >
-        <div class="img-block" style="background-image: url({{ block.settings.image | image_url: width: 600 }});">
-          {% comment %}
-            {% if block.settings.image %}
-              <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
-            {% endif %}
-          {% endcomment %}
-        </div>
-        <div class="text-block text-{{ block.settings.align_text }}">
-          <div class="text-block__container">
-            {% if block.settings.heading %}
-              <h3 class="color-{{ block.settings.color_scheme }}">{{ block.settings.heading | truncate: 100, '' }}</h3>
-            {% endif %}
-            {% if block.settings.text %}
-              <p>{{ block.settings.text | truncate: 300, '…' }}</p>
+    <div class="glider">
+      {% for block in section.blocks %}
+        <div
+          class="carousel-slide color-{{ block.settings.color_scheme }}"
+          {{ block.shopify_attributes }}
+        >
+          <div class="img-block" style="background-image: url({{ block.settings.image | image_url: width: 600 }});">
+            {% comment %}
+              {% if block.settings.image %}
+                <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
+              {% endif %}
+            {% endcomment %}
+          </div>
+          <div class="text-block text-{{ block.settings.align_text }}">
+            <div class="text-block__container">
+              {% if block.settings.heading %}
+                <h3 class="color-{{ block.settings.color_scheme }}">
+                  {{ block.settings.heading | truncate: 100, '' }}
+                </h3>
+              {% endif %}
+              {% if block.settings.text %}
+                <p>{{ block.settings.text | truncate: 300, '…' }}</p>
+              {% endif %}
+            </div>
+            {% if block.settings.link %}
+              <a class="button" href="{{ block.settings.link }}">
+                {{ block.settings.linktext }}
+              </a>
             {% endif %}
           </div>
-          {% if block.settings.link %}
-            <a class="button" href="{{ block.settings.link }}">
-              {{ block.settings.linktext }}
-            </a>
-          {% endif %}
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
+    <button class="prev" aria-label="Previous slide">prev</button>
+    <button class="next" aria-label="Next slide">
+      next
+      {% comment %} {{ 'slider-arrow.svg' | inline_asset_content }} {% endcomment %}
+    </button>
   </div>
-  <button class="prev" aria-label="Previous slide">prev</button>
-  <button class="next" aria-label="Next slide">
-    next
-    {% comment %} {{ 'slider-arrow.svg' | inline_asset_content }} {% endcomment %}
-  </button>
 </div>
-
 {% comment %} her henter jeg Glide.min.js scriptet for  glideren inde i assets {% endcomment %}
 <script src="{{ 'glider.min.js' |asset_url}}" async></script>
 
