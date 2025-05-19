@@ -69,7 +69,7 @@
             "image": "shopify://shop_images/self-serve-coffee-shop.jpg",
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
-            "align_text": "center",
+            "align_text": "left",
             "link": "",
             "linktext": "Click here"
           }
