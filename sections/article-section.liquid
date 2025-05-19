@@ -31,24 +31,28 @@
       {
         "type": "image_picker",
         "id": "hero_image",
-        "label": "t:sections.video.settings.cover_image.label"
-      },
-      {
-        "type": "video",
-        "id": "hero_video",
-        "label": "Hero video"
+        "label": "t:sections.video.settings.cover_image.label",
+        "condition": {
+          "hero_type": "image"
+        }
       },
       {
         "type": "video_url",
-        "id": "hero_video_url",
+        "id": "hero_video",
         "accept": ["youtube", "vimeo"],
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "label": "t:sections.video.settings.video_url.label",
-        "info": "t:sections.video.settings.video_url.info"
-      }, {
+        "info": "t:sections.video.settings.video_url.info",
+        "condition": {
+          "hero_type": "video"
+        }
+      },
+      {
         "type": "image_picker",
         "id": "hero_video_thumbnail",
-        "label": "Uploade din egen video thumbnail"
+        "label": "Uploade din egen video thumbnail",
+        "hero_type": "video"
+
       }, {
         "type": "text",
         "id": "hero_title",
@@ -170,8 +174,7 @@
   .article-hero img,
   .article-hero iframe,
   .article-hero video,
-  .article-hero .media--landscape
-  {
+  .article-hero .media--landscape {
     grid-column: full;
     width: 100%;
     height: auto;
@@ -299,44 +302,25 @@
    iframe {
    aspect-ratio: 16/9;
    }
-
-
-*/
-article-hero__video {
-  height: auto;
-}
+*/.article-hero__video {
+    height: auto;
+  }
 
 {% endstylesheet %}
 
 <div class="article-wrapper">
   {% if section.settings.hero_type == 'image' and section.settings.hero_image %}
+
     <div class="article-hero">
       <img src="{{ section.settings.hero_image | image_url: width: 2000 }}" alt="{{ section.settings.hero_image.alt | escape }}" />
     </div>
 
   {% elsif section.settings.hero_type == 'video' %}
 
-    {% assign is_external = false %}
+    {% assign video_id = section.settings.video.id | default: section.settings.video_url.id %}
+
     {% assign poster = section.settings.hero_video.preview_image | default: section.settings.hero_video_thumbnail %}
 
-    {% assign video_id = '' %}
-
-    {% if section.settings.hero_video_url != blank and section.settings.hero_video == blank %}
-      {% assign is_external = true %}
-      {% if section.settings.hero_video_url contains 'youtube.com/watch?v=' %}
-        {% assign video_id = section.settings.hero_video_url | split: 'v=' | last | split: '&' | first %}
-      {% elsif section.settings.hero_video_url contains 'youtu.be/' %}
-        {% assign video_id = section.settings.hero_video_url | split: 'youtu.be/' | last | split: '?' | first %}
-      {% elsif section.settings.hero_video_url contains 'vimeo.com/' %}
-        {% assign video_id = section.settings.hero_video_url | split: 'vimeo.com/' | last | split: '?' | first %}
-      {% endif %}
-    {% else %}
-      {% assign video_id = section.settings.hero_video.id %}
-    {% endif %}
-
-    {% assign alt = section.settings.hero_title | escape %}
-
-    {% assign fix_ratio = false %}
     {% if section.settings.hero_video != null and poster != null %}
       {% assign ratio_diff = section.settings.hero_video.aspect_ratio | minus: poster.aspect_ratio | abs %}
       {% if ratio_diff < 0.01 and ratio_diff > 0 %}
@@ -344,9 +328,6 @@ article-hero__video {
       {% endif %}
     {% endif %}
 
-    {% capture sizes %}
-      (min-width: 750px) calc(100vw - 10rem), 100vw
-    {% endcapture %}
     {% if video_id != blank or section.settings.hero_video != blank %}
       <div class="article-hero article-hero__video">
         <deferred-media
@@ -375,15 +356,15 @@ article-hero__video {
           </button>
 
           <template>
-            {% if section.settings.hero_video_url != blank and section.settings.hero_video == blank %}
-              {% if section.settings.hero_video_url contains 'youtube' %}
+            {% if section.settings.hero_video != blank and section.settings.hero_video == blank %}
+              {% if section.settings.hero_video contains 'youtube' %}
                 <iframe
                   src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1"
                   allow="autoplay; encrypted-media"
                   allowfullscreen
                   title="{{ alt }}"
                   class="js-youtube"></iframe>
-              {% elsif section.settings.hero_video_url contains 'vimeo' %}
+              {% elsif section.settings.hero_video contains 'vimeo' %}
                 <iframe
                   src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1"
                   allow="autoplay; encrypted-media"
