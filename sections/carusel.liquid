@@ -1,3 +1,105 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+
+
+  .glider__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0px 10px 60px 10px;
+  }
+
+  .glider__container .prev,
+  .glider__container .next {
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .glider__container .next {
+    right: 45%;
+  }
+
+  .glider__container .prev {
+    transform: translate(-50%) rotate(180deg);
+    left: 45%;
+  }
+
+  .glider {
+    display: flex;
+    align-items: stretch;
+    min-height: 400px;
+    margin: 25px 0 0 0 !important;
+  }
+
+  .carousel-slide {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* 2/5 image, 3/5 text */
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 10px 0;
+    max-width: 850px;
+    padding: 0 !important;
+  }
+
+  .img-block {
+    aspect-ratio: 7 / 9;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text-block {
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  /* Mobile layout */
+  @media screen and (max-width: 749px) {
+    .carousel-slide {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+      height: 80vh !important;
+    }
+    .img-block {
+      aspect-ratio: auto;
+    }
+
+    /* .glider__container .prev,
+    .glider__container .next {
+      display: none;
+    } */
+  }
+{%- endstyle -%}
+
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 
@@ -196,105 +298,3 @@
   ]
 }
 {% endschema %}
-
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-
-
-
-  .glider__container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 0px 10px 60px 10px;
-  }
-
-  .glider__container .prev,
-  .glider__container .next {
-    position: absolute;
-    bottom: 0;
-    transform: translate(-50%);
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-  }
-
-  .glider__container .next {
-    right: 45%;
-  }
-
-  .glider__container .prev {
-    transform: translate(-50%) rotate(180deg);
-    left: 45%;
-  }
-
-  .glider {
-    display: flex;
-    align-items: stretch;
-    min-height: 400px;
-    margin: 25px 0 0 0 !important;
-  }
-
-  .carousel-slide {
-    display: grid;
-    grid-template-columns: 2fr 3fr; /* 2/5 image, 3/5 text */
-    border-radius: 25px;
-    overflow: hidden;
-    margin: 10px 0;
-    max-width: 850px;
-    padding: 0 !important;
-  }
-
-  .img-block {
-    aspect-ratio: 7 / 9;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .text-block {
-    padding: 10px 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .text-left {
-    text-align: left;
-  }
-
-  .text-center {
-    text-align: center;
-  }
-
-  .text-right {
-    text-align: right;
-  }
-
-  /* Mobile layout */
-  @media screen and (max-width: 749px) {
-    .carousel-slide {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr;
-      height: 80vh !important;
-    }
-    .img-block {
-      aspect-ratio: auto;
-    }
-
-    /* .glider__container .prev,
-    .glider__container .next {
-      display: none;
-    } */
-  }
-{%- endstyle -%}
