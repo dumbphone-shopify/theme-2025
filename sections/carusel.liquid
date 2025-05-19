@@ -28,8 +28,8 @@
             <p>{{ block.settings.text }}</p>
           {% endif %}
 
-          {% if block.settings.button %}
-            <a href="{{ block.settings.link }}">
+          {% if block.settings.link %}
+            <a class="button" href="{{ block.settings.link }}">
               {{ block.settings.linktext }}
             </a>
           {% endif %}
