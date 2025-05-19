@@ -9,9 +9,8 @@
   <div class="glider">
     {% for block in section.blocks %}
       <div
-        class="carousel-slide"
+        class="carousel-slide color-{{ block.settings.color_scheme }}"
         {{ block.shopify_attributes }}
-        style="background-color: {{ block.settings.text_background }};"
       >
         <div class="img-block" style="background-image: url({{ block.settings.image | image_url: width: 600 }});">
           {% comment %}
@@ -20,9 +19,9 @@
             {% endif %}
           {% endcomment %}
         </div>
-        <div class="text-block text-{{ block.settings.align_text }} color-{{ block.settings.color_scheme }}">
+        <div class="text-block text-{{ block.settings.align_text }}">
           {% if block.settings.heading %}
-            <h3 style="color: {{ block.settings.text_color }}">{{ block.settings.heading }}</h3>
+            <h3 class="color-{{ block.settings.color_scheme }}">{{ block.settings.heading }}</h3>
           {% endif %}
           {% if block.settings.text %}
             <p>{{ block.settings.text }}</p>
