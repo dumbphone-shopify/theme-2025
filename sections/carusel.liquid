@@ -21,7 +21,7 @@
         </div>
         <div class="text-block text-{{ block.settings.align_text }}">
           {% if block.settings.heading %}
-            <h3 class="color-{{ block.settings.color_scheme }}">{{ block.settings.heading }}</h3>
+            <h3 class="color-{{ block.settings.color_scheme }}">{{ block.settings.heading | truncate: 100, '' }}</h3>
           {% endif %}
           {% if block.settings.text %}
             <p>{{ block.settings.text | truncate: 300, '…' }}</p>
