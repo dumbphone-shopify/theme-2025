@@ -171,6 +171,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "custom_css": [
         "p {font-size: medium;}",
         "img {object-fit: contain;}"
