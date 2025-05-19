@@ -67,7 +67,7 @@
             "image": "shopify://shop_images/self-serve-coffee-shop.jpg",
             "heading": "This is a heading",
             "text": "Here’s a short description or message.",
-            "align_text": "left",
+            "align_text": "center",
             "text_background": "#ffd9b1",
             "text_color": "#ac3f00"
           }
@@ -96,7 +96,8 @@
       "settings": {
         "number_slider_desktop": 3,
         "title": "Det vi gør",
-        "align_text": "center"
+        "align_text": "center",
+        "title_color": "#ac3f00"
       }
     },
     "article_section_UPqpGX": {
