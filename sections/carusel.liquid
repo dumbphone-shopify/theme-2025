@@ -37,12 +37,10 @@
     {% endfor %}
   </div>
   <button class="prev" aria-label="Previous slide">
-    {% comment %}{{ 'slider-arrow.svg' | inline_asset_content}}{% endcomment %}
-    <img src="{{ 'slider_arrow.svg' | asset_url }}" alt="Arrow" height="50" width="50">
+    {{ 'slider-arrow.svg' | inline_asset_content }}
   </button>
   <button class="next" aria-label="Next slide">
-    {% comment %}{{ 'slider-arrow.svg' | inline_asset_content}}{% endcomment %}
-    <img src="{{ 'slider_arrow.svg' | asset_url }}" alt="Arrow" height="50" width="50">
+    {{ 'slider-arrow.svg' | inline_asset_content }}
   </button>
 </div>
 
