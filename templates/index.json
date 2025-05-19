@@ -92,7 +92,9 @@
         "slide_UMaxaR",
         "slide_n43yy9"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".carousel-slide{margin:0 10px ;}"
+      ],
       "name": "Carousel",
       "settings": {
         "title": "Det vi gør",
