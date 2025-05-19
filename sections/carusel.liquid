@@ -1,9 +1,10 @@
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
-{% if settings.title %}
-      <h2>{{ settings.title}}</h2>
-{% endif %}
+
 <div class="page-width glider__container" id="{{ section.id }}">
+  {% if settings.title %}
+      <h2>{{ settings.title}}</h2>
+  {% endif %}
   <div class="glider">
     {% for block in section.blocks %}
       <div class="carousel-slide" {{ block.shopify_attributes }} style="background-color: {{ block.settings.text_background }};">
@@ -171,6 +172,7 @@ border: none;
   align-items: stretch;
   height: 100%;
   min-height: 400px;
+  margin: 10px 0;
   
 }
 
