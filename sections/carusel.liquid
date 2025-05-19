@@ -1,33 +1,31 @@
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width glider__container" id="{{ section.id }}">
-  <h2 class="text-{{ section.settings.align_text }}" style="color:{{ section.settings.title_color }}">
+<div
+  class="page-width glider__container color-scheme"
+  id="{{ section.id }}"
+  data-color-scheme="{{ section.settings.section_color_scheme }}"
+>
+  <h2 class="text-{{ section.settings.align_text }}">
     {{ section.settings.title }}
   </h2>
 
   <div class="glider">
     {% for block in section.blocks %}
       <div
-        class="carousel-slide"
+        class="carousel-slide color-scheme"
         {{ block.shopify_attributes }}
-        style="background-color: {{ block.settings.text_background }};"
+        data-color-scheme="{{ block.settings.block_color_scheme }}"
       >
-        <div class="img-block" style="background-image: url({{ block.settings.image | image_url: width: 600 }});">
-          {% comment %}
-            {% if block.settings.image %}
-              <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
-            {% endif %}
-          {% endcomment %}
-        </div>
-        <div class="text-block text-{{ block.settings.align_text }}" style=" color: {{ block.settings.text_color }};">
+        <div class="img-block" style="background-image: url({{ block.settings.image | image_url: width: 600 }});"></div>
+
+        <div class="text-block text-{{ block.settings.align_text }}">
           {% if block.settings.heading %}
-            <h3 style="color: {{ block.settings.text_color }}">{{ block.settings.heading }}</h3>
+            <h3>{{ block.settings.heading }}</h3>
           {% endif %}
           {% if block.settings.text %}
             <p>{{ block.settings.text }}</p>
           {% endif %}
-
           {% if block.settings.link %}
             <a class="button" href="{{ block.settings.link }}">
               {{ block.settings.linktext }}
@@ -37,12 +35,11 @@
       </div>
     {% endfor %}
   </div>
+
   <button class="prev" aria-label="Previous slide">
-    {% comment %}{{ 'slider-arrow.svg' | inline_asset_content}}{% endcomment %}
     <img src="{{ 'slider_arrow.svg' | asset_url }}" alt="Arrow" height="50" width="50">
   </button>
   <button class="next" aria-label="Next slide">
-    {% comment %}{{ 'slider-arrow.svg' | inline_asset_content}}{% endcomment %}
     <img src="{{ 'slider_arrow.svg' | asset_url }}" alt="Arrow" height="50" width="50">
   </button>
 </div>
@@ -81,11 +78,6 @@
   "name": "Carousel",
   "settings": [
     {
-      "type": "number",
-      "id": "number_slider_desktop",
-      "label": "Numer of SLides (desktop)"
-    },
-    {
       "type": "text",
       "id": "title",
       "label": "Title",
@@ -103,10 +95,10 @@
       ]
     },
     {
-      "type": "color",
-      "id": "title_color",
-      "label": "This is the title color",
-      "default": "#ffffff"
+      "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "Section color scheme",
+      "default": "background-1"
     }
   ],
   "blocks": [
@@ -143,16 +135,10 @@
           ]
         },
         {
-          "type": "color",
-          "id": "text_background",
-          "label": "Text block background color",
-          "default": "#ffffff"
-        },
-        {
-          "type": "color",
-          "id": "text_color",
-          "label": "Text block text color",
-          "default": "#000000"
+          "type": "color_scheme",
+          "id": "block_color_scheme",
+          "label": "Block color scheme",
+          "default": "background-2"
         },
         {
           "id": "link",
@@ -178,6 +164,21 @@
 {% endschema %}
 
 {%- style -%}
+  .carousel-slide {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  .text-block a.button {
+    background-color: var(--color-button);
+    color: var(--color-button-text);
+    padding: 0.5em 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+  }
+
   .glider__container {
     display: flex;
     flex-direction: column;
