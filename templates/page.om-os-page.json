@@ -228,6 +228,62 @@
         "padding_bottom": 0
       }
     },
+    "carusel_Gxtdiy": {
+      "type": "carusel",
+      "blocks": {
+        "slide_7QCM6B": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "image": "shopify://shop_images/Arne-with-dumbphones.webp",
+            "heading": "This is a slider heading",
+            "text": "Here’s a short description or message.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "slide_4ntK8h": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "image": "shopify://shop_images/Arne-and-TIkko-on-a_bike-trip.webp",
+            "heading": "This is a slider heading",
+            "text": "Here’s a short description or message.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "slide_pKiEjg": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
+            "heading": "This is a slider heading",
+            "text": "Here’s a short description or message.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        }
+      },
+      "block_order": [
+        "slide_7QCM6B",
+        "slide_4ntK8h",
+        "slide_pKiEjg"
+      ],
+      "name": "Carousel",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "number_slider_desktop": 4,
+        "title": "This is a title",
+        "align_text": "left",
+        "title_color": "#ffffff",
+        "color_scheme": ""
+      }
+    },
     "image_with_text_9R8dpj": {
       "type": "image-with-text",
       "blocks": {
@@ -296,6 +352,7 @@
     "article_section_eTXCAR",
     "rich_text_bUkCeJ",
     "image_with_text_M9M7XT",
+    "carusel_Gxtdiy",
     "image_with_text_9R8dpj",
     "main"
   ]
