@@ -356,7 +356,7 @@
     -%}
     <div class="article-hero article-hero__video">
       <deferred-media
-        class="deferred-media video-section__media gradient global-media-settings"
+        class="deferred-media gradient global-media-settings"
         data-media-id="{{ video_id }}"
         {% if poster != null %}
           style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
