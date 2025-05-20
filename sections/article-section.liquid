@@ -323,12 +323,13 @@
     border-radius: 25px !important;
   }
 
-  /*
-   iframe {
-   aspect-ratio: 16/9;
-   }
-
+  /* no border radius on imgs or videos in mobile view  */
+  @media screen and (max-width: 600px) {
+  .article-image,   iframe,
+  .deferred-media__poster  {
+    border-radius: 0px;
   }
+}
 
 
   */
