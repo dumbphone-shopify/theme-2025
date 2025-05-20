@@ -121,6 +121,9 @@
         "h3_yKwt3V",
         "paragraph_ErtNEp"
       ],
+      "custom_css": [
+        ".video-section__media {padding-bottom: 0;}"
+      ],
       "name": "Default custom sections",
       "settings": {
         "hero_type": "video",
