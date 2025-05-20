@@ -148,7 +148,7 @@
             "image": "{{ product.featured_image }}",
             "caption": "",
             "heading": "{{ product.title }}",
-            "text": "<p>Det skal være let at ringe og sende en sms, ikke noget teknisk cirkus. Derfor er HMD 2660 Flip lavet med store knapper, en tydelig skærm og en menu der er nem at finde rundt i. Jeg bruger den selv når jeg bare vil være til stede, og lyden er så klar at man faktisk får lyst til at snakke lidt længere.<br/><br/></p>",
+            "text": "<p>Det skal være let at ringe og sende en sms, ikke noget teknisk cirkus. Derfor er HMD 2660 Flip lavet med store knapper, en tydelig skærm og en menu der er nem at finde rundt i. Jeg bruger den selv når jeg bare vil være til stede, og lyden er så klar at man faktisk får lyst til at snakke lidt længere.</p>",
             "button_label": "",
             "button_link": ""
           }
