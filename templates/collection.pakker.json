@@ -11,30 +11,6 @@
   "sections": {
     "hero_banner_LLDNpQ": {
       "type": "hero-banner",
-      "blocks": {
-        "button_aYyyhj": {
-          "type": "button",
-          "settings": {
-            "label": "Klik her",
-            "link": "",
-            "button_bg_color": "#f32424",
-            "button_text_color": "#f5a3a3"
-          }
-        },
-        "button_ecqTdD": {
-          "type": "button",
-          "settings": {
-            "label": "Klik her",
-            "link": "",
-            "button_bg_color": "#ffffff",
-            "button_text_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "button_aYyyhj",
-        "button_ecqTdD"
-      ],
       "name": "Hero-sektion",
       "settings": {
         "background_image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
@@ -434,8 +410,8 @@
         "title": "Tre gode grunde til hvorfor en dumbphone er et godt valg",
         "align_text": "left",
         "title_color": "#ac3f00",
-        "arrow_color": "#ac3f00",
-        "color_scheme": ""
+        "color_scheme": "",
+        "arrow_color": "#ac3f00"
       }
     },
     "contact_form_TyGdag": {
