@@ -143,48 +143,34 @@
     </h2>
 
     <div class="glider">
-      {% if section.blocks.size > 0 %}
-        {% for block in section.blocks %}
+      {% for block in section.blocks default: 1 %}
+        <div
+          class="carousel-slide color-{{ block.settings.color_scheme }}"
+          {{ block.shopify_attributes }}
+        >
           <div
-            class="carousel-slide color-{{ block.settings.color_scheme }}"
-            {{ block.shopify_attributes }}
-          >
-            <div
-              class="img-block"
-              style="background-image: url({{ block.settings.image | image_url: width: 600 }});"
-            ></div>
-            <div class="text-block text-{{ block.settings.align_text }}">
-              <div class="text-block__container">
-                {% if block.settings.heading %}
-                  <h3 class="color-{{ block.settings.color_scheme }}">
-                    {{ block.settings.heading | truncate: 100, '' }}
-                  </h3>
-                {% endif %}
-                {% if block.settings.text %}
-                  <p>{{ block.settings.text | truncate: 300, '…' }}</p>
-                {% endif %}
-              </div>
-              {% if block.settings.link %}
-                <a class="button" href="{{ block.settings.link }}">
-                  {{ block.settings.linktext }}
-                </a>
+            class="img-block"
+            style="background-image: url({{ block.settings.image | image_url: width: 600 }});"
+          ></div>
+          <div class="text-block text-{{ block.settings.align_text }}">
+            <div class="text-block__container">
+              {% if block.settings.heading %}
+                <h3 class="color-{{ block.settings.color_scheme }}">
+                  {{ block.settings.heading | truncate: 100, '' }}
+                </h3>
+              {% endif %}
+              {% if block.settings.text %}
+                <p>{{ block.settings.text | truncate: 300, '…' }}</p>
               {% endif %}
             </div>
-          </div>
-        {% endfor %}
-      {% else %}
-        <!-- Default Slide (if no blocks exist) -->
-        <div class="carousel-slide color-background-1">
-          <div class="img-block" style="background-color: #f0f0f0;"></div>
-          <div class="text-block text-center">
-            <div class="text-block__container">
-              <h3 class="color-background-1">Velkommen</h3>
-              <p>Dette er en standardslide. Tilføj indhold i temaeditoren for at erstatte denne.</p>
-            </div>
-            <a class="button" href="#"> Læs mere </a>
+            {% if block.settings.link %}
+              <a class="button" href="{{ block.settings.link }}">
+                {{ block.settings.linktext }}
+              </a>
+            {% endif %}
           </div>
         </div>
-      {% endif %}
+      {% endfor %}
     </div>
     <button class="prev" aria-label="Previous slide">
       {{ 'slider-arrow.svg' | inline_asset_content }}
