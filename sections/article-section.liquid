@@ -335,110 +335,43 @@
   */
 {% endstylesheet %}
 
+{% assign hero_type = article.metafields.custom.hero_type.value %}
+{% assign hero_title = article.metafields.custom.hero_title.value %}
+{% assign hero_image = article.metafields.custom.hero_image %}
+{% assign hero_video_url = article.metafields.custom.hero_video_url %}
+{% assign hero_thumb = article.metafields.custom.hero_video_thumb %}
+
 <div class="article-wrapper">
-  {% if section.settings.hero_type == 'image' and section.settings.hero_image %}
+  {% if hero_type == 'image' and hero_image %}
     <div class="article-hero">
-      <img
-        src="{{ section.settings.hero_image | image_url: width: 2000 }}"
-        alt="{{ section.settings.hero_image.alt | escape }}"
-      >
+      <img src="{{ hero_image | image_url: width: 2000 }}" alt="{{ hero_image.alt | escape }}">
     </div>
-
-  {% elsif section.settings.hero_type == 'video' and section.settings.hero_video_url != blank %}
-    {% assign video_type = section.settings.hero_video_url.type %}
-    {% assign video_id = section.settings.hero_video_url.id %}
-    {% assign video_type = section.settings.hero_video_url.type %}
-    {% assign poster = section.settings.hero_video_thumbnail %}
-    {% assign alt = section.settings.hero_title | default: 'Hero Video' %}
-
-    {%- liquid
-      if section.settings.video != null
-        assign ratio_diff = section.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
-        if ratio_diff < 0.01 and ratio_diff > 0
-          assign fix_ratio = true
-        endif
-      endif
-    -%}
+  {% elsif hero_type == 'video' and hero_video_url %}
     <div class="article-hero article-hero__video">
-      <deferred-media
-        style="padding-bottom: 0;"
-        class="deferred-media video-section__media gradient global-media-settings"
-        data-media-id="{{ video_id }}"
-        {% if poster != null %}
-          style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
-        {% endif %}
-      >
-        <button
-          id="Deferred-Poster-Modal-{{ video_id }}"
-          class="video-section__poster media deferred-media__poster media--landscape"
-          type="button"
-          aria-label="{{ alt }}"
-        >
-          {%- if poster != null -%}
-            {{
-              poster
-              | image_url: width: 3840
-              | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
-            }}
-          {%- else -%}
-            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-          {%- endif -%}
-          <span class="deferred-media__poster-button motion-reduce">
-            <span class="svg-wrapper">
-              {{ 'icon-play.svg' | inline_asset_content }}
-            </span>
-          </span>
+      <deferred-media class="deferred-media" data-media-id="video">
+        <button class="deferred-media__poster" type="button" aria-label="{{ hero_title }}">
+          {% if hero_thumb %}
+            {{ hero_thumb | image_url: width: 2000 | image_tag: alt: hero_title }}
+          {% endif %}
+          <span class="deferred-media__poster-button">▶</span>
         </button>
         <template>
-          {%- if video_type == 'youtube' -%}
-            <iframe
-              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1"
-              class="js-youtube"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="{{ alt }}"
-            ></iframe>
-          {% elsif video_type == 'vimeo' %}
-            <iframe
-              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1"
-              class="js-vimeo"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-              title="{{ alt }}"
-            ></iframe>
-          {% endif %}
+          <iframe
+            src="{{ hero_video_url }}?autoplay=1"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="{{ hero_title }}"
+          ></iframe>
         </template>
       </deferred-media>
     </div>
   {% endif %}
 
   <div class="article-content">
-    {% if section.settings.hero_title != blank %}
-      <h1 class="article-title">{{ section.settings.hero_title }}</h1>
+    {% if hero_title %}
+      <h1 class="article-title">{{ hero_title }}</h1>
     {% endif %}
 
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'heading' %}
-          <h2 class="text-content">{{ block.settings.heading }}</h2>
-        {% when 'h3' %}
-          <h3 class="text-content">{{ block.settings.heading }}</h3>
-        {% when 'h4' %}
-          <h4 class="text-content">{{ block.settings.heading }}</h4>
-        {% when 'paragraph' %}
-          <p class="article-paragraph text-content">{{ block.settings.text }}</p>
-        {% when 'pull_quote' %}
-          <blockquote class="pull-quote">
-            {{ block.settings.quote }}
-          </blockquote>
-
-        {% when 'image' %}
-          <img
-            class="article-image article-image--{{ block.settings.image_size }}"
-            src="{{ block.settings.image | image_url: width: 1200 }}"
-            alt="{{ block.settings.alt | escape }}"
-          >
-      {% endcase %}
-    {% endfor %}
+    {{ article.metafields.custom.article_body | metafield_tag }}
   </div>
 </div>
