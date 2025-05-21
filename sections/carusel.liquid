@@ -152,6 +152,7 @@
             class="img-block"
             style="background-image: url({{ block.settings.image | image_url: width: 600 }});"
           ></div>
+          <p>{{ block.settings.image | image_url }}</p>
           <div class="text-block text-{{ block.settings.align_text }}">
             <div class="text-block__container">
               {% if block.settings.heading %}
