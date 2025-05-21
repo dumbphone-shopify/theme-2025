@@ -43,7 +43,7 @@
         "heading": "Giv dine elever en bedre forhold til smartphones",
         "title_color": "#ffffff",
         "text_alignment": "left",
-        "content_position": "flex-end",
+        "content_position": "bottom-left",
         "mobile_content_alignment": "center"
       }
     },
@@ -103,6 +103,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/students-at-coding-workshop.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
