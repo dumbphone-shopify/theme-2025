@@ -194,7 +194,7 @@
           "type": "button",
           "settings": {
             "button_label": "learn more →",
-            "button_link": "",
+            "button_link": "shopify://pages/dumbphone-guide",
             "button_style_secondary": true
           }
         }
