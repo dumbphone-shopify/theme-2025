@@ -315,10 +315,7 @@
         "slide_8jixRm",
         "slide_6RtGf7"
       ],
-      "custom_css": [
-        ".next {width: 0; height: 0; border-top: 16px solid transparent; border-bottom: 16px solid transparent; border-left: 16px solid #ac3f00; border-radius: 5px;}",
-        ".prev {width: 0; height: 0; border-top: 16px solid transparent; border-bottom: 16px solid transparent; border-right: 16px solid #ac3f00; border-radius: 5px; transform: rotate(360deg);}"
-      ],
+      "custom_css": [],
       "name": "Carousel",
       "settings": {
         "padding_top": 36,
