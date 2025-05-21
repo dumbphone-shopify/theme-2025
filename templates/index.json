@@ -264,7 +264,7 @@
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-3",
-            "image": "shopify://shop_images/abandoned-iceland-farm-home.jpg",
+            "image": "shopify://shop_images/girl-using-sidewalk-chalk.jpg",
             "heading": "En bedre start for de små",
             "text": "Smartphones kan hurtigt gå fra værktøj til tidsrøver. Jeg tror børn har godt af at starte med en dumbphone i 1.-2. klasse, så de lærer balance og er mere til stede i skolen, med venner og derhjemme. \ntil det har jeg skabt udlejnings planer for din klasse.\nse hvad passer til jer",
             "align_text": "left",
@@ -450,7 +450,7 @@
         "background_style": "primary",
         "color_scheme": "",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 12,
         "padding_bottom": 36
       }
