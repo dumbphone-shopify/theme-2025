@@ -163,4 +163,53 @@
       border-radius: 0 !important;
     }
   }
+
+  /* text styling  */
+  blockquote {
+    grid-column: inner;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-family: Georgia
+    , 'Times New Roman'
+    , Times
+    , serif;
+    position: relative;
+    margin: 2rem auto;
+    padding: 1.2rem 0 0 1.5rem;
+    line-height: 1.5;
+    border: none;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  blockquote::before {
+    content: '“';
+    font-size: 5rem;
+    color: #999;
+    position: absolute;
+  }
+
+  blockquote::before {
+    top: 0;
+    left: -1rem;
+  }
+
+  h3.text-content {
+    margin: 1rem auto 0;
+  }
+
+  p.text-content {
+    margin: 0.5rem auto;
+  }
+
+  h4.text-content {
+    margin: 0.5rem auto 0;
+  }
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+  .text-content:is(h2):not(:first-of-type) {
+    margin-top: 3rem;
+  }
 {% endstylesheet %}
