@@ -288,9 +288,10 @@
         "slide_8jixRm": {
           "type": "slide",
           "settings": {
-            "color_scheme": "scheme-1",
-            "heading": "This is a slider heading",
-            "text": "Here’s a short description or message.",
+            "color_scheme": "scheme-2",
+            "image": "shopify://shop_images/mist-rises-above-rocky-water-fall.jpg",
+            "heading": "Du behøver ikke vælge alt eller intet",
+            "text": "Du behøver ikke skifte helt\nMange apps som mail og bank er svære at undvære\nMen der findes tilbehør der kan hjælpe dig med at skabe lidt ro og balance uden at give helt slip\nSe hvad vi har samlet til dig her",
             "align_text": "left",
             "link": "",
             "linktext": "Click here"
