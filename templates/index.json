@@ -399,8 +399,9 @@
         "column_qpzpMw": {
           "type": "column",
           "settings": {
-            "title": "navn på anmelder",
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "title": "Tage Jepsen<em><strong> </strong></em>Forstander, Venø Efterskole",
+            "text": "<p>\"Et super godt forløb for vores efterskoleelever - det har virkelig givet stof til eftertanke. Det her forsøg har givet en oplevelse, som vi kan bruge i vores samtale med eleverne om brugen af smartphones\"</p>",
             "link_label": "",
             "link": ""
           }
@@ -430,7 +431,9 @@
         "column_aP9g8h"
       ],
       "custom_css": [
-        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}"
+        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}",
+        ".multicolumn-card__image-wrapper {width: 150px; height:150px; border-radius: 50%; overflow: hidden; padding-top: 0; margin-top: 2.5rem;}",
+        "img{object-fit:contain; object-position: center bottom;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
