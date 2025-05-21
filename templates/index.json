@@ -121,50 +121,13 @@
         "h3_yKwt3V",
         "paragraph_ErtNEp"
       ],
+      "disabled": true,
       "name": "Default custom sections",
       "settings": {
         "hero_type": "image",
         "hero_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg",
         "hero_video_url": "",
         "hero_title": "Rubrik"
-      }
-    },
-    "rich_text_LMikFR": {
-      "type": "rich-text",
-      "blocks": {
-        "text_wdR6fj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Vi har samlet alle de bedste dumbphones, gadgets og tilbehør som kan hjælpe dig med at styre skærmforbruget</p>"
-          }
-        },
-        "button_UfHqXV": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "shopify://collections/vores-dumbphones",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "text_wdR6fj",
-        "button_UfHqXV"
-      ],
-      "custom_css": [
-        "h2 {font-size: 4, 9vw;}",
-        "div {font-size: 1, 5vw;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-6",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 12
       }
     },
     "1747382751afc67ba6": {
@@ -223,7 +186,7 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "color_scheme": "scheme-3",
-        "padding_top": 24,
+        "padding_top": 52,
         "padding_bottom": 24
       }
     },
@@ -530,7 +493,6 @@
   "order": [
     "hero_banner_xc7HTV",
     "article_section_UPqpGX",
-    "rich_text_LMikFR",
     "1747382751afc67ba6",
     "image_with_text_3acgQr",
     "collection_list_3gXFbh",
