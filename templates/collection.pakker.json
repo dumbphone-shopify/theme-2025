@@ -38,12 +38,13 @@
       "name": "Hero-sektion",
       "settings": {
         "background_image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
+        "enable_scroll_effect": true,
         "hero_height": "75vh",
         "heading": "Giv dine elever en bedre forhold til smartphones",
         "title_color": "#ffffff",
-        "vertical_position": "center",
         "text_alignment": "left",
-        "content_position": "flex-end"
+        "content_position": "flex-end",
+        "mobile_content_alignment": "center"
       }
     },
     "featured_collection_tifA63": {
@@ -102,7 +103,6 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/three-students-working-flatlay.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -172,7 +172,6 @@
     },
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "custom_css": [
         "p {font-size: medium;}",
         "img {object-fit: contain;}"
@@ -379,10 +378,10 @@
         "padding_bottom": 36
       }
     },
-    "carusel_TEcgAc": {
+    "carusel_ikF49C": {
       "type": "carusel",
       "blocks": {
-        "slide_g73TQR": {
+        "slide_LmTeaX": {
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-4",
@@ -394,7 +393,7 @@
             "linktext": "Click here"
           }
         },
-        "slide_x3nWjr": {
+        "slide_xPKtAW": {
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-4",
@@ -406,10 +405,10 @@
             "linktext": "Click here"
           }
         },
-        "slide_EyDWzF": {
+        "slide_ibwBna": {
           "type": "slide",
           "settings": {
-            "color_scheme": "scheme-3",
+            "color_scheme": "scheme-2",
             "image": "shopify://shop_images/child-on-playground.jpg",
             "heading": "3.",
             "text": "Med dumbphonen bliver det mere overskueligt at vente med smartphonen\n\nBare 1 eller 2 år kunne potentielt være meget nærvær og trivsel vundet. Man kan også her tale om at gøre det blot ud fra et forsigtighedsprincip.",
@@ -420,18 +419,18 @@
         }
       },
       "block_order": [
-        "slide_g73TQR",
-        "slide_x3nWjr",
-        "slide_EyDWzF"
+        "slide_LmTeaX",
+        "slide_xPKtAW",
+        "slide_ibwBna"
       ],
       "name": "Carousel",
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36,
-        "title": "FORDELE VED AT STARTE MED DUMBPHONES",
+        "title": "This is a title",
         "align_text": "left",
-        "title_color": "#ac3f00",
-        "color_scheme": "scheme-1"
+        "title_color": "#002b0c",
+        "color_scheme": ""
       }
     },
     "contact_form_TyGdag": {
@@ -459,7 +458,7 @@
     "multicolumn_HbKqAa",
     "multicolumn_McXrfj",
     "product-grid",
-    "carusel_TEcgAc",
+    "carusel_ikF49C",
     "contact_form_TyGdag"
   ]
 }
