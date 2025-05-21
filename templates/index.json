@@ -12,28 +12,28 @@
     "hero_banner_xc7HTV": {
       "type": "hero-banner",
       "blocks": {
+        "button_YFHfp6": {
+          "type": "button",
+          "settings": {
+            "label": "Se vores dumbphones",
+            "link": "shopify://collections/vores-dumbphones",
+            "button_bg_color": "#fffdf8",
+            "button_text_color": "#002b0c"
+          }
+        },
         "button_xiCWY6": {
           "type": "button",
           "settings": {
-            "label": "hiiiii",
-            "link": "",
-            "button_bg_color": "#ffffff",
-            "button_text_color": "#000000"
-          }
-        },
-        "button_YPkiTz": {
-          "type": "button",
-          "settings": {
-            "label": "hiiii",
-            "link": "shopify://blogs/potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug/kan-jeg-fa-mere-naervaer",
+            "label": "Se vores guides",
+            "link": "shopify://pages/dumbphone-guide",
             "button_bg_color": "#fffdf8",
-            "button_text_color": "#3e2103"
+            "button_text_color": "#0a2038"
           }
         }
       },
       "block_order": [
-        "button_xiCWY6",
-        "button_YPkiTz"
+        "button_YFHfp6",
+        "button_xiCWY6"
       ],
       "custom_css": [],
       "name": "Hero Banner",
@@ -44,7 +44,7 @@
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
         "text_alignment": "center",
-        "content_position": "flex-end",
+        "content_position": "bottom-right",
         "mobile_content_alignment": "center"
       }
     },
