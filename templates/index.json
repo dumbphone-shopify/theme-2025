@@ -156,7 +156,7 @@
         "button_KRxVph": {
           "type": "button",
           "settings": {
-            "button_label": "learn more →",
+            "button_label": "Læs mere om os →",
             "button_link": "shopify://pages/dumbphone-guide",
             "button_style_secondary": true
           }
