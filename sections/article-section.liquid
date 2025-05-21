@@ -1,35 +1,26 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
-{% assign hero_type = article.metafields.custom.hero_type.value %}
-{% assign hero_title = article.metafields.custom.hero_title.value %}
-{% assign hero_image = article.metafields.custom.hero_image %}
+{% assign hero_type = article.metafields.custom.hero_type.value | default: 'image' %}
 {% assign hero_video_url = article.metafields.custom.hero_video_url %}
-{% assign hero_thumb = article.metafields.custom.hero_video_thumb %}
-{% assign article_body = article.metafields.custom.article_body.value %}
+{% assign hero_video_thumb = article.metafields.custom.hero_video_thumb %}
+{% assign show_author = true %}
 
 <div class="article-wrapper">
-  {% if hero_type == 'image' and hero_image %}
+  {% if hero_type == 'image' and article.image %}
     <div class="article-hero">
-      <img
-        src="{{ hero_image | image_url: width: 2000 }}"
-        alt="{{ hero_image.alt | escape }}"
-      >
+      <img src="{{ article.image | image_url: width: 2000 }}" alt="{{ article.image.alt | escape }}">
     </div>
 
   {% elsif hero_type == 'video' and hero_video_url %}
     <div class="article-hero article-hero__video">
-      <deferred-media
-        class="deferred-media video-section__media gradient global-media-settings"
-        data-media-id="video"
-      >
+      <deferred-media class="deferred-media video-section__media gradient global-media-settings" data-media-id="video">
         <button
           class="video-section__poster media deferred-media__poster media--landscape"
           type="button"
-          aria-label="{{ hero_title }}"
-        >
-          {% if hero_thumb %}
-            {{ hero_thumb | image_url: width: 2000 | image_tag: alt: hero_title }}
+          aria-label="{{ article.title }}">
+          {% if hero_video_thumb %}
+            {{ hero_video_thumb | image_url: width: 2000 | image_tag: alt: article.title }}
           {% endif %}
           <span class="deferred-media__poster-button motion-reduce">
             <span class="svg-wrapper">
@@ -42,31 +33,27 @@
             src="{{ hero_video_url }}?autoplay=1"
             allow="autoplay; encrypted-media"
             allowfullscreen
-            title="{{ hero_title }}"
-          ></iframe>
+            title="{{ article.title }}"></iframe>
         </template>
       </deferred-media>
     </div>
   {% endif %}
 
   <div class="article-content">
-    {% if hero_title %}
-      <h1 class="article-title">{{ hero_title }}</h1>
-    {% else %}
-      <h1 class="article-title">{{ article.title }}</h1>
+    <h1 class="article-title">{{ article.title }}</h1>
+
+    {% if show_author %}
+      <p class="article-author">Af {{ article.author }}</p>
     {% endif %}
 
-    {% if article_body %}
-      <div class="text-content">
-        {{ article.metafields.custom.article_body | metafield_tag }}
-
-      </div>
-    {% endif %}
+    <div class="text-content">
+      {{ article.content }}
+    </div>
   </div>
 </div>
 
 {% stylesheet %}
-  :root {
+  :root  {
     --col-50: clamp(0rem, -1.1364rem + 5.6818vw, 3.125rem);
     --col-100: clamp(0rem, -2.2727rem + 11.3636vw, 6.25rem);
     --img-article-pad: clamp(2rem, 1.8261rem + 0.8696vw, 2.5rem);
@@ -75,11 +62,7 @@
 
   .article-wrapper {
     display: grid;
-    grid-template-columns:
-      [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(
-        --col-50
-      )
-      [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
+    grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
   }
 
   .article-hero {
@@ -138,11 +121,7 @@
   .article-content {
     grid-column: full;
     display: grid;
-    grid-template-columns:
-      [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 4fr var(
-        --col-50
-      )
-      [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
+    grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 4fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
   }
 
   .article-content p,
@@ -154,77 +133,19 @@
     width: 100%;
   }
 
+  .article-author {
+    grid-column: inner;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+  }
+
   .article-image {
     border-radius: 25px;
     display: block;
     width: 100%;
     margin: var(--img-article-pad) auto;
-  }
-
-  .article-image--large {
-    grid-column: full;
-    max-width: 800px;
-  }
-
-  .article-image--medium {
-    grid-column: content;
-    max-width: 600px;
-  }
-
-  .article-image--small {
-    grid-column: inner;
-    max-width: 300px;
-  }
-
-  .pull-quote {
-    grid-column: inner;
-    font-size: 2.5rem;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    margin: 2rem auto;
-    padding: 1.2rem 0 0 1.5rem;
-    line-height: 1.5;
-    border: none;
-    max-width: 600px;
-    width: 100%;
-  }
-
-  .pull-quote::before {
-    content: '“';
-    font-size: 5rem;
-    color: #999;
-    position: absolute;
-    top: 0;
-    left: -1rem;
-  }
-
-  h3.text-content {
-    margin: 1rem auto 0;
-  }
-
-  p.text-content {
-    margin: 0.5rem auto;
-  }
-
-  h4.text-content {
-    margin: 0.5rem auto 0;
-  }
-
-  h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .text-content:is(h2):not(:first-of-type) {
-    margin-top: 3rem;
-  }
-
-  .article-hero button {
-    height: 100%;
-  }
-
-  .video-section__media {
-    padding-bottom: 0;
   }
 
   iframe,
@@ -239,7 +160,7 @@
     iframe,
     .deferred-media__poster,
     .article-hero img {
-      border-radius: 0px !important;
+      border-radius: 0 !important;
     }
   }
 {% endstylesheet %}
