@@ -147,11 +147,31 @@
     grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
   }
 
+  .article-content p,
+  .text-content,
+  .article-title {
+    grid-column: inner;
+    max-width: 550px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
   .article-hero {
     grid-column: full;
     display: grid;
     grid-template-columns: subgrid;
   }
+
+  .article-content {
+    grid-column: full;
+    display: grid;
+    grid-template-columns:
+      [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 4fr var(
+        --col-50
+      )
+      [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
+  }
+
 
   .article-hero img,
   .article-hero iframe,
