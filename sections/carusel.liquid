@@ -54,12 +54,12 @@
     .glider__container .next {
       border-top: 16px solid transparent;
       border-bottom: 16px solid transparent;
-      border-left: 16px solid {{ section.settings.arrow_color }};
+      border-left: 16px solid {{section.settings.arrow_color}};
       }
     .glider__container .prev {
       border-top: 16px solid transparent;
       border-bottom: 16px solid transparent;
-      border-right: 16px solid {{ section.settings.arrow_color }};
+      border-right: 16px solid {{section.settings.arrow_color}};
 
       }
 
@@ -143,15 +143,18 @@
     </h2>
 
     <div class="glider">
-      {% for block in section.blocks default: 1 %}
+      {% for block in section.blocks %}
         <div
           class="carousel-slide color-{{ block.settings.color_scheme }}"
           {{ block.shopify_attributes }}
         >
-          <div
-            class="img-block"
-            style="background-image: url({{ block.settings.image | image_url: width: 600 }});"
-          ></div>
+          <div class="img-block" style="background-image: url({{ block.settings.image | image_url: width: 600 }});">
+            {% comment %}
+              {% if block.settings.image %}
+                <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
+              {% endif %}
+            {% endcomment %}
+          </div>
           <div class="text-block text-{{ block.settings.align_text }}">
             <div class="text-block__container">
               {% if block.settings.heading %}
@@ -265,7 +268,7 @@
       "type": "color",
       "id": "arrow_color",
       "label": "Arrow color",
-      "default": "#ac3f00"
+      "default": "##ac3f00"
     },
     {
       "type": "color_scheme",
