@@ -1,135 +1,157 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
 {% schema %}
-  {
-    "name": "Artikelsektion",
-    "tag": "article",
-    "class": "custom-article",
-    "limit": 1,
-    "presets": [
-      {
-        "name": "Artikelsektion"
-      }
-    ],
-    "settings": [
-      {
-        "type": "select",
-        "id": "hero_type",
-        "label": "Hero-billede",
-        "options": [
-          {
-            "value": "image",
-            "label": "Billede"
-          }, {
-            "value": "video",
-            "label": "Video"
-          }
-        ],
-        "default": "image"
-      }, {
-        "type": "image_picker",
-        "id": "hero_image",
-        "label": "Vælg billede"
-      }, {
-        "type": "url",
-        "id": "hero_video_url",
-        "label": "Video-URL"
-      }, {
-        "type": "text",
-        "id": "hero_title",
-        "label": "Rubrik"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "heading",
-        "name": "Ny titel",
-        "settings": [
-          {
-            "type": "text",
-            "id": "heading",
-            "label": "Ny titel"
-          }
-        ]
-      },
-      {
-        "type": "h3",
-        "name": "Underoverskrift",
-        "settings": [
-          {
-            "type": "text",
-            "id": "heading",
-            "label": "Underoverskrift"
-          }
-        ]
-      },
-      {
-        "type": "h4",
-        "name": "Mellemoverskrift",
-        "settings": [
-          {
-            "type": "text",
-            "id": "heading",
-            "label": "Mellemoverskrift"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "name": "Paragraf",
-        "settings": [
-          {
-            "type": "richtext",
-            "id": "text",
-            "label": "Paragraf"
-          }
-        ]
-      }, {
-        "type": "pull_quote",
-        "name": "Citatboks",
-        "settings": [
-          {
-            "type": "text",
-            "id": "quote",
-            "label": "Citat"
-          }
-        ]
-      }, {
-        "type": "image",
-        "name": "Billede",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Billede til artikel"
-          }, {
-            "type": "text",
-            "id": "alt",
-            "label": "Alternativ billedetekst"
-          }, {
-            "type": "select",
-            "id": "image_size",
-            "label": "Billedets størrelse",
-            "options": [
-              {
-                "value": "large",
-                "label": "Stor"
-              }, {
-                "value": "medium",
-                "label": "Mellem"
-              }, {
-                "value": "small",
-                "label": "Lille"
-              }
-            ],
-            "default": "large"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Artikelsektion",
+  "tag": "article",
+  "class": "custom-article",
+  "limit": 1,
+  "presets": [
+    {
+      "name": "Artikelsektion"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "hero_type",
+      "label": "Hero-billede",
+      "options": [
+        {
+          "value": "image",
+          "label": "Billede"
+        },
+        {
+          "value": "video",
+          "label": "Video"
+        }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "t:sections.video.settings.cover_image.label"
+    },
+    {
+      "type": "video_url",
+      "id": "hero_video_url",
+      "accept": ["youtube", "vimeo"],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "label": "t:sections.video.settings.video_url.label",
+      "info": "t:sections.video.settings.video_url.info"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_video_thumbnail",
+      "label": "Uploade din egen video thumbnail"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Rubrik"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Ny titel",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:sections.video.settings.description.label",
+          "info": "t:sections.video.settings.description.info"
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "name": "Underoverskrift",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Underoverskrift"
+        }
+      ]
+    },
+    {
+      "type": "h4",
+      "name": "Mellemoverskrift",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Mellemoverskrift"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "Paragraf",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Paragraf"
+        }
+      ]
+    },
+    {
+      "type": "pull_quote",
+      "name": "Citatboks",
+      "settings": [
+        {
+          "type": "text",
+          "id": "quote",
+          "label": "Citat"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Billede",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Billede til artikel"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alternativ billedetekst"
+        },
+        {
+          "type": "select",
+          "id": "image_size",
+          "label": "Billedets størrelse",
+          "options": [
+            {
+              "value": "large",
+              "label": "Stor"
+            },
+            {
+              "value": "medium",
+              "label": "Mellem"
+            },
+            {
+              "value": "small",
+              "label": "Lille"
+            }
+          ],
+          "default": "large"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
-  :root  {
+  :root {
     --col-50: clamp(0rem, -1.1364rem + 5.6818vw, 3.125rem);
     --col-100: clamp(0rem, -2.2727rem + 11.3636vw, 6.25rem);
     --img-article-pad: clamp(2rem, 1.8261rem + 0.8696vw, 2.5rem);
@@ -138,9 +160,12 @@
 
   .article-wrapper {
     display: grid;
-    grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
+    grid-template-columns:
+      [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 7fr var(
+        --col-50
+      )
+      [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
   }
-
 
   .article-hero {
     grid-column: full;
@@ -148,9 +173,10 @@
     grid-template-columns: subgrid;
   }
 
-
   .article-hero img,
-  .article-hero video {
+  .article-hero iframe,
+  .article-hero video,
+  .article-hero .deferred-media {
     grid-column: full;
     width: 100%;
     height: auto;
@@ -159,19 +185,51 @@
     max-width: 1000px;
   }
 
+  /* article video settings  */
+
+  .deferred-media {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 250px;
+    min-height: 140px;
+    margin-inline: auto;
+    background: #000;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+  }
+  @supports (aspect-ratio: 16 / 9) {
+    .deferred-media {
+      height: auto;
+      padding-bottom: 0;
+    }
+  }
+  .deferred-media > * {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* article title  */
 
   .article-title {
     margin: 2rem 0 1rem;
     font-size: 3.25rem;
     line-height: 1.2;
-
   }
-
 
   .article-content {
     grid-column: full;
     display: grid;
-    grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 4fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end]
+    grid-template-columns:
+      [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 4fr var(
+        --col-50
+      )
+      [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
   }
 
   .article-content p,
@@ -183,12 +241,11 @@
     width: 100%;
   }
 
-
   .article-image {
+    border-radius: 25px;
     display: block;
-    margin-inline: auto;
     width: 100%;
-    padding: var(--img-article-pad) 0;
+    margin: var(--img-article-pad) auto;
   }
 
   .article-image--large {
@@ -210,10 +267,7 @@
     grid-column: inner;
     font-size: 2.5rem;
     font-style: italic;
-    font-family: Georgia
-    , 'Times New Roman'
-    , Times
-    , serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     margin: 2rem auto;
     padding: 1.2rem 0 0 1.5rem;
@@ -254,30 +308,115 @@
     margin-top: 3rem;
   }
 
+  /* video hero section  */
 
+  .article-hero button {
+    height: 100%;
+  }
+
+  .video-section__media {
+    padding-bottom: 0;
+  }
+
+  iframe,
+  .deferred-media__poster {
+    border-radius: 25px !important;
+  }
+
+  /* no border radius on imgs or videos in mobile view  */
+  @media screen and (max-width: 1000px) {
+    .article-image--medium,   .article-image--large,   iframe,
+  .deferred-media__poster  {
+    border-radius: 0px !important;
+  }
+}
+
+
+  */
 {% endstylesheet %}
 
 <div class="article-wrapper">
   {% if section.settings.hero_type == 'image' and section.settings.hero_image %}
     <div class="article-hero">
-      <img src="{{ section.settings.hero_image | image_url: width: 2000 }}" alt="{{ section.settings.hero_image.alt | escape }}" />
+      <img
+        src="{{ section.settings.hero_image | image_url: width: 2000 }}"
+        alt="{{ section.settings.hero_image.alt | escape }}"
+      >
     </div>
-    {% if section.settings.hero_title != blank %}
-      <h1 class="article-title">{{ section.settings.hero_title }}</h1>
-    {% endif %}
-  {% elsif section.settings.hero_type == 'video' and section.settings.hero_video_url %}
-    <div class="article-hero">
-      <video controls>
-        <source src="{{ section.settings.hero_video_url }}" type="video/mp4" />
-      </video>
+
+  {% elsif section.settings.hero_type == 'video' and section.settings.hero_video_url != blank %}
+    {% assign video_type = section.settings.hero_video_url.type %}
+    {% assign video_id = section.settings.hero_video_url.id %}
+    {% assign video_type = section.settings.hero_video_url.type %}
+    {% assign poster = section.settings.hero_video_thumbnail %}
+    {% assign alt = section.settings.hero_title | default: 'Hero Video' %}
+
+    {%- liquid
+      if section.settings.video != null
+        assign ratio_diff = section.settings.video.aspect_ratio | minus: poster.aspect_ratio | abs
+        if ratio_diff < 0.01 and ratio_diff > 0
+          assign fix_ratio = true
+        endif
+      endif
+    -%}
+    <div class="article-hero article-hero__video">
+      <deferred-media
+        style="padding-bottom: 0;"
+        class="deferred-media video-section__media gradient global-media-settings"
+        data-media-id="{{ video_id }}"
+        {% if poster != null %}
+          style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
+        {% endif %}
+      >
+        <button
+          id="Deferred-Poster-Modal-{{ video_id }}"
+          class="video-section__poster media deferred-media__poster media--landscape"
+          type="button"
+          aria-label="{{ alt }}"
+        >
+          {%- if poster != null -%}
+            {{
+              poster
+              | image_url: width: 3840
+              | image_tag: sizes: sizes, widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: alt
+            }}
+          {%- else -%}
+            {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+          {%- endif -%}
+          <span class="deferred-media__poster-button motion-reduce">
+            <span class="svg-wrapper">
+              {{ 'icon-play.svg' | inline_asset_content }}
+            </span>
+          </span>
+        </button>
+        <template>
+          {%- if video_type == 'youtube' -%}
+            <iframe
+              src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1"
+              class="js-youtube"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ alt }}"
+            ></iframe>
+          {% elsif video_type == 'vimeo' %}
+            <iframe
+              src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1"
+              class="js-vimeo"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+              title="{{ alt }}"
+            ></iframe>
+          {% endif %}
+        </template>
+      </deferred-media>
     </div>
-    {% if section.settings.hero_title != blank %}
-      <h1 class="article-title">{{ section.settings.hero_title }}</h1>
-    {% endif %}
   {% endif %}
 
-
   <div class="article-content">
+    {% if section.settings.hero_title != blank %}
+      <h1 class="article-title">{{ section.settings.hero_title }}</h1>
+    {% endif %}
+
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'heading' %}
@@ -295,9 +434,10 @@
 
         {% when 'image' %}
           <img
-        class="article-image article-image--{{ block.settings.image_size }}"
-        src="{{ block.settings.image | image_url: width: 1200 }}"
-        alt="{{ block.settings.alt | escape }}" />
+            class="article-image article-image--{{ block.settings.image_size }}"
+            src="{{ block.settings.image | image_url: width: 1200 }}"
+            alt="{{ block.settings.alt | escape }}"
+          >
       {% endcase %}
     {% endfor %}
   </div>

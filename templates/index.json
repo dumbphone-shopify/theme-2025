@@ -39,11 +39,13 @@
       "name": "Hero Banner",
       "settings": {
         "background_image": "shopify://shop_images/grassy-beach-view.jpg",
+        "enable_scroll_effect": true,
         "hero_height": "75vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
         "text_alignment": "center",
-        "content_position": "flex-end"
+        "content_position": "middle-left",
+        "mobile_content_alignment": "center"
       }
     },
     "article_section_UPqpGX": {
@@ -119,11 +121,13 @@
         "h3_yKwt3V",
         "paragraph_ErtNEp"
       ],
+      "custom_css": [],
       "name": "Default custom sections",
       "settings": {
-        "hero_type": "image",
+        "hero_type": "video",
         "hero_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg",
-        "hero_video_url": "",
+        "hero_video_url": "https://www.youtube.com/watch?v=egvwrDwlX8U",
+        "hero_video_thumbnail": "shopify://shop_images/abandoned-iceland-farm-home.jpg",
         "hero_title": "Rubrik"
       }
     },

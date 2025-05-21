@@ -1,22 +1,22 @@
 {% comment %} 
 
-          LINK TO OFFICIAL DOCS HERE:
+                            LINK TO OFFICIAL DOCS HERE:
 
-          Overall docs relevant to us: 
-          https://shopify.dev/docs/storefronts/themes/architecture/
+                            Overall docs relevant to us: 
+                            https://shopify.dev/docs/storefronts/themes/architecture/
 
-          Input settings:
-          https://shopify.dev/docs/storefronts/themes/architecture/settings/input-settings
+                            Input settings:
+                            https://shopify.dev/docs/storefronts/themes/architecture/settings/input-settings
 
-          Sections and blocks:
-          https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks
+                            Sections and blocks:
+                            https://help.shopify.com/en/manual/online-store/themes/theme-structure/sections-and-blocks
 
-          Schema is the part of the code that will be visible in the theme-editor. 
+                            Schema is the part of the code that will be visible in the theme-editor. 
 
-          The name sets the name that will present in the sections-list. 
+                            The name sets the name that will present in the sections-list. 
 
-          Settings are the fields that the user can customize in the theme editor. There is more information in the link on the top of this comment.
-           
+                            Settings are the fields that the user can customize in the theme editor. There is more information in the link on the top of this comment.
+                             
  {% endcomment %}
 {% schema %}
   {
@@ -33,8 +33,12 @@
         "label": "Baggrundsbillede"
       },
       {
-
-        // This is for giving various heights to the section.
+        "type": "checkbox",
+        "id": "enable_scroll_effect",
+        "label": "Aktiver scroll-effekt",
+        "default": true
+      },
+      {
         "type": "select",
         "id": "hero_height",
         "label": "Sektionstørrelse",
@@ -60,36 +64,12 @@
         "id": "heading",
         "label": "Titel",
         "default": "Velkommen til"
-      },
-      {
+      }, {
         "type": "color",
         "id": "title_color",
         "label": "Titel farve",
         "default": "#ffffff"
-      }, 
-      
-      {
-  "type": "select",
-  "id": "vertical_position",
-  "label": "Vertikal placering",
-  "default": "center",
-  "options": [
-    {
-      "value": "flex-start",
-      "label": "Top"
-    },
-    {
-      "value": "center",
-      "label": "Midten"
-    },
-    {
-      "value": "flex-end",
-      "label": "Bund"
-    }
-  ]
-},{
-
-        // This creates the option to align the text to the left, center or right.
+      }, {
         "type": "select",
         "id": "text_alignment",
         "label": "Tekst placering",
@@ -109,24 +89,63 @@
       }, {
         "type": "select",
         "id": "content_position",
-        "label": "Tekst block position",
+        "label": "Indholdets placering",
+        "default": "middle-center",
+        "options": [
+          {
+            "value": "top-left",
+            "label": "Top venstre"
+          },
+          {
+            "value": "top-center",
+            "label": "Top center"
+          },
+          {
+            "value": "top-right",
+            "label": "Top højre"
+          },
+          {
+            "value": "middle-left",
+            "label": "Midten venstre"
+          }, {
+            "value": "middle-center",
+            "label": "Midten center"
+          }, {
+            "value": "middle-right",
+            "label": "Midten højre"
+          }, {
+            "value": "bottom-left",
+            "label": "Bund venstre"
+          }, {
+            "value": "bottom-center",
+            "label": "Bund center"
+          }, {
+            "value": "bottom-right",
+            "label": "Bund højre"
+          }
+        ]
+      }, {
+        "type": "header",
+        "content": "t:sections.image-banner.settings.mobile.content"
+      }, {
+        "type": "select",
+        "id": "mobile_content_alignment",
+        "label": "Indhold placering på mobil",
         "default": "center",
         "options": [
           {
-            "value": "flex-start",
-            "label": "Venstre"
+            "value": "top",
+            "label": "top"
           }, {
             "value": "center",
-            "label": "Center"
+            "label": "center"
           }, {
-            "value": "flex-end",
-            "label": "Højre"
+            "value": "bottom",
+            "label": "bottom"
           }
         ]
       }
     ],
-
-// This is used to allow the user to add up to two button "blocks"
     "blocks": [
       {
         "type": "button",
@@ -156,7 +175,6 @@
       }
     ],
     "max_blocks": 2,
-
     "presets": [
       {
         "name": "hero-sektion"
@@ -164,9 +182,9 @@
     ]
   }
 {% endschema %}
+<section class="hero-banner-section {% if section.settings.enable_scroll_effect %}parallax-bg{% endif %}" style="background-image: url({{ section.settings.background_image | image_url: width: 2000 }});">
+  <div class="hero-overlay position-{{ section.settings.content_position}} mobile-position-{{ section.settings.mobile_content_alignment }}">
 
-<section class="hero-banner-section" style="background-image: url({{ section.settings.background_image | image_url: width: 2000 }});">
-  <div class="hero-overlay">
     <div class="hero-content">
       <h1 style="color: {{ section.settings.title_color }};">{{ section.settings.heading }}</h1>
       {% if section.blocks.size > 0 %}
@@ -196,16 +214,74 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
+    // for scroll effect
   }
 
+
+  /* inspiration from the default image-banner.liquid section */
+  @media screen and (min-width: 750px) {
+    .hero-content {
+      padding: 5rem;
+      width: auto;
+      max-width: 71rem;
+      min-width: 45rem;
+    }
+    .hero-overlay {
+      padding: 5rem;
+    }
+  }
+
+  /* Desktop content placement */
   .hero-overlay {
-    background: rgba(0, 0, 0, 0.4);
+    display: grid;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: {{ section.settings.vertical_position }};
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .hero-overlay.position-top-left {
+    place-content: start start;
+  }
+  .hero-overlay.position-top-center {
+    place-content: start center;
+  }
+  .hero-overlay.position-top-right {
+    place-content: start end;
+  }
+  .hero-overlay.position-middle-left {
+    place-content: center start;
+  }
+  .hero-overlay.position-middle-center {
+    place-content: center center;
+  }
+  .hero-overlay.position-middle-right {
+    place-content: center end;
+  }
+  .hero-overlay.position-bottom-left {
+    place-content: end start;
+  }
+  .hero-overlay.position-bottom-center {
+    place-content: end center;
+  }
+  .hero-overlay.position-bottom-right {
+    place-content: end end;
+  }
 
-    justify-content: {{ section.settings.content_position }};
+  /* Mobile content placement  */
+  @media screen and (max-width: 749px) {
+    /* Disables animation effect of background image in mobile view */
+    .hero-banner-section {
+      background-attachment: scroll;
+    }
+    .hero-overlay.mobile-position-top {
+      place-content: start center;
+    }
+    .hero-overlay.mobile-position-center {
+      place-content: center center;
+    }
+    .hero-overlay.mobile-position-bottom {
+      place-content: end center;
+    }
   }
 
   .hero-content {
@@ -255,7 +331,6 @@
   /* center buttons vertically on small screens */
   @media (max-width: 600px) {
     .button-wrapper {
-
       align-items: center;
       gap: 2rem;
     }
