@@ -139,7 +139,7 @@
           "type": "button",
           "settings": {
             "button_label": "Læs mere →",
-            "button_link": "",
+            "button_link": "shopify://pages/dumbphone-guide",
             "button_style_secondary": true
           }
         }
@@ -152,7 +152,8 @@
       "custom_css": [
         ".image-with-text__content {border-radius: 0 25px 25px 0;}",
         ".image-with-text__media {border-radius: 25px 0 0 25px;}",
-        "@media screen and (max-width: 749px) {.image-with-text__content {border-radius: 0 0 25px 25px; } .image-with-text__media {border-radius: 25px 25px 0 0; }}"
+        "@media screen and (max-width: 749px) {.image-with-text__content {border-radius: 0 0 25px 25px; } .image-with-text__media {border-radius: 25px 25px 0 0; }}",
+        "a {align-self: flex-end; --border-offset: none;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
