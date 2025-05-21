@@ -93,7 +93,7 @@
       }
 
       .text-block {
-        padding: 10px 30px;
+        padding: 10px 25px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -148,11 +148,13 @@
           class="carousel-slide color-{{ block.settings.color_scheme }}"
           {{ block.shopify_attributes }}
         >
-          <div
-            class="img-block"
-            style="background-image: url({{ block.settings.image | image_url: width: 600 }});"
-          ></div>
-          <p>{{ block.settings.image | image_url }}</p>
+          <div class="img-block" style="background-image: url({{ block.settings.image | image_url: width: 600 }});">
+            {% comment %}
+              {% if block.settings.image %}
+                <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
+              {% endif %}
+            {% endcomment %}
+          </div>
           <div class="text-block text-{{ block.settings.align_text }}">
             <div class="text-block__container">
               {% if block.settings.heading %}
@@ -263,16 +265,16 @@
       "default": "#000000"
     },
     {
-      "type": "color",
-      "id": "arrow_color",
-      "label": "Arrow color",
-      "default": "##ac3f00"
-    },
-    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Arrow color",
+      "default": "#ac3f00"
     }
   ],
   "blocks": [
