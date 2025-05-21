@@ -43,9 +43,8 @@
         "hero_height": "75vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
-        "vertical_position": "center",
         "text_alignment": "center",
-        "content_position": "middle-left",
+        "content_position": "flex-end",
         "mobile_content_alignment": "center"
       }
     },
@@ -122,70 +121,12 @@
         "h3_yKwt3V",
         "paragraph_ErtNEp"
       ],
-      "custom_css": [],
       "name": "Default custom sections",
       "settings": {
-        "hero_type": "video",
-        "hero_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg"
-      }
-    },
-    "carusel_TeGAzP": {
-      "type": "carusel",
-      "blocks": {
-        "slide_PTJEt3": {
-          "type": "slide",
-          "settings": {
-            "color_scheme": "scheme-4",
-            "image": "shopify://shop_images/fall-vegetable-box.jpg",
-            "heading": "Vi står for at hjælper med at finde balancen",
-            "text": "Jeg skiftede min smartphone ud med en dumbphone for tre år siden\nSiden da har jeg skiftet mellem de to og forsøgt at finde den balance der føles rigtig for mig\nMåske kan jeg også hjælpe dig med at finde din\nJeg har lavet nogle guides der kan hjælper dig med at finde din balance",
-            "align_text": "left",
-            "link": "shopify://pages/contact",
-            "linktext": "Find vores guides her"
-          }
-        },
-        "slide_UMaxaR": {
-          "type": "slide",
-          "settings": {
-            "color_scheme": "scheme-3",
-            "image": "shopify://shop_images/self-serve-coffee-shop.jpg",
-            "heading": "Du behøver ikke vælge alt eller intet",
-            "text": "Du behøver ikke skifte helt\nMange apps som mail og bank er svære at undvære\nMen der findes tilbehør der kan hjælpe dig med at skabe lidt ro og balance uden at give helt slip\nSe hvad vi har samlet til dig her",
-            "align_text": "left",
-            "link": "shopify://collections/tilbehor",
-            "linktext": "se vores tilbehør"
-          }
-        },
-        "slide_n43yy9": {
-          "type": "slide",
-          "settings": {
-            "color_scheme": "scheme-2",
-            "image": "shopify://shop_images/abandoned-iceland-farm-home.jpg",
-            "heading": "En bedre start for de små",
-            "text": "Smartphones kan hurtigt gå fra værktøj til tidsrøver. Jeg tror børn har godt af at starte med en dumbphone i 1.-2. klasse, så de lærer balance og er mere til stede i skolen, med venner og derhjemme. \ntil det har jeg skabt udlejnings planer for din klasse.\nse hvad passer til jer",
-            "align_text": "left",
-            "link": "shopify://pages/vores-skoleforlob",
-            "linktext": "udlejning af telefoner"
-          }
-        }
-      },
-      "block_order": [
-        "slide_PTJEt3",
-        "slide_UMaxaR",
-        "slide_n43yy9"
-      ],
-      "custom_css": [
-        ".carousel-slide {margin: 0 10px;}"
-      ],
-      "name": "Carousel",
-      "settings": {
-        "padding_top": 24,
-        "padding_bottom": 24,
-        "number_slider_desktop": 3,
-        "title": "Det vi gør",
-        "align_text": "center",
-        "title_color": "#ac3f00",
-        "color_scheme": "scheme-1"
+        "hero_type": "image",
+        "hero_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg",
+        "hero_video_url": "",
+        "hero_title": "Rubrik"
       }
     },
     "rich_text_LMikFR": {
@@ -223,7 +164,7 @@
         "color_scheme": "scheme-6",
         "full_width": true,
         "padding_top": 24,
-        "padding_bottom": 24
+        "padding_bottom": 12
       }
     },
     "1747382751afc67ba6": {
@@ -325,8 +266,61 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 52
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "carusel_bMcbcV": {
+      "type": "carusel",
+      "blocks": {
+        "slide_dYYRxj": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "image": "shopify://shop_images/fall-vegetable-box.jpg",
+            "heading": "Vi står for at hjælper med at finde balancen",
+            "text": "Jeg skiftede min smartphone ud med en dumbphone for tre år siden\nSiden da har jeg skiftet mellem de to og forsøgt at finde den balance der føles rigtig for mig\nMåske kan jeg også hjælpe dig med at finde din\nJeg har lavet nogle guides der kan hjælper dig med at finde din balance",
+            "align_text": "left",
+            "link": "shopify://pages/contact",
+            "linktext": "læs vores guides her"
+          }
+        },
+        "slide_8jixRm": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "heading": "This is a slider heading",
+            "text": "Here’s a short description or message.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "slide_6RtGf7": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "heading": "This is a slider heading",
+            "text": "Here’s a short description or message.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        }
+      },
+      "block_order": [
+        "slide_dYYRxj",
+        "slide_8jixRm",
+        "slide_6RtGf7"
+      ],
+      "name": "Carousel",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "title": "This is a title",
+        "align_text": "left",
+        "title_color": "#ffffff",
+        "color_scheme": ""
       }
     },
     "rich_text_WhwJye": {
@@ -374,7 +368,7 @@
         "content_alignment": "left",
         "color_scheme": "scheme-2",
         "full_width": true,
-        "padding_top": 24,
+        "padding_top": 40,
         "padding_bottom": 0
       }
     },
@@ -394,8 +388,8 @@
         "show_date": false,
         "show_author": true,
         "color_scheme": "scheme-2",
-        "padding_top": 12,
-        "padding_bottom": 24
+        "padding_top": 8,
+        "padding_bottom": 36
       }
     },
     "rich_text_az4UTm": {
@@ -428,7 +422,7 @@
         "content_alignment": "left",
         "color_scheme": "scheme-1",
         "full_width": true,
-        "padding_top": 24,
+        "padding_top": 40,
         "padding_bottom": 12
       }
     },
@@ -486,7 +480,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 12,
-        "padding_bottom": 52
+        "padding_bottom": 36
       }
     },
     "collage_f44EKd": {
@@ -535,9 +529,9 @@
     "article_section_UPqpGX",
     "rich_text_LMikFR",
     "1747382751afc67ba6",
-    "collection_list_3gXFbh",
     "image_with_text_3acgQr",
-    "carusel_TeGAzP",
+    "collection_list_3gXFbh",
+    "carusel_bMcbcV",
     "rich_text_WhwJye",
     "featured_blog_XGYwnV",
     "rich_text_az4UTm",
