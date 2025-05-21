@@ -228,56 +228,60 @@
         "padding_bottom": 0
       }
     },
-    "image_with_text_9R8dpj": {
-      "type": "image-with-text",
+    "carusel_Gxtdiy": {
+      "type": "carusel",
       "blocks": {
-        "heading_VgwmJM": {
-          "type": "heading",
+        "slide_7QCM6B": {
+          "type": "slide",
           "settings": {
-            "heading": "Billede med tekst",
-            "heading_size": "h1"
+            "color_scheme": "scheme-1",
+            "image": "shopify://shop_images/Arne-with-dumbphones.webp",
+            "heading": "This is a slider heading",
+            "text": "Here’s a short description or message.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
           }
         },
-        "text_ktzPM7": {
-          "type": "text",
+        "slide_4ntK8h": {
+          "type": "slide",
           "settings": {
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
-            "text_style": "body"
+            "color_scheme": "scheme-1",
+            "image": "shopify://shop_images/Arne-and-TIkko-on-a_bike-trip.webp",
+            "heading": "This is a slider heading",
+            "text": "Here’s a short description or message.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
           }
         },
-        "button_nVBtyp": {
-          "type": "button",
+        "slide_pKiEjg": {
+          "type": "slide",
           "settings": {
-            "button_label": "Knaptekst",
-            "button_link": "",
-            "button_style_secondary": false
+            "color_scheme": "scheme-1",
+            "image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
+            "heading": "This is a slider heading",
+            "text": "Here’s a short description or message.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
           }
         }
       },
       "block_order": [
-        "heading_VgwmJM",
-        "text_ktzPM7",
-        "button_nVBtyp"
+        "slide_7QCM6B",
+        "slide_4ntK8h",
+        "slide_pKiEjg"
       ],
-      "custom_css": [
-        ".image-with-text__content {border-radius: 25px 0 0 25px;}",
-        ".image-with-text__media {border-radius: 0 25px 25px 0;}",
-        "@media screen and (max-width: 749px) {.image-with-text__content {border-radius: 0 0 25px 25px; } .image-with-text__media {border-radius: 25px 25px 0 0; }}"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
+      "name": "Carousel",
       "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
         "padding_top": 36,
-        "padding_bottom": 52
+        "padding_bottom": 36,
+        "number_slider_desktop": 4,
+        "title": "Min tid i dumbphone.dk",
+        "align_text": "center",
+        "title_color": "#43668f",
+        "color_scheme": "scheme-2"
       }
     },
     "main": {
@@ -296,7 +300,7 @@
     "article_section_eTXCAR",
     "rich_text_bUkCeJ",
     "image_with_text_M9M7XT",
-    "image_with_text_9R8dpj",
+    "carusel_Gxtdiy",
     "main"
   ]
 }

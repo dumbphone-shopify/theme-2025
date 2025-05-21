@@ -41,6 +41,7 @@
         "hero_height": "75vh",
         "heading": "Giv dine elever en bedre forhold til smartphones",
         "title_color": "#ffffff",
+        "vertical_position": "center",
         "text_alignment": "left",
         "content_position": "flex-end"
       }
@@ -101,6 +102,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/three-students-working-flatlay.jpg",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -170,6 +172,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "custom_css": [
         "p {font-size: medium;}",
         "img {object-fit: contain;}"
@@ -376,10 +379,65 @@
         "padding_bottom": 36
       }
     },
+    "carusel_TEcgAc": {
+      "type": "carusel",
+      "blocks": {
+        "slide_g73TQR": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "image": "shopify://shop_images/family-time-in-the-kitchen.jpg",
+            "heading": "1.",
+            "text": "Dumbphonen løser et meget naturligt og alment behov hos mange forældre - nemlig at kunne komme i kontakt med deres barn\n\nDumbphonen opfyldet dette behov og giver jer som forældre tryghed og barnet en blød start med telefon og teknologi",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "slide_x3nWjr": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
+            "heading": "2.",
+            "text": "Det er en fordel at være flere med, da det gør det nemmere at udskyde smartphonen når man er flere om at gøre det sammen\n\nDet vil samtidig gøre det mere realistisk at flere forældre kan se sig selv i det og vil være med til at prøve bare et par år på denne måde",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "slide_EyDWzF": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-3",
+            "image": "shopify://shop_images/child-on-playground.jpg",
+            "heading": "3.",
+            "text": "Med dumbphonen bliver det mere overskueligt at vente med smartphonen\n\nBare 1 eller 2 år kunne potentielt være meget nærvær og trivsel vundet. Man kan også her tale om at gøre det blot ud fra et forsigtighedsprincip.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        }
+      },
+      "block_order": [
+        "slide_g73TQR",
+        "slide_x3nWjr",
+        "slide_EyDWzF"
+      ],
+      "name": "Carousel",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "title": "FORDELE VED AT STARTE MED DUMBPHONES",
+        "align_text": "left",
+        "title_color": "#ac3f00",
+        "color_scheme": "scheme-1"
+      }
+    },
     "contact_form_TyGdag": {
       "type": "contact-form",
       "custom_css": [
-        "h2 {color: #AC3F00;}"
+        "h2 {color: #ac3f00;}"
       ],
       "settings": {
         "heading": "Interesseret? Kontakt os her!          Så sender vi en rabatkode til jer!",
@@ -401,6 +459,7 @@
     "multicolumn_HbKqAa",
     "multicolumn_McXrfj",
     "product-grid",
+    "carusel_TEcgAc",
     "contact_form_TyGdag"
   ]
 }
