@@ -208,7 +208,7 @@
         ".image-with-text__content {border-radius: 25px 0 0 25px;}",
         ".image-with-text__media {border-radius: 0 25px 25px 0;}",
         "@media screen and (max-width: 749px) {.image-with-text__content {border-radius: 0 0 25px 25px; } .image-with-text__media {border-radius: 25px 25px 0 0; }}",
-        "a {align-self: flex-end;}"
+        "a {align-self: flex-end; --border-offset: none;}"
       ],
       "name": "velkomst sektion",
       "settings": {
