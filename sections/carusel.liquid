@@ -54,12 +54,12 @@
     .glider__container .next {
       border-top: 16px solid transparent;
       border-bottom: 16px solid transparent;
-      border-left: 16px solid #ac3f00;
+      border-left: 16px solid {{ section.settings.arrow_color }};
       }
     .glider__container .prev {
       border-top: 16px solid transparent;
       border-bottom: 16px solid transparent;
-      border-right: 16px solid #ac3f00;
+      border-right: 16px solid {{ section.settings.arrow_color }};
 
       }
 
@@ -274,6 +274,12 @@
       "id": "title_color",
       "label": "This is the title color",
       "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Arrow color",
+      "default": "#ac3f00"
     },
     {
       "type": "color_scheme",
