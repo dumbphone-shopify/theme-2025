@@ -148,13 +148,10 @@
           class="carousel-slide color-{{ block.settings.color_scheme }}"
           {{ block.shopify_attributes }}
         >
-          <div class="img-block" style="background-image: url({{ block.settings.image | image_url: width: 600 }});">
-            {% comment %}
-              {% if block.settings.image %}
-                <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
-              {% endif %}
-            {% endcomment %}
-          </div>
+          <div
+            class="img-block"
+            style="background-image: url({{ block.settings.image | image_url: width: 600 }});"
+          ></div>
           <div class="text-block text-{{ block.settings.align_text }}">
             <div class="text-block__container">
               {% if block.settings.heading %}
