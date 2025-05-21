@@ -425,10 +425,7 @@
         "slide_xPKtAW",
         "slide_ibwBna"
       ],
-      "custom_css": [
-        ".next{right: 40%;}",
-        ".prev{left: 40%;}"
-      ],
+      "custom_css": [],
       "name": "Carousel",
       "settings": {
         "padding_top": 24,
