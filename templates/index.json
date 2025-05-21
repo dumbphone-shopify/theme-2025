@@ -319,9 +319,9 @@
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36,
-        "title": "This is a title",
-        "align_text": "left",
-        "title_color": "#ffffff",
+        "title": "dette hvad vi gør",
+        "align_text": "center",
+        "title_color": "#ac3f00",
         "color_scheme": ""
       }
     },
