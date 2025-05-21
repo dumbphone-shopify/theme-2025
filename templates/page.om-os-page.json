@@ -280,7 +280,8 @@
         "title": "Min tid i med dumbphone.dk",
         "align_text": "left",
         "title_color": "#43668f",
-        "color_scheme": "scheme-2"
+        "color_scheme": "scheme-2",
+        "arrow_color": "#43668f"
       }
     },
     "main": {
