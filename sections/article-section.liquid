@@ -58,7 +58,8 @@
 
     {% if article_body %}
       <div class="text-content">
-        {{ article_body | metafield_tag }}
+        {{ article.metafields.custom.article_body | metafield_tag }}
+
       </div>
     {% endif %}
   </div>
