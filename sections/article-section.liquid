@@ -1,154 +1,68 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
-{% schema %}
-{
-  "name": "Artikelsektion",
-  "tag": "article",
-  "class": "custom-article",
-  "limit": 1,
-  "presets": [
-    {
-      "name": "Artikelsektion"
-    }
-  ],
-  "settings": [
-    {
-      "type": "select",
-      "id": "hero_type",
-      "label": "Hero-billede",
-      "options": [
-        {
-          "value": "image",
-          "label": "Billede"
-        },
-        {
-          "value": "video",
-          "label": "Video"
-        }
-      ],
-      "default": "image"
-    },
-    {
-      "type": "image_picker",
-      "id": "hero_image",
-      "label": "t:sections.video.settings.cover_image.label"
-    },
-    {
-      "type": "video_url",
-      "id": "hero_video_url",
-      "accept": ["youtube", "vimeo"],
-      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-      "label": "t:sections.video.settings.video_url.label",
-      "info": "t:sections.video.settings.video_url.info"
-    },
-    {
-      "type": "image_picker",
-      "id": "hero_video_thumbnail",
-      "label": "Uploade din egen video thumbnail"
-    },
-    {
-      "type": "text",
-      "id": "hero_title",
-      "label": "Rubrik"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "heading",
-      "name": "Ny titel",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "t:sections.video.settings.description.label",
-          "info": "t:sections.video.settings.description.info"
-        }
-      ]
-    },
-    {
-      "type": "h3",
-      "name": "Underoverskrift",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "Underoverskrift"
-        }
-      ]
-    },
-    {
-      "type": "h4",
-      "name": "Mellemoverskrift",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "Mellemoverskrift"
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "name": "Paragraf",
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Paragraf"
-        }
-      ]
-    },
-    {
-      "type": "pull_quote",
-      "name": "Citatboks",
-      "settings": [
-        {
-          "type": "text",
-          "id": "quote",
-          "label": "Citat"
-        }
-      ]
-    },
-    {
-      "type": "image",
-      "name": "Billede",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Billede til artikel"
-        },
-        {
-          "type": "text",
-          "id": "alt",
-          "label": "Alternativ billedetekst"
-        },
-        {
-          "type": "select",
-          "id": "image_size",
-          "label": "Billedets størrelse",
-          "options": [
-            {
-              "value": "large",
-              "label": "Stor"
-            },
-            {
-              "value": "medium",
-              "label": "Mellem"
-            },
-            {
-              "value": "small",
-              "label": "Lille"
-            }
-          ],
-          "default": "large"
-        }
-      ]
-    }
-  ]
-}
-{% endschema %}
+{% assign hero_type = article.metafields.custom.hero_type.value %}
+{% assign hero_title = article.metafields.custom.hero_title.value %}
+{% assign hero_image = article.metafields.custom.hero_image %}
+{% assign hero_video_url = article.metafields.custom.hero_video_url %}
+{% assign hero_thumb = article.metafields.custom.hero_video_thumb %}
+{% assign article_body = article.metafields.custom.article_body.value %}
+
+<div class="article-wrapper">
+  {% if hero_type == 'image' and hero_image %}
+    <div class="article-hero">
+      <img
+        src="{{ hero_image | image_url: width: 2000 }}"
+        alt="{{ hero_image.alt | escape }}"
+      >
+    </div>
+
+  {% elsif hero_type == 'video' and hero_video_url %}
+    <div class="article-hero article-hero__video">
+      <deferred-media
+        class="deferred-media video-section__media gradient global-media-settings"
+        data-media-id="video"
+      >
+        <button
+          class="video-section__poster media deferred-media__poster media--landscape"
+          type="button"
+          aria-label="{{ hero_title }}"
+        >
+          {% if hero_thumb %}
+            {{ hero_thumb | image_url: width: 2000 | image_tag: alt: hero_title }}
+          {% endif %}
+          <span class="deferred-media__poster-button motion-reduce">
+            <span class="svg-wrapper">
+              {{ 'icon-play.svg' | inline_asset_content }}
+            </span>
+          </span>
+        </button>
+        <template>
+          <iframe
+            src="{{ hero_video_url }}?autoplay=1"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="{{ hero_title }}"
+          ></iframe>
+        </template>
+      </deferred-media>
+    </div>
+  {% endif %}
+
+  <div class="article-content">
+    {% if hero_title %}
+      <h1 class="article-title">{{ hero_title }}</h1>
+    {% else %}
+      <h1 class="article-title">{{ article.title }}</h1>
+    {% endif %}
+
+    {% if article_body %}
+      <div class="text-content">
+        {{ article_body | metafield_tag }}
+      </div>
+    {% endif %}
+  </div>
+</div>
 
 {% stylesheet %}
   :root {
@@ -185,8 +99,6 @@
     max-width: 1000px;
   }
 
-  /* article video settings  */
-
   .deferred-media {
     aspect-ratio: 16 / 9;
     width: 100%;
@@ -200,12 +112,14 @@
     overflow: hidden;
     height: 0;
   }
+
   @supports (aspect-ratio: 16 / 9) {
     .deferred-media {
       height: auto;
       padding-bottom: 0;
     }
   }
+
   .deferred-media > * {
     position: absolute;
     inset: 0;
@@ -213,8 +127,6 @@
     height: 100%;
     object-fit: cover;
   }
-
-  /* article title  */
 
   .article-title {
     margin: 2rem 0 1rem;
@@ -282,9 +194,6 @@
     font-size: 5rem;
     color: #999;
     position: absolute;
-  }
-
-  .pull-quote::before {
     top: 0;
     left: -1rem;
   }
@@ -304,11 +213,10 @@
   h2 {
     margin-bottom: 0.5rem;
   }
+
   .text-content:is(h2):not(:first-of-type) {
     margin-top: 3rem;
   }
-
-  /* video hero section  */
 
   .article-hero button {
     height: 100%;
@@ -319,59 +227,18 @@
   }
 
   iframe,
-  .deferred-media__poster, .article-hero img {
+  .deferred-media__poster,
+  .article-hero img {
     border-radius: 25px !important;
   }
 
-  /* no border radius on imgs or videos in mobile view  */
   @media screen and (max-width: 1000px) {
-    .article-image--medium,   .article-image--large,   iframe,
-  .deferred-media__poster, .article-hero img   {
-    border-radius: 0px !important;
+    .article-image--medium,
+    .article-image--large,
+    iframe,
+    .deferred-media__poster,
+    .article-hero img {
+      border-radius: 0px !important;
+    }
   }
-}
-
-
-  */
 {% endstylesheet %}
-
-{% assign hero_type = article.metafields.custom.hero_type.value %}
-{% assign hero_title = article.metafields.custom.hero_title.value %}
-{% assign hero_image = article.metafields.custom.hero_image %}
-{% assign hero_video_url = article.metafields.custom.hero_video_url %}
-{% assign hero_thumb = article.metafields.custom.hero_video_thumb %}
-
-<div class="article-wrapper">
-  {% if hero_type == 'image' and hero_image %}
-    <div class="article-hero">
-      <img src="{{ hero_image | image_url: width: 2000 }}" alt="{{ hero_image.alt | escape }}">
-    </div>
-  {% elsif hero_type == 'video' and hero_video_url %}
-    <div class="article-hero article-hero__video">
-      <deferred-media class="deferred-media" data-media-id="video">
-        <button class="deferred-media__poster" type="button" aria-label="{{ hero_title }}">
-          {% if hero_thumb %}
-            {{ hero_thumb | image_url: width: 2000 | image_tag: alt: hero_title }}
-          {% endif %}
-          <span class="deferred-media__poster-button">▶</span>
-        </button>
-        <template>
-          <iframe
-            src="{{ hero_video_url }}?autoplay=1"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-            title="{{ hero_title }}"
-          ></iframe>
-        </template>
-      </deferred-media>
-    </div>
-  {% endif %}
-
-  <div class="article-content">
-    {% if hero_title %}
-      <h1 class="article-title">{{ hero_title }}</h1>
-    {% endif %}
-
-    {{ article.metafields.custom.article_body | metafield_tag }}
-  </div>
-</div>
