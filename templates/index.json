@@ -43,7 +43,6 @@
         "hero_height": "75vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
-        "vertical_position": "center",
         "text_alignment": "center",
         "content_position": "middle-left",
         "mobile_content_alignment": "center"
