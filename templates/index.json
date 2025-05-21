@@ -409,8 +409,9 @@
         "column_RPGQee": {
           "type": "column",
           "settings": {
-            "title": "Kolonne",
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. </p>",
+            "image": "shopify://shop_images/billede_testimonial_dumbphone.png",
+            "title": "Mette Sanggaard Forstander, Ollerup Efterskole",
+            "text": "<p>“Han har en fantastisk energi og tilgang til eleverne. Han oplyser, men uden moralske pegefingre, hvilket har skabt et stort engagement omkring eksperimentet...”</p>",
             "link_label": "",
             "link": ""
           }
@@ -418,8 +419,9 @@
         "column_aP9g8h": {
           "type": "column",
           "settings": {
-            "title": "Kolonne",
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "image": "shopify://shop_images/billede3_testimonial_dumbphone.png",
+            "title": "Karen Friis<strong> </strong>Forstander, Nørgaards Højskole",
+            "text": "<p>“Arne taler i øjenhøjde, smitter med sin entusiasme og er omhyggelig med at gøre set-uppet involverende og interessant...”.</p>",
             "link_label": "",
             "link": ""
           }
@@ -432,7 +434,7 @@
       ],
       "custom_css": [
         ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}",
-        ".multicolumn-card__image-wrapper {aspect-ratio: 1; height: 100px; border-radius: 50%; overflow: hidden; padding-top: 0; margin-top: 2.5rem;}",
+        ".multicolumn-card__image-wrapper {aspect-ratio: 1; height: 80px; border-radius: 50%; overflow: hidden; padding-top: 0; margin-top: 2.5rem;}",
         ".media {height: 100%; width: 100%; object-fit: contain; object-position: center;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
