@@ -399,7 +399,7 @@
         "column_qpzpMw": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "image": "shopify://shop_images/testimonal_billede_dumbphone.jpg",
             "title": "Tage Jepsen<em><strong> </strong></em>Forstander, Venø Efterskole",
             "text": "<p>\"Et super godt forløb for vores efterskoleelever - det har virkelig givet stof til eftertanke. Det her forsøg har givet en oplevelse, som vi kan bruge i vores samtale med eleverne om brugen af smartphones\"</p>",
             "link_label": "",
@@ -432,8 +432,8 @@
       ],
       "custom_css": [
         ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}",
-        ".multicolumn-card__image-wrapper {width: 150px; height:150px; border-radius: 50%; overflow: hidden; padding-top: 0; margin-top: 2.5rem;}",
-        "img{object-fit:contain; object-position: center bottom;}"
+        ".multicolumn-card__image-wrapper {aspect-ratio: 1; height: 100px; border-radius: 50%; overflow: hidden; padding-top: 0; margin-top: 2.5rem;}",
+        ".media {height: 100%; width: 100%; object-fit: contain; object-position: center;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
