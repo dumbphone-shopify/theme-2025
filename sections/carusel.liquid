@@ -187,56 +187,31 @@
 <script src="{{ 'glider.min.js' |asset_url}}" async></script>
 
 <script>
-          {% comment %} her linker jeg knapeprne med mine buttons
-           i gennem klasserne. dette kan man finde i github documentationen for
-           glider.js "https://github.com/NickPiscitelli/Glider.js/tree/master" {% endcomment %}
+      {% comment %} her linker jeg knapeprne med mine buttons
+       i gennem klasserne. dette kan man finde i github documentationen for
+       glider.js "https://github.com/NickPiscitelli/Glider.js/tree/master" {% endcomment %}
 
-      window.addEventListener('DOMContentLoaded', () =>{
-      new Glider(document.querySelector('.glider'),{
-          slidesToShow: 1, // or 2, or any float (e.g., 1.3)
-        slidesToScroll: 1,
-        draggable: true,
-        arrows: {
-          prev: '#{{ section.id }} .prev',
-          next: '#{{ section.id }} .next',
-        },
-         responsive: [
-          {
-            breakpoint: 750,
-            settings: {
-              slidesToShow: 1.5
-            }
-          }
-        ]
-      });
-
-
-    const buttons = document.querySelectorAll('button');
-
-  buttons.forEach(button => {
-    function updateAriaLabel() {
-      if (button.classList.contains('disabled')) {
-        button.setAttribute('aria-label', 'No more slides');
-      } else if (button.classList.contains('next')) {
-        button.setAttribute('aria-label', 'Next slide');
-      } else {
-        button.setAttribute('aria-label', 'Previous slide');
+  window.addEventListener('DOMContentLoaded', () =>{
+  new Glider(document.querySelector('.glider'),{
+      slidesToShow: 1, // or 2, or any float (e.g., 1.3)
+    slidesToScroll: 1,
+    draggable: true,
+    arrows: {
+      prev: '#{{ section.id }} .prev',
+      next: '#{{ section.id }} .next',
+    },
+     responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1.5
+        }
       }
-    }
-
-    updateAriaLabel();
-
-    {% comment %} no enrties needed since we only want to listen to when something changes and dont care what {% endcomment %}
-    const observer = new MutationObserver(() => {
-      updateAriaLabel();
-    });
-
-    {% comment %} here the observe observes if the atributes, specifily the classes of the buttons, and then
-     runs the updateAriallabe function  {% endcomment %}
-    observer.observe(button, { attributes: true, attributeFilter: ['class'] });
+    ]
   });
 
-      });
+
+   });
 </script>
 
 {% schema %}
