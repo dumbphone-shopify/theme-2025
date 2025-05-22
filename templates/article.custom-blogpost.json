@@ -11,6 +11,30 @@
   "sections": {
     "main": {
       "type": "article-section",
+      "blocks": [
+        {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": true
+          }
+        },
+        {
+          "type": "content"
+        },
+        {
+          "type": "share",
+          "settings": {
+            "share_label": "Del"
+          }
+        }
+      ],
       "settings": {}
     }
   },
