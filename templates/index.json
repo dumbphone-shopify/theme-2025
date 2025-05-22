@@ -455,6 +455,16 @@
         "padding_bottom": 36
       }
     },
+    "mediaslider_PKNYUf": {
+      "type": "mediaslider",
+      "name": "Media Logos Slider",
+      "settings": {}
+    },
+    "mediaslider_YzhQUk": {
+      "type": "mediaslider",
+      "name": "Media Logos Slider",
+      "settings": {}
+    },
     "collage_f44EKd": {
       "type": "collage",
       "blocks": {
@@ -507,6 +517,8 @@
     "featured_blog_XGYwnV",
     "rich_text_az4UTm",
     "multicolumn_keDkMU",
+    "mediaslider_PKNYUf",
+    "mediaslider_YzhQUk",
     "collage_f44EKd"
   ]
 }
