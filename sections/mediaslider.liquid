@@ -1,0 +1,60 @@
+{% schema %}
+{
+  "name": "Media Logos Slider",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Media Logos Slider",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="media-logos-slider">
+  <div class="slider-container">
+    {% for block in section.blocks %}
+      <div class="slider-item">
+        <img src="{{ block.settings.logo_image | img_url: 'medium' }}" alt="Media Logo">
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .media-logos-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider-container {
+    display: flex;
+    width: 100%;
+    animation: slide 25s linear infinite;
+  }
+  .slider-item {
+    flex: 0 0 auto;
+    margin: 0 10px;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
