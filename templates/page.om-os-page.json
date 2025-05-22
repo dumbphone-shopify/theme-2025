@@ -283,6 +283,7 @@
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-1",
+            "image": "shopify://shop_images/Arne-and-TIkko-on-a_bike-trip.webp",
             "heading": "This is a slider heading",
             "text": "Vi præsenterer vores løsninger som forslag, ikke sandheder, for vi kæmper også selv. Vi falder i digitale huller og ved, at viden ikke er nok. Jeg, Arne, har arbejdet fuld tid med det i 3,5 år og kan stadig ikke styre det helt. Måske er det bare mig, den er gal med.",
             "align_text": "left",
