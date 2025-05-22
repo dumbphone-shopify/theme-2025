@@ -458,6 +458,96 @@
     "mediaslider_PKNYUf": {
       "type": "mediaslider",
       "blocks": {
+        "logo_kfAfUM": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/8.png"
+          }
+        },
+        "logo_xgJztP": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/7.png"
+          }
+        },
+        "logo_yMHyGh": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/6.png"
+          }
+        },
+        "logo_yYgcXh": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/5.png"
+          }
+        },
+        "logo_M78jDt": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/4.png"
+          }
+        },
+        "logo_Rn3zn8": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/3.png"
+          }
+        },
+        "logo_CPFc3g": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/2.png"
+          }
+        },
+        "logo_c49PaT": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/1.png"
+          }
+        },
+        "logo_9tpcbn": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/8.png"
+          }
+        },
+        "logo_4XFGiT": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/7.png"
+          }
+        },
+        "logo_RXdnq3": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/6.png"
+          }
+        },
+        "logo_8yQB6M": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/5.png"
+          }
+        },
+        "logo_DrPiEn": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/4.png"
+          }
+        },
+        "logo_R9qU49": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/3.png"
+          }
+        },
+        "logo_qqpjBh": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/2.png"
+          }
+        },
         "logo_TGQtiJ": {
           "type": "logo",
           "settings": {
@@ -466,6 +556,21 @@
         }
       },
       "block_order": [
+        "logo_kfAfUM",
+        "logo_xgJztP",
+        "logo_yMHyGh",
+        "logo_yYgcXh",
+        "logo_M78jDt",
+        "logo_Rn3zn8",
+        "logo_CPFc3g",
+        "logo_c49PaT",
+        "logo_9tpcbn",
+        "logo_4XFGiT",
+        "logo_RXdnq3",
+        "logo_8yQB6M",
+        "logo_DrPiEn",
+        "logo_R9qU49",
+        "logo_qqpjBh",
         "logo_TGQtiJ"
       ],
       "name": "Media Logos Slider",
