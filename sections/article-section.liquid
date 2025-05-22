@@ -16,7 +16,9 @@
         </div>
 
       {%- when 'featured_image' -%}
-        {%- if article.image -%}
+        {% comment %} {%- if article.image -%} {% endcomment %}
+        {%- if hero_type == 'image' and article.image -%} 
+          {% comment %} trying to find a way to combine schema and shopifys default blog features {% endcomment %}
           <div class="article-hero {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" {{ block.shopify_attributes }}>
             <img
               src="{{ article.image | image_url: width: 2000 }}"
@@ -304,7 +306,8 @@
       {% endform %}
     </div>
   </div>
-{%- endif -%}</article>{% schema %}
+{%- endif -%}</article>
+{% schema %}
 {
   "name": "t:sections.main-article.name",
   "tag": "section",
@@ -312,6 +315,12 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "featured_image",
+      "name": "Hero",
+      "limit": 1,
+      "settings": []
     },
     {
       "type": "title",
@@ -429,7 +438,7 @@
 }
 
 .article-title {
-  margin: 2rem 0 1rem;
+  margin: 2rem 0 0;
   font-size: 3.25rem;
   line-height: 1.2;
 }
@@ -437,7 +446,7 @@
 .article-content {
   grid-column: full;
   display: grid;
-  grid-template-columns: [full-start] var(--col-100) [breakout-start] var(--col-100) [content-start] var(--col-50) [inner] 4fr var(--col-50) [content-end] var(--col-100) [breakout-end] var(--col-100) [full-end];
+  grid-template-columns: [full-start] 1rem [content-start] 0.5rem [inner] 7fr 0.5rem [content-end] 1rem [full-end];
 }
 
 .article-content p,
