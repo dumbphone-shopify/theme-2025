@@ -26,6 +26,29 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "This is a title"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Text alignment",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Centered" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
     }
   ],
   "blocks": [
@@ -50,11 +73,13 @@
 }
 {% endschema %}
 
-<div class="media-logos-slider section-{{ section.id }}-padding">
+<div class="media-logos-slider section-{{ section.id }}-padding color-{{ section.settings.color_scheme }}">
+  <h2 class="text-{{ section.settings.align_text }}" style="color:{{ section.settings.title_color }}">
+    {{ section.settings.title }}
+  </h2>
   <div class="slider-container">
     {% for block in section.blocks %}
       <div class="slider-item">
-        <P>hello</P>
         <img src="{{ block.settings.logo_image | img_url: 'medium' }}" alt="Media Logo">
       </div>
     {% endfor %}
