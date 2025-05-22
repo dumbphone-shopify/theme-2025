@@ -468,7 +468,7 @@
         "text_TARmKf": {
           "type": "text",
           "settings": {
-            "text": "<p>Del oplysninger om dit brand med dine kunder. Beskriv et produkt, del meddelelser, eller byd velkommen til din butik.</p>"
+            "text": ""
           }
         }
       },
@@ -607,6 +607,7 @@
         "logo_qqpjBh",
         "logo_TGQtiJ"
       ],
+      "custom_css": [],
       "name": "Media Logos Slider",
       "settings": {
         "padding_top": 0,
