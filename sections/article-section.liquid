@@ -78,7 +78,7 @@
           </header>
 
           {%- when 'share' -%}
-          <div class="article-template__social-sharing {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+          <div class="article-template__social-sharing article-share {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
             {% assign share_url = request.origin | append: article.url %}
             {% render 'share-button'
               , block: block
@@ -314,37 +314,6 @@
       "type": "@app"
     },
     {
-      "type": "featured_image",
-      "name": "t:sections.main-article.blocks.featured_image.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "select",
-          "id": "image_height",
-          "options": [
-            {
-              "value": "adapt",
-              "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__1.label"
-            },
-            {
-              "value": "small",
-              "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__2.label"
-            },
-            {
-              "value": "medium",
-              "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__3.label"
-            },
-            {
-              "value": "large",
-              "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__4.label"
-            }
-          ],
-          "default": "adapt",
-          "label": "t:sections.main-article.blocks.featured_image.settings.image_height.label"
-        }
-      ]
-    },
-    {
       "type": "title",
       "name": "t:sections.main-article.blocks.title.name",
       "limit": 1,
@@ -382,7 +351,8 @@
       ]
     }
   ]
-}{% endschema %}{% stylesheet %}
+}{% endschema %}
+{% stylesheet %}
 :root  {
   --col-50: clamp(0rem, -1.1364rem + 5.6818vw, 3.125rem);
   --col-100: clamp(0rem, -2.2727rem + 11.3636vw, 6.25rem);
@@ -472,7 +442,7 @@
 
 .article-content p,
 .text-content,
-.article-title {
+.article-title, .article-share {
   grid-column: inner;
   max-width: 550px;
   margin-inline: auto;
@@ -480,11 +450,9 @@
 }
 
 .article-author {
-  grid-column: inner;
-  margin-bottom: 1rem;
-  font-style: italic;
+  /* grid-column: inner; */
   color: #AC3F00;
-  text-align: left !important;
+  /* text-align: left !important; */
 }
 
 .article-image {
