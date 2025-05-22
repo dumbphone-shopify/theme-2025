@@ -457,13 +457,25 @@
     },
     "mediaslider_PKNYUf": {
       "type": "mediaslider",
+      "blocks": {
+        "logo_TGQtiJ": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/1.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_TGQtiJ"
+      ],
       "name": "Media Logos Slider",
-      "settings": {}
-    },
-    "mediaslider_YzhQUk": {
-      "type": "mediaslider",
-      "name": "Media Logos Slider",
-      "settings": {}
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "title": "This is a title",
+        "align_text": "left",
+        "color_scheme": ""
+      }
     },
     "collage_f44EKd": {
       "type": "collage",
@@ -518,7 +530,6 @@
     "rich_text_az4UTm",
     "multicolumn_keDkMU",
     "mediaslider_PKNYUf",
-    "mediaslider_YzhQUk",
     "collage_f44EKd"
   ]
 }
