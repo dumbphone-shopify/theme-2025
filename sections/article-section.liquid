@@ -3,8 +3,8 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {% assign hero_type = article.metafields.custom.hero_type.value | default: 'image' %}
-{% assign hero_video_url = article.metafields.custom.hero_video_url %}
-{% assign hero_video_thumb = article.metafields.custom.hero_video_thumb %}
+{% assign hero_video_url = article.metafields.custom.hero_video_url.value %}
+{% assign hero_video_thumb = article.metafields.custom.hero_video_thumb.value %}
 {% assign show_author = true %}
 
 <div class="article-wrapper">
@@ -17,7 +17,7 @@
 
       {%- when 'featured_image' -%}
         {% comment %} {%- if article.image -%} {% endcomment %}
-        {%- if hero_type == 'image' and article.image -%} 
+        {%- if hero_type == 'image' and article.image -%}
           {% comment %} trying to find a way to combine schema and shopifys default blog features {% endcomment %}
           <div class="article-hero {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" {{ block.shopify_attributes }}>
             <img
@@ -26,7 +26,7 @@
               loading="eager"
               fetchpriority="high">
           </div>
-        {%- elsif hero_type == 'video' and hero_video_url -%}
+          {%- elsif hero_type == 'video' and hero_video_url -%}
           <div class="article-hero article-hero__video {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" {{ block.shopify_attributes }}>
             <deferred-media class="deferred-media video-section__media gradient global-media-settings" data-media-id="video">
               <button
@@ -79,7 +79,7 @@
             {%- endif -%}
           </header>
 
-          {%- when 'share' -%}
+        {%- when 'share' -%}
           <div class="article-template__social-sharing article-share {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
             {% assign share_url = request.origin | append: article.url %}
             {% render 'share-button'
@@ -93,7 +93,7 @@
             {{ article.content }}
           </div>
 
-        
+
       {%- endcase -%}
     {%- endfor -%}
 
@@ -306,8 +306,7 @@
       {% endform %}
     </div>
   </div>
-{%- endif -%}</article>
-{% schema %}
+{%- endif -%}</article>{% schema %}
 {
   "name": "t:sections.main-article.name",
   "tag": "section",
@@ -360,8 +359,7 @@
       ]
     }
   ]
-}{% endschema %}
-{% stylesheet %}
+}{% endschema %}{% stylesheet %}
 :root  {
   --col-50: clamp(0rem, -1.1364rem + 5.6818vw, 3.125rem);
   --col-100: clamp(0rem, -2.2727rem + 11.3636vw, 6.25rem);
@@ -451,7 +449,8 @@
 
 .article-content p,
 .text-content,
-.article-title, .article-share {
+.article-title,
+.article-share {
   grid-column: inner;
   max-width: 550px;
   margin-inline: auto;
@@ -488,6 +487,10 @@ iframe,
 }
 
 /* text styling  */
+
+header {
+  text-align: center;
+}
 blockquote {
   grid-column: inner;
   font-size: 2.5rem;
