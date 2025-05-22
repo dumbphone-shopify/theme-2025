@@ -576,10 +576,10 @@
       "name": "Media Logos Slider",
       "settings": {
         "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_bottom": 52,
         "title": "This is a title",
-        "align_text": "left",
-        "color_scheme": ""
+        "align_text": "center",
+        "color_scheme": "scheme-1"
       }
     },
     "collage_f44EKd": {
