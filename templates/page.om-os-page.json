@@ -236,8 +236,8 @@
           "settings": {
             "color_scheme": "scheme-1",
             "image": "shopify://shop_images/Arne-with-dumbphones.webp",
-            "heading": "This is a slider heading",
-            "text": "Here’s a short description or message.",
+            "heading": "Starten af dumbphone",
+            "text": "Dumbphone-firmaet blev startet for 3,5 år siden. Det blev grundlagt ud fra et ønske om at skabe en form for digital dannelse, som var baseret på oplevelse og erfaring, frem for bare snak og refleksion.\n\nVi startede med at lave eksperimenter på efterskoler, og det har vi gjort helt frem til nu.",
             "align_text": "left",
             "link": "",
             "linktext": "Click here"
@@ -248,8 +248,8 @@
           "settings": {
             "color_scheme": "scheme-1",
             "image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
-            "heading": "This is a slider heading",
-            "text": "Here’s a short description or message.",
+            "heading": "løsninger til den fælles udfordring",
+            "text": "Undervejs har måden, vi laver eksperimenterne på, ændret sig løbende. Gennem årene har vi hele tiden overvejet, hvordan vi kan bidrage til at løse den fælles udfordring, vi står med som samfund.\n\nVores oprindelige kerneprodukt var et forløb målrettet efterskoler, som var et oplagt sted at starte.",
             "align_text": "left",
             "link": "",
             "linktext": "Click here"
@@ -260,8 +260,30 @@
           "settings": {
             "color_scheme": "scheme-1",
             "image": "shopify://shop_images/Arne-and-TIkko-on-a_bike-trip.webp",
+            "heading": "Det er lettere at forebygge end at afvænne",
+            "text": "Vi har også tilføjet støtte til forældre, fordi vi oplevede, hvor svært det er at fjerne smartphones fra klasselokalet, selv i 10 dage. Derfor fokuserer vi nu på at udskyde introduktionen. Det er ofte nemmere at vente ét år end at tage mobilen væk, når vanen først er skabt.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "slide_fPbjiW": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "heading": "Nye veje og partnerskaber i 2025",
+            "text": "I 2025 satser vi på større, kommercielle samarbejder for at skalere vores løsninger. Vi arbejder eksperimenterende og tror på læring gennem praksis. Emnet er følsomt, så vi møder folk med ydmyghed – ingen skal føle sig belært, og vi ved, at vi heller ikke selv er perfekte.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "slide_anWmFN": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
             "heading": "This is a slider heading",
-            "text": "Here’s a short description or message.",
+            "text": "Vi præsenterer vores løsninger som forslag, ikke sandheder, for vi kæmper også selv. Vi falder i digitale huller og ved, at viden ikke er nok. Jeg, Arne, har arbejdet fuld tid med det i 3,5 år og kan stadig ikke styre det helt. Måske er det bare mig, den er gal med.",
             "align_text": "left",
             "link": "",
             "linktext": "Click here"
@@ -271,7 +293,9 @@
       "block_order": [
         "slide_kAe3EP",
         "slide_RKTerH",
-        "slide_brdGzR"
+        "slide_brdGzR",
+        "slide_fPbjiW",
+        "slide_anWmFN"
       ],
       "name": "Carousel",
       "settings": {
