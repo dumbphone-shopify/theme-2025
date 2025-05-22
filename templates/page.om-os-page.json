@@ -288,6 +288,28 @@
             "link": "",
             "linktext": "Click here"
           }
+        },
+        "slide_bK9rd8": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "heading": "Dumbphone, simpelt supplement, ikke erstatning",
+            "text": "Navnet Dumbphone beskriver en simpel telefon, modsat en smartphone. En vigtig pointe er, at Dumbphone ikke skal erstatte din smartphone, men fungere som et supplement. Den hjælper med at skabe balance i brugen af digitale enheder uden at fjerne smartphonens funktionalitet helt.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
+        },
+        "slide_CThdXN": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "heading": "This is a slider heading",
+            "text": "Dumbphonen fungere som din telefon i dagligdagen, mens smartphonen bliver et værktøj, som du bruger mere bevidst. \nDer er meget få mennesker, jeg kender, som lever helt uden adgang til smartphone, det handler mere om at finde en bæredygtig balance. Her kan en Dumbphone være et redskab til netop det.",
+            "align_text": "left",
+            "link": "",
+            "linktext": "Click here"
+          }
         }
       },
       "block_order": [
@@ -295,7 +317,9 @@
         "slide_RKTerH",
         "slide_brdGzR",
         "slide_fPbjiW",
-        "slide_anWmFN"
+        "slide_anWmFN",
+        "slide_bK9rd8",
+        "slide_CThdXN"
       ],
       "name": "Carousel",
       "settings": {
