@@ -77,20 +77,21 @@
             {%- endif -%}
           </header>
 
-        {%- when 'content' -%}
-
-          <div class="text-content {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
-            {{ article.content }}
-          </div>
-
-        {%- when 'share' -%}
-          <div class="article-template__social-sharing page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+          {%- when 'share' -%}
+          <div class="article-template__social-sharing {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
             {% assign share_url = request.origin | append: article.url %}
             {% render 'share-button'
               , block: block
               , share_link: share_url %}
           </div>
 
+        {%- when 'content' -%}
+
+          <div class="text-content {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}>
+            {{ article.content }}
+          </div>
+
+        
       {%- endcase -%}
     {%- endfor -%}
 
