@@ -148,6 +148,10 @@
 {%- endstyle -%}
 
 
+{% assign video_url = product.metafields.custom.video_feature.value %}
+{% assign description = product.metafields.custom.video_description.value %}
+
+{% if video_url and description %}
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class=" grid-wrapper {% if section.settings.full_width %} page-width{% endif %}">
@@ -155,8 +159,7 @@
         {% if section.settings.heading != blank %}
           <h2 class="centered-text ">{{ section.settings.heading }}</h2>
         {% endif %}
-
-        {% assign video_url = product.metafields.custom.video_feature.value %}
+        
         {% assign embed_url = '' %}
         {% if video_url %}
           {% if video_url contains 'youtube.com/watch?v=' %}
@@ -181,7 +184,6 @@
           </div>
         {% endif %}
 
-        {% assign description = product.metafields.custom.video_description.value %}
         {% if description %}
           <div class="product-description centered-text">
             {{ description | metafield_tag }}
@@ -192,3 +194,4 @@
     </div>
   </div>
 </div>
+{% endif %}
