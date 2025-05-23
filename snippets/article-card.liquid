@@ -49,13 +49,13 @@
           <div class="article-card__image-wrapper card__media">
             <div class="article-card__image media media--hover-effect">
               {{ hero_video_thumb | image_url: width: 800 | image_tag: alt: article.title }}
-              {%- if hero_video_url -%}
+              {% comment %} {%- if hero_video_url -%}
                 <span class="deferred-media__poster-button motion-reduce">
                   <span class="svg-wrapper">
                     {{ 'icon-play.svg' | inline_asset_content }}
                   </span>
                 </span>
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
             </div>
           </div>
         {%- elsif show_image and article.image -%}
