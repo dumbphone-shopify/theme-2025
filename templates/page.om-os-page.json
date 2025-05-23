@@ -128,12 +128,7 @@
         "img {border-radius: 25px; max-width: 900px; margin: auto auto;}"
       ],
       "name": "Artikelsektion",
-      "settings": {
-        "hero_type": "image",
-        "hero_image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
-        "hero_video_url": "",
-        "hero_title": ""
-      }
+      "settings": {}
     },
     "rich_text_bUkCeJ": {
       "type": "rich-text",
