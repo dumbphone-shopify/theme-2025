@@ -2,7 +2,8 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
-{% assign hero_type = article.metafields.custom.hero_type.value | default: 'image' %}
+{% comment %} {% assign hero_type = article.metafields.custom.hero_type.value | default: 'image' %} {% endcomment %}
+{% assign hero_type = article.metafields.custom.hero_type.value %}
 {% assign hero_video_url = article.metafields.custom.hero_video_url.value %}
 {% assign hero_video_thumb = article.metafields.custom.hero_video_thumb.value %}
 {% assign show_author = true %}
@@ -317,7 +318,7 @@
     },
     {
       "type": "featured_image",
-      "name": "Hero",
+      "name": "hero",
       "limit": 1,
       "settings": []
     },
