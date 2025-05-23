@@ -3705,27 +3705,3 @@ details-disclosure > details {
 }
 
 /***     Edits made by NH & JKJ    ***/
-
-:root {
-  /* based on utopia */
-
-  /*  54px → 100px */
-  --main-bottom-p: clamp(3.375rem, 2.375rem + 5vw, 6.25rem);
-}
-/* Doesn't really do the trick just yet: */
-
-/*
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  background: transparent;
-} 
-
-*/
-
-main {
-  padding: 0 0 var(--main-bottom-p);
-}
