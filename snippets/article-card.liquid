@@ -29,6 +29,8 @@
       assign hero_video_thumb_is_image = true
     endif
   -%}
+
+
   <div class="article-card-wrapper card-wrapper underline-links-hover">
     <div class="
         card article-card
@@ -52,8 +54,8 @@
           <div class="article-card__image-wrapper card__media">
             <div
               class="article-card__image media media--hover-effect"
-              {% if section.settings.media_height == 'adapt' and (hero_video_thumb_is_image or article.image) %}
-              style="padding-bottom: {{ 1 | divided_by: (hero_video_thumb_is_image and hero_video_thumb.aspect_ratio or article.image.aspect_ratio) | times: 100 }}%;"
+              {% if section.settings.media_height == 'adapt' %}
+              style="padding-bottom: {{ 1 | divided_by: card_aspect_ratio | times: 100 }}%;"
               {% endif %}>
               {%- if hero_video_thumb_is_image and hero_video_url -%}
                 <a
