@@ -11,55 +11,31 @@
   "sections": {
     "hero_banner_LLDNpQ": {
       "type": "hero-banner",
-      "blocks": {
-        "button_aYyyhj": {
-          "type": "button",
-          "settings": {
-            "label": "Klik her",
-            "link": "",
-            "button_bg_color": "#f32424",
-            "button_text_color": "#f5a3a3"
-          }
-        },
-        "button_ecqTdD": {
-          "type": "button",
-          "settings": {
-            "label": "Klik her",
-            "link": "",
-            "button_bg_color": "#ffffff",
-            "button_text_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "button_aYyyhj",
-        "button_ecqTdD"
-      ],
       "name": "Hero-sektion",
       "settings": {
         "background_image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
         "enable_scroll_effect": true,
         "hero_height": "75vh",
         "heading": "Giv dine elever en bedre forhold til smartphones",
-        "title_color": "#ffffff",
-        "text_alignment": "left",
-        "content_position": "bottom-left",
-    
+        "title_color": "#fffdf8",
+        "text_alignment": "center",
+        "content_position": "middle-center",
         "mobile_content_alignment": "center"
       }
     },
     "featured_collection_tifA63": {
       "type": "featured-collection",
       "custom_css": [
-        "h2 {color: #ac3f00;}"
+        "h2 {color: #ac3f00;}",
+        "p {max-width: 600px;}"
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "kits",
         "products_to_show": 3,
-        "title": "Udvalgt kollektion",
+        "title": "Udlejning af dumbphones",
         "heading_size": "h1",
-        "description": "<p>asdwasdwa</p>",
+        "description": "<p><br/>Udlej Dumbphones til din klasse og hjælp børnene med en sund og bevidst start på smartphone-brugen. Skab bedre digitale vaner fra begyndelsen, uden at frarøve dem muligheden for kontakt og læring.</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 3,
@@ -125,14 +101,14 @@
         "heading_8yXm4x": {
           "type": "heading",
           "settings": {
-            "heading": "Fordrag",
-            "heading_size": "h1"
+            "heading": "Fordrag, starten af dumbphones historie",
+            "heading_size": "h2"
           }
         },
         "text_Qx9Vcj": {
           "type": "text",
           "settings": {
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "text": "<p>Dumbphone startede med eksperimenter på efterskoler, hvor eleverne byttede deres smartphones ud med en dumbphone i ti dage. Gennem de her forsøg så jeg et mønster: Mange unge havde svært ved at bryde deres vaner. </p><p>Jeg overveje, om løsningen lå før vanerne blev til. Det skulle give en bedre start og et sundere forhold til det digitale liv.</p><p>Det var kun begyndelsen.</p><p>Hvis du har lyst til at høre mere om min rejse med Dumbphone, så kan du læs mere på min om dumbphone side. Her deler jeg min historie indtil nu</p>",
             "text_style": "body"
           }
         },
@@ -140,7 +116,7 @@
           "type": "button",
           "settings": {
             "button_label": "Læs mere →",
-            "button_link": "",
+            "button_link": "shopify://pages/om-dumbhpone",
             "button_style_secondary": true
           }
         }
@@ -153,7 +129,8 @@
       "custom_css": [
         ".image-with-text__content {border-radius: 0 25px 25px 0;}",
         ".image-with-text__media {border-radius: 25px 0 0 25px;}",
-        "@media screen and (max-width: 749px) {.image-with-text__content {border-radius: 0 0 25px 25px; } .image-with-text__media {border-radius: 25px 25px 0 0; }}"
+        "@media screen and (max-width: 749px) {.image-with-text__content {border-radius: 0 0 25px 25px; } .image-with-text__media {border-radius: 25px 25px 0 0; }}",
+        "a {align-self: flex-end; --border-offset: none;}"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -434,7 +411,8 @@
         "title": "Tre gode grunde til hvorfor en dumbphone er et godt valg",
         "align_text": "left",
         "title_color": "#ac3f00",
-        "color_scheme": ""
+        "color_scheme": "",
+        "arrow_color": "#ac3f00"
       }
     },
     "contact_form_TyGdag": {

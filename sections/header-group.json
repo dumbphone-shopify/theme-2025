@@ -14,9 +14,11 @@
     "header": {
       "type": "header",
       "custom_css": [
+        "@media (min-width: 768px) {.header-wrapper {background: transparent; } header {border-radius: 50px; border: 1px #3e2103 solid; margin: 0.5em auto; }}",
         "nav a {font-size: 16px;}",
         ".header-wrapper {background: transparent;}",
-        "header {display: flex; justify-content: space-between; flex-wrap: nowrap; border-radius: 50px; border: 1px #3e2103 solid; background: rgb(255, 253, 248, 0.2); backdrop-filter: blur(10px); margin: 0.5em auto; max-width: 1200px; width: 100%; z-index: 10; }"
+        "header:has(details[open]) {background: rgb(255, 253, 248);}",
+        "header {display: flex; justify-content: space-between; background: rgb(255, 253, 248, 0.2); backdrop-filter: blur(10px); flex-wrap: nowrap; max-width: 1200px; width: 100%; z-index: 10;}"
       ],
       "settings": {
         "logo_position": "top-left",

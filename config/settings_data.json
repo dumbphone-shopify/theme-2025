@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/logo_hvid.png",
-    "logo_width": 110,
+    "logo": "shopify://shop_images/favicon_6af4891d-5f82-45be-9893-fbd2d60722d7.png",
+    "logo_width": 60,
     "favicon": "shopify://shop_images/favicon.png",
     "type_header_font": "figtree_n4",
     "heading_scale": 100,
@@ -109,7 +109,7 @@
     "sold_out_badge_color_scheme": "scheme-2",
     "brand_headline": "Dumb Phone, Smart Choice",
     "brand_description": "<p>Shop-dumbphone.dk er din portal til et enklere og mere nærværende liv. Vi tilbyder et hånd-plukket udvalg af dumbphones og tilbehør.</p>",
-    "brand_image": "shopify://shop_images/logo_664106ca-d753-4e3f-824b-705c0a3b8bb8.png",
+    "brand_image": "shopify://shop_images/logo_hvid.png",
     "brand_image_width": 100,
     "social_facebook_link": "https://www.facebook.com/profile.php?id=100083092193056",
     "social_instagram_link": "https://www.instagram.com/dumbphone.dk/",

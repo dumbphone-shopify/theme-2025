@@ -12,28 +12,28 @@
     "hero_banner_xc7HTV": {
       "type": "hero-banner",
       "blocks": {
+        "button_YFHfp6": {
+          "type": "button",
+          "settings": {
+            "label": "Se vores dumbphones",
+            "link": "shopify://collections/vores-dumbphones",
+            "button_bg_color": "#fffdf8",
+            "button_text_color": "#002b0c"
+          }
+        },
         "button_xiCWY6": {
           "type": "button",
           "settings": {
-            "label": "hiiiii",
-            "link": "",
-            "button_bg_color": "#ffffff",
-            "button_text_color": "#000000"
-          }
-        },
-        "button_YPkiTz": {
-          "type": "button",
-          "settings": {
-            "label": "hiiii",
-            "link": "shopify://blogs/potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug/kan-jeg-fa-mere-naervaer",
+            "label": "Se vores guides",
+            "link": "shopify://blogs/potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
             "button_bg_color": "#fffdf8",
-            "button_text_color": "#3e2103"
+            "button_text_color": "#0a2038"
           }
         }
       },
       "block_order": [
-        "button_xiCWY6",
-        "button_YPkiTz"
+        "button_YFHfp6",
+        "button_xiCWY6"
       ],
       "custom_css": [],
       "name": "Hero Banner",
@@ -44,7 +44,7 @@
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
         "text_alignment": "center",
-        "content_position": "flex-end",
+        "content_position": "bottom-right",
         "mobile_content_alignment": "center"
       }
     },
@@ -156,8 +156,8 @@
         "button_KRxVph": {
           "type": "button",
           "settings": {
-            "button_label": "learn more →",
-            "button_link": "",
+            "button_label": "Læs mere om Dumbphone →",
+            "button_link": "shopify://pages/om-dumbhpone",
             "button_style_secondary": true
           }
         }
@@ -171,7 +171,7 @@
         ".image-with-text__content {border-radius: 25px 0 0 25px;}",
         ".image-with-text__media {border-radius: 0 25px 25px 0;}",
         "@media screen and (max-width: 749px) {.image-with-text__content {border-radius: 0 0 25px 25px; } .image-with-text__media {border-radius: 25px 25px 0 0; }}",
-        "a {align-self: flex-end;}"
+        "a {align-self: flex-end; --border-offset: none;}"
       ],
       "name": "velkomst sektion",
       "settings": {
@@ -186,8 +186,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "color_scheme": "scheme-3",
-        "padding_top": 52,
-        "padding_bottom": 24
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "collection_list_3gXFbh": {
@@ -221,7 +221,7 @@
         ".card-wrapper {overflow: hidden; border-radius: 25px; background-color: #d2dfdf; padding: 0 15px;}"
       ],
       "settings": {
-        "title": "her er det forskellige hjælpemidler vi sælger",
+        "title": "Vi sælger ikke bare dumbphones, men også redskaber som hjælper dig",
         "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 3,
@@ -240,11 +240,11 @@
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-4",
-            "image": "shopify://shop_images/fall-vegetable-box.jpg",
+            "image": "shopify://shop_images/small-rock-piles-on-log.jpg",
             "heading": "Vi står for at hjælper med at finde balancen",
             "text": "Jeg skiftede min smartphone ud med en dumbphone for tre år siden\nSiden da har jeg skiftet mellem de to og forsøgt at finde den balance der føles rigtig for mig\nMåske kan jeg også hjælpe dig med at finde din\nJeg har lavet nogle guides der kan hjælper dig med at finde din balance",
             "align_text": "left",
-            "link": "shopify://pages/dumbphone-guide",
+            "link": "shopify://blogs/potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
             "linktext": "Læs vores guides her"
           }
         },
@@ -252,7 +252,7 @@
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-2",
-            "image": "shopify://shop_images/mist-rises-above-rocky-water-fall.jpg",
+            "image": "shopify://shop_images/bike-and-phone.jpg",
             "heading": "Du behøver ikke vælge alt eller intet",
             "text": "Du behøver ikke skifte helt\nMange apps som mail og bank er svære at undvære\nMen der findes tilbehør der kan hjælpe dig med at skabe lidt ro og balance uden at give helt slip\n\nSe hvad vi har samlet til dig her",
             "align_text": "left",
@@ -264,7 +264,7 @@
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-3",
-            "image": "shopify://shop_images/abandoned-iceland-farm-home.jpg",
+            "image": "shopify://shop_images/girl-using-sidewalk-chalk.jpg",
             "heading": "En bedre start for de små",
             "text": "Smartphones kan hurtigt gå fra værktøj til tidsrøver. Jeg tror børn har godt af at starte med en dumbphone i 1.-2. klasse, så de lærer balance og er mere til stede i skolen, med venner og derhjemme. \ntil det har jeg skabt udlejnings planer for din klasse.\nse hvad passer til jer",
             "align_text": "left",
@@ -281,12 +281,13 @@
       "custom_css": [],
       "name": "Carousel",
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "title": "Dette hvad vi gør",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "title": "Dette er hvad vi står for",
         "align_text": "center",
         "title_color": "#ac3f00",
-        "color_scheme": ""
+        "color_scheme": "",
+        "arrow_color": "#ac3f00"
       }
     },
     "rich_text_WhwJye": {
@@ -364,7 +365,7 @@
         "heading_JFTTYE": {
           "type": "heading",
           "settings": {
-            "heading": "Recensioner",
+            "heading": "Testimonials",
             "heading_size": "h1"
           }
         },
@@ -398,17 +399,9 @@
         "column_qpzpMw": {
           "type": "column",
           "settings": {
-            "title": "navn på anmelder",
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_RPGQee": {
-          "type": "column",
-          "settings": {
-            "title": "Kolonne",
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. </p>",
+            "image": "shopify://shop_images/testimonal_billede_dumbphone.jpg",
+            "title": "Tage Jepsen<em><strong> </strong></em>Forstander, Venø Efterskole",
+            "text": "<p>\"Et super godt forløb for vores efterskoleelever - det har virkelig givet stof til eftertanke. Det her forsøg har givet en oplevelse, som vi kan bruge i vores samtale med eleverne om brugen af smartphones\"</p>",
             "link_label": "",
             "link": ""
           }
@@ -416,8 +409,19 @@
         "column_aP9g8h": {
           "type": "column",
           "settings": {
-            "title": "Kolonne",
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "image": "shopify://shop_images/billede3_testimonial_dumbphone.png",
+            "title": "Karen Friis<strong> </strong>Forstander, Nørgaards Højskole",
+            "text": "<p>“Arne taler i øjenhøjde, smitter med sin entusiasme og er omhyggelig med at gøre set-uppet involverende og interessant...”.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RPGQee": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/billede_testimonial_dumbphone.png",
+            "title": "Mette Sanggaard Forstander, Ollerup Efterskole",
+            "text": "<p>“Han har en fantastisk energi og tilgang til eleverne. Han oplyser, men uden moralske pegefingre, hvilket har skabt et stort engagement omkring eksperimentet...”</p>",
             "link_label": "",
             "link": ""
           }
@@ -425,11 +429,13 @@
       },
       "block_order": [
         "column_qpzpMw",
-        "column_RPGQee",
-        "column_aP9g8h"
+        "column_aP9g8h",
+        "column_RPGQee"
       ],
       "custom_css": [
-        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}"
+        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}",
+        ".multicolumn-card__image-wrapper {aspect-ratio: 1; height: 80px; border-radius: 50%; overflow: hidden; padding-top: 0; margin-top: 2.5rem;}",
+        ".media {height: 100%; width: 100%; object-fit: contain; object-position: center;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -447,6 +453,168 @@
         "swipe_on_mobile": true,
         "padding_top": 12,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_WCVTJa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7JUXKx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Omtale i medierne",
+            "heading_size": "h1"
+          }
+        },
+        "text_TARmKf": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_7JUXKx",
+        "text_TARmKf"
+      ],
+      "custom_css": [
+        "h2 {color: #c55614;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "mediaslider_PKNYUf": {
+      "type": "mediaslider",
+      "blocks": {
+        "logo_kfAfUM": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/8.png"
+          }
+        },
+        "logo_xgJztP": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/7.png"
+          }
+        },
+        "logo_yMHyGh": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/6.png"
+          }
+        },
+        "logo_yYgcXh": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/5.png"
+          }
+        },
+        "logo_M78jDt": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/4.png"
+          }
+        },
+        "logo_Rn3zn8": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/3.png"
+          }
+        },
+        "logo_CPFc3g": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/2.png"
+          }
+        },
+        "logo_c49PaT": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/1.png"
+          }
+        },
+        "logo_9tpcbn": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/8.png"
+          }
+        },
+        "logo_4XFGiT": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/7.png"
+          }
+        },
+        "logo_RXdnq3": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/6.png"
+          }
+        },
+        "logo_8yQB6M": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/5.png"
+          }
+        },
+        "logo_DrPiEn": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/4.png"
+          }
+        },
+        "logo_R9qU49": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/3.png"
+          }
+        },
+        "logo_qqpjBh": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/2.png"
+          }
+        },
+        "logo_TGQtiJ": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/1.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_kfAfUM",
+        "logo_xgJztP",
+        "logo_yMHyGh",
+        "logo_yYgcXh",
+        "logo_M78jDt",
+        "logo_Rn3zn8",
+        "logo_CPFc3g",
+        "logo_c49PaT",
+        "logo_9tpcbn",
+        "logo_4XFGiT",
+        "logo_RXdnq3",
+        "logo_8yQB6M",
+        "logo_DrPiEn",
+        "logo_R9qU49",
+        "logo_qqpjBh",
+        "logo_TGQtiJ"
+      ],
+      "custom_css": [],
+      "name": "Media Logos Slider",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 52,
+        "title": "",
+        "align_text": "center",
+        "color_scheme": "scheme-1"
       }
     },
     "collage_f44EKd": {
@@ -501,6 +669,8 @@
     "featured_blog_XGYwnV",
     "rich_text_az4UTm",
     "multicolumn_keDkMU",
+    "rich_text_WCVTJa",
+    "mediaslider_PKNYUf",
     "collage_f44EKd"
   ]
 }

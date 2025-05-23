@@ -76,11 +76,13 @@
       "name": "Hero-sektion",
       "settings": {
         "background_image": "shopify://shop_images/foggy-landscape-reflected-in-lake.jpg",
+        "enable_scroll_effect": true,
         "hero_height": "75vh",
         "heading": "Vores dumbphones",
         "title_color": "#fffdf8",
         "text_alignment": "center",
-        "content_position": "center"
+        "content_position": "middle-center",
+        "mobile_content_alignment": "center"
       }
     },
     "banner": {
