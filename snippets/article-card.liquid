@@ -26,7 +26,7 @@
     assign hero_video_thumb = article.metafields.custom.hero_thumbnail
     assign hero_video_thumb_is_image = false
     if hero_video_thumb and hero_video_thumb.media_type == "image"
-      assign hero_video_thumb_is_image == true
+      assign hero_video_thumb_is_image = true
     endif
   -%}
   <div class="article-card-wrapper card-wrapper underline-links-hover">
