@@ -124,6 +124,7 @@
     },
     "article_section_eTXCAR": {
       "type": "article-section",
+      "disabled": true,
       "custom_css": [
         "img {border-radius: 25px; max-width: 900px; margin: auto auto;}"
       ],
