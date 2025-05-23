@@ -551,19 +551,20 @@ a {
 
 {% comment %} Deferred media when click on play button to video {% endcomment %}
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('deferred-media').forEach(function(media) {
-    var button = media.querySelector('button');
-    if (!button) return;
-    button.addEventListener('click', function() {
-      if (media.classList.contains('is-active')) return;
-      media.classList.add('is-active');
-      var template = media.querySelector('template');
-      if (template) {
-        media.insertAdjacentHTML('beforeend', template.innerHTML);
-      }
-      button.style.display = 'none';
-    });
-  });
-});
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   document.querySelectorAll('deferred-media').forEach(function(media) {
+//     var button = media.querySelector('button');
+//     if (!button) return;
+//     button.addEventListener('click', function() {
+//       if (media.classList.contains('is-active')) return;
+//       media.classList.add('is-active');
+//       var template = media.querySelector('template');
+//       if (template) {
+//         media.insertAdjacentHTML('beforeend', template.innerHTML);
+//       }
+//       button.style.display = 'none';
+//     });
+//   });
+// });
 </script>
