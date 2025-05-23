@@ -1,5 +1,6 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 <div class="article-wrapper">
   {%- for block in section.blocks -%}
@@ -549,7 +550,7 @@ a {
 }
 {% endstylesheet %}
 
-{% comment %} Deferred media when click on play button to video {% endcomment %}
+{% comment %} Deferred media when click on play button to video. I have currently put this in the theme.liquid, so it is not needed here. That is because I plan to be able to play videos by deferring media from a grid system {% endcomment %}
 <script>
 
 // document.addEventListener('DOMContentLoaded', function() {
