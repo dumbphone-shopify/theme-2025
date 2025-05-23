@@ -133,13 +133,6 @@
   }
 
 
-  /*
-   .centered-grid{
-   grid-column: 1/-1;
-
-   }
-*/
-
   .centered-text {
     margin: 0 auto;
     max-width: 550px;
@@ -188,7 +181,7 @@
           </div>
         {% endif %}
 
-        {% assign description = product.metafields.custom.secondary_description.value %}
+        {% assign description = product.metafields.custom.video_description.value %}
         {% if description %}
           <div class="product-description centered-text">
             {{ description | metafield_tag }}
