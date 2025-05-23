@@ -24,7 +24,7 @@
     endif
     assign hero_video_url = article.metafields.custom.hero_video_url.value
     assign hero_video_thumb = article.metafields.custom.hero_thumbnail
-    {% comment %} this is for being able to play the video without clicking in onto the article  {% endcomment %}
+
     assign hero_video_thumb_is_image = false
     if hero_video_thumb and hero_video_thumb.media_type == "image"
       assign hero_video_thumb_is_image = true
