@@ -95,10 +95,13 @@
         "padding_bottom": 52
       }
     },
-
     "video_review": {
       "type": "video-review",
-      "settings": {}
+      "settings": {
+        "heading": "Video review",
+        "show_description": true,
+        "color_scheme": "scheme-3"
+      }
     },
     "rich_text_7MHYf6": {
       "type": "rich-text",
@@ -117,7 +120,11 @@
           }
         }
       },
-      "block_order": ["heading_gzrYVg", "text_fzyNVF"],
+      "block_order": [
+        "heading_gzrYVg",
+        "text_fzyNVF"
+      ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -130,6 +137,7 @@
     },
     "article_section_UikNit": {
       "type": "article-section",
+      "disabled": true,
       "custom_css": [
         "img {max-width: 900px; margin: auto auto;}",
         "div {background-color: #9cb7aa; padding: 10px;}"
@@ -163,8 +171,13 @@
           }
         }
       },
-      "block_order": ["row_DK3azV", "row_qx96hY"],
-      "custom_css": ["img {border-radius: 25px;}"],
+      "block_order": [
+        "row_DK3azV",
+        "row_qx96hY"
+      ],
+      "custom_css": [
+        "img {border-radius: 25px;}"
+      ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "medium",
