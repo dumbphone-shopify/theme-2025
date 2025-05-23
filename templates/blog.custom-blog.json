@@ -60,7 +60,7 @@
       ],
       "name": "t:sections.featured-blog.presets.name",
       "settings": {
-        "blog": "potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
+        "blog": "information",
         "post_limit": 2,
         "heading": "Blogopslag",
         "heading_size": "h1",
