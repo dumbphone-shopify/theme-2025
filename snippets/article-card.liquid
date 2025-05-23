@@ -26,16 +26,26 @@
     assign hero_video_thumb = article.metafields.custom.hero_thumbnail
   -%}
   <div class="article-card-wrapper card-wrapper underline-links-hover">
-    {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     <div class="
         card article-card
         card--{{ settings.blog_card_style }}
         {% if media_height and media_height != 'adapt' %} article-card__image--{{ media_height }}{% endif %}
-        {% if hero_video_thumb or article.image and show_image %} card--media{% else %} card--text{% endif %}
+        {% if show_image and hero_video_thumb %} card--media
+        {% elsif show_image and article.image %} card--media
+        {% else %} card--text
+        {% endif %}
         {% if settings.blog_card_style == 'card' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}
         {% if settings.blog_card_style == 'card' and media_height == nil and article.image == empty or show_image == false %} ratio{% endif %}
       " style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-      <div class="card__inner {% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}{% if (hero_video_thumb or article.image)  and show_image or settings.blog_card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+      <div class="card__inner
+          {% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}
+          {% if show_image and hero_video_thumb %}
+            ratio
+          {% elsif show_image and article.image %}
+            ratio
+          {% elsif settings.blog_card_style == 'standard' %}
+            ratio
+          {% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
         {%- if show_image and hero_video_thumb -%}
           <div class="article-card__image-wrapper card__media">
             <div class="article-card__image media media--hover-effect">
