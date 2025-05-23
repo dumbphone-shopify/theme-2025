@@ -31,7 +31,7 @@
         card article-card
         card--{{ settings.blog_card_style }}
         {% if media_height and media_height != 'adapt' %} article-card__image--{{ media_height }}{% endif %}
-        {% if (hero_video_thumb or article.image) and show_image %} card--media{% else %} card--text{% endif %}
+        {% if hero_video_thumb or article.image and show_image %} card--media{% else %} card--text{% endif %}
         {% if settings.blog_card_style == 'card' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}
         {% if settings.blog_card_style == 'card' and media_height == nil and article.image == empty or show_image == false %} ratio{% endif %}
       " style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
