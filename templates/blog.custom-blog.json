@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_zBQrtt": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Jcqqje": {
+          "type": "heading",
+          "settings": {
+            "heading": "Artikler og selvhjælps-videoer",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Jcqqje"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/persons-hand-points-to-text-in-a-open-book-laying-in-a-table.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-right",
+        "desktop_content_alignment": "right",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "custom_css": [
+        "div .blog-articles__article {border-radius: 25px; overflow: hidden;}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "small",
+        "show_date": false,
+        "show_author": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_Vfq9Ab": {
+      "type": "featured-blog",
+      "custom_css": [
+        ".article-card {background-color: #fffdf8; border-radius: 25px; overflow: hidden;}"
+      ],
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "blog": "potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
+        "post_limit": 2,
+        "heading": "Blogopslag",
+        "heading_size": "h1",
+        "columns_desktop": 2,
+        "show_view_all": false,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_zBQrtt",
+    "main",
+    "featured_blog_Vfq9Ab"
+  ]
+}
