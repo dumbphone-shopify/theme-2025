@@ -9,6 +9,7 @@
         <div class="page-width page-width--narrow">
           {% render block %}
         </div>
+
       {%- when 'featured_image' -%}
         {% assign hero_video_url = article.metafields.custom.hero_video_url.value %}
         {% assign hero_video_thumb = article.metafields.custom.hero_video_thumb %}
@@ -280,14 +281,14 @@
                   <p class="article-template__comment-warning caption">{{ 'blogs.article.moderated' | t }}</p>
                 {%- endif -%}
                 <input
-                  type="submit"
-                  class="button"
-                  value="{{ 'blogs.article.post' | t }}">
-              {% endform %}
-            </div>
+                type="submit"
+                class="button"
+                value="{{ 'blogs.article.post' | t }}">
+            {% endform %}
           </div>
-        {%- endif -%}
-      </div>
+        </div>
+      {%- endif -%}
+</div>
 
       {% schema %}
         {
@@ -344,6 +345,8 @@
           ]
         }
       {% endschema %}
+
+      
       {% stylesheet %}:root
       {
         --col-50: clamp(0rem, -1.1364rem + 5.6818vw, 3.125rem);
