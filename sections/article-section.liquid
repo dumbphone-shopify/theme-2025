@@ -7,7 +7,7 @@
     {%- case block.type -%}
       {%- when 'featured_image' -%}
         {% assign hero_video_url = article.metafields.custom.hero_video_url.value %}
-        {% assign hero_video_thumb = article.metafields.custom.hero_video_thumb %}
+        {% assign hero_video_thumb = article.metafields.custom.hero_thumbnail %}
         {%- if hero_video_url -%}
           <div class="article-hero article-hero__video {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
             <deferred-media class="deferred-media video-section__media gradient global-media-settings" data-media-id="video">
