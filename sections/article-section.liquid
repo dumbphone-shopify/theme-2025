@@ -1,6 +1,5 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
-{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 <div class="article-wrapper">
   {%- for block in section.blocks -%}
@@ -10,7 +9,7 @@
         {% assign hero_video_thumb = article.metafields.custom.hero_thumbnail %}
       
         {%- if hero_video_url -%}
-        {%- comment %} Extract video ID and embed URL {%- endcomment -%}
+        {%- comment %} extracts video ID and embed URL {%- endcomment -%}
         {%- assign embed_url = '' -%}
         {%- if hero_video_url contains 'youtube.com/watch?v=' -%}
           {%- assign video_id = hero_video_url | split: 'v=' | last | split: '&' | first -%}
@@ -112,6 +111,7 @@
   </a>
 </div>
 
+{% comment %} this part is copy pasted from /main-article.liquid  {% endcomment %}
 {%- if blog.comments_enabled? -%}
   <div class="article-template__comment-wrapper background-secondary">
     <div id="comments" class="page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -304,7 +304,10 @@
       {% endform %}
     </div>
   </div>
-{%- endif -%}</div>{% schema %}
+{%- endif -%}
+</div>
+
+{% schema %}
 {
   "name": "t:sections.main-article.name",
   "tag": "section",
