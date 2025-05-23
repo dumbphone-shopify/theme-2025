@@ -17,9 +17,9 @@
         "enable_scroll_effect": true,
         "hero_height": "75vh",
         "heading": "Giv dine elever en bedre forhold til smartphones",
-        "title_color": "#ffffff",
-        "text_alignment": "left",
-        "content_position": "bottom-left",
+        "title_color": "#fffdf8",
+        "text_alignment": "center",
+        "content_position": "middle-center",
         "mobile_content_alignment": "center"
       }
     },
@@ -101,14 +101,14 @@
         "heading_8yXm4x": {
           "type": "heading",
           "settings": {
-            "heading": "Fordrag",
-            "heading_size": "h1"
+            "heading": "Fordrag, starten af dumbphones historie",
+            "heading_size": "h2"
           }
         },
         "text_Qx9Vcj": {
           "type": "text",
           "settings": {
-            "text": "<p>Kombiner tekst med et billede for at fokusere på dit valgte produkt, din valgte kollektion eller dit valgte blogopslag. Tilføj oplysninger om tilgængelighed, stil og eventuelt også en anmeldelse.</p>",
+            "text": "<p>Dumbphone startede med eksperimenter på efterskoler, hvor eleverne byttede deres smartphones ud med en dumbphone i ti dage. Gennem de her forsøg begyndte jeg at se et mønster: Mange unge havde svært ved at bryde deres vaner. </p><p>Jeg begyndte at overveje, om løsningen lå i at starte endnu tidligere, før vanerne blev til. Derfor begyndte jeg at give dumbphones til elever, som endnu ikke havde fået en smartphone. De fik en bedre start og et sundere forhold til det digitale liv.</p><p>Det var kun begyndelsen.</p><p>Hvis du har lyst til at høre mere om min rejse med Dumbphone, så kan du læs mere på min om dumbphone side. Her deler jeg min historie indtil nu</p>",
             "text_style": "body"
           }
         },
