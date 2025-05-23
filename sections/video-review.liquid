@@ -91,7 +91,7 @@
   }
 {% endschema %}
 
-<style>
+{%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -109,19 +109,43 @@
     display: block;
     margin-bottom: 1.5rem;
   }
-  .product-video-review {
-  ;
-  /* background-color: lightblue;  not needed if using color schme*/
-}
+
 
 h2 {
   text-align: center;
   font-size: clamp(1.5rem, 1.2391rem + 1.3043vw, 2.25rem);
 }
 
-.wrapper {}
+.rich-text__wrapper {
+    display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
 
-</style>
+.rich-text__blocks {
+    grid-column: 1 / -1;
+  place-self: center;
+  display: grid;
+  grid-template-columns: subgrid;
+
+  >* {
+    grid-column: 1/-1;
+  }
+}
+
+/* .centered-grid{
+    grid-column: 1/-1;
+    
+} */
+
+.centered-text {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+}
+
+
+
+{%- endstyle -%}
 
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
@@ -129,7 +153,7 @@ h2 {
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {% if section.settings.heading != blank %}
-            <h2>{{ section.settings.heading }}</h2>
+            <h2 class="centered-text ">{{ section.settings.heading }}</h2>
           {% endif %}
         
         {% assign video_url = product.metafields.custom.video_feature.value %}
@@ -159,7 +183,7 @@ h2 {
 
         {% assign description = product.metafields.custom.secondary_description.value %}
         {% if description %}
-          <div class="product-description">
+          <div class="product-description centered-text">
             {{ description | metafield_tag }}
           </div>
         {% endif %}
