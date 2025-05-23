@@ -24,6 +24,10 @@
     endif
     assign hero_video_url = article.metafields.custom.hero_video_url.value
     assign hero_video_thumb = article.metafields.custom.hero_thumbnail
+    assign hero_video_thumb_is_image = false
+    if hero_video_thumb and hero_video_thumb.media_type == "image"
+      assign hero_video_thumb_is_image == true
+    endif
   -%}
   <div class="article-card-wrapper card-wrapper underline-links-hover">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
@@ -45,19 +49,41 @@
           {% elsif settings.blog_card_style == 'standard' %}
             ratio
           {% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-        {%- if show_image and hero_video_thumb -%}
-          <div class="article-card__image-wrapper card__media">
-            <div class="article-card__image media media--hover-effect">
+        {%- if show_image and hero_video_thumb_is_image and hero_video_url -%}
+          <deferred-media class="deferred-media card__deferred-media" data-media-id="video-{{ article.id }}">
+            <button
+              class="media deferred-media__poster"
+              type="button"
+              aria-label="{{ article.title }}">
               {{ hero_video_thumb | image_url: width: 800 | image_tag: alt: article.title }}
-              {%- if hero_video_url -%}
-                <span class="deferred-media__poster-button motion-reduce">
-                  <span class="svg-wrapper">
-                    {{ 'icon-play.svg' | inline_asset_content }}
-                  </span>
+              <span class="deferred-media__poster-button motion-reduce">
+                <span class="svg-wrapper">
+                  {{ 'icon-play.svg' | inline_asset_content }}
                 </span>
+              </span>
+            </button>
+            <template>
+              {%- assign embed_url = '' -%}
+              {%- if hero_video_url contains 'youtube.com/watch?v=' -%}
+                {%- assign video_id = hero_video_url | split: 'v=' | last | split: '&' | first -%}
+                {%- assign embed_url = 'https://www.youtube.com/embed/' | append: video_id | append: '?autoplay=1' -%}
+              {%- elsif hero_video_url contains 'youtu.be/' -%}
+                {%- assign video_id = hero_video_url | split: 'youtu.be/' | last | split: '?' | first -%}
+                {%- assign embed_url = 'https://www.youtube.com/embed/' | append: video_id | append: '?autoplay=1' -%}
+              {%- elsif hero_video_url contains 'vimeo.com/' -%}
+                {%- assign video_id = hero_video_url | split: 'vimeo.com/' | last | split: '?' | first -%}
+                {%- assign embed_url = 'https://player.vimeo.com/video/' | append: video_id | append: '?autoplay=1' -%}
+              {%- else -%}
+                {%- assign embed_url = hero_video_url -%}
               {%- endif -%}
-            </div>
-          </div>
+              <iframe
+                src="{{ embed_url }}"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                title="{{ article.title }}"></iframe>
+            </template>
+          </deferred-media>
+        {%- elsif show_image and article.image -%}
         {%- elsif show_image and article.image -%}
           <div class="article-card__image-wrapper card__media">
             <div
