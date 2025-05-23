@@ -25,7 +25,7 @@
           "type": "button",
           "settings": {
             "label": "Se vores guides",
-            "link": "shopify://blogs/arikler",
+            "link": "shopify://blogs/potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
             "button_bg_color": "#fffdf8",
             "button_text_color": "#0a2038"
           }
@@ -196,7 +196,7 @@
             "heading": "Vi står for at hjælper med at finde balancen",
             "text": "Jeg skiftede min smartphone ud med en dumbphone for tre år siden\nSiden da har jeg skiftet mellem de to og forsøgt at finde den balance der føles rigtig for mig\nMåske kan jeg også hjælpe dig med at finde din\nJeg har lavet nogle guides der kan hjælper dig med at finde din balance",
             "align_text": "left",
-            "link": "shopify://blogs/arikler",
+            "link": "shopify://blogs/potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
             "linktext": "Læs vores guides her"
           }
         },
@@ -297,7 +297,7 @@
         ".article-card {background-color: #fffdf8; border-radius: 25px; overflow: hidden;}"
       ],
       "settings": {
-        "blog": "arikler",
+        "blog": "potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
         "post_limit": 3,
         "heading": "",
         "heading_size": "h1",
