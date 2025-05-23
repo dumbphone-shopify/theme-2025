@@ -357,7 +357,10 @@
       ]
     }
   ]
-}{% endschema %}{% stylesheet %}
+}
+{% endschema %}
+
+{% stylesheet %}
 :root  {
   --col-50: clamp(0rem, -1.1364rem + 5.6818vw, 3.125rem);
   --col-100: clamp(0rem, -2.2727rem + 11.3636vw, 6.25rem);
@@ -456,9 +459,7 @@
 }
 
 .article-author {
-  /* grid-column: inner; */
   color: #AC3F00;
-  /* text-align: left !important; */
 }
 
 .article-image {
@@ -473,6 +474,8 @@ iframe,
 .article-hero img {
   border-radius: 25px !important;
 }
+
+  /* no border radius on imgs or videos in mobile view */
 
 @media screen and (max-width: 1000px) {
   .article-image--medium,
@@ -536,4 +539,24 @@ h2 {
 
 a {
   color: #AC3F00;
-}{% endstylesheet %}
+}
+{% endstylesheet %}
+
+{% comment %} Deferred media when click on play button to video {% endcomment %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('deferred-media').forEach(function(media) {
+    var button = media.querySelector('button');
+    if (!button) return;
+    button.addEventListener('click', function() {
+      if (media.classList.contains('is-active')) return;
+      media.classList.add('is-active');
+      var template = media.querySelector('template');
+      if (template) {
+        media.insertAdjacentHTML('beforeend', template.innerHTML);
+      }
+      button.style.display = 'none';
+    });
+  });
+});
+</script>
