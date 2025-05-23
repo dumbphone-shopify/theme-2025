@@ -126,16 +126,6 @@
         "padding_bottom": 24
       }
     },
-    "custom_liquid_wDzVxT": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "{{ product.metafields.custom.video_feature.value }}\n\n<style>\n.responsive-video {\naspect-ratio: 16 / 9;\nwidth:100%;\nheight: auto;\n}\n</style>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "article_section_UikNit": {
       "type": "article-section",
       "custom_css": [
@@ -273,7 +263,6 @@
   "order": [
     "main",
     "rich_text_7MHYf6",
-    "custom_liquid_wDzVxT",
     "article_section_UikNit",
     "multirow_qEFL7e",
     "related-products",
