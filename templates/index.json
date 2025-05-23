@@ -31,10 +31,7 @@
           }
         }
       },
-      "block_order": [
-        "button_YFHfp6",
-        "button_xiCWY6"
-      ],
+      "block_order": ["button_YFHfp6", "button_xiCWY6"],
       "custom_css": [],
       "name": "Hero Banner",
       "settings": {
@@ -48,88 +45,7 @@
         "mobile_content_alignment": "center"
       }
     },
-    "article_section_UPqpGX": {
-      "type": "article-section",
-      "blocks": {
-        "heading_6RtkV6": {
-          "type": "heading",
-          "settings": {
-            "heading": "Titel til artikel"
-          }
-        },
-        "paragraph_ePHtFA": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.<br/><br/>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>"
-          }
-        },
-        "pull_quote_FzWRxf": {
-          "type": "pull_quote",
-          "settings": {
-            "quote": "Very inspiration quote here, don't you agree?"
-          }
-        },
-        "image_BiLanp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/fall-vegetable-box.jpg",
-            "alt": "bild",
-            "image_size": "large"
-          }
-        },
-        "paragraph_kNMJcf": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p><p></p>"
-          }
-        },
-        "image_kt3QYf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/abandoned-iceland-farm-home.jpg",
-            "alt": "",
-            "image_size": "large"
-          }
-        },
-        "heading_ciHPAc": {
-          "type": "heading",
-          "settings": {
-            "heading": "Titel igen"
-          }
-        },
-        "h3_yKwt3V": {
-          "type": "h3",
-          "settings": {
-            "heading": "Underoverskrift"
-          }
-        },
-        "paragraph_ErtNEp": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p><p></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_6RtkV6",
-        "paragraph_ePHtFA",
-        "pull_quote_FzWRxf",
-        "image_BiLanp",
-        "paragraph_kNMJcf",
-        "image_kt3QYf",
-        "heading_ciHPAc",
-        "h3_yKwt3V",
-        "paragraph_ErtNEp"
-      ],
-      "disabled": true,
-      "name": "Default custom sections",
-      "settings": {
-        "hero_type": "image",
-        "hero_image": "shopify://shop_images/pet-and-owner-on-fall-walk.jpg",
-        "hero_video_url": "",
-        "hero_title": "Rubrik"
-      }
-    },
+
     "1747382751afc67ba6": {
       "type": "apps",
       "settings": {
@@ -162,11 +78,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_eP6Yjq",
-        "text_cbbnAW",
-        "button_KRxVph"
-      ],
+      "block_order": ["heading_eP6Yjq", "text_cbbnAW", "button_KRxVph"],
       "custom_css": [
         ".image-with-text__content {border-radius: 25px 0 0 25px;}",
         ".image-with-text__media {border-radius: 0 25px 25px 0;}",
@@ -273,11 +185,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_dYYRxj",
-        "slide_8jixRm",
-        "slide_6RtGf7"
-      ],
+      "block_order": ["slide_dYYRxj", "slide_8jixRm", "slide_6RtGf7"],
       "custom_css": [],
       "name": "Carousel",
       "settings": {
@@ -376,13 +284,8 @@
           }
         }
       },
-      "block_order": [
-        "heading_JFTTYE",
-        "text_MaAH7h"
-      ],
-      "custom_css": [
-        "h2 {color: #c55614;}"
-      ],
+      "block_order": ["heading_JFTTYE", "text_MaAH7h"],
+      "custom_css": ["h2 {color: #c55614;}"],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "left",
@@ -427,11 +330,7 @@
           }
         }
       },
-      "block_order": [
-        "column_qpzpMw",
-        "column_aP9g8h",
-        "column_RPGQee"
-      ],
+      "block_order": ["column_qpzpMw", "column_aP9g8h", "column_RPGQee"],
       "custom_css": [
         ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}",
         ".multicolumn-card__image-wrapper {aspect-ratio: 1; height: 80px; border-radius: 50%; overflow: hidden; padding-top: 0; margin-top: 2.5rem;}",
@@ -472,13 +371,8 @@
           }
         }
       },
-      "block_order": [
-        "heading_7JUXKx",
-        "text_TARmKf"
-      ],
-      "custom_css": [
-        "h2 {color: #c55614;}"
-      ],
+      "block_order": ["heading_7JUXKx", "text_TARmKf"],
+      "custom_css": ["h2 {color: #c55614;}"],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -640,11 +534,7 @@
           }
         }
       },
-      "block_order": [
-        "image_HbWMRX",
-        "product_4PM84E",
-        "collection_dJUy9b"
-      ],
+      "block_order": ["image_HbWMRX", "product_4PM84E", "collection_dJUy9b"],
       "disabled": true,
       "settings": {
         "heading": "Alt er inkluderet i vores Dumbphone-pakker",
