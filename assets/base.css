@@ -3705,3 +3705,15 @@ details-disclosure > details {
 }
 
 /***     Edits made by NH & JKJ    ***/
+
+:root {
+  /* based on utopia.fyi calculations */
+
+  /*  54px → 100px */
+  --main-bottom-p: clamp(3.375rem, 2.375rem + 5vw, 6.25rem);
+}
+
+
+main {
+  padding: 0 0 var(--main-bottom-p);
+}
