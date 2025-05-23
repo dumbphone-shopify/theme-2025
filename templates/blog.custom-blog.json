@@ -20,7 +20,9 @@
           }
         }
       },
-      "block_order": ["heading_Jcqqje"],
+      "block_order": [
+        "heading_Jcqqje"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/persons-hand-points-to-text-in-a-open-book-laying-in-a-table.jpg",
@@ -58,7 +60,7 @@
       ],
       "name": "t:sections.featured-blog.presets.name",
       "settings": {
-        "blog": "arikler",
+        "blog": "potentielle-gavnlige-resultater-af-nedskaret-smartphoneforbrug",
         "post_limit": 2,
         "heading": "Blogopslag",
         "heading_size": "h1",
@@ -73,5 +75,9 @@
       }
     }
   },
-  "order": ["image_banner_zBQrtt", "main", "featured_blog_Vfq9Ab"]
+  "order": [
+    "image_banner_zBQrtt",
+    "main",
+    "featured_blog_Vfq9Ab"
+  ]
 }
