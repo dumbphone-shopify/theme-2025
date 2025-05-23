@@ -95,6 +95,11 @@
         "padding_bottom": 52
       }
     },
+
+    "video_review": {
+      "type": "video-review",
+      "settings": {}
+    },
     "rich_text_7MHYf6": {
       "type": "rich-text",
       "blocks": {
@@ -112,10 +117,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_gzrYVg",
-        "text_fzyNVF"
-      ],
+      "block_order": ["heading_gzrYVg", "text_fzyNVF"],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -161,13 +163,8 @@
           }
         }
       },
-      "block_order": [
-        "row_DK3azV",
-        "row_qx96hY"
-      ],
-      "custom_css": [
-        "img {border-radius: 25px;}"
-      ],
+      "block_order": ["row_DK3azV", "row_qx96hY"],
+      "custom_css": ["img {border-radius: 25px;}"],
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "medium",
@@ -262,6 +259,7 @@
   },
   "order": [
     "main",
+    "video_review",
     "rich_text_7MHYf6",
     "article_section_UikNit",
     "multirow_qEFL7e",
