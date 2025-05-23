@@ -888,16 +888,20 @@ summary::-webkit-details-marker {
 
 /* component-grid */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 2em;
-  /* display: flex;
-  flex-wrap: wrap; */
+ 
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
   padding: 0;
   list-style: none;
   column-gap: var(--grid-mobile-horizontal-spacing);
   row-gap: var(--grid-mobile-vertical-spacing);
+}
+
+.grid-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2em;
 }
 
 @media screen and (min-width: 750px) {
