@@ -9,6 +9,17 @@
         {% assign hero_video_url = article.metafields.custom.hero_video_url.value %}
         {% assign hero_video_thumb = article.metafields.custom.hero_thumbnail %}
         {%- if hero_video_url -%}
+          {%- capture embed_url -%}
+            {%- if hero_video_url contains 'youtube.com/watch?v=' -%}
+              https://www.youtube.com/embed/{{ hero_video_url | split: 'v=' | last | split: '&' | first }}?autoplay=1
+            {%- elsif hero_video_url contains 'youtu.be/' -%}
+              https://www.youtube.com/embed/{{ hero_video_url | split: 'youtu.be/' | last | split: '?' | first }}?autoplay=1
+            {%- elsif hero_video_url contains 'vimeo.com/' -%}
+              https://player.vimeo.com/video/{{ hero_video_url | split: 'vimeo.com/' | last | split: '?' | first }}?autoplay=1
+            {%- else -%}
+              {{ hero_video_url }}
+            {%- endif -%}
+          {%- endcapture -%}
           <div class="article-hero article-hero__video {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
             <deferred-media class="deferred-media video-section__media gradient global-media-settings" data-media-id="video">
               <button
@@ -28,7 +39,7 @@
               </button>
               <template>
                 <iframe
-                  src="{{ hero_video_url }}?autoplay=1"
+                  src="{{ embed_url | strip }}"
                   allow="autoplay; encrypted-media"
                   allowfullscreen
                   title="{{ article.title }}"></iframe>
