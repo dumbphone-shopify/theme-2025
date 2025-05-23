@@ -24,7 +24,14 @@
     endif
     assign hero_video_url = article.metafields.custom.hero_video_url.value
     assign hero_video_thumb = article.metafields.custom.hero_thumbnail
+    {% comment %} this is for being able to play the video without clicking in onto the article  {% endcomment %}
+    assign hero_video_thumb_is_image = false
+    if hero_video_thumb and hero_video_thumb.media_type == "image"
+      assign hero_video_thumb_is_image = true
+    endif
   -%}
+
+
   <div class="article-card-wrapper card-wrapper underline-links-hover">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     <div class="
@@ -195,22 +202,3 @@
     </div>
   </div>
 {%- endif -%}
-
-{% comment %} Deferred media when click on play button to video {% endcomment %}
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('deferred-media').forEach(function(media) {
-    var button = media.querySelector('button');
-    if (!button) return;
-    button.addEventListener('click', function() {
-      if (media.classList.contains('is-active')) return;
-      media.classList.add('is-active');
-      var template = media.querySelector('template');
-      if (template) {
-        media.insertAdjacentHTML('beforeend', template.innerHTML);
-      }
-      button.style.display = 'none';
-    });
-  });
-  });
-</script>
