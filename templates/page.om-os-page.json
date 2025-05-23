@@ -32,10 +32,10 @@
         "text_XCHWYm"
       ],
       "custom_css": [
-        ".banner__box {border-radius: 15px 15px 0 0; width: 1400px; padding: 25px 50px; margin: auto auto -55px auto;}",
+        ".banner__box {border-radius: 15px 15px 0 0; min-width: 80vw; width: 100%; padding: 25px 50px; margin: auto auto -55px auto;}",
         "@media screen and (max-width: 749px) {.banner__box {margin: auto auto auto auto; }}",
         "img {object-position: top;}",
-        "@media screen and (max-width: 749px) {}"
+        "@media screen and (min-width: 749px) {p {max-width: 700px; margin: auto; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
