@@ -100,7 +100,12 @@
       "settings": {
         "heading": "Video review",
         "show_description": true,
-        "color_scheme": "scheme-3"
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "rich_text_7MHYf6": {
