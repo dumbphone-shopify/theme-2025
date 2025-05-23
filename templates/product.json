@@ -133,12 +133,7 @@
         "div {background-color: #9cb7aa; padding: 10px;}"
       ],
       "name": "Artikelsektion",
-      "settings": {
-        "hero_type": "image",
-        "hero_image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
-        "hero_video_url": "",
-        "hero_title": ""
-      }
+      "settings": {}
     },
     "multirow_qEFL7e": {
       "type": "multirow",
