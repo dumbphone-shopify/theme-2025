@@ -22,8 +22,6 @@
     if media_aspect_ratio != null
       assign ratio = media_aspect_ratio
     endif
-    assign hero_video_url = article.metafields.custom.hero_video_url.value
-    assign hero_video_thumb = article.metafields.custom.hero_thumbnail
   -%}
   <div class="article-card-wrapper card-wrapper underline-links-hover">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
@@ -31,31 +29,61 @@
         card article-card
         card--{{ settings.blog_card_style }}
         {% if media_height and media_height != 'adapt' %} article-card__image--{{ media_height }}{% endif %}
-          {% if show_image and hero_video_thumb %} card--media
-        {% elsif show_image and article.image %} card--media
-        {% else %} card--text
-        {% endif %}
+        {% if article.image and show_image %} card--media{% else %} card--text{% endif %}
         {% if settings.blog_card_style == 'card' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}
         {% if settings.blog_card_style == 'card' and media_height == nil and article.image == empty or show_image == false %} ratio{% endif %}
       " style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-      <div class="card__inner {% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}{% if show_image and hero_video_thumb %}
-            ratio
-          {% elsif show_image and article.image %}
-            ratio
-          {% elsif settings.blog_card_style == 'standard' %}
-            ratio
-          {% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-        {%- if show_image and hero_video_thumb -%}
+      <div class="card__inner {% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}{% if article.image and show_image or settings.blog_card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">{%- assign hero_video_url = article.metafields.custom.hero_video_url.value -%}
+        {%- assign hero_video_thumb = article.metafields.custom.hero_thumbnail -%}
+        {%- assign hero_video_thumb_is_image = false -%}
+        {%- if hero_video_thumb and hero_video_thumb.media_type == "image" -%}
+          {%- assign hero_video_thumb_is_image = true -%}
+        {%- endif -%}
+
+        {%- if show_image and hero_video_thumb_is_image and hero_video_url -%}
           <div class="article-card__image-wrapper card__media">
-            <div class="article-card__image media media--hover-effect">
-              {{ hero_video_thumb | image_url: width: 800 | image_tag: alt: article.title }}
-              {% comment %} {%- if hero_video_url -%}
+            <div
+              class="article-card__image media media--hover-effect"
+              {% if section.settings.media_height == 'adapt' %}
+              style="padding-bottom: {{ 1 | divided_by: hero_video_thumb.aspect_ratio | times: 100 }}%;"
+              {% endif %}>
+              <a
+                href="javascript:void(0);"
+                class="video-thumb-link"
+                data-embed-id="video-{{ article.id }}">
+                {{ hero_video_thumb | image_url: width: 800 | image_tag: alt: article.title }}
                 <span class="deferred-media__poster-button motion-reduce">
                   <span class="svg-wrapper">
                     {{ 'icon-play.svg' | inline_asset_content }}
                   </span>
                 </span>
-              {%- endif -%} {% endcomment %}
+              </a>
+              <div
+                class="video-embed-container"
+                id="video-{{ article.id }}"
+                style="display:none;">
+                {%- assign embed_url = '' -%}
+                {%- if hero_video_url contains 'youtube.com/watch?v=' -%}
+                  {%- assign video_id = hero_video_url | split: 'v=' | last | split: '&' | first -%}
+                  {%- assign embed_url = 'https://www.youtube.com/embed/' | append: video_id | append: '?autoplay=1' -%}
+                {%- elsif hero_video_url contains 'youtu.be/' -%}
+                  {%- assign video_id = hero_video_url | split: 'youtu.be/' | last | split: '?' | first -%}
+                  {%- assign embed_url = 'https://www.youtube.com/embed/' | append: video_id | append: '?autoplay=1' -%}
+                {%- elsif hero_video_url contains 'vimeo.com/' -%}
+                  {%- assign video_id = hero_video_url | split: 'vimeo.com/' | last | split: '?' | first -%}
+                  {%- assign embed_url = 'https://player.vimeo.com/video/' | append: video_id | append: '?autoplay=1' -%}
+                {%- else -%}
+                  {%- assign embed_url = hero_video_url -%}
+                {%- endif -%}
+                <iframe
+                  src="{{ embed_url }}"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  title="{{ article.title }}"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"></iframe>
+              </div>
             </div>
           </div>
         {%- elsif show_image and article.image -%}
@@ -65,16 +93,17 @@
               {% if section.settings.media_height == 'adapt' %}
               style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"
               {% endif %}>
+              {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
                 srcset="
-                    {%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
-                    {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
-                    {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
-                    {%- if article.image.src.width >= 720 -%}{{ article.image.src | image_url: width: 720 }} 720w,{%- endif -%}
-                    {%- if article.image.src.width >= 1000 -%}{{ article.image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
-                    {%- if article.image.src.width >= 1500 -%}{{ article.image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
-                    {{ article.image.src | image_url }} {{ article.image.src.width }}w
-                  "
+                {%- if article.image.src.width >= 165 -%}{{ article.image.src | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if article.image.src.width >= 360 -%}{{ article.image.src | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if article.image.src.width >= 533 -%}{{ article.image.src | image_url: width: 533 }} 533w,{%- endif -%}
+                {%- if article.image.src.width >= 720 -%}{{ article.image.src | image_url: width: 720 }} 720w,{%- endif -%}
+                {%- if article.image.src.width >= 1000 -%}{{ article.image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
+                {%- if article.image.src.width >= 1500 -%}{{ article.image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {{ article.image.src | image_url }} {{ article.image.src.width }}w
+              "
                 src="{{ article.image.src | image_url: width: 533 }}"
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
                 alt="{{ article.image.src.alt | escape }}"
@@ -84,13 +113,7 @@
                 {% endunless %}
                 width="{{ article.image.width }}"
                 height="{{ article.image.height }}">
-              {%- if hero_video_url -%}
-                <span class="deferred-media__poster-button motion-reduce">
-                  <span class="svg-wrapper">
-                    {{ 'icon-play.svg' | inline_asset_content }}
-                  </span>
-                </span>
-              {%- endif -%}
+              {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
             </div>
           </div>
         {%- endif -%}
