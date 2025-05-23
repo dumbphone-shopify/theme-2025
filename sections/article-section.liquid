@@ -3,7 +3,7 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {% comment %} {% assign hero_type = article.metafields.custom.hero_type.value | default: 'image' %} {% endcomment %}
-{% assign hero_type = article.metafields.custom.hero_type.value %}
+{% assign hero_type = article.metafields.custom.hero_type.value | default: 'image' | downcase | strip %}
 {% assign hero_video_url = article.metafields.custom.hero_video_url.value %}
 {% assign hero_video_thumb = article.metafields.custom.hero_video_thumb.value %}
 {% assign show_author = true %}
