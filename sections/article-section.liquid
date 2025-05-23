@@ -49,6 +49,10 @@
               fetchpriority="high">
           </div>
         {%- endif -%}
+      {%- endif -%}
+    
+
+
         <div class="article-content">
           {%- for block in section.blocks -%}
             {%- case block.type -%}
@@ -288,7 +292,7 @@
           </div>
         </div>
       {%- endif -%}
-    {%- endif -%}
+   
 </div>
 
       {% schema %}
