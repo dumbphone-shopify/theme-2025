@@ -20,9 +20,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_Jcqqje"
-      ],
+      "block_order": ["heading_Jcqqje"],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/persons-hand-points-to-text-in-a-open-book-laying-in-a-table.jpg",
@@ -75,9 +73,5 @@
       }
     }
   },
-  "order": [
-    "image_banner_zBQrtt",
-    "main",
-    "featured_blog_Vfq9Ab"
-  ]
+  "order": ["image_banner_zBQrtt", "main", "featured_blog_Vfq9Ab"]
 }
