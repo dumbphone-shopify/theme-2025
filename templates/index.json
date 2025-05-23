@@ -45,7 +45,34 @@
         "mobile_content_alignment": "center"
       }
     },
-
+    "article_section_UPqpGX": {
+      "type": "article-section",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Del"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": ["featured_image", "title", "share", "content"],
+      "settings": {}
+    },
     "1747382751afc67ba6": {
       "type": "apps",
       "settings": {
