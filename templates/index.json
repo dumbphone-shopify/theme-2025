@@ -156,8 +156,8 @@
         "button_KRxVph": {
           "type": "button",
           "settings": {
-            "button_label": "Læs mere om os →",
-            "button_link": "shopify://pages/dumbphone-guide",
+            "button_label": "Læs mere om Dumbphone →",
+            "button_link": "shopify://pages/om-dumbhpone",
             "button_style_secondary": true
           }
         }

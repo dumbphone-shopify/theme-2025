@@ -116,7 +116,7 @@
           "type": "button",
           "settings": {
             "button_label": "Læs mere →",
-            "button_link": "shopify://pages/dumbphone-guide",
+            "button_link": "shopify://pages/om-dumbhpone",
             "button_style_secondary": true
           }
         }
