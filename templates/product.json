@@ -74,9 +74,12 @@
       ],
       "custom_css": [
         ".product__media {border-radius: 25px;}",
-        "img {background: #9cb7aa;}",
+        ".product-form__submit {padding: 1rem 2rem; margin: 0 auto;}",
+        ".product-form__submit:hover {background-color: #c55614; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); transition: background 0.2s; cursor: pointer;}",
+        ".product-media-container {border: none;}",
+        ".product-media-container {aspect-ratio: 1 / 1; width: 100%; max-width: 100%; position: relative; overflow: hidden; }",
         "h2.title {text-align: center;}",
-        ".thumbnail {border-radius: 15px;}",
+        ".thumbnail {border-radius: 15px; border: none;}",
         "@media (max-width: 768px) {span {font-size: 1.5rem !important; }}"
       ],
       "settings": {
