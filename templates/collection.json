@@ -168,8 +168,8 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         ".card:hover {background-color: #9cb7aa;}",
-        ".grid__item {border-radius: 25px; transition: all ease-in-out 0.3s; overflow: hidden; box-shadow: 0 0 0 2px #3e2103;}",
-        ".grid__item:hover {box-shadow: none;}",
+        ".grid__item {border-radius: 25px; transition: overflow ease-in-out 0.3s; overflow: hidden; border: solid 1px #3e2103;}",
+        ".grid__item:hover {border: none;}",
         ".grid {--grid-mobile-horizontal-spacing: 20px; --grid-mobile-vertical-spacing: 65px; column-gap: var(--grid-mobile-horizontal-spacing); row-gap: var(--grid-mobile-vertical-spacing);}"
       ],
       "settings": {
