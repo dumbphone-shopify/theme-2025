@@ -181,7 +181,8 @@
         "row_qx96hY"
       ],
       "custom_css": [
-        "img {border-radius: 25px;}"
+        "img {border-radius: 25px;}",
+        ".media > img {object-fit: contain;}"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
