@@ -182,7 +182,8 @@
       ],
       "custom_css": [
         "img {border-radius: 25px;}",
-        ".media > img {object-fit: contain;}"
+        ".media > img {object-fit: contain;}",
+        "p {max-width: 550px; width: 100%; margin: 0 auto;}"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
