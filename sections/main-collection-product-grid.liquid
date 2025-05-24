@@ -156,7 +156,8 @@
                   {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
-                  {% endif %}>
+                  {% endif %}
+                  id="grid__item">
                   {% render 'card-product'
                     , card_product: product
                     , media_aspect_ratio: section.settings.image_ratio
@@ -405,19 +406,22 @@
 
 
 {% style %}
- #product-grid {
+  #product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2em;
   }
 
 
-  .grid__item {
-      width: 100%;
-      height: 100%;
-}
-  /* @media screen and (max-width: 989px) {
-    
-    
-  } */
+  #grid__item {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /*
+   @media screen and (max-width: 989px) {
+
+   }
+*/
 {% endstyle %}
