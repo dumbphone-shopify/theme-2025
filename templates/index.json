@@ -196,7 +196,9 @@
         "slide_8jixRm",
         "slide_6RtGf7"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.carousel-container {max-height: 350px; overflow: hidden; } .hero-content, .hero-overlay {padding: 1.5rem; max-width: 95vw; width: 100%; margin: 0 auto; box-sizing: border-box; }}"
+      ],
       "name": "Carousel",
       "settings": {
         "padding_top": 48,
