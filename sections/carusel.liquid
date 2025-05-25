@@ -95,7 +95,8 @@
   }
 
   .text-block {
-    padding: 10px 25px;
+    /* padding: 10px 25px; */
+    padding: 2rem 4rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -130,7 +131,22 @@
       left: 35%;
     }
 
-  }{%- endstyle -%}
+  }
+
+  .carousel-slide a.button {
+    padding: 1rem 2rem;
+    /* transition: background-color 0.3s ease; */
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .carousel-slide a.button:hover {
+    background-color: #AC3F00;
+    color: #FFFDF8;
+  }
+  {%- endstyle -%}
 
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
@@ -182,31 +198,31 @@
 <script src="{{ 'glider.min.js' |asset_url}}" async></script>
 
 <script>
-  {% comment %} her linker jeg knapeprne med mine buttons
-   i gennem klasserne. dette kan man finde i github documentationen for
-   glider.js "https://github.com/NickPiscitelli/Glider.js/tree/master" {% endcomment %}
+      {% comment %} her linker jeg knapeprne med mine buttons
+       i gennem klasserne. dette kan man finde i github documentationen for
+       glider.js "https://github.com/NickPiscitelli/Glider.js/tree/master" {% endcomment %}
 
   window.addEventListener('DOMContentLoaded', () =>{
   new Glider(document.querySelector('.glider'),{
-  slidesToShow: 1, // or 2, or any float (e.g., 1.3)
-  slidesToScroll: 1,
-  draggable: true,
-  arrows: {
-  prev: '#{{ section.id }} .prev',
-  next: '#{{ section.id }} .next',
-  },
-   responsive: [
-  {
-    breakpoint: 750,
-    settings: {
-      slidesToShow: 1.5
-    }
-  }
-  ]
+      slidesToShow: 1, // or 2, or any float (e.g., 1.3)
+    slidesToScroll: 1,
+    draggable: true,
+    arrows: {
+      prev: '#{{ section.id }} .prev',
+      next: '#{{ section.id }} .next',
+    },
+     responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1.5
+        }
+      }
+    ]
   });
 
 
-  });
+   });
 </script>
 
 {% schema %}
