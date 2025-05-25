@@ -133,7 +133,7 @@
 
   }
 
-  .carousel-slide .button {
+  .carousel-slide a.button {
     padding: 1rem 2rem;
     /* transition: background-color 0.3s ease; */
     width: 100%;
@@ -142,10 +142,11 @@
     border-radius: 10px;
   }
 
-  .carousel-slide .button:hover {
+  .carousel-slide a.button:hover {
     background-color: #AC3F00;
     color: #FFFDF8;
-  }{%- endstyle -%}
+  }
+  {%- endstyle -%}
 
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
