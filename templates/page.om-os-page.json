@@ -109,7 +109,7 @@
       "settings": {
         "image": "shopify://shop_images/Arne-with-dumbphones.webp",
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
@@ -211,7 +211,7 @@
       "settings": {
         "image": "shopify://shop_images/dumbphone-founder-at-tvmv.webp",
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
