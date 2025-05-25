@@ -169,7 +169,7 @@
       "custom_css": [
         "/*.card:hover {background-color: beige;}",
         "*/.grid__item {border-radius: 25px; transition: transform ease-in-out 0.3s; overflow: hidden; border: solid 1px #3e2103;}",
-        ".grid__item:hover {/* border: none;*/ transform: scale(1.02);}",
+        ".grid__item:hover {/* border: none;*/ transform: scale(1.02) !important;}",
         ".grid {--grid-mobile-horizontal-spacing: 20px; --grid-mobile-vertical-spacing: 65px; column-gap: var(--grid-mobile-horizontal-spacing); row-gap: var(--grid-mobile-vertical-spacing);}"
       ],
       "settings": {
