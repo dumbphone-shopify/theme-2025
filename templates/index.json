@@ -231,7 +231,7 @@
         "slide_6RtGf7"
       ],
       "custom_css": [
-        "a{margin: 20px 0px;}"
+        "a {margin: 20px 0px;}"
       ],
       "name": "Carousel",
       "settings": {
