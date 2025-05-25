@@ -146,7 +146,6 @@
     },
     "article_section_eTXCAR": {
       "type": "article-section",
-      "disabled": true,
       "custom_css": [],
       "name": "Artikelsektion",
       "settings": {}
