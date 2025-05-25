@@ -109,7 +109,7 @@
       "settings": {
         "image": "shopify://shop_images/Arne-with-dumbphones.webp",
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
@@ -122,12 +122,31 @@
         "padding_bottom": 52
       }
     },
+    "image_banner_m37hrm": {
+      "type": "image-banner",
+      "custom_css": [
+        ".banner {max-width: 900px; margin: auto;}",
+        ".media {background-color: transparent;}",
+        "img {object-position: center top; border-radius: 25px; background-color: transparent;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "top-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
     "article_section_eTXCAR": {
       "type": "article-section",
-      "disabled": true,
-      "custom_css": [
-        "img {border-radius: 25px; max-width: 900px; margin: auto auto;}"
-      ],
+      "custom_css": [],
       "name": "Artikelsektion",
       "settings": {}
     },
@@ -211,7 +230,7 @@
       "settings": {
         "image": "shopify://shop_images/dumbphone-founder-at-tvmv.webp",
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
@@ -345,6 +364,7 @@
     "image_banner_9ad76N",
     "rich_text_8U9amQ",
     "image_with_text_tU3CRX",
+    "image_banner_m37hrm",
     "article_section_eTXCAR",
     "rich_text_bUkCeJ",
     "image_with_text_M9M7XT",
