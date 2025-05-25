@@ -197,7 +197,7 @@
         "slide_6RtGf7"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.carousel-container {max-height: 350px; overflow: hidden; } .hero-content, .hero-overlay {padding: 1.5rem; max-width: 95vw; width: 100%; margin: 0 auto; box-sizing: border-box; }}"
+        ".carousel-slide,.hero-content {display: flex; flex-direction: column; justify-content: center; align-items: flex-start; /* or center if preferred */}"
       ],
       "name": "Carousel",
       "settings": {
