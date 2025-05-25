@@ -196,9 +196,7 @@
         "slide_8jixRm",
         "slide_6RtGf7"
       ],
-      "custom_css": [
-        ".carousel-slide,.hero-content {display: flex; flex-direction: column; justify-content: center; align-items: flex-start; /* or center if preferred */}"
-      ],
+      "custom_css": [],
       "name": "Carousel",
       "settings": {
         "padding_top": 48,
