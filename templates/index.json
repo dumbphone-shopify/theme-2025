@@ -31,10 +31,7 @@
           }
         }
       },
-      "block_order": [
-        "button_YFHfp6",
-        "button_xiCWY6"
-      ],
+      "block_order": ["button_YFHfp6", "button_xiCWY6"],
       "custom_css": [],
       "name": "Hero Banner",
       "settings": {
@@ -48,40 +45,7 @@
         "mobile_content_alignment": "center"
       }
     },
-    "article_section_UPqpGX": {
-      "type": "article-section",
-      "blocks": {
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {}
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Del"
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "featured_image",
-        "title",
-        "share",
-        "content"
-      ],
-      "disabled": true,
-      "settings": {}
-    },
+
     "1747382751afc67ba6": {
       "type": "apps",
       "settings": {
@@ -114,11 +78,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_eP6Yjq",
-        "text_cbbnAW",
-        "button_KRxVph"
-      ],
+      "block_order": ["heading_eP6Yjq", "text_cbbnAW", "button_KRxVph"],
       "custom_css": [
         ".image-with-text__content {border-radius: 25px 0 0 25px;}",
         ".image-with-text__media {border-radius: 0 25px 25px 0;}",
@@ -225,14 +185,8 @@
           }
         }
       },
-      "block_order": [
-        "slide_dYYRxj",
-        "slide_8jixRm",
-        "slide_6RtGf7"
-      ],
-      "custom_css": [
-        "a {margin: 20px 0px;}"
-      ],
+      "block_order": ["slide_dYYRxj", "slide_8jixRm", "slide_6RtGf7"],
+      "custom_css": ["a {margin: 20px 0px;}"],
       "name": "Carousel",
       "settings": {
         "padding_top": 48,
@@ -330,13 +284,8 @@
           }
         }
       },
-      "block_order": [
-        "heading_JFTTYE",
-        "text_MaAH7h"
-      ],
-      "custom_css": [
-        "h2 {color: #c55614;}"
-      ],
+      "block_order": ["heading_JFTTYE", "text_MaAH7h"],
+      "custom_css": ["h2 {color: #c55614;}"],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "left",
@@ -381,11 +330,7 @@
           }
         }
       },
-      "block_order": [
-        "column_qpzpMw",
-        "column_aP9g8h",
-        "column_RPGQee"
-      ],
+      "block_order": ["column_qpzpMw", "column_aP9g8h", "column_RPGQee"],
       "custom_css": [
         ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}",
         ".multicolumn-card__image-wrapper {aspect-ratio: 1; height: 80px; border-radius: 50%; overflow: hidden; padding-top: 0; margin-top: 2.5rem;}",
@@ -426,13 +371,8 @@
           }
         }
       },
-      "block_order": [
-        "heading_7JUXKx",
-        "text_TARmKf"
-      ],
-      "custom_css": [
-        "h2 {color: #c55614;}"
-      ],
+      "block_order": ["heading_7JUXKx", "text_TARmKf"],
+      "custom_css": ["h2 {color: #c55614;}"],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -594,11 +534,7 @@
           }
         }
       },
-      "block_order": [
-        "image_HbWMRX",
-        "product_4PM84E",
-        "collection_dJUy9b"
-      ],
+      "block_order": ["image_HbWMRX", "product_4PM84E", "collection_dJUy9b"],
       "disabled": true,
       "settings": {
         "heading": "Alt er inkluderet i vores Dumbphone-pakker",
