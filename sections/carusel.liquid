@@ -9,159 +9,163 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+    .glider {
+ /*
+   this is specifically for the padding!!! not scroll bar! be careful as saving this file removes parts of the code.
+   It should look like this:
+   padding: max(5rem, calc((100vw - var(--page-width, 1200px)) / 2));
+  */
+  padding: max(5rem, calc((100vw - var(--page-width, 1200px)) / 2));
   }
+}
 
 
-  .glider__container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 0 10px 60px;
+.glider__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* padding: 0 10px 60px; */
 
-  }
+}
 
-  .glider__container .prev,
-  .glider__container .next {
-    position: absolute;
-    bottom: 0;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    border-radius: 5px;
-    width: 0;
-    height: 0;
-    transition: all 0.2s ease-in-out;
-  }
+.glider__container .prev,
+.glider__container .next {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  width: 0;
+  height: 0;
+  transition: all 0.2s ease-in-out;
+}
 
-  .glider__container .next {
-    right: 45%;
-  }
+.glider__container .next {
+  right: 45%;
+}
 
-  .glider__container .prev {
-    left: 45%;
-  }
+.glider__container .prev {
+  left: 45%;
+}
 
 
-  .glider__container .prev.disabled {
-    border-right: 16px solid rgb(133, 121, 114);
-    cursor: auto !important;
-  }
+.glider__container .prev.disabled {
+  border-right: 16px solid rgb(133, 121, 114);
+  cursor: auto !important;
+}
 
-  .glider__container .next.disabled {
-    border-left: 16px solid rgb(133, 121, 114);
-    cursor: auto !important;
-  }
+.glider__container .next.disabled {
+  border-left: 16px solid rgb(133, 121, 114);
+  cursor: auto !important;
+}
 
-  .glider__container .next {
-    border-top: 16px solid transparent;
-    border-bottom: 16px solid transparent;
-    border-left: 16px solid{{ ' ' }}{{ section.settings.arrow_color }};
-  }
-  .glider__container .prev {
-    border-top: 16px solid transparent;
-    border-bottom: 16px solid transparent;
-    border-right: 16px solid{{ ' ' }}{{ section.settings.arrow_color }};
-  }
+.glider__container .next {
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid{{ ' ' }}{{ section.settings.arrow_color }};
+}
+.glider__container .prev {
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 16px solid{{ ' ' }}{{ section.settings.arrow_color }};
+}
 
-  .glider__container .next:hover:not(.disabled),
-  .glider__container .prev:hover:not(.disabled) {
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out;
+.glider__container .next:hover:not(.disabled),
+.glider__container .prev:hover:not(.disabled) {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
 
-  }
+}
 
-  .glider {
-    display: flex;
-    align-items: stretch;
-    min-height: 400px;
-    margin: 25px 0 0 !important;
-  }
+.glider {
+  display: flex;
+  align-items: stretch;
+  min-height: 400px;
+  margin: 25px 0 0 !important;
+}
 
+.carousel-slide {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  /* 2/5 image, 3/5 text */
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 10px !important;
+  max-width: 850px;
+  padding: 0 !important;
+}
+
+.img-block {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-block {
+  /* padding: 10px 25px; */
+  padding: 2rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 749px) {
   .carousel-slide {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    /* 2/5 image, 3/5 text */
-    border-radius: 25px;
-    overflow: hidden;
-    margin: 0 10px !important;
-    max-width: 850px;
-    padding: 0 !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    /* height: 80vh !important; disabled because it caused a lot of "white" unused space in the cards */
   }
-
   .img-block {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    aspect-ratio: auto;
+  }
+  .glider__container .next {
+    right: 35%;
+  }
+  .glider__container .prev {
+    left: 35%;
   }
 
-  .text-block {
-    /* padding: 10px 25px; */
-    padding: 2rem 4rem 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+}
 
-  .text-left {
-    text-align: left;
-  }
+/* styling the button in slider card  */
 
-  .text-center {
-    text-align: center;
-  }
+.carousel-slide a.button {
+  padding: 1rem 2rem;
+  /* transition: background-color 0.3s ease; */
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+  border-radius: 10px;
+}
 
-  .text-right {
-    text-align: right;
-  }
+.carousel-slide a.button:hover {
+  background-color: #AC3F00;
+  color: #FFFDF8;
+}
 
-  /* Mobile layout */
-  @media screen and (max-width: 749px) {
-    .carousel-slide {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr;
-      /* height: 80vh !important; disabled because it caused a lot of "white" unused space in the cards */
-    }
-    .img-block {
-      aspect-ratio: auto;
-    }
-    .glider__container .next {
-      right: 35%;
-    }
-    .glider__container .prev {
-      left: 35%;
-    }
+/* hiding the scrollbar for .glider */
+.glider {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.glider::-webkit-scrollbar {
+  display: none;
 
-  }
-
-  /* styling the button in slider card  */
-
-  .carousel-slide a.button {
-    padding: 1rem 2rem;
-    /* transition: background-color 0.3s ease; */
-    width: 100%;
-    max-width: 30rem;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-
-  .carousel-slide a.button:hover {
-    background-color: #AC3F00;
-    color: #FFFDF8;
-  }
-
-  /* hiding the scrollbar for .glider */
-  .glider {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    /* this is specifically for the padding!!! not scroll bar! be careful as saving this file removes parts of the code. 
-    It should look like this: 
-    padding:  max(5rem, calc((100vw - var(--page-width, 1200px)) / 2)); */
-    padding: 0 max(5rem, calc((100vw - var(--page-width, 1200px)) / 2));
-  }
-  .glider::-webkit-scrollbar {
-    display: none;
-
-  }{%- endstyle -%}
+}{%- endstyle -%}
 
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
