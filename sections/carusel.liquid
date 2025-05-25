@@ -1,157 +1,161 @@
 {%- style -%}
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-        padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-      }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
-      @media screen and (min-width: 750px) {
-        .section-{{ section.id }}-padding {
-          padding-top: {{ section.settings.padding_top }}px;
-          padding-bottom: {{ section.settings.padding_bottom }}px;
-        }
-      }
-
-
-      .glider__container {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        padding: 0px 10px 60px 10px;
-      }
-
-      .glider__container .prev,
-      .glider__container .next {
-        position: absolute;
-        bottom: 0;
-        cursor: pointer;
-        background:transparent;
-        border:none;
-        border-radius: 5px;
-        width: 0;
-        height: 0;
-       transition: all 0.2s ease-in-out;
-      }
-
-      .glider__container .next {
-        right: 45%;
-      }
-
-      .glider__container .prev {
-         left: 45%;
-      }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
 
 
-      .glider__container .prev.disabled{
-        border-right: 16px solid rgb(133, 121, 114);
-  cursor:auto !important;
-      }
+  .glider__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 60px;
+  }
 
-       .glider__container .next.disabled{
-        border-left: 16px solid rgb(133, 121, 114);
-  cursor:auto !important;
-      }
+  .glider__container .prev,
+  .glider__container .next {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    width: 0;
+    height: 0;
+    transition: all 0.2s ease-in-out;
+  }
 
+  .glider__container .next {
+    right: 45%;
+  }
+
+  .glider__container .prev {
+    left: 45%;
+  }
+
+
+  .glider__container .prev.disabled {
+    border-right: 16px solid rgb(133, 121, 114);
+    cursor: auto !important;
+  }
+
+  .glider__container .next.disabled {
+    border-left: 16px solid rgb(133, 121, 114);
+    cursor: auto !important;
+  }
+
+  .glider__container .next {
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid{{section.settings.arrow_color}};
+  }
+  .glider__container .prev {
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-right: 16px solid{{section.settings.arrow_color}};
+
+  }
+
+  .glider__container .next:hover:not(.disabled),
+  .glider__container .prev:hover:not(.disabled) {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+
+  }
+
+  .glider {
+    display: flex;
+    align-items: stretch;
+    min-height: 400px;
+    margin: 25px 0 0 !important;
+  }
+
+  .carousel-slide {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /* 2/5 image, 3/5 text */
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 10px !important;
+    max-width: 850px;
+    padding: 0 !important;
+  }
+
+  .img-block {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text-block {
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  /* Mobile layout */
+  @media screen and (max-width: 749px) {
+    .carousel-slide {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+      height: 80vh !important;
+    }
+    .img-block {
+      aspect-ratio: auto;
+    }
     .glider__container .next {
-      border-top: 16px solid transparent;
-      border-bottom: 16px solid transparent;
-      border-left: 16px solid {{section.settings.arrow_color}};
-      }
+      right: 35%;
+    }
     .glider__container .prev {
-      border-top: 16px solid transparent;
-      border-bottom: 16px solid transparent;
-      border-right: 16px solid {{section.settings.arrow_color}};
+      left: 35%;
+    }
 
-      }
+  }
 
-       .glider__container .next:hover:not(.disabled), .glider__container .prev:hover:not(.disabled){
-        transform:scale(1.2);
-        transition:all 0.2s ease-in-out;
+  .button {
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
+  }
 
-      }
-
-      .glider {
-        display: flex;
-        align-items: stretch;
-        min-height: 400px;
-        margin: 25px 0 0 0 !important;
-      }
-
-      .carousel-slide {
-        display: grid;
-        grid-template-columns: 2fr 3fr; /* 2/5 image, 3/5 text */
-        border-radius: 25px;
-        overflow: hidden;
-       margin: 0 10px;
-        max-width: 850px;
-        padding: 0 !important;
-      }
-
-      .img-block {
-          background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .text-block {
-        padding: 10px 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-
-      .text-left {
-        text-align: left;
-      }
-
-      .text-center {
-        text-align: center;
-      }
-
-      .text-right {
-        text-align: right;
-      }
-
-      /* Mobile layout */
-      @media screen and (max-width: 749px) {
-        .carousel-slide {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 2fr;
-          height: 80vh !important;
-        }
-        .img-block {
-          aspect-ratio: auto;
-        }
-        .glider__container .next {
-          right: 35%;
-        }
-        .glider__container .prev {
-          left: 35%;
-        }
-
-      }
-{%- endstyle -%}
+  .button:hover {
+    background-color: blue;
+  }{%- endstyle -%}
 
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
 <div class="color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
-  <div
-    class="page-width glider__container"
-    id="{{section.id}}"
-  >
+  <div class="page-width glider__container" id="{{section.id}}">
     <h2 class="text-{{ section.settings.align_text }}" style="color:{{ section.settings.title_color }}">
       {{ section.settings.title }}
     </h2>
 
     <div class="glider">
       {% for block in section.blocks %}
-        <div
-          class="carousel-slide color-{{ block.settings.color_scheme }}"
-          {{ block.shopify_attributes }}
-        >
+        <div class="carousel-slide color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
           <div class="img-block" style="background-image: url({{ block.settings.image | image_url: width: 600 }});">
             {% comment %}
               {% if block.settings.image %}
-                <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
+              <img width="250" height="250" src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.heading | escape }}" />
               {% endif %}
             {% endcomment %}
           </div>
@@ -215,128 +219,146 @@
 </script>
 
 {% schema %}
-{
-  "name": "Carousel",
-  "settings": [
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
-    },
-    {
-      "type": "number",
-      "id": "number_slider_desktop",
-      "label": "Numer of SLides (desktop)"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "This is a title"
-    },
-    {
-      "type": "select",
-      "id": "align_text",
-      "label": "Text alignment",
-      "default": "left",
-      "options": [
-        { "value": "left", "label": "Left" },
-        { "value": "center", "label": "Centered" },
-        { "value": "right", "label": "Right" }
-      ]
-    },
-    {
-      "type": "color",
-      "id": "title_color",
-      "label": "This is the title color",
-      "default": "#000000"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
-    },
-    {
-      "type": "color",
-      "id": "arrow_color",
-      "label": "Arrow color",
-      "default": "#ac3f00"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "slide",
-      "name": "Slide",
-      "settings": [
-        {
-          "type": "color_scheme",
-          "id": "color_scheme",
-          "label": "t:sections.all.colors.label",
-          "default": "scheme-1"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "Heading",
-          "default": "This is a slider heading"
-        },
-        {
-          "type": "textarea",
-          "id": "text",
-          "label": "Text",
-          "default": "Here’s a short description or message."
-        },
-        {
-          "type": "select",
-          "id": "align_text",
-          "label": "Text alignment",
-          "default": "left",
-          "options": [
-            { "value": "left", "label": "Left" },
-            { "value": "center", "label": "Centered" },
-            { "value": "right", "label": "Right" }
-          ]
-        },
-        {
-          "id": "link",
-          "type": "url",
-          "label": "Link URL"
-        },
-        {
-          "id": "linktext",
-          "type": "text",
-          "label": "Link text",
-          "default": "Click here"
-        }
-      ]
-    }
-  ],
-  "max_blocks": 10,
-  "presets": [
-    {
-      "name": "Carousel"
-    }
-  ]
-}
+  {
+    "name": "Carousel",
+    "settings": [
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      },
+      {
+        "type": "number",
+        "id": "number_slider_desktop",
+        "label": "Numer of SLides (desktop)"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "This is a title"
+      },
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "Text alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "This is the title color",
+        "default": "#000000"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "color",
+        "id": "arrow_color",
+        "label": "Arrow color",
+        "default": "#ac3f00"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "color_scheme",
+            "id": "color_scheme",
+            "label": "t:sections.all.colors.label",
+            "default": "scheme-1"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "This is a slider heading"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text",
+            "default": "Here’s a short description or message."
+          },
+          {
+            "type": "select",
+            "id": "align_text",
+            "label": "Text alignment",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Centered"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ]
+          },
+          {
+            "id": "link",
+            "type": "url",
+            "label": "Link URL"
+          },
+          {
+            "id": "linktext",
+            "type": "text",
+            "label": "Link text",
+            "default": "Click here"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 10,
+    "presets": [
+      {
+        "name": "Carousel"
+      }
+    ]
+  }
 {% endschema %}
