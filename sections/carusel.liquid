@@ -54,12 +54,12 @@
   .glider__container .next {
     border-top: 16px solid transparent;
     border-bottom: 16px solid transparent;
-    border-left: 16px solid {{ section.settings.arrow_color }};
+    border-left: 16px solid{{ section.settings.arrow_color }};
   }
   .glider__container .prev {
     border-top: 16px solid transparent;
     border-bottom: 16px solid transparent;
-    border-right: 16px solid {{ section.settings.arrow_color }};
+    border-right: 16px solid{{ section.settings.arrow_color }};
 
   }
 
@@ -146,7 +146,15 @@
     background-color: #AC3F00;
     color: #FFFDF8;
   }
-  {%- endstyle -%}
+
+  /* hiding the scrollbar for .glider */
+  .glider {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .glider::-webkit-scrollbar {
+    display: none;
+  }{%- endstyle -%}
 
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
 {{ 'glider.min.css' | asset_url | stylesheet_tag }}
