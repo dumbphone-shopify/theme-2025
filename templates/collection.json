@@ -167,9 +167,9 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".card:hover {background-color: #9cb7aa;}",
-        ".grid__item {border-radius: 25px; transition: overflow ease-in-out 0.3s; overflow: hidden; border: solid 1px #3e2103;}",
-        ".grid__item:hover {border: none;}",
+        "/*.card:hover {background-color: beige;}",
+        "*/.grid__item {border-radius: 25px; transition: transform ease-in-out 0.3s; overflow: hidden; border: solid 1px #3e2103;}",
+        ".grid__item:hover {/* border: none;*/ transform: scale(1.02);}",
         ".grid {--grid-mobile-horizontal-spacing: 20px; --grid-mobile-vertical-spacing: 65px; column-gap: var(--grid-mobile-horizontal-spacing); row-gap: var(--grid-mobile-vertical-spacing);}"
       ],
       "settings": {
@@ -177,7 +177,7 @@
         "columns_desktop": 3,
         "columns_mobile": "1",
         "color_scheme": "scheme-9cb15f53-7587-4f63-bade-50a1282d6270",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
