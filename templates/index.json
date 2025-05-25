@@ -230,7 +230,9 @@
         "slide_8jixRm",
         "slide_6RtGf7"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "a{margin: 20px 0px;}"
+      ],
       "name": "Carousel",
       "settings": {
         "padding_top": 48,
