@@ -143,16 +143,7 @@
         "padding_bottom": 24
       }
     },
-    "article_section_UikNit": {
-      "type": "article-section",
-      "disabled": true,
-      "custom_css": [
-        "img {max-width: 900px; margin: auto auto;}",
-        "div {background-color: #9cb7aa; padding: 10px;}"
-      ],
-      "name": "Artikelsektion",
-      "settings": {}
-    },
+ 
     "multirow_qEFL7e": {
       "type": "multirow",
       "blocks": {
@@ -284,7 +275,6 @@
     "main",
     "video_review",
     "rich_text_7MHYf6",
-    "article_section_UikNit",
     "multirow_qEFL7e",
     "related-products",
     "collapsible_content_8VzBej"
