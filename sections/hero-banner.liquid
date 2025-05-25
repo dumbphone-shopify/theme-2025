@@ -292,7 +292,8 @@
   }
 
   .hero-content h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    /* font-size: clamp(2rem, 5vw, 3rem); */
+    font-size: clamp(1.5rem, 1.1364rem + 1.8182vw, 2.5rem);
     /*  2rem to 3rem */
     max-width: 762px;
     width: 100%;
@@ -317,15 +318,6 @@
     padding: 1rem 2rem;
     text-decoration: none;
     text-align: center;
-
-  }
-
-  .cta-button:hover {
-    background-color: #e0e0e0;
-  }
-
-
-  .cta-button {
     background-color: {{ block.settings.button_bg_color }};
     color: {{ block.settings.button_text_color }};
     border-radius: 0.5em;
