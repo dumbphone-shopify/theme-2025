@@ -131,6 +131,46 @@
       "name": "Artikelsektion",
       "settings": {}
     },
+    "image_banner_mr3WK6": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Vq7q98": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_TtpjHp": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vq7q98",
+        "text_TtpjHp"
+      ],
+      "custom_css": [
+        ".banner__media {padding: 20px 50px;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-1",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "rich_text_bUkCeJ": {
       "type": "rich-text",
       "blocks": {
@@ -346,6 +386,7 @@
     "rich_text_8U9amQ",
     "image_with_text_tU3CRX",
     "article_section_eTXCAR",
+    "image_banner_mr3WK6",
     "rich_text_bUkCeJ",
     "image_with_text_M9M7XT",
     "carusel_7HymjV",
