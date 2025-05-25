@@ -54,12 +54,13 @@
   .glider__container .next {
     border-top: 16px solid transparent;
     border-bottom: 16px solid transparent;
-    border-left: 16px solid{{ section.settings.arrow_color }};
+    border-right: 16px solid{{ ' ' }}{{ section.settings.arrow_color }};
   }
   .glider__container .prev {
     border-top: 16px solid transparent;
     border-bottom: 16px solid transparent;
-    border-right: 16px solid{{ section.settings.arrow_color }};
+
+    border-right: 16px solid{{ ' ' }}{{ section.settings.arrow_color }};
 
   }
 
@@ -154,6 +155,7 @@
   }
   .glider::-webkit-scrollbar {
     display: none;
+
   }{%- endstyle -%}
 
 {% comment %} her henter jeg glider css inde i assets {% endcomment %}
