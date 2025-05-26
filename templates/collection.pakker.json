@@ -9,21 +9,33 @@
  */
 {
   "sections": {
-    "hero_banner_LLDNpQ": {
-      "type": "hero-banner",
-      "custom_css": [
-        "h1{font-size: xx-large;}"
+    "image_banner_iTgTEY": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_kfUtWE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Giv dine elever et bedre forhold til smartphones",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kfUtWE"
       ],
-      "name": "Hero-sektion",
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "background_image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
-        "enable_scroll_effect": true,
-        "hero_height": "50vh",
-        "heading": "Giv dine elever et bedre forhold til smartphones",
-        "title_color": "#fffdf8",
-        "text_alignment": "center",
-        "content_position": "bottom-right",
-        "mobile_content_alignment": "center"
+        "image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
+        "image_overlay_opacity": 40,
+        "image_height": "small",
+        "image_behavior": "fixed",
+        "desktop_content_position": "bottom-right",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "rich_text_r4Ha3q": {
@@ -459,7 +471,7 @@
     }
   },
   "order": [
-    "hero_banner_LLDNpQ",
+    "image_banner_iTgTEY",
     "rich_text_r4Ha3q",
     "image_with_text_EAwdnQ",
     "image_with_text_LttLM3",
