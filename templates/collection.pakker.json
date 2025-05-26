@@ -23,35 +23,49 @@
         "mobile_content_alignment": "center"
       }
     },
-    "featured_collection_tifA63": {
-      "type": "featured-collection",
-      "custom_css": [
-        "h2 {color: #ac3f00;}",
-        "p {max-width: 600px;}"
+    "image_with_text_LttLM3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JfCCMc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Køb mindst 10 stk - og få den perfekte første børnetelefon til - 160 kr",
+            "heading_size": "h2"
+          }
+        },
+        "text_VjYqAE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Send os en besked, så sender vi jer en rabatkode til køb af +10 stk.<br/><br/><em>*Dette tilbud er kun til forældregrupper. Det er et tilbud, vi har for at hjælpe forældre med at få så mange med som muligt. Vi tjener 10 kr. pr. telefon på tilbuddet.</em></p>",
+            "text_style": "body"
+          }
+        },
+        "button_hmVERM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Kontakt os",
+            "button_link": "shopify://pages/contact",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JfCCMc",
+        "text_VjYqAE",
+        "button_hmVERM"
       ],
-      "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "kits",
-        "products_to_show": 3,
-        "title": "Udlejning af dumbphones",
-        "heading_size": "h1",
-        "description": "<p><br/>Udlej Dumbphones til din klasse og hjælp børnene med en sund og bevidst start på smartphone-brugen. Skab bedre digitale vaner fra begyndelsen, uden at frarøve dem muligheden for kontakt og læring.</p>",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 3,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
+        "image": "shopify://shop_images/96b4ab77-72c1-44bf-9df6-db9c6597f67b.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
         "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -162,54 +176,6 @@
         "color_scheme": "scheme-1"
       }
     },
-    "image_with_text_LttLM3": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_JfCCMc": {
-          "type": "heading",
-          "settings": {
-            "heading": "Køb mindst 10 stk - og få den perfekte første børnetelefon til - 160 kr",
-            "heading_size": "h2"
-          }
-        },
-        "text_VjYqAE": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Send os en besked, så sender vi jer en rabatkode til køb af +10 stk.<br/><br/><em>*Dette tilbud er kun til forældregrupper. Det er et tilbud, vi har for at hjælpe forældre med at få så mange med som muligt. Vi tjener 10 kr. pr. telefon på tilbuddet.</em></p>",
-            "text_style": "body"
-          }
-        },
-        "button_hmVERM": {
-          "type": "button",
-          "settings": {
-            "button_label": "Kontakt os",
-            "button_link": "shopify://pages/contact",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_JfCCMc",
-        "text_VjYqAE",
-        "button_hmVERM"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/96b4ab77-72c1-44bf-9df6-db9c6597f67b.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "video_c7yMcg": {
       "type": "video",
       "disabled": true,
@@ -272,63 +238,6 @@
         "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_McXrfj": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_iBbqpy": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/CleanShot_2024-09-10_at_17.51.33.png",
-            "title": "STEP 1:",
-            "text": "<p>Del denne video med forældrene i klassen og tag evt. en snak om det med de andre forældre hvis det er muligt. <br/><br/>Der er et link til videoen her:<br/><a href=\"https://youtu.be/MHh_exH07rE\">https://youtu.be/MHh_exH07rE<strong><br/></strong></a></p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_gLGGeE": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/11ea1fe7-2ed8-4283-ab18-4aab8867d90e.png",
-            "title": "STEP 2:",
-            "text": "<p>Modtag tilbagemeldinger om hvem der er klar + modtag betaling fra hver forældre.</p><p><br/></p><p>Brug evt. din egen mobilepay til at samle pengene sammen.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_yqBtra": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/96b4ab77-72c1-44bf-9df6-db9c6597f67b.png",
-            "title": "STEP 3:",
-            "text": "<p>Send os en mail på<a href=\"mailto:kontakt@dumbphone.dk\" target=\"_self\">kontakt@dumbphone.dk</a> eller ring på:<a href=\"tel:40261270\" target=\"_self\">40261270</a>eller skriv en besked i feltet nedenfor. Vi sender dig herefter en rabatkode.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_iBbqpy",
-        "column_gLGGeE",
-        "column_yqBtra"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Det kræver at en eller to forældre tager lederskab til disse steps:",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "",
         "columns_mobile": "1",
@@ -415,6 +324,65 @@
         "arrow_color": "#ac3f00"
       }
     },
+    "multicolumn_McXrfj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_iBbqpy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CleanShot_2024-09-10_at_17.51.33.png",
+            "title": "STEP 1:",
+            "text": "<p>Del denne video med forældrene i klassen og tag evt. en snak om det med de andre forældre hvis det er muligt. <br/><br/>Der er et link til videoen her:<br/><a href=\"https://youtu.be/MHh_exH07rE\">https://youtu.be/MHh_exH07rE<strong><br/></strong></a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gLGGeE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/11ea1fe7-2ed8-4283-ab18-4aab8867d90e.png",
+            "title": "STEP 2:",
+            "text": "<p>Modtag tilbagemeldinger om hvem der er klar + modtag betaling fra hver forældre.</p><p><br/></p><p>Brug evt. din egen mobilepay til at samle pengene sammen.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yqBtra": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/96b4ab77-72c1-44bf-9df6-db9c6597f67b.png",
+            "title": "STEP 3:",
+            "text": "<p>Send os en mail på<a href=\"mailto:kontakt@dumbphone.dk\" target=\"_self\">kontakt@dumbphone.dk</a> eller ring på:<a href=\"tel:40261270\" target=\"_self\">40261270</a>eller skriv en besked i feltet nedenfor. Vi sender dig herefter en rabatkode.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_iBbqpy",
+        "column_gLGGeE",
+        "column_yqBtra"
+      ],
+      "custom_css": [
+        "h2 {color: #C55614;}"
+      ],
+      "settings": {
+        "title": "Det kræver at en eller to forældre tager lederskab til disse steps:",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "contact_form_TyGdag": {
       "type": "contact-form",
       "custom_css": [
@@ -427,20 +395,53 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "featured_collection_tifA63": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {color: #ac3f00;}",
+        "p {max-width: 600px;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "kits",
+        "products_to_show": 2,
+        "title": "Udlejning af dumbphones",
+        "heading_size": "h1",
+        "description": "<p><br/>Udlej Dumbphones til din klasse og hjælp børnene med en sund og bevidst start på smartphone-brugen. Skab bedre digitale vaner fra begyndelsen, uden at frarøve dem muligheden for kontakt og læring.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "hero_banner_LLDNpQ",
-    "featured_collection_tifA63",
+    "image_with_text_LttLM3",
     "image_with_text_EAwdnQ",
     "image_with_text_VwxAnJ",
     "banner",
-    "image_with_text_LttLM3",
     "video_c7yMcg",
     "multicolumn_HbKqAa",
-    "multicolumn_McXrfj",
     "product-grid",
     "carusel_ikF49C",
-    "contact_form_TyGdag"
+    "multicolumn_McXrfj",
+    "contact_form_TyGdag",
+    "featured_collection_tifA63"
   ]
 }
