@@ -39,7 +39,7 @@
    }
 */
 
-  @media screen and (max-width: 993px) {
+  /* @media screen and (max-width: 993px) { */
     .related-products__slider {
       display: flex;
       flex-wrap: nowrap;
@@ -52,7 +52,7 @@
       min-width: 220px;
       width: 100%;
       max-width: auto;
-      flex: 0 0 220px;
+      /* flex: 0 0 220px; */
       scroll-snap-align: start;
     }
     .related-products__slider.grid,
@@ -62,9 +62,9 @@
     }
 
     .related-products .page-width {
-    padding: 0 max(5rem, calc((100vw - var(--page-width, 1200px)) / 2));
+    padding: 5rem max(5rem, calc((100vw - var(--page-width, 1200px)) / 2));
     }
-  }
+  /* } */
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
