@@ -410,67 +410,75 @@
       "blocks": {
         "logo_kfAfUM": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/6.png"
+          }
         },
         "logo_xgJztP": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/7.png"
+          }
         },
         "logo_yMHyGh": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/2.png"
+          }
         },
         "logo_yYgcXh": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/5.png"
+          }
         },
         "logo_M78jDt": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/8_1.png"
+          }
         },
         "logo_Rn3zn8": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/1.png"
+          }
         },
         "logo_CPFc3g": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/6.png"
+          }
         },
         "logo_c49PaT": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/7.png"
+          }
         },
         "logo_9tpcbn": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/2.png"
+          }
         },
         "logo_4XFGiT": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/5.png"
+          }
         },
         "logo_RXdnq3": {
           "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/8_1.png"
+          }
         },
         "logo_8yQB6M": {
           "type": "logo",
-          "settings": {}
-        },
-        "logo_DrPiEn": {
-          "type": "logo",
-          "settings": {}
-        },
-        "logo_R9qU49": {
-          "type": "logo",
-          "settings": {}
-        },
-        "logo_qqpjBh": {
-          "type": "logo",
-          "settings": {}
-        },
-        "logo_TGQtiJ": {
-          "type": "logo",
-          "settings": {}
+          "settings": {
+            "logo_image": "shopify://shop_images/1.png"
+          }
         }
       },
       "block_order": [
@@ -485,11 +493,7 @@
         "logo_9tpcbn",
         "logo_4XFGiT",
         "logo_RXdnq3",
-        "logo_8yQB6M",
-        "logo_DrPiEn",
-        "logo_R9qU49",
-        "logo_qqpjBh",
-        "logo_TGQtiJ"
+        "logo_8yQB6M"
       ],
       "custom_css": [],
       "name": "Media Logos Slider",
@@ -499,44 +503,6 @@
         "title": "",
         "align_text": "center",
         "color_scheme": "scheme-1"
-      }
-    },
-    "collage_f44EKd": {
-      "type": "collage",
-      "blocks": {
-        "image_HbWMRX": {
-          "type": "image",
-          "settings": {}
-        },
-        "product_4PM84E": {
-          "type": "product",
-          "settings": {
-            "product": "familiepakke-2",
-            "second_image": false
-          }
-        },
-        "collection_dJUy9b": {
-          "type": "collection",
-          "settings": {
-            "collection": "kits"
-          }
-        }
-      },
-      "block_order": [
-        "image_HbWMRX",
-        "product_4PM84E",
-        "collection_dJUy9b"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Alt er inkluderet i vores Dumbphone-pakker",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "scheme-1",
-        "padding_top": 56,
-        "padding_bottom": 36
       }
     }
   },
@@ -551,7 +517,6 @@
     "rich_text_az4UTm",
     "multicolumn_keDkMU",
     "rich_text_WCVTJa",
-    "mediaslider_PKNYUf",
-    "collage_f44EKd"
+    "mediaslider_PKNYUf"
   ]
 }
