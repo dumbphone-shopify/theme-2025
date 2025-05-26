@@ -1,1 +1,91 @@
-{"sections":{"main":{"type":"main-404","settings":{}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "featured_product_yMtDXF": {
+      "type": "featured-product",
+      "blocks": {
+        "text_jK9BVK": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_jJnXY9": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_XWMdjA": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_jBMP8G": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_3CVWze": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_iXJtQq": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_n9MjcN": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_jK9BVK",
+        "title_jJnXY9",
+        "price_XWMdjA",
+        "variant_picker_jBMP8G",
+        "quantity_selector_3CVWze",
+        "buy_buttons_iXJtQq",
+        "share_n9MjcN"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "nokia-105-2g-1",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-404",
+      "settings": {}
+    }
+  },
+  "order": [
+    "featured_product_yMtDXF",
+    "main"
+  ]
+}
