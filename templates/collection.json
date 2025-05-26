@@ -27,9 +27,9 @@
       ],
       "name": "Hero-sektion",
       "settings": {
-        "background_image": "shopify://shop_images/foggy-landscape-reflected-in-lake.jpg",
+        "background_image": "shopify://shop_images/wooden-path-in-dark-forest.jpg",
         "enable_scroll_effect": true,
-        "hero_height": "75vh",
+        "hero_height": "50vh",
         "heading": "Vores dumbphones",
         "title_color": "#fffdf8",
         "text_alignment": "center",
