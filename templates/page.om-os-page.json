@@ -122,17 +122,38 @@
         "padding_bottom": 52
       }
     },
-    "article_section_eTXCAR": {
-      "type": "article-section",
-      "custom_css": [
-        "img {border-radius: 25px; max-width: 900px; margin: auto auto;}"
+    "image_banner_gKnNWa": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_GQHxqT": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GQHxqT"
       ],
-      "name": "Artikelsektion",
+      "custom_css": [
+        ".banner {border-radius: 25px; max-width: 900px; margin: auto;}",
+        ".banner__media {background-color:transparent;}",
+        "img {border-radius: 25px;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "hero_type": "image",
-        "hero_image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
-        "hero_video_url": "",
-        "hero_title": ""
+        "image": "shopify://shop_images/Arne-found-of-dumbphone.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "rich_text_bUkCeJ": {
@@ -349,7 +370,7 @@
     "image_banner_9ad76N",
     "rich_text_8U9amQ",
     "image_with_text_tU3CRX",
-    "article_section_eTXCAR",
+    "image_banner_gKnNWa",
     "rich_text_bUkCeJ",
     "image_with_text_M9M7XT",
     "carusel_7HymjV",
