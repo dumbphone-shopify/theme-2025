@@ -34,9 +34,19 @@
           "settings": {}
         }
       },
-      "block_order": ["featured_image", "title", "share", "content"],
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "custom_css": [
+        "a.article-template__link {padding: 0 0 4rem;}"
+      ],
       "settings": {}
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
