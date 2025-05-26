@@ -41,7 +41,9 @@
     "main": {
       "type": "main-blog",
       "custom_css": [
-        "div .blog-articles__article {border-radius: 25px; overflow: hidden;}"
+        "div .blog-articles__article {border-radius: 25px; overflow: hidden;}",
+        ".blog-articles {gap: 3rem;}",
+        ".article-card__excerpt {display: none;}"
       ],
       "settings": {
         "layout": "grid",
