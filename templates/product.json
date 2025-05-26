@@ -95,52 +95,6 @@
         "padding_bottom": 88
       }
     },
-    "rich_text_iyNAgT": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_z9PP7z": {
-          "type": "heading",
-          "settings": {
-            "heading": "Træt af at være online hele tiden?",
-            "heading_size": "h1"
-          }
-        },
-        "text_FUwf6m": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Måske kender du det. Du tager bare lige telefonen frem, og pludselig er der gået en halv time. En dumbphone handler ikke om notifikationer, apps eller endeløse feeds. Den handler om at være til stede. I samtaler. I roen. I hverdagen. Dumbphone er ikke for alle, men måske er den for dig, der savner lidt mere nærvær.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_z9PP7z",
-        "text_FUwf6m"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "video_99GwWd": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-3",
-        "padding_top": 36,
-        "padding_bottom": 56
-      }
-    },
     "multirow_yB9i4E": {
       "type": "multirow",
       "blocks": {
@@ -261,8 +215,6 @@
   },
   "order": [
     "main",
-    "rich_text_iyNAgT",
-    "video_99GwWd",
     "multirow_yB9i4E",
     "related-products",
     "collapsible_content_8VzBej"

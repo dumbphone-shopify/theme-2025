@@ -187,7 +187,6 @@
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/MHh_exH07rE",
-        "cover_image": "shopify://shop_images/CleanShot_2024-09-03_at_14.01.472x_2_optimized_2500.png",
         "description": "",
         "full_width": false,
         "color_scheme": "",
@@ -253,9 +252,6 @@
       "type": "main-collection-product-grid",
       "disabled": true,
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 5,
-        "columns_mobile": "2",
         "color_scheme": "scheme-2",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -335,7 +331,6 @@
         "column_iBbqpy": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/CleanShot_2024-09-10_at_17.51.33.png",
             "title": "STEP 1:",
             "text": "<p>Del denne video med forældrene i klassen og tag evt. en snak om det med de andre forældre hvis det er muligt. <br/><br/>Der er et link til videoen her:<br/><a href=\"https://youtu.be/MHh_exH07rE\">https://youtu.be/MHh_exH07rE<strong><br/></strong></a></p>",
             "link_label": "",
@@ -345,7 +340,6 @@
         "column_gLGGeE": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/11ea1fe7-2ed8-4283-ab18-4aab8867d90e.png",
             "title": "STEP 2:",
             "text": "<p>Modtag tilbagemeldinger om hvem der er klar + modtag betaling fra hver forældre.</p><p><br/></p><p>Brug evt. din egen mobilepay til at samle pengene sammen.</p>",
             "link_label": "",
@@ -411,7 +405,7 @@
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "kits",
+        "collection": "indskoling-klassetilbud",
         "products_to_show": 2,
         "title": "Udlejning af dumbphones",
         "heading_size": "h1",
