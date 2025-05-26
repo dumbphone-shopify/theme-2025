@@ -392,7 +392,7 @@
           "settings": {
             "image": "shopify://shop_images/96b4ab77-72c1-44bf-9df6-db9c6597f67b.png",
             "title": "STEP 3:",
-            "text": "<p>Send os en mail på<a href=\"mailto:kontakt@dumbphone.dk\" target=\"_self\">kontakt@dumbphone.dk</a> eller ring på:<a href=\"tel:40261270\" target=\"_self\">40261270</a>eller skriv en besked i feltet nedenfor. Vi sender dig herefter en rabatkode.</p>",
+            "text": "<p>Send os en mail på<a href=\"mailto:kontakt@dumbphone.dk\" target=\"_self\">kontakt@dumbphone.dk</a> eller ring på:<a href=\"tel:40261270\" target=\"_self\">40261270</a> eller skriv en besked i feltet nedenfor. Vi sender dig herefter en rabatkode.</p>",
             "link_label": "",
             "link": ""
           }
