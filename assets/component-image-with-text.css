@@ -455,6 +455,6 @@
   align-self: end;
 }
 
-.image-with-text__container {
-  padding: 0 max(5rem, calc((100vw - var(--page-width, 1200px)) / 2));
+.image-with-text__container img{
+  padding: 0 ;
 }
