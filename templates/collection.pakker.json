@@ -365,7 +365,7 @@
       ],
       "custom_css": [
         "h2 {color: #c55614;}",
-        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}"
+        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: 100%; background: transparent;}"
       ],
       "settings": {
         "title": "Det kræver at en eller to forældre tager lederskab til disse steps:",
