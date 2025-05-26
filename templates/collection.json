@@ -79,8 +79,8 @@
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "tilbehor",
-        "products_to_show": 3,
+        "collection": "vores-dumbphones",
+        "products_to_show": 5,
         "title": "{{ section.settings.collection.title }}",
         "heading_size": "h1",
         "description": "",
