@@ -11,15 +11,18 @@
   "sections": {
     "hero_banner_LLDNpQ": {
       "type": "hero-banner",
+      "custom_css": [
+        "h1{font-size: xx-large;}"
+      ],
       "name": "Hero-sektion",
       "settings": {
         "background_image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
         "enable_scroll_effect": true,
-        "hero_height": "75vh",
+        "hero_height": "50vh",
         "heading": "Giv dine elever et bedre forhold til smartphones",
         "title_color": "#fffdf8",
         "text_alignment": "center",
-        "content_position": "bottom-center",
+        "content_position": "bottom-right",
         "mobile_content_alignment": "center"
       }
     },
