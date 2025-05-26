@@ -49,8 +49,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".grid__item {border-radius: 25px; overflow: hidden; border: solid 1px #3e2103; transition: transform ease-in-out 0.3s; transform: scale(1);}",
-        ".grid__item:hover {transform: scale(1.02); transition: transform ease-in-out 0.2s;}",
+        ".grid__item {border-radius: 25px; overflow: hidden; border: solid 1px #3e2103; transition: transform ease-in-out 0.3s !important; transform: scale(1);}",
+        ".grid__item:hover {transform: scale(1.02); transition: transform ease-in-out 0.2s !important;;}",
         ".card:not(.ratio) > .card__content {align-items: end;}"
       ],
       "settings": {
