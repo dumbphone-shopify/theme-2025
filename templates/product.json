@@ -95,6 +95,19 @@
         "padding_bottom": 88
       }
     },
+    "video_review": {
+      "type": "video-review",
+      "settings": {
+        "heading": "Video review",
+        "show_description": true,
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text_PjVBgh": {
       "type": "rich-text",
       "blocks": {
@@ -112,10 +125,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_AkNp3k",
-        "text_dYXVha"
-      ],
+      "block_order": ["heading_AkNp3k", "text_dYXVha"],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -152,10 +162,7 @@
           }
         }
       },
-      "block_order": [
-        "row_GfJDae",
-        "row_CFh4cj"
-      ],
+      "block_order": ["row_GfJDae", "row_CFh4cj"],
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "medium",
@@ -198,6 +205,7 @@
   },
   "order": [
     "main",
+    "video_review",
     "rich_text_PjVBgh",
     "multirow_yB9i4E",
     "related-products"
