@@ -370,6 +370,7 @@
         "column_iBbqpy": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/young-old-using-technology.jpg",
             "title": "STEP 1:",
             "text": "<p>Del denne video med forældrene i klassen og tag evt. en snak om det med de andre forældre hvis det er muligt. <br/><br/>Der er et link til videoen her:<br/><a href=\"https://youtu.be/MHh_exH07rE\">https://youtu.be/MHh_exH07rE<strong><br/></strong></a></p>",
             "link_label": "",
@@ -379,6 +380,7 @@
         "column_gLGGeE": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/MP_logo.png",
             "title": "STEP 2:",
             "text": "<p>Modtag tilbagemeldinger om hvem der er klar + modtag betaling fra hver forældre.</p><p><br/></p><p>Brug evt. din egen mobilepay til at samle pengene sammen.</p>",
             "link_label": "",
@@ -403,7 +405,8 @@
       ],
       "custom_css": [
         "h2 {color: #c55614;}",
-        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: 100%; background: transparent;}"
+        ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: 100%; background: transparent;}",
+        "img {border-radius: 15px;}"
       ],
       "settings": {
         "title": "Det kræver at en eller to forældre tager lederskab til disse steps:",
