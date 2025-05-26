@@ -313,12 +313,12 @@
         "slide_ibwBna"
       ],
       "custom_css": [
-        "h2{margin: 0 10px ;}"
+        "h2 {margin: 0 10px;}"
       ],
       "name": "Carousel",
       "settings": {
         "padding_top": 52,
-        "padding_bottom": 52,
+        "padding_bottom": 36,
         "title": "Tre gode grunde til hvorfor en dumbphone er et godt valg",
         "align_text": "left",
         "title_color": "#ac3f00",
@@ -383,18 +383,19 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 52
       }
     },
     "contact_form_TyGdag": {
       "type": "contact-form",
       "custom_css": [
-        "h2 {color: #ac3f00;}"
+        "h2 {color: #ac3f00;}",
+        "input,textarea {background: white;}"
       ],
       "settings": {
         "heading": "Interesseret? Kontakt os her!          Så sender vi en rabatkode til jer!",
         "heading_size": "h2",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
         "padding_top": 52,
         "padding_bottom": 36
       }
