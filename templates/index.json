@@ -120,13 +120,13 @@
         "featured_collection_yLdp8L": {
           "type": "featured_collection",
           "settings": {
-            "collection": "tilbehor"
+            "collection": "tilbehor-og-gadgets"
           }
         },
         "featured_collection_DVbR4m": {
           "type": "featured_collection",
           "settings": {
-            "collection": "kits"
+            "collection": "indskoling-klassetilbud"
           }
         }
       },
@@ -267,7 +267,7 @@
         "post_limit": 3,
         "heading": "",
         "heading_size": "h1",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "show_view_all": true,
         "show_image": true,
         "show_date": false,
