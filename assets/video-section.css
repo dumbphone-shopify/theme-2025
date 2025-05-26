@@ -1,7 +1,8 @@
 .video-section__media {
-  --ratio-percent: 56.25%;
+  /* --ratio-percent: 56.25%;
   position: relative;
-  padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
+  padding-bottom: calc(var(--ratio-percent) - var(--media-border-width)); */
+  aspect-ratio: 16 / 9;
 }
 
 /* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
