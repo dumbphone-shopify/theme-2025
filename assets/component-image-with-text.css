@@ -448,8 +448,13 @@
   }
 }
 
+/* New styles added by NH and JKJ */
 .image-with-text__content a {
   padding: 1rem 2rem;
   border-radius: 10px;
   align-self: end;
+}
+
+.image-with-text__container {
+  padding: 0 max(5rem, calc((100vw - var(--page-width, 1200px)) / 2));
 }
