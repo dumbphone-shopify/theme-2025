@@ -30,7 +30,7 @@
         "background_image": "shopify://shop_images/wooden-path-in-dark-forest.jpg",
         "enable_scroll_effect": true,
         "hero_height": "50vh",
-        "heading": "Vores dumbphones",
+        "heading": "Vores Produkter",
         "title_color": "#fffdf8",
         "text_alignment": "center",
         "content_position": "middle-center",
@@ -49,6 +49,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
+        "li a {text-decoration: none;}",
         ".grid__item {border-radius: 25px; overflow: hidden; border: solid 1px #3e2103; transition: transform ease-in-out 0.3s !important; transform: scale(1) !important;}",
         ".grid__item:hover {transform: scale(1.02) !important; transition: transform ease-in-out 0.2s !important;}",
         ".card:not(.ratio) > .card__content {align-items: end;}",
@@ -78,7 +79,7 @@
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "tilbehor",
+        "collection": "tilbehor-og-gadgets",
         "products_to_show": 3,
         "title": "{{ section.settings.collection.title }}",
         "heading_size": "h1",
@@ -88,7 +89,7 @@
         "columns_desktop": 3,
         "enable_desktop_slider": false,
         "full_width": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
@@ -97,8 +98,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }

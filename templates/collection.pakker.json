@@ -23,6 +23,72 @@
         "mobile_content_alignment": "center"
       }
     },
+    "rich_text_r4Ha3q": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6LMWV6": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6LMWV6"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_EAwdnQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_aL6E7c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Udlej vores dumbphone og skab mere fokus",
+            "heading_size": "h2"
+          }
+        },
+        "text_wYmffA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Giv jeres team eller elever mulighed for at være til stede uden digitale forstyrrelser. Vores dumbphones hjælper med at skabe ro og fokus i travle hverdagssituationer, hvor nærvær og koncentration er vigtigst. Lej dem, når I vil styrke opmærksomheden og mindske unødvendige afbrydelser.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_aL6E7c",
+        "text_wYmffA"
+      ],
+      "custom_css": [
+        ".image-with-text__container {padding: 0;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/students-at-coding-workshop.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_with_text_LttLM3": {
       "type": "image-with-text",
       "blocks": {
@@ -70,48 +136,6 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_EAwdnQ": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_aL6E7c": {
-          "type": "heading",
-          "settings": {
-            "heading": "Udlej vores dumbphone og skab mere fokus",
-            "heading_size": "h2"
-          }
-        },
-        "text_wYmffA": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Giv jeres team eller elever mulighed for at være til stede uden digitale forstyrrelser. Vores dumbphones hjælper med at skabe ro og fokus i travle hverdagssituationer, hvor nærvær og koncentration er vigtigst. Lej dem, når I vil styrke opmærksomheden og mindske unødvendige afbrydelser.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_aL6E7c",
-        "text_wYmffA"
-      ],
-      "custom_css": [
-        ".image-with-text__container {padding: 0;}"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/students-at-coding-workshop.jpg",
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "image_with_text_VwxAnJ": {
       "type": "image-with-text",
       "blocks": {
@@ -132,8 +156,8 @@
         "button_hhCMkG": {
           "type": "button",
           "settings": {
-            "button_label": "Læs mere →",
-            "button_link": "shopify://pages/om-dumbhpone",
+            "button_label": "Lær mere om dumbphone →",
+            "button_link": "shopify://pages/om-dumbphone",
             "button_style_secondary": true
           }
         }
@@ -187,7 +211,6 @@
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/MHh_exH07rE",
-        "cover_image": "shopify://shop_images/CleanShot_2024-09-03_at_14.01.472x_2_optimized_2500.png",
         "description": "",
         "full_width": false,
         "color_scheme": "",
@@ -253,9 +276,6 @@
       "type": "main-collection-product-grid",
       "disabled": true,
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 5,
-        "columns_mobile": "2",
         "color_scheme": "scheme-2",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -335,7 +355,6 @@
         "column_iBbqpy": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/CleanShot_2024-09-10_at_17.51.33.png",
             "title": "STEP 1:",
             "text": "<p>Del denne video med forældrene i klassen og tag evt. en snak om det med de andre forældre hvis det er muligt. <br/><br/>Der er et link til videoen her:<br/><a href=\"https://youtu.be/MHh_exH07rE\">https://youtu.be/MHh_exH07rE<strong><br/></strong></a></p>",
             "link_label": "",
@@ -345,7 +364,6 @@
         "column_gLGGeE": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/11ea1fe7-2ed8-4283-ab18-4aab8867d90e.png",
             "title": "STEP 2:",
             "text": "<p>Modtag tilbagemeldinger om hvem der er klar + modtag betaling fra hver forældre.</p><p><br/></p><p>Brug evt. din egen mobilepay til at samle pengene sammen.</p>",
             "link_label": "",
@@ -411,7 +429,7 @@
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "kits",
+        "collection": "indskoling-klassetilbud",
         "products_to_show": 2,
         "title": "Udlejning af dumbphones",
         "heading_size": "h1",
@@ -439,8 +457,9 @@
   },
   "order": [
     "hero_banner_LLDNpQ",
-    "image_with_text_LttLM3",
+    "rich_text_r4Ha3q",
     "image_with_text_EAwdnQ",
+    "image_with_text_LttLM3",
     "image_with_text_VwxAnJ",
     "banner",
     "video_c7yMcg",
