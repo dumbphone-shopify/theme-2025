@@ -15,12 +15,78 @@
       "settings": {
         "background_image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
         "enable_scroll_effect": true,
-        "hero_height": "50vh",
+        "hero_height": "75vh",
         "heading": "Giv dine elever et bedre forhold til smartphones",
         "title_color": "#fffdf8",
         "text_alignment": "center",
         "content_position": "bottom-center",
         "mobile_content_alignment": "center"
+      }
+    },
+    "rich_text_r4Ha3q": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6LMWV6": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6LMWV6"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_EAwdnQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_aL6E7c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Udlej vores dumbphone og skab mere fokus",
+            "heading_size": "h2"
+          }
+        },
+        "text_wYmffA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Giv jeres team eller elever mulighed for at være til stede uden digitale forstyrrelser. Vores dumbphones hjælper med at skabe ro og fokus i travle hverdagssituationer, hvor nærvær og koncentration er vigtigst. Lej dem, når I vil styrke opmærksomheden og mindske unødvendige afbrydelser.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_aL6E7c",
+        "text_wYmffA"
+      ],
+      "custom_css": [
+        ".image-with-text__container {padding: 0;}"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/students-at-coding-workshop.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_with_text_LttLM3": {
@@ -68,48 +134,6 @@
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "image_with_text_EAwdnQ": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_aL6E7c": {
-          "type": "heading",
-          "settings": {
-            "heading": "Udlej vores dumbphone og skab mere fokus",
-            "heading_size": "h2"
-          }
-        },
-        "text_wYmffA": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Giv jeres team eller elever mulighed for at være til stede uden digitale forstyrrelser. Vores dumbphones hjælper med at skabe ro og fokus i travle hverdagssituationer, hvor nærvær og koncentration er vigtigst. Lej dem, når I vil styrke opmærksomheden og mindske unødvendige afbrydelser.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_aL6E7c",
-        "text_wYmffA"
-      ],
-      "custom_css": [
-        ".image-with-text__container {padding: 0;}"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/students-at-coding-workshop.jpg",
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "image_with_text_VwxAnJ": {
@@ -433,8 +457,9 @@
   },
   "order": [
     "hero_banner_LLDNpQ",
-    "image_with_text_LttLM3",
+    "rich_text_r4Ha3q",
     "image_with_text_EAwdnQ",
+    "image_with_text_LttLM3",
     "image_with_text_VwxAnJ",
     "banner",
     "video_c7yMcg",
