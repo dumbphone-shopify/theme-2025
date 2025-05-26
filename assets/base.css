@@ -3713,7 +3713,7 @@ details-disclosure > details {
 
 /***     Edits made by NH & JKJ    ***/
 
-.button, button:not(.glider *) {
+.button:not(.glider *), button {
   padding: 1rem 2rem;
   border-radius: 10px;
 
