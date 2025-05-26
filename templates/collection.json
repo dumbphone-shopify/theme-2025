@@ -51,13 +51,9 @@
       "custom_css": [
         ".grid__item {border-radius: 25px; overflow: hidden; border: solid 1px #3e2103;}",
         ".grid__item:hover {transform: scale(1.02) !important; transition: transform ease-in-out 0.2s;}",
-        ".grid {--grid-mobile-horizontal-spacing: 20px; --grid-mobile-vertical-spacing: 65px; column-gap: var(--grid-mobile-horizontal-spacing); row-gap: var(--grid-mobile-vertical-spacing);}",
         ".card:not(.ratio) > .card__content {align-items: end;}"
       ],
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 3,
-        "columns_mobile": "1",
         "color_scheme": "scheme-9cb15f53-7587-4f63-bade-50a1282d6270",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -68,8 +64,8 @@
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 12,
+        "padding_bottom": 16
       }
     },
     "featured_collection_n9Hc8c": {
