@@ -166,7 +166,13 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "custom_css": [],
+      "custom_css": [
+        ".grid__item {border-radius: 25px; overflow: hidden; border: solid 1px #3e2103;}",
+        ".grid__item:hover {transform: scale(1.02) !important; transition: transform ease-in-out 0.2s;}",
+        ".grid {--grid-mobile-horizontal-spacing: 20px; --grid-mobile-vertical-spacing: 65px; column-gap: var(--grid-mobile-horizontal-spacing); row-gap: var(--grid-mobile-vertical-spacing);}",
+        "#product-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2em;}",
+        ".card:not(.ratio) > .card__content {align-items: end;}"
+      ],
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 3,
