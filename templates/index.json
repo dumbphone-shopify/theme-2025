@@ -317,6 +317,7 @@
         "column_qpzpMw": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/testimonal_billede_dumbphone.jpg",
             "title": "Tage Jepsen<em><strong> </strong></em>Forstander, Venø Efterskole",
             "text": "<p>\"Et super godt forløb for vores efterskoleelever - det har virkelig givet stof til eftertanke. Det her forsøg har givet en oplevelse, som vi kan bruge i vores samtale med eleverne om brugen af smartphones\"</p>",
             "link_label": "",
@@ -326,6 +327,7 @@
         "column_aP9g8h": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/billede3_testimonial_dumbphone.png",
             "title": "Karen Friis<strong> </strong>Forstander, Nørgaards Højskole",
             "text": "<p>“Arne taler i øjenhøjde, smitter med sin entusiasme og er omhyggelig med at gøre set-uppet involverende og interessant...”.</p>",
             "link_label": "",
@@ -335,6 +337,7 @@
         "column_RPGQee": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/billede_testimonial_dumbphone.png",
             "title": "Mette Sanggaard Forstander, Ollerup Efterskole",
             "text": "<p>“Han har en fantastisk energi og tilgang til eleverne. Han oplyser, men uden moralske pegefingre, hvilket har skabt et stort engagement omkring eksperimentet...”</p>",
             "link_label": "",
