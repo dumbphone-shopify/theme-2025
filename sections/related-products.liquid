@@ -46,7 +46,6 @@
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
-      gap: 1rem;
       padding-bottom: 1rem;
     }
     .related-products__slider > li {
@@ -60,6 +59,10 @@
     .related-products__slider.product-grid {
       display: flex !important;
 
+    }
+
+    .related-products {
+      padding-inline: max(5rem, calc((100vw - var(--page-width, 1200px)) / 2));
     }
   }
 {%- endstyle -%}
