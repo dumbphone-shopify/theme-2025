@@ -25,6 +25,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Del"
           }
@@ -34,9 +35,20 @@
           "settings": {}
         }
       },
-      "block_order": ["featured_image", "title", "share", "content"],
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "custom_css": [
+        ".article-wrapper {padding: 5rem 0 0;}",
+        ".article-template__back {padding: 0 0 5rem 0;}"
+      ],
       "settings": {}
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
