@@ -38,9 +38,9 @@
       "custom_css": [],
       "name": "Hero Banner",
       "settings": {
-        "background_image": "shopify://shop_images/Arne-and-TIkko-on-a_bike-trip.webp",
+        "background_image": "shopify://shop_images/wooden-boardwalk-through-brown-grassy-land.jpg",
         "enable_scroll_effect": true,
-        "hero_height": "50vh",
+        "hero_height": "75vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
         "text_alignment": "center",
