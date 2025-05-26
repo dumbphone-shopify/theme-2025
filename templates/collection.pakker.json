@@ -16,10 +16,10 @@
         "background_image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
         "enable_scroll_effect": true,
         "hero_height": "75vh",
-        "heading": "Giv dine elever en bedre forhold til smartphones",
+        "heading": "Giv dine elever et bedre forhold til smartphones",
         "title_color": "#fffdf8",
         "text_alignment": "center",
-        "content_position": "middle-center",
+        "content_position": "bottom-center",
         "mobile_content_alignment": "center"
       }
     },
