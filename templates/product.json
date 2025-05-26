@@ -91,8 +91,8 @@
         "image_zoom": "hover",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 52,
+        "padding_bottom": 88
       }
     },
     "rich_text_iyNAgT": {
@@ -139,6 +139,53 @@
         "color_scheme": "scheme-3",
         "padding_top": 36,
         "padding_bottom": 56
+      }
+    },
+    "multirow_yB9i4E": {
+      "type": "multirow",
+      "blocks": {
+        "row_GfJDae": {
+          "type": "row",
+          "settings": {
+            "image": "{{ product.featured_image }}",
+            "caption": "",
+            "heading": "{{ product.title }}",
+            "text": "<p>{{ product.metafields.custom.secondary_description | metafield_tag }}</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_CFh4cj": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Frame37_e0a8561a-11c6-47e1-82a0-9cf9fec77c93.png",
+            "caption": "",
+            "heading": "Mist ikke forbindelsen",
+            "text": "<p>Det skal være nemt at holde kontakten, også når hverdagen roder lidt. Vi har massere af forskellige dumbpohnes til mange forskellige behov.  Find den telefon som passer dig bedst og mist ikke forbindelsen men styrk nærveredet.<br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_GfJDae",
+        "row_CFh4cj"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-right",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "related-products": {
@@ -216,6 +263,7 @@
     "main",
     "rich_text_iyNAgT",
     "video_99GwWd",
+    "multirow_yB9i4E",
     "related-products",
     "collapsible_content_8VzBej"
   ]
