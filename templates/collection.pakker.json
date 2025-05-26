@@ -92,6 +92,9 @@
         "heading_aL6E7c",
         "text_wYmffA"
       ],
+      "custom_css": [
+        ".image-with-text__container {padding: 0;}"
+      ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/students-at-coding-workshop.jpg",
