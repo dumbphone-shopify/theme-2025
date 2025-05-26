@@ -93,6 +93,7 @@
       ],
       "name": "velkomst sektion",
       "settings": {
+        "image": "shopify://shop_images/wooden-path-in-dark-forest.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -262,7 +263,7 @@
         ".article-card {background-color: #fffdf8; border-radius: 25px; overflow: hidden;}"
       ],
       "settings": {
-        "blog": "information",
+        "blog": "artikler",
         "post_limit": 3,
         "heading": "",
         "heading_size": "h1",
