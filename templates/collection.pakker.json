@@ -156,8 +156,8 @@
         "button_hhCMkG": {
           "type": "button",
           "settings": {
-            "button_label": "Læs mere →",
-            "button_link": "shopify://pages/om-dumbhpone",
+            "button_label": "Lær mere om dumbphone →",
+            "button_link": "shopify://pages/om-dumbphone",
             "button_style_secondary": true
           }
         }
