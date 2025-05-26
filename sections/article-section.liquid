@@ -430,20 +430,19 @@
   height: 0;
 }
 
-@supports (aspect-ratio: 16 / 9) {
+
   .deferred-media {
-    height: auto;
     padding-bottom: 0;
   }
-}
 
-.deferred-media > * {
+
+/* .deferred-media > * {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .article-title {
   margin: 2rem 0 0;
@@ -561,7 +560,7 @@ a {
     display: block;
     margin-bottom: 1.5rem;
   }
-  
+
 iframe:focus-visible {
     outline: none;
     outline-offset: none;
@@ -569,22 +568,3 @@ iframe:focus-visible {
   }
 {% endstylesheet %}
 
-{% comment %} Deferred media when click on play button to video. I have currently put this in the theme.liquid, so it is not needed here. That is because I plan to be able to play videos by deferring media from a grid system {% endcomment %}
-<script>
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   document.querySelectorAll('deferred-media').forEach(function(media) {
-//     var button = media.querySelector('button');
-//     if (!button) return;
-//     button.addEventListener('click', function() {
-//       if (media.classList.contains('is-active')) return;
-//       media.classList.add('is-active');
-//       var template = media.querySelector('template');
-//       if (template) {
-//         media.insertAdjacentHTML('beforeend', template.innerHTML);
-//       }
-//       button.style.display = 'none';
-//     });
-//   });
-// });
-</script>
