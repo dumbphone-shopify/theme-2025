@@ -79,8 +79,8 @@
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "vores-dumbphones",
-        "products_to_show": 5,
+        "collection": "tilbehor-og-gadgets",
+        "products_to_show": 3,
         "title": "{{ section.settings.collection.title }}",
         "heading_size": "h1",
         "description": "",
@@ -89,7 +89,7 @@
         "columns_desktop": 3,
         "enable_desktop_slider": false,
         "full_width": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
@@ -98,8 +98,8 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
