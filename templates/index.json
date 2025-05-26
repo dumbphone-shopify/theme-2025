@@ -38,9 +38,9 @@
       "custom_css": [],
       "name": "Hero Banner",
       "settings": {
-        "background_image": "shopify://shop_images/grassy-beach-view.jpg",
+        "background_image": "shopify://shop_images/wooden-boardwalk-through-brown-grassy-land.jpg",
         "enable_scroll_effect": true,
-        "hero_height": "75vh",
+        "hero_height": "50vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
         "text_alignment": "center",
@@ -93,7 +93,6 @@
       ],
       "name": "velkomst sektion",
       "settings": {
-        "image": "shopify://shop_images/Arne-and-TIkko-on-a_bike-trip.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -158,7 +157,6 @@
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-4",
-            "image": "shopify://shop_images/small-rock-piles-on-log.jpg",
             "heading": "Vi står for at hjælper med at finde balancen",
             "text": "Jeg skiftede min smartphone ud med en dumbphone for tre år siden\nSiden da har jeg skiftet mellem de to og forsøgt at finde den balance der føles rigtig for mig\nMåske kan jeg også hjælpe dig med at finde din\nJeg har lavet nogle guides der kan hjælper dig med at finde din balance",
             "align_text": "left",
@@ -317,7 +315,6 @@
         "column_qpzpMw": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/testimonal_billede_dumbphone.jpg",
             "title": "Tage Jepsen<em><strong> </strong></em>Forstander, Venø Efterskole",
             "text": "<p>\"Et super godt forløb for vores efterskoleelever - det har virkelig givet stof til eftertanke. Det her forsøg har givet en oplevelse, som vi kan bruge i vores samtale med eleverne om brugen af smartphones\"</p>",
             "link_label": "",
@@ -327,7 +324,6 @@
         "column_aP9g8h": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/billede3_testimonial_dumbphone.png",
             "title": "Karen Friis<strong> </strong>Forstander, Nørgaards Højskole",
             "text": "<p>“Arne taler i øjenhøjde, smitter med sin entusiasme og er omhyggelig med at gøre set-uppet involverende og interessant...”.</p>",
             "link_label": "",
@@ -337,7 +333,6 @@
         "column_RPGQee": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/billede_testimonial_dumbphone.png",
             "title": "Mette Sanggaard Forstander, Ollerup Efterskole",
             "text": "<p>“Han har en fantastisk energi og tilgang til eleverne. Han oplyser, men uden moralske pegefingre, hvilket har skabt et stort engagement omkring eksperimentet...”</p>",
             "link_label": "",
@@ -354,7 +349,7 @@
         ".multicolumn-card {border-radius: 25px; border: 1px #3e2103 solid; height: fit-content; background: transparent;}",
         ".multicolumn-card__image-wrapper {aspect-ratio: 1; height: 80px; border-radius: 50%; overflow: hidden; padding-top: 0; margin-top: 2.5rem;}",
         ".media {height: 100%; width: 100%; object-fit: contain; object-position: center;}",
-        ".multicolumn-card:hover {transition: background-color ease 0.3s; background-color: #FFF5EA;}"
+        ".multicolumn-card:hover {transition: background-color ease 0.3s; background-color: #fff5ea;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -413,99 +408,67 @@
       "blocks": {
         "logo_kfAfUM": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/8.png"
-          }
+          "settings": {}
         },
         "logo_xgJztP": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/7.png"
-          }
+          "settings": {}
         },
         "logo_yMHyGh": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/6.png"
-          }
+          "settings": {}
         },
         "logo_yYgcXh": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/5.png"
-          }
+          "settings": {}
         },
         "logo_M78jDt": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/4.png"
-          }
+          "settings": {}
         },
         "logo_Rn3zn8": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/3.png"
-          }
+          "settings": {}
         },
         "logo_CPFc3g": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/2.png"
-          }
+          "settings": {}
         },
         "logo_c49PaT": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/1.png"
-          }
+          "settings": {}
         },
         "logo_9tpcbn": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/8.png"
-          }
+          "settings": {}
         },
         "logo_4XFGiT": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/7.png"
-          }
+          "settings": {}
         },
         "logo_RXdnq3": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/6.png"
-          }
+          "settings": {}
         },
         "logo_8yQB6M": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/5.png"
-          }
+          "settings": {}
         },
         "logo_DrPiEn": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/4.png"
-          }
+          "settings": {}
         },
         "logo_R9qU49": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/3.png"
-          }
+          "settings": {}
         },
         "logo_qqpjBh": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/2.png"
-          }
+          "settings": {}
         },
         "logo_TGQtiJ": {
           "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/1.png"
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -541,9 +504,7 @@
       "blocks": {
         "image_HbWMRX": {
           "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Pyntpakker.png"
-          }
+          "settings": {}
         },
         "product_4PM84E": {
           "type": "product",
