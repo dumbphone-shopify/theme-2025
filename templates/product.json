@@ -76,7 +76,7 @@
         ".product__media {border-radius: 25px;}",
         "img {background: #9cb7aa;}",
         "h2.title {text-align: center;}",
-        ".thumbnail {border-radius: 15px;}",
+        ".thumbnail {border-radius: 15px; background: #9cb7aa; padding: 0.5rem;}",
         "@media (max-width: 768px) {span {font-size: 1.5rem !important; }}"
       ],
       "settings": {
