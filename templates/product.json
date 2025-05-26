@@ -100,6 +100,7 @@
     },
     "video_review": {
       "type": "video-review",
+      "custom_css": [],
       "settings": {
         "heading": "Video Review",
         "show_description": true,
