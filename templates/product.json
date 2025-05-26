@@ -108,34 +108,6 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_PjVBgh": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_AkNp3k": {
-          "type": "heading",
-          "settings": {
-            "heading": "Træt af at være online hele tiden?",
-            "heading_size": "h1"
-          }
-        },
-        "text_dYXVha": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Måske kender du det. Du tager bare lige telefonen frem, og pludselig er der gået en halv time. En dumbphone handler ikke om notifikationer, apps eller endeløse feeds. Den handler om at være til stede. I samtaler. I roen. I hverdagen. Dumbphone er ikke for alle, men måske er den for dig, der savner lidt mere nærvær.</p>"
-          }
-        }
-      },
-      "block_order": ["heading_AkNp3k", "text_dYXVha"],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "multirow_yB9i4E": {
       "type": "multirow",
       "blocks": {
@@ -162,7 +134,10 @@
           }
         }
       },
-      "block_order": ["row_GfJDae", "row_CFh4cj"],
+      "block_order": [
+        "row_GfJDae",
+        "row_CFh4cj"
+      ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "medium",
@@ -178,6 +153,37 @@
         "row_color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_PjVBgh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AkNp3k": {
+          "type": "heading",
+          "settings": {
+            "heading": "Træt af at være online hele tiden?",
+            "heading_size": "h1"
+          }
+        },
+        "text_dYXVha": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Måske kender du det. Du tager bare lige telefonen frem, og pludselig er der gået en halv time. En dumbphone handler ikke om notifikationer, apps eller endeløse feeds. Den handler om at være til stede. I samtaler. I roen. I hverdagen. Dumbphone er ikke for alle, men måske er den for dig, der savner lidt mere nærvær.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AkNp3k",
+        "text_dYXVha"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "related-products": {
@@ -206,8 +212,8 @@
   "order": [
     "main",
     "video_review",
-    "rich_text_PjVBgh",
     "multirow_yB9i4E",
+    "rich_text_PjVBgh",
     "related-products"
   ]
 }
