@@ -312,7 +312,9 @@
         "slide_xPKtAW",
         "slide_ibwBna"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "h2{margin: 0 10px ;}"
+      ],
       "name": "Carousel",
       "settings": {
         "padding_top": 52,
@@ -379,7 +381,7 @@
         "background_style": "primary",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
