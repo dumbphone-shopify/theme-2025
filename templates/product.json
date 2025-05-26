@@ -144,6 +144,10 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".card {background-color: #9cb7aa;}",
+        ".grid__item {border-radius: 25px; overflow: hidden;}"
+      ],
       "settings": {
         "heading": "Andre kigger også på",
         "heading_size": "h2",
