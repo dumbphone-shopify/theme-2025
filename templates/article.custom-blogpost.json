@@ -41,7 +41,7 @@
         "content"
       ],
       "custom_css": [
-        "a.article-template__link {padding: 0 0 4rem;}"
+        "a.article-template__link {padding: 0 3rem 4rem 0;}"
       ],
       "settings": {}
     }
