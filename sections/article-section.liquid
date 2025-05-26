@@ -26,7 +26,7 @@
         {%- endif -%}
 
           <div class="article-hero article-hero__video {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-            <deferred-media class="deferred-media video-section__media gradient global-media-settings" data-media-id="video">
+            <deferred-media class="deferred-media video-section__media gradient global-media-settings" data-media-id="video" id="deferred">
               <button
                 class="video-section__poster media deferred-media__poster media--landscape"
                 type="button"
@@ -431,10 +431,6 @@
 }
 
 
-  .deferred-media, .video-section__media {
-    padding-bottom: 0 !important;
-  }
-
 
 .deferred-media > * {
   position: absolute;
@@ -565,6 +561,10 @@ iframe:focus-visible {
     outline: none;
     outline-offset: none;
     box-shadow: none;
+  }
+
+  #deferred .video-section__media {
+    padding-bottom: 0;
   }
 {% endstylesheet %}
 
