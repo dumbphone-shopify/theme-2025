@@ -23,19 +23,25 @@
       "block_order": [
         "heading_kfUtWE"
       ],
+      "custom_css": [
+        ".banner__box {border-radius: 15px 15px 0 0; min-width: 80vw; width: 100%; padding: 25px 50px; margin: auto auto -55px auto;}",
+        "@media screen and (max-width: 749px) {.banner__box {margin: auto auto auto auto; }}",
+        "img {object-position: top;}",
+        "@media screen and (min-width: 749px) {p {max-width: 700px; margin: auto; }}"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/dumbphone-lecture-at-school.webp",
         "image_overlay_opacity": 40,
-        "image_height": "small",
+        "image_height": "medium",
         "image_behavior": "fixed",
         "desktop_content_position": "bottom-right",
         "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-5",
+        "show_text_box": true,
+        "color_scheme": "scheme-1",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
-        "show_text_below": false
+        "show_text_below": true
       }
     },
     "rich_text_r4Ha3q": {
