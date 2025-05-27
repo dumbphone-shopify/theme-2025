@@ -430,14 +430,12 @@
         "heading_7JUXKx",
         "text_TARmKf"
       ],
-      "custom_css": [
-        "h2 {color: #c55614;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "scheme-1",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
@@ -589,7 +587,7 @@
         "padding_bottom": 52,
         "title": "",
         "align_text": "center",
-        "color_scheme": "scheme-1"
+        "color_scheme": "scheme-2"
       }
     }
   },
