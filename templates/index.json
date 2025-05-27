@@ -229,12 +229,14 @@
         "slide_8jixRm",
         "slide_6RtGf7"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "h2 {font-size: xx-large;}"
+      ],
       "name": "Carousel",
       "settings": {
         "padding_top": 48,
         "padding_bottom": 48,
-        "title": "Dette er hvad vi står for",
+        "title": "Her er hvad vi tilbyder",
         "align_text": "left",
         "title_color": "#ac3f00",
         "color_scheme": "",
