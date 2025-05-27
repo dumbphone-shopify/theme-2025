@@ -25,7 +25,7 @@
           "type": "button",
           "settings": {
             "label": "Se vores guides",
-            "link": "shopify://pages/dumbphone-guide",
+            "link": "shopify://blogs/artikler",
             "button_bg_color": "#fffdf8",
             "button_text_color": "#0a2038"
           }
