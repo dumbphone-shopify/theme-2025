@@ -13,8 +13,7 @@
       "type": "article-section",
       "blocks": {
         "featured_image": {
-          "type": "featured_image",
-          "settings": {}
+          "type": "featured_image"
         },
         "title": {
           "type": "title",
