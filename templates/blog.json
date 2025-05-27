@@ -15,7 +15,7 @@
         "heading_Jcqqje": {
           "type": "heading",
           "settings": {
-            "heading": "Artikler og selvhjælps-videoer",
+            "heading": "Informations guides og selvhjælps-videoer",
             "heading_size": "h1"
           }
         }
@@ -30,7 +30,7 @@
         "image_height": "small",
         "image_behavior": "none",
         "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "right",
+        "desktop_content_alignment": "center",
         "show_text_box": false,
         "color_scheme": "scheme-5",
         "stack_images_on_mobile": true,
