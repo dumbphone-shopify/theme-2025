@@ -411,6 +411,42 @@
     "mediaslider_PKNYUf": {
       "type": "mediaslider",
       "blocks": {
+        "logo_CPFc3g": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/6.png"
+          }
+        },
+        "logo_gRAhzD": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/7.png"
+          }
+        },
+        "logo_rBpdJ7": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/2.png"
+          }
+        },
+        "logo_qBt8zR": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/5.png"
+          }
+        },
+        "logo_NV9BGg": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/8_1.png"
+          }
+        },
+        "logo_9dPNtd": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/1.png"
+          }
+        },
         "logo_kfAfUM": {
           "type": "logo",
           "settings": {
@@ -447,7 +483,13 @@
             "logo_image": "shopify://shop_images/1.png"
           }
         },
-        "logo_CPFc3g": {
+        "logo_XXWCWw": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/1.png"
+          }
+        },
+        "logo_7KpJph": {
           "type": "logo",
           "settings": {
             "logo_image": "shopify://shop_images/6.png"
@@ -485,13 +527,20 @@
         }
       },
       "block_order": [
+        "logo_CPFc3g",
+        "logo_gRAhzD",
+        "logo_rBpdJ7",
+        "logo_qBt8zR",
+        "logo_NV9BGg",
+        "logo_9dPNtd",
         "logo_kfAfUM",
         "logo_xgJztP",
         "logo_yMHyGh",
         "logo_yYgcXh",
         "logo_M78jDt",
         "logo_Rn3zn8",
-        "logo_CPFc3g",
+        "logo_XXWCWw",
+        "logo_7KpJph",
         "logo_c49PaT",
         "logo_9tpcbn",
         "logo_4XFGiT",
