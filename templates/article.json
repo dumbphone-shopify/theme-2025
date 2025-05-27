@@ -31,8 +31,7 @@
           }
         },
         "content": {
-          "type": "content",
-          "settings": {}
+          "type": "content"
         }
       },
       "block_order": [
