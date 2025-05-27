@@ -14,11 +14,11 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "@media (min-width: 768px) {.header-wrapper {background: transparent; } header {border-radius: 50px; border: 1px #3e2103 solid; margin: 0.5em auto; backdrop-filter:none !important; } .header-wrapper {margin: 0.5em 1rem; }}",
         "nav a {font-size: 16px;}",
         ".header-wrapper {background: transparent;}",
         "header:has(details[open]) {background: rgb(255, 253, 248);}",
-        "header {display: flex; justify-content: space-between; background: rgb(255, 253, 248, 0.2); backdrop-filter: blur(25px); flex-wrap: nowrap; max-width: 1200px; width: 100%; z-index: 10;}"
+        "header {display: flex; justify-content: space-between; background: rgb(255, 253, 248, 0.2); backdrop-filter: blur(25px); flex-wrap: nowrap; max-width: 1200px; width: 100%; z-index: 10;}",
+        "@media (min-width: 768px) {.header-wrapper {background:rgb(255, 253, 248); border-radius: 50px; } header {border-radius: 50px; border: 1px #3e2103 solid; margin: 0.5em auto; backdrop-filter: none; } .header-wrapper {margin: 0.5em 1rem; }}"
       ],
       "settings": {
         "logo_position": "top-left",
