@@ -35,16 +35,18 @@
         "button_YFHfp6",
         "button_xiCWY6"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "h1 {font-size: xx-large; padding: 5px;}"
+      ],
       "name": "Hero Banner",
       "settings": {
-        "background_image": "shopify://shop_images/wooden-boardwalk-through-brown-grassy-land.jpg",
+        "background_image": "shopify://shop_images/sumeet-singh--_YnzIHeSNw-unsplash.jpg",
         "enable_scroll_effect": true,
         "hero_height": "75vh",
         "heading": "En hjælpende hånd med at styre skærmforbruget",
         "title_color": "#ffffff",
         "text_alignment": "center",
-        "content_position": "bottom-right",
+        "content_position": "bottom-center",
         "mobile_content_alignment": "center"
       }
     },
@@ -233,7 +235,7 @@
         "padding_top": 48,
         "padding_bottom": 48,
         "title": "Dette er hvad vi står for",
-        "align_text": "center",
+        "align_text": "left",
         "title_color": "#ac3f00",
         "color_scheme": "",
         "arrow_color": "#ac3f00"
