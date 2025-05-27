@@ -108,6 +108,37 @@
         "padding_bottom": 48
       }
     },
+    "rich_text_apRVFF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xTaQnn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Se vores udvlag",
+            "heading_size": "h1"
+          }
+        },
+        "text_Y8Y786": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Vi sælger ikke bare dumbphones, men også redskaber som hjælper dig<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xTaQnn",
+        "text_Y8Y786"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "collection_list_3gXFbh": {
       "type": "collection-list",
       "blocks": {
@@ -139,7 +170,7 @@
         ".card-wrapper {overflow: hidden; border-radius: 25px; background-color: #d2dfdf; padding: 0 15px;}"
       ],
       "settings": {
-        "title": "Vi sælger ikke bare dumbphones, men også redskaber som hjælper dig",
+        "title": "",
         "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 3,
@@ -147,7 +178,7 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -562,6 +593,7 @@
     "hero_banner_xc7HTV",
     "1747382751afc67ba6",
     "image_with_text_3acgQr",
+    "rich_text_apRVFF",
     "collection_list_3gXFbh",
     "carusel_bMcbcV",
     "rich_text_WhwJye",
