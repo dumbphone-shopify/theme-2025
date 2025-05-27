@@ -42,7 +42,7 @@
       "type": "main-blog",
       "custom_css": [
         "div .blog-articles__article {border-radius: 25px; overflow: hidden;}",
-        ".blog-articles {gap: 3rem;}",
+        ".blog-articles {gap: 3rem; padding: 0 0 6rem;}",
         ".article-card__excerpt {display: none;}"
       ],
       "settings": {
